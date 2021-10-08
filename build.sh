@@ -34,6 +34,7 @@ for file in *.md; do
 	cmark "$file" >> "$outfile"
 	# TODO: hacky
 	sed -i "s/<a /<a rel='noopener noreferrer' /gi" "$outfile"
+	sed -i 's/\[\[\(.*\)\]\]/<a href="\1.html">\1<\/a>/g' "$outfile"
 	echo -n "<li><a href='$title.html'>$title</a></li>" >> "$index"
 done
 
