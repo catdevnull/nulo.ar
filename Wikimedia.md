@@ -1,0 +1,1 @@
+- Horrible la analogía pero buenas concluciones, [Wikipedia has cancer](https://en.wikipedia.org/wiki/User:Guy_Macon/Wikipedia_has_Cancer)

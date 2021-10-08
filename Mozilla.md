@@ -1,0 +1,1 @@
+- [Firefox usage is down 85% despite Mozilla's top exec pay going up 400%](https://calpaterson.com/mozilla.html)
