@@ -11,6 +11,7 @@ pipeline:
 
       - eval $(ssh-agent -s)
       - echo "$${SSH_KEY}" | tr -d '\r' | ssh-add -
+      - mkdir -p ~/.ssh
       - echo "[nulo.in]:420,[186.136.121.7]:420 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGPkgRVWYcVcgjI0xAjDgZQsYuXU9edcya8zna01ibyUMlfKHIMD9yOoq0R+fQPTCqwiol/2tKMPJ2hlKshc+H8=" > ~/.ssh/known_hosts
 
       - ./upload.sh
