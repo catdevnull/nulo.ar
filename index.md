@@ -7,6 +7,8 @@ Este es mi hogar. ¿Estás perdidx?
 
 Algunos de mis proyectos:
 - [Manejador de Tareas](https://tareas.nulo.in)
+- Laburos:
+    - [Salvá la costanera](https://salvalacostanera.com.ar), [código](https://gitea.nulo.in/Nulo/salva-la-costanera)
 - Juguetes:
 	- [Cuarentena](https://cuarentena.nulo.in)
 - [Este sitio](https://gitea.nulo.in/Nulo/sitio)
