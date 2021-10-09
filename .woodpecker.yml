@@ -2,7 +2,7 @@ pipeline:
   build:
     image: docker.io/alpine:3.14
     commands:
-      - apk add cmark git
+      - apk add cmark git cmd:setup-timezone
       # Para generar las fechas bien
       - setup-timezone -z America/Argentina/Buenos_Aires
       - ./build.sh
