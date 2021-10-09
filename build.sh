@@ -3,6 +3,7 @@
 template () {
 	echo -n "<!doctype html>"
 	echo -n "<meta charset=utf-8>"
+	echo -n "<meta name=viewport content='width=device-width, initial-scale=1.0'>"
 	echo -n "<link rel=stylesheet href=drip.css>"
 	echo -n "<title>$1</title>"
 	if test "$inicio" != true; then
