@@ -12,7 +12,7 @@ template () {
 	if test -n "$2"; then
 		echo -n "<header>"
 		echo -n "<h1>$1</h1>"
-		echo -n "<p><small>Último cambio: <time datetime='$(stat -c %y "$2")'>$(date -d "$(stat -c %y "$2" | cut -f 1 -d .)" '+%Y-%m-%d %H:%M')</time></small></p>"
+		echo -n "<p><small>Último cambio: <time datetime='$(git log -1 --format=%ai "$2")'>$(date -d "@$(git log -1 --format=%at "$2")" '+%Y-%m-%d %H:%M')</time></small></p>"
 		echo -n "</header>"
 	fi
 }
