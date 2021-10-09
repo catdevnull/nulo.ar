@@ -1,20 +1,20 @@
 pipeline:
-	build:
-		image: docker.io/alpine:3.14
-		commands:
-			- apk add cmark
-			- ./build.sh
-	deploy:
-		image: docker.io/alpine:3.14
-		commands:
-			- apk add rsync openssh-client-default
+  build:
+    image: docker.io/alpine:3.14
+    commands:
+      - apk add cmark
+      - ./build.sh
+  deploy:
+    image: docker.io/alpine:3.14
+    commands:
+      - apk add rsync openssh-client-default
 
-			- eval $(ssh-agent -s)
-			- echo "$${SSH_KEY}" | tr -d '\r' | ssh-add -
+      - eval $(ssh-agent -s)
+      - echo "$${SSH_KEY}" | tr -d '\r' | ssh-add -
 
-			- ./upload.sh
-		when:
-			branch: ANTIFASCISTA
-			event: push
-		secrets:
-			- ssh_key
+      - ./upload.sh
+    when:
+      branch: ANTIFASCISTA
+      event: push
+    secrets:
+      - ssh_key
