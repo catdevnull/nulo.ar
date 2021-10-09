@@ -3,6 +3,8 @@ pipeline:
     image: docker.io/alpine:3.14
     commands:
       - apk add cmark
+      # Para generar las fechas bien
+      - ln -sf /etc/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
       - ./build.sh
   deploy:
     image: docker.io/alpine:3.14
