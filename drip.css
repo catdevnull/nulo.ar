@@ -1,14 +1,14 @@
 body {
-    font-family: sans-serif;
-    max-width: 30rem;
-    margin: 0 auto;
-    padding: 1rem;
+	font-family: sans-serif;
+	max-width: 30rem;
+	margin: 0 auto;
+	padding: 1rem;
 }
 
 img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 abbr {
-    color: gray;
+	color: gray;
 }

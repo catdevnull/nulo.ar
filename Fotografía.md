@@ -1,3 +1,3 @@
 ## Links
 
-- [Beej's Photo Guide](https://beej.us/guide/bggdb/)
+-   [Beej's Photo Guide](https://beej.us/guide/bggdb/)

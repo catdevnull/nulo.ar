@@ -4,8 +4,8 @@ Tip: usar la [interfaz web](https://openstreetmap.org) de [[OpenStreetMap]] o [G
 
 ## API
 
-- [Documentación docs.graphhopper.com](https://docs.graphhopper.com)
-- [Documentación GitHub](https://github.com/graphhopper/graphhopper/blob/3.x/docs/web/api-doc.md)
+-   [Documentación docs.graphhopper.com](https://docs.graphhopper.com)
+-   [Documentación GitHub](https://github.com/graphhopper/graphhopper/blob/3.x/docs/web/api-doc.md)
 
 Por lo que veo, es la misma API pero la documentación de docs.graphhopper.com están mejor ordenadas y representadas.
 
