@@ -2,9 +2,9 @@ pipeline:
   build:
     image: docker.io/alpine:3.14
     commands:
-      - apk add cmark git tzdata
+      - apk add cmark git
       # Para generar las fechas bien
-      - ln -sf /etc/zoneinfo/America/Argentina/Buenos_Aires /etc/localtime
+      - setup-timezone -z America/Argentina/Buenos_Aires
       - ./build.sh
   deploy:
     image: docker.io/alpine:3.14
