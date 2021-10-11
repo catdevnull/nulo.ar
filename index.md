@@ -5,6 +5,10 @@
 
 Este es mi hogar. ¿Estás perdidx?
 
+Algunas cosas que escribí recientemente:
+
+-	[[Arreglando bugs ajenos]]
+
 Algunos de mis proyectos:
 
 -	[Manejador de Tareas](https://tareas.nulo.in)
@@ -13,9 +17,5 @@ Algunos de mis proyectos:
 -	Juguetes:
 	-	[Cuarentena](https://cuarentena.nulo.in)
 -	[Este sitio](https://gitea.nulo.in/Nulo/sitio)
-
-Algunas cosas que escribí recientemente:
-
--	[[Arreglando bugs ajenos]]
 
 Webamigx: [nadie@nulo.in](mailto:nadie@nulo.in) <small>no gods no webmasters</small>
