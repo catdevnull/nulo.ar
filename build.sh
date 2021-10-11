@@ -32,7 +32,7 @@ for file in *.md; do
 	title="$(basename "$file" .md)"
 	outfile="$outdir/$title.html"
 	template "$title" "$file" > "$outfile"
-	cmark "$file" >> "$outfile"
+	cmark --unsafe "$file" >> "$outfile"
 	# TODO: hacky
 	sed -i "s/<a /<a rel='noopener noreferrer' /gi" "$outfile"
 	sed -i 's/\[\[\(.*\)\]\]/<a href="\1.html">\1<\/a>/g' "$outfile"
