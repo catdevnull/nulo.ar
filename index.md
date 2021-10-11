@@ -16,6 +16,6 @@ Algunos de mis proyectos:
 
 Algunas cosas que escribí recientemente:
 
--	[[Arrelgando bugs ajenos]]
+-	[[Arreglando bugs ajenos]]
 
 Webamigx: [nadie@nulo.in](mailto:nadie@nulo.in) <small>no gods no webmasters</small>
