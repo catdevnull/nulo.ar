@@ -20,7 +20,7 @@ template () {
 outdir=build
 mkdir -p $outdir
 # Autocopiarnos :)
-cp *.sh *.md *.css *.png "$outdir"
+cp *.sh *.md *.css *.png *.mp4 "$outdir"
 
 index="$outdir/index.html"
 inicio=true header=false template "nulo.in" > "$index"
