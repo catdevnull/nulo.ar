@@ -198,4 +198,4 @@ Más allá del desarrollo técnico que hice, creo que es más importante el pol�
 
 Por otro lado, se me vienen a la mente la necesidad de testear el código para que no pasen cosas como bug 2, y también el testeo de herramientas de accesibilidad para bug 1.
 
-Gute Nacht!
+[Gute Nacht!](https://gitea.nulo.in/Nulo/learngerman)
