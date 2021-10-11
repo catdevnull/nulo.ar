@@ -13,3 +13,7 @@ video {
 abbr {
 	color: gray;
 }
+
+pre {
+	overflow-x: auto;
+}
