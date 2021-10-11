@@ -28,7 +28,7 @@ cmark --unsafe index.md >> "$index"
 echo -n "<h2>Lista de páginas</h2><ul>" >> "$index"
 
 for file in *.md; do
-	test "$(basename $file)" = index.md && continue
+	test "$(basename "$file")" = index.md && continue
 	title="$(basename "$file" .md)"
 	outfile="$outdir/$title.html"
 	template "$title" "$file" > "$outfile"
