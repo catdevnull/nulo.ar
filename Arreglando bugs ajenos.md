@@ -86,7 +86,7 @@ Tuve varios problemas al intentar levantar un entorno de desarrollo local con el
 
 	Notese como originalmente había mentido diciendo que la URL de la API era learngerman.dw.com, pero luego lo cambié para que apunte a una URL local ya que la API no me permitía accederla desde un sitio no legítimo. Esa URL local apunta a un proxy a la API real.
 
-Es muy probable que haya tenído que hacer más cosas y me haya olvidado. Fue mucho prueba y error hasta que el sitio finalmente cargó.
+Es muy probable que haya tenido que hacer más cosas y me haya olvidado. Fue mucho prueba y error hasta que el sitio finalmente cargó.
 
 ## Arreglando bug 1: problema de accesibilidad
 
