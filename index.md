@@ -14,4 +14,8 @@ Algunos de mis proyectos:
     -   [Cuarentena](https://cuarentena.nulo.in)
 -   [Este sitio](https://gitea.nulo.in/Nulo/sitio)
 
+Algunas cosas que escribí recientemente:
+
+-   [[Arrelgando bugs ajenos]]
+
 Webamigx: [nadie@nulo.in](mailto:nadie@nulo.in) <small>no gods no webmasters</small>
