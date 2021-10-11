@@ -38,53 +38,53 @@ Tuve varios problemas al intentar levantar un entorno de desarrollo local con el
 
 -   Vite esperaba que los archivos de React tengan la extensión `.jsx` mientras que originalmente tenían la extensión `.js`. Script:
 
-    ```sh
-    for f in $(find -iname '*.js'); do
-    	mv $f ${f}x
-    done
-    ```
+	```sh
+	for f in $(find -iname '*.js'); do
+		mv $f ${f}x
+	done
+	```
 
 -   Había una parte del código que eran archivos SVG "compilados" a React. Sin embargo, estos esperaban una variable especial de webpack (o algún plugin de webpack) que por supuesto no existía. Para esto, hice otro script para inyectarles esa variable:
 
-    ```sh
-    for f in $(find -iname '*.svg.js'); do
-    	echo 'const __webpack_public_path__ = "https://learngerman.dw.com/";' > ${f}.lol
-    	cat $f >> ${f}.lol
-    	mv ${f}.lol $f
-    done
-    ```
+	```sh
+	for f in $(find -iname '*.svg.js'); do
+		echo 'const __webpack_public_path__ = "https://learngerman.dw.com/";' > ${f}.lol
+		cat $f >> ${f}.lol
+		mv ${f}.lol $f
+	done
+	```
 
 -   Tenía que instalar las dependencias de todo el proyecto. Esto lo hice con más script-fu:
 
-    ```sh
-    grep -r "from '[\w@].*';" . > imports
-    sort -u imports > imports.uniq
-    xargs pnpm add < imports.uniq
-    # Por alguna razón esto no fue suficiente y tuve que manualmente añadir varias dependencias
-    pnpm add graphql videojs-seek-buttons videojs-contrib-quality-levels videojs-hls-quality-selector videojs-seek-buttons videojs-hls-quality-selector
-    ```
+	```sh
+	grep -r "from '[\w@].*';" . > imports
+	sort -u imports > imports.uniq
+	xargs pnpm add < imports.uniq
+	# Por alguna razón esto no fue suficiente y tuve que manualmente añadir varias dependencias
+	pnpm add graphql videojs-seek-buttons videojs-contrib-quality-levels videojs-hls-quality-selector videojs-seek-buttons videojs-hls-quality-selector
+	```
 
 -   Faltaba tener el CSS localmente así que lo descargé:
 
-    ```sh
-    for f in basestyles stylesheets customBaku; do
-    	wget https://learngerman.dw.com/assets/css/${f}.css
-    done
-    ```
+	```sh
+	for f in basestyles stylesheets customBaku; do
+		wget https://learngerman.dw.com/assets/css/${f}.css
+	done
+	```
 
 -   En `config.js` se tomaban variables de entorno que asumo existen en el entorno de trabajo de lxs desarrolladorxs. Yo las mentí:
 
-    ```js
-    const process = {
-    	env: {
-    		// REACT_APP_GRAPHQL_BASE_URL: "https://learngerman.dw.com/graphql",
-    		REACT_APP_GRAPHQL_BASE_URL: "https://localhost:4002/graphql",
-    		REACT_APP_RECAPTCHA_SITEKEY: null,
-    	},
-    };
-    ```
+	```js
+	const process = {
+		env: {
+			// REACT_APP_GRAPHQL_BASE_URL: "https://learngerman.dw.com/graphql",
+			REACT_APP_GRAPHQL_BASE_URL: "https://localhost:4002/graphql",
+			REACT_APP_RECAPTCHA_SITEKEY: null,
+		},
+	};
+	```
 
-    Notese como originalmente había mentido diciendo que la URL de la API era learngerman.dw.com, pero luego lo cambié para que apunte a una URL local ya que la API no me permitía accederla desde un sitio no legítimo. Esa URL local apunta a un proxy a la API real.
+	Notese como originalmente había mentido diciendo que la URL de la API era learngerman.dw.com, pero luego lo cambié para que apunte a una URL local ya que la API no me permitía accederla desde un sitio no legítimo. Esa URL local apunta a un proxy a la API real.
 
 Es muy probable que haya tenído que hacer más cosas y me haya olvidado. Fue mucho prueba y error hasta que el sitio finalmente cargó.
 

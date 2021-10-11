@@ -1,2 +1,2 @@
-- [Software Does Not Contain Errors](https://tuukkapensala.com/files/software_does_not_contain_errors.txt)
-- [Semantic Compression](https://caseymuratori.com/blog_0015)
+-	[Software Does Not Contain Errors](https://tuukkapensala.com/files/software_does_not_contain_errors.txt)
+-	[Semantic Compression](https://caseymuratori.com/blog_0015)
