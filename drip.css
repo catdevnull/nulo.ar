@@ -5,7 +5,8 @@ body {
 	padding: 1rem;
 }
 
-img {
+img,
+video {
 	max-width: 100%;
 }
 
