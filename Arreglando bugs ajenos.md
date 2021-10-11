@@ -4,7 +4,7 @@ Estoy aprendiendo alemán y mi principal recurso es el "Aprender Alemán" de la 
 
 Les mandé un mail al equipo de desarrollo ¡pero no me contestaron! Así que lo arreglé yo mismo.
 
-Pero ¿cómo? El código es privativo y no tengo acceso. El _JavaScript_ que llega a mi navegador está minificado, es decir que se le elimina palabras y se comprime a un archivo para ahorrar en banda ancha. Pero **otra de las razones por las que se minifica es para no dar acceso al código.**
+Pero ¿cómo? El código es privativo y no tengo acceso. El _JavaScript_ que llega a mi navegador está minificado, es decir que se le elimina palabras y se comprime a un archivo para ahorrar ancho de banda. Pero **otra de las razones por las que se minifica es para no dar acceso al código.**
 
 Sin embargo, el equipo de desarrollo cometió un error (¿intencionalmente?) en donde dejaron los "source maps". Los source maps son unos archivos que le permiten a las herramientas de desarrolladorx saber que parte del código minificado es cuál línea de código. ¡Por eso se llaman mapas! Para lograr esto, contienen casi todo el código del sitio.
 
