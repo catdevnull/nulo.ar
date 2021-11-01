@@ -17,3 +17,9 @@ abbr {
 pre {
 	overflow-x: auto;
 }
+
+blockquote {
+	border-left: solid 3px black;
+	margin: auto .5em;
+	padding-left: 1em;
+}
