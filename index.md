@@ -19,3 +19,5 @@ Algunos de mis proyectos:
 -	[Este sitio](https://gitea.nulo.in/Nulo/sitio)
 
 Webamigx: [nadie@nulo.in](mailto:nadie@nulo.in) <small>no gods no webmasters</small>
+
+> De este sitio se desprenden graves falencias tales como simbología confusa, cuestionamientos ideológicos-sociales, objetivos no adecuados al hecho estético, ilimitada fantasía...
