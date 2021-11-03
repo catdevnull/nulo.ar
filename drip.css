@@ -19,7 +19,23 @@ pre {
 }
 
 blockquote {
-	border-left: solid 3px black;
+	border-left: solid 3px;
 	margin: auto .5em;
 	padding-left: 1em;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: black;
+		color: #eee;
+	}
+	abbr {
+		color: lightgray;
+	}
+	a {
+		color: gold;
+	}
+	a:visited {
+		color: #ff9;
+	}
 }
