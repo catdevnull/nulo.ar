@@ -1,6 +1,6 @@
 ## Restricciones de red
 
-YouTube permite a lxs administradorxs de una red bloquear sitios "inapropiados" (!). Este bloqueo funciona [interceptando DNS o HTTP](https://support.google.com/a/answer/6214622?hl=en). En mi caso, es DNS. Para liberarnos de la censura, podemos agregar IPs no censuradas a `/etc/hosts`:
+YouTube permite a lxs administradorxs de una red bloquear videos "inapropiados" (!). Este bloqueo funciona [interceptando DNS o HTTP](https://support.google.com/a/answer/6214622?hl=en). En mi caso, es DNS. Para liberarnos de la censura, podemos agregar IPs no censuradas a `/etc/hosts`:
 
 ```
 172.217.173.142 youtube.com www.youtube.com m.youtube.com youtubei.googleapis.com youtube.googleapis.com www.youtube-nocookie.com
