@@ -1,4 +1,4 @@
-- [Repositorio GitHub](https://github.com/39aldo39/DecSync)
+-   [Repositorio GitHub](https://github.com/39aldo39/DecSync)
 
 Es un formato para archivos con datos de calendarios, tareas, RSS, contactos y otras cosas para ser sincronizado con Syncthing o otras herramientas similares.
 
