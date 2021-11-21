@@ -2,3 +2,4 @@
 -   [Semantic Compression](https://caseymuratori.com/blog_0015)
 -   [Destroy All Software](https://www.destroyallsoftware.com/screencasts), tutoriales y screencasts para hacer componentes básicos de sistemas.
 -   [Invisible backdoor](https://certitude.consulting/blog/en/invisible-backdoor/), el uso de caracteres Unicode invisibles o difíciles de diferenciar de otros para introducir vulnerabilidades en código.
+-   [Coding Interview University](https://github.com/jwasham/coding-interview-university)
