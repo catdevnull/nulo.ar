@@ -1,1 +1,2 @@
 -	[Better Diff Highlighting in Git](https://joelclermont.com/post/2021-02/better-diff-highlighting-in-git/)
+-	[Git es difícil](https://mastodon.sdf.org/@khm/107301080271400610)
