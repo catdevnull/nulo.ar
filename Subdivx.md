@@ -1,4 +1,4 @@
-[Subdivx](https://subdivx.com) está desapareciendo. Acá documento mis esfuerzos archivandolo.
+[Subdivx](https://subdivx.com) está desapareciendo. Acá documento nuestros esfuerzos archivandolo.
 
 ## 2021-11-30
 
