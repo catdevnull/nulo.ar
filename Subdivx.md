@@ -2,6 +2,10 @@
 
 Fechas en GMT-3.
 
+## Si querés contribuir
+
+Estoy descargando los archivos iniciales para saber los enlaces de los subtítulos. Mientras tanto, andá preparando una maquina con buena conexión a internet y espacio en disco, idealmente con Linux.
+
 ## 2021-11-30
 
 -   Descargué todas las páginas de los subtitulos, es decir, `https://www.subdivx.com/?pg={1..5490}`. Esto sirve como indice a todas las páginas de los subtitulos y autorxs.
