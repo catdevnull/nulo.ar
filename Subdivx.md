@@ -1,4 +1,4 @@
-[Subdivx](https://subdivx.com) está desapareciendo. Acá documento nuestros esfuerzos archivandolo.
+[Subdivx](https://subdivx.com) está desapareciendo. Acá documento nuestros esfuerzos archivándolo.
 
 Fechas en GMT-3.
 
