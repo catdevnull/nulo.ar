@@ -17,3 +17,7 @@ Estoy descargando los archivos iniciales para saber los enlaces de los subtítul
 
     Seguimos archivando por las dudas.
 -   22:10 - Empezamos a distribuir tareas para descargar las paginas de los subtítulos.
+
+## 2021-12-01
+
+-   13:35 - Descubrí que usar wget con muchas listas separadas es _mucho_ más eficiente que aria2. Descargando cosas a ~mil por segundo.
