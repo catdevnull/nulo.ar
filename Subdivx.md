@@ -16,3 +16,4 @@ Estoy descargando los archivos iniciales para saber los enlaces de los subtítul
     > Bueno, me convencieron, seguimos... cualquier cosa me escriben en @deifar
 
     Seguimos archivando por las dudas.
+-   22:10 - Empezamos a distribuir tareas para descargar las paginas de los subtítulos.
