@@ -1,0 +1,3 @@
+-   [Encrypted + Locked + LineageOS 16.0 + MicroG on OnePlus 5T](https://github.com/rarecoil/open-dumpling)
+-   [Un post en r/LineageOS pesimista sobre re-bloquear bootloaders](https://old.reddit.com/r/LineageOS/comments/n7yo7u/a_discussion_about_bootloader_lockingunlocking/)
+-   [Otro post, específico del OnePlus 5T](https://old.reddit.com/r/LineageOS/comments/op468c/relocking_bootloader_oneplus_5t/)
