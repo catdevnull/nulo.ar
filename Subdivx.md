@@ -22,3 +22,7 @@ Estoy descargando los archivos iniciales para saber los enlaces de los subtítul
 
 -   13:35 - Descubrí que usar wget con muchas listas separadas es _mucho_ más eficiente que aria2. Descargando cosas a ~mil por segundo.
 -   19:31 - Terminé de bajar todo y descomprimirlo, ahora a extraer enlaces de subtitulos para descargar. Antes dije que eran `548.825` subtitulos, pero en realidad son `548.815`; habían 10 duplicados por alguna razón.
+
+## 2021-12-02
+
+-   15:18 - Subdivx falla al cargar algunas paginas aleatoriamente con "Unable to Connect db". Estoy revisando si reporta el error correctamente con un código de estado HTTP.
