@@ -1,0 +1,2 @@
+-   [Mundo viejo, mundo nuevo de Hernán Casciari](https://www.youtube.com/watch?v=62zc4zB77f4)
+-   [Los justos de Hernán Casciari](https://www.youtube.com/watch?v=GWO8wghlyE4) sobre rips, subtitulado comunitario
