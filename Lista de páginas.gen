@@ -1,7 +1,11 @@
 #!/bin/sh
 echo "<ul>"
-for file in build/*.html; do
-	title="$(basename "$file" .html)"
-	echo "<li><a href='$file'>$title</a></li>"
+for file in *.md; do
+	title="$(basename "$file" .md)"
+	echo "<li><a href='$title.html'>$title</a></li>"
+done
+for file in *.gen; do
+	title="$(basename "$file" .gen)"
+	echo "<li><a href='$title.html'>$title</a></li>"
 done
 echo "</ul>"
