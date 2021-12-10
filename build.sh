@@ -21,7 +21,7 @@ template () {
 markdown () {
 	# TODO: hacky
 	cmark --unsafe "$1" \
-	| sed "s/<a /<a rel='noopener noreferrer' /gi" \
+	| sed "s/<a h/<a rel='noopener noreferrer' h/gi" \
 	| sed 's/\[\[\(.*\)\]\]/<a href="\1.html">\1<\/a>/g'
 }
 

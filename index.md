@@ -21,6 +21,6 @@ Algunos de mis proyectos:
 
 Webamigx: [nadie@nulo.in](mailto:nadie@nulo.in) <small>no gods no webmasters</small>
 
-<a rel="me" href="https://todon.eu/@Nulo">Mastodon</a>
+<a rel="me noopener noreferrer" href="https://todon.eu/@Nulo">Mastodon</a>
 
 > De este sitio se desprenden graves falencias tales como simbología confusa, cuestionamientos ideológicos-sociales, objetivos no adecuados al hecho estético, ilimitada fantasía...
