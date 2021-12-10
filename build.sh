@@ -33,7 +33,6 @@ cp ./*.sh ./*.md ./*.css ./*.png ./*.mp4 "$outdir"
 index="$outdir/index.html"
 inicio=true header=false template "nulo.in" > "$index"
 markdown index.md >> "$index"
-echo "<h2>Lista de páginas</h2><ul>" >> "$index"
 
 for file in *.md; do
 	test "$(basename "$file")" = index.md && continue
@@ -41,7 +40,12 @@ for file in *.md; do
 	outfile="$outdir/$title.html"
 	template "$title" "$file" > "$outfile"
 	markdown "$file" >> "$outfile"
-	echo "<li><a href='$title.html'>$title</a></li>" >> "$index"
 done
 
-echo "</ul>" >> "$index"
+for file in *.gen; do
+	title="$(basename "$file" .gen)"
+	outfile="$outdir/$title.html"
+	template "$title" "$file" > "$outfile"
+	"./$file" >> "$outfile"
+done
+

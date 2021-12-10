@@ -23,4 +23,6 @@ Webamigx: [nadie@nulo.in](mailto:nadie@nulo.in) <small>no gods no webmasters</sm
 
 <a rel="me noopener noreferrer" href="https://todon.eu/@Nulo">Mastodon</a>
 
+[[Lista de páginas]]
+
 > De este sitio se desprenden graves falencias tales como simbología confusa, cuestionamientos ideológicos-sociales, objetivos no adecuados al hecho estético, ilimitada fantasía...
