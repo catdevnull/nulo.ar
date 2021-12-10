@@ -51,3 +51,5 @@ for _, tema in ipairs(temas) do
 	print("<li>"..tema.."</li>")
 end
 print("</ol>")
+
+print("<p><a href='https://gitea.nulo.in/Nulo/sitio/src/branch/ANTIFASCISTA/Men%c3%ba%20art%c3%adstico.gen'>Código</a></p>")
