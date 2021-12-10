@@ -24,7 +24,7 @@ local adjetivos = {
 
 local random_i = 1
 local function random(list)
-	math.randomseed(os.time() + random_i)
+	math.randomseed((''..os.time()):reverse() + random_i)
 	random_i = random_i + 5
 	return list[math.random(#list)]
 end
