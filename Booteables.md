@@ -1,0 +1,1 @@
+-   [Ventoy](https://www.ventoy.net/en/index.html): automágicamente bootea ISOs dentro de un pendrive sin tener que flashearlo cada vez
