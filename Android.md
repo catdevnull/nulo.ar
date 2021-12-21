@@ -25,3 +25,10 @@ Estas instrucciones están parcialmente tomadas de [esta respuesta en StackOverf
     ```sh
     sdkmanager 'build-tools;29.0.2' 'platforms;android-29'
     ```
+
+5.  Instalamos [`gcompat`](https://git.adelielinux.org/adelie/gcompat) que nos permite correr binarios que requieren [Glibc](https://es.wikipedia.org/wiki/Glibc) en Alpine que no lo tiene:
+
+    ```sh
+    # Correr como root:
+    apk add gcompat
+    ```
