@@ -52,4 +52,5 @@ for _, tema in ipairs(temas) do
 end
 print("</ol>")
 
-print("<p><a href='https://gitea.nulo.in/Nulo/sitio/src/branch/ANTIFASCISTA/Men%c3%ba%20art%c3%adstico.gen'>Código</a></p>")
+print("<p><a href='https://cgit.nulo.in/sitio/tree/Men%c3%ba%20art%c3%adstico.gen
+'>Código</a></p>")

@@ -17,7 +17,7 @@ Algunos de mis proyectos:
 -	Juguetes:
 	-	[Cuarentena](https://cuarentena.nulo.in)
 	-	[[txt2txt]]
--	[Este sitio](https://gitea.nulo.in/Nulo/sitio)
+-	[Este sitio](https://cgit.nulo.in/sitio)
 
 Webamigx: [nadie@nulo.in](mailto:nadie@nulo.in) <small>no gods no webmasters</small>
 
