@@ -20,8 +20,13 @@ pre {
 
 blockquote {
 	border-left: solid 3px;
-	margin: auto .5em;
+	margin: auto 0.5em;
 	padding-left: 1em;
+}
+
+ul {
+	background: rgba(0, 0, 255, 0.05);
+	margin: 0.5rem 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,5 +42,8 @@ blockquote {
 	}
 	a:visited {
 		color: #ff9;
+	}
+	ul {
+		background: rgba(255, 0, 0, 0.2);
 	}
 }
