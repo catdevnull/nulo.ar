@@ -1,0 +1,7 @@
+-   Un ereader con software malo.
+-   Update.zips:
+    -   Booxtor:
+        -   [Reuploads a MEGA por bsnick](https://www.mobileread.com/forums/showpost.php?p=3728867&postcount=907)
+            -   [Reupload de eso al Inernet Archive](https://archive.org/details/boox-t68-m96-booxtor-update.zip)
+        -   [Update.zip (versión desconocida, cortesía del Internet Archive)](https://web.archive.org/web/20170706225957if_/http://www.ereader-store.de/DATA/T68/update.zip)
+-   [Guía de como flashear el update.zip en el caso de que se brickee (de Booxtor)](https://www.mobileread.com/forums/showthread.php?s=36252b33ca897a409c1773ae75c5cbd0&t=242726)
