@@ -1,4 +1,5 @@
 -   [Git es difícil](https://mastodon.sdf.org/@khm/107301080271400610)
+-   ["¿Como puedo confiar en esta repo de Git? "](https://anarc.at/blog/2020-03-17-git-gpg-verification/] de Anarcat (en inglés)
 
 ## Diffs útiles para Alpine
 
