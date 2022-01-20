@@ -16,6 +16,7 @@ abbr {
 
 pre {
 	overflow-x: auto;
+	white-space: break-spaces;
 }
 
 blockquote {
