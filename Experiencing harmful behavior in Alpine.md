@@ -212,7 +212,7 @@ snip
 
 Soon after that, Ariadne privately messaged me asking me about the situation. She first told me that I should report it to the Technical Steering Comittee, but I was told a few moments later that apparently mps "does not want to waste the TSC's time with [my] dispute." This is ironic as he [previously](#tsc-log) explicitly told psykose to report it to the TSC.
     
-She then asked me if restoring the deleted comments would be an acceptable outcome. I said no, because the problem wasn't that mps removed some comments. The problem was that mps bypassed me as a maintainer twice, making changes which he was explicitly told not to. ==This is the kind of unwelcoming behavior that turns people away from free software communities==. I was then told that there was no interest in kicking out mps from the project, and that she had spoken with mps for him to stop this behavior.
+She then asked me if restoring the deleted comments would be an acceptable outcome. I said no, because the problem wasn't that mps removed some comments. The problem was that mps bypassed me as a maintainer twice, making changes which he was explicitly told not to. <mark>This is the kind of unwelcoming behavior that turns people away from free software communities</mark>. I was then told that there was no interest in kicking out mps from the project, and that she had spoken with mps for him to stop this behavior.
     
 I for one don't believe that someone can change their behavior which they repeated many times can change it by being told not to one hour after they last did it. In fact, I don't think mps understood the problem at all:
 
