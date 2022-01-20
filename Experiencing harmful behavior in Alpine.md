@@ -1,3 +1,5 @@
+<small>Started writing 2022-01-01, published 2022-01-20 with help from friends.</small>
+
 I'm a new contributor to aports/Alpine. Recently, [I took maintainership of `telegram-desktop` (and the related `tg_owt`)](https://gitlab.alpinelinux.org/alpine/aports/-/merge_requests/28864) after [upgrading it for a few versions](https://gitlab.alpinelinux.org/alpine/aports/-/merge_requests/27025) and generally improving the situation of the package by using some packaged dependencies instead of bundled ones.
 
 The MR for the change of maintainership also contained many changes to the APKBUILD with the help of psykose and mps. Along with it, I added some comments that explained where dependencies were taken from, which were bundled with the package, which were patched out, etc. This was in the hope of making it easier to check for new dependencies in newer releases. I also added a `TODO` comment [as suggested by CODINGSTYLE.md](https://gitlab.alpinelinux.org/alpine/aports/-/blob/4cded765f8b08139a36a01cdf327776571ced825/CODINGSTYLE.md#todo-comments) stating the need to eventually upgrade the package to Qt6.
