@@ -248,7 +248,7 @@ The problem wasn't the Non Maintainer Update, the problem was the intent behind 
 
 Yes, that was an an oversight of my part but also of mps (he merged my changes.) I had already noticed that and had fixed it locally, waiting for a new release of telegram-desktop to commit it.
 
-My objective is not necessarily to kick mps out. I also understand that the TSC doesn't want this from happening; mps currently maintains 82 packages, and I'm sure he does much more in the project. My objective is, instead, to make sure Alpine is a community that welcomes contributions. To this end, I can only think that this means detecting problematic behavior as this one, and possibly kicking people out (or, at least, preventing it from happening.)
+I understand that the TSC doesn't want to kick him out; mps currently maintains 82 packages, and I'm sure he does much more in the project. My objective is, instead, to make sure Alpine is a community that welcomes contributions. To this end, I can only think that this means detecting problematic behavior as this one, and possibly kicking people out (or, at least, preventing it from happening.) This is not just about mps.
 
 Just reading the logs and seeing what he did should make it clear that he's being an asshole. I hope it's clear that I'm acting in good faith. It's wild to me how the only way to make him stop bypassing me was to report this as a CoC misconduct, even though this happened publicly in front of OPs in #alpine-devel. Even though they answered and disagreed, they didn't stop mps from doing what he did, and speaking like he did.
 
