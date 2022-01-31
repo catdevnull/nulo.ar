@@ -32,3 +32,20 @@ Estas instrucciones están parcialmente tomadas de [esta respuesta en StackOverf
     # Correr como root:
     apk add gcompat
     ```
+
+## `adb reverse` roto
+
+En algunos dispostivos, cuando están conectados a través de ADB TCP/IP se rompen al intentar usar `adb reverse`:
+
+```
+$ adb reverse tcp:42069 tcp:42069
+more than one device/emulator
+```
+
+Aún cuando no hay otros dispositivos. La solución es hacer el `adb reverse` antes de conectarse mientras está conectado por USB:
+
+```
+adb tcpip 5555
+adb reverse tcp:42069 tcp:42069
+adb connect IP:5555
+```
