@@ -1,3 +1,5 @@
+-   [Propuesta para archivar todo el Internet Archive con BitTorrent (Archive Team)](https://wiki.archiveteam.org/index.php/INTERNETARCHIVE.BAK/torrents_implementation)
+
 ## Ideas
 
 ### Magnets/torrents reproducibles
