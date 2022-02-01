@@ -5,6 +5,7 @@ template () {
 	echo "<meta charset=utf-8>"
 	echo "<meta name=viewport content='width=device-width, initial-scale=1.0'>"
 	echo "<link rel=stylesheet href=drip.css>"
+	echo "<link rel=icon href=cowboy.svg>"
 	echo "<title>$1</title>"
 	: "${inicio:=}"
 	if test "$inicio" != true; then
@@ -28,7 +29,7 @@ markdown () {
 outdir=build
 mkdir -p $outdir
 # Autocopiarnos :)
-cp ./*.sh ./*.md ./*.css ./*.png ./*.mp4 "$outdir"
+cp ./*.sh ./*.md ./*.css ./*.png ./*.mp4 ./*.svg "$outdir"
 
 index="$outdir/index.html"
 inicio=true header=false template "nulo.in" > "$index"
