@@ -1,18 +1,22 @@
 -   [Git es difícil](https://mastodon.sdf.org/@khm/107301080271400610)
 -   ["¿Como puedo confiar en esta repo de Git? "](https://anarc.at/blog/2020-03-17-git-gpg-verification/] de Anarcat (en inglés)
 
-## Diffs útiles para Alpine
+## Diffs útiles con [delta](https://github.com/dandavison/delta)
 
--   `apk add git-diff-highlight less`
+-   `apk add delta less`
 -   `~/.gitconfig`
 
     ```
-    [pager]
-        log = diff-highlight | less
-        show = diff-highlight | less
-        diff = diff-highlight | less
+    [core]
+    	pager = delta
     [interactive]
-        diffFilter = diff-highlight
+    	diffFilter = delta --color-only
+    [delta]
+    	light = true # Cambiar a dark si se usa tema oscuro
+    	navigate = true  # use n and N to move between diff sections
+    [merge]
+    	conflictstyle = diff3
+    [diff]
+    	colorMoved = default
     ```
 
-Gracias: [Better Diff Highlighting in Git](https://joelclermont.com/post/2021-02/better-diff-highlighting-in-git/)
