@@ -20,3 +20,10 @@
     	colorMoved = default
     ```
 
+## Encontrar que commit eliminó algo
+
+```
+git log -S <string> archivo
+```
+
+[StackOverflow](https://stackoverflow.com/a/4404551)
