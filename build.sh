@@ -29,7 +29,7 @@ markdown () {
 outdir=build
 mkdir -p $outdir
 # Autocopiarnos :)
-cp ./*.sh ./*.md ./*.css ./*.png ./*.mp4 ./*.svg "$outdir"
+cp ./*.sh ./*.md ./*.css ./*.png ./*.mp4 ./*.svg ./*.html "$outdir"
 
 index="$outdir/index.html"
 inicio=true header=false template "nulo.in" > "$index"
