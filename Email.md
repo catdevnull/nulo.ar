@@ -1,1 +1,2 @@
 -   [Email Privacy Tester](https://www.emailprivacytester.com/)
+-   [Resetting credentials without email](https://cblgh.org/password-restoration/)
