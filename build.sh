@@ -8,6 +8,9 @@ template () {
 	echo "<link rel=icon href=cowboy.svg>"
 	echo "<title>$1</title>"
 	: "${inicio:=}"
+	if test "$mirror" = true; then
+		echo "<p style=color:darkred>Ojo: este sitio es un espejo (mirror). <a href=https://nulo.in>nulo.in</a> es la fuente.</p>"
+	fi
 	if test "$inicio" != true; then
 		echo "<a href=.>☚ Volver al inicio</a>"
 	fi
