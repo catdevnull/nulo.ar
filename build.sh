@@ -4,6 +4,13 @@ template () {
 	echo "<!doctype html>"
 	echo "<meta charset=utf-8>"
 	echo "<meta name=viewport content='width=device-width, initial-scale=1.0'>"
+	echo "<meta name=author content=Nulo>"
+	echo "<meta property=og:title content='$1'>"
+	echo "<meta property=og:type content=website>"
+	if test -n "$base_uri"; then
+		echo "<meta property=og:url content='${base_uri}${title}.html'>"
+	fi
+	echo "<meta property=og:image content=cowboy.svg>"
 	echo "<link rel=stylesheet href=drip.css>"
 	echo "<link rel=icon href=cowboy.svg>"
 	echo "<title>$1</title>"
