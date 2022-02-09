@@ -5,7 +5,7 @@ pipeline:
       - apk add cmark git cmd:setup-timezone lua5.1
       # Para generar las fechas bien
       - setup-timezone -z America/Argentina/Buenos_Aires
-      - ./build.sh
+      - base_uri=https://nulo.in/ ./build.sh
   deploy:
     image: docker.io/alpine:3.14
     commands:
