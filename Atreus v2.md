@@ -5,6 +5,10 @@ Take two. Hay varios problemas con mi v1:
 -   Puse Outemu Blue pensando que me iban a buscar pero creo que no me gustan el ruido que hacen.
 -   Quiero hacer otro teclado más limpio :P
 
+## Inspiraciones
+
+-   [Atreus 21 - DIY handwired and split keyboard](https://old.reddit.com/r/MechanicalKeyboards/comments/g0lhxs/atreus_21_diy_handwired_and_split_atreus_keyboard/) - Atreus split. Lo más interesante es que es un handwired hotswap muy limpio, este me dio la idea de hacerlo hotswap.
+
 ## Partes
 
 Cuando hice v1 originalmente, casi no había de donde comprar switches y cosas para teclados. Lo único que encontraba era [switches Outemu en Nisuta](https://wirepc.com/producto/NSSWO). Pero en 2021 aparecieron dos empresas que importan cosas: [LatamKeys](https://latamkeys.com/) y [CYTinfo](https://www.cytinfo.com.ar/). Aparte, LatamKeys tiene un Discord activo que me ayudó diciendome donde conseguir varias cosas (como el alambre de cobre esmaltado e "impresión" de acero o aluminio).
