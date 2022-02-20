@@ -8,7 +8,7 @@ template () {
 	echo "<meta property=og:title content='$1'>"
 	echo "<meta property=og:type content=website>"
 	if test -n "$base_uri"; then
-		echo "<meta property=og:url content='${base_uri}${title}.html'>"
+		echo "<meta property=og:url content='${base_uri}${1}.html'>"
 	fi
 	echo "<meta property=og:image content=cowboy.svg>"
 	echo "<link rel=stylesheet href=drip.css>"
@@ -39,7 +39,7 @@ markdown () {
 outdir=build
 mkdir -p $outdir
 # Autocopiarnos :)
-cp ./*.sh ./*.md ./*.css ./*.png ./*.mp4 ./*.svg ./*.html "$outdir"
+cp ./*.sh ./*.md ./*.css ./*.png ./*.jpg ./*.mp4 ./*.svg ./*.html "$outdir"
 
 index="$outdir/index.html"
 inicio=true header=false template "nulo.in" > "$index"
