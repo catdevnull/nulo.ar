@@ -1,0 +1,1 @@
+-   [How to fix: Thinkpad X230 fails to enter sleep mode, fan keeps running](https://old.reddit.com/r/thinkpad/comments/a1mai6/how_to_fix_thinkpad_x230_fails_to_enter_sleep/) - TL;DR No usar la placa de red Intel 6205.
