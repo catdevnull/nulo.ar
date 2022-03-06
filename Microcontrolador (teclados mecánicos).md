@@ -1,15 +1,17 @@
 El cerebro de los [[Teclados mecánicos]].
 
--   [Arduino Pro Micro](https://www.sparkfun.com/products/12640) y sus miles de clones.
+## Tipos
 
-    ![Una foto de un SparkFun Pro Micro](Microcontrolador%20(teclados%20mecánicos).md-pro-micro.jpg)
+### [Arduino Pro Micro](https://www.sparkfun.com/products/12640) y sus miles de clones
 
-    Generalmente su puerto USB es muy frágil.
+![Una foto de un SparkFun Pro Micro](Microcontrolador%20(teclados%20mecánicos).md-pro-micro.jpg)
 
--   [Elite-C](https://keeb.io/products/elite-c-low-profile-version-usb-c-pro-micro-replacement-atmega32u4)
+Su puerto USB suele ser muy frágil.
 
-    Compatible con el Pro Micro. Tiene un puerto USB-C diseñado para no tener los problemas del Pro Micro.
+### [Elite-C](https://keeb.io/products/elite-c-low-profile-version-usb-c-pro-micro-replacement-atmega32u4)
 
--   [nice!nano](https://nicekeyboards.com/nice-nano/)
+Compatible con el Pro Micro. Tiene un puerto USB-C diseñado para no tener los problemas del Pro Micro.
+
+### [nice!nano](https://nicekeyboards.com/nice-nano/)
  
-    Compatible con el Pro Micro. USB-C y Bluetooth(!).
+Compatible con el Pro Micro. USB-C y Bluetooth(!).
