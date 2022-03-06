@@ -6,6 +6,15 @@ body {
 	padding: 0.5rem;
 }
 
+header {
+	margin: 2rem 0;
+	text-align: center;
+}
+
+h2 {
+	border-bottom: black solid 1px;
+}
+
 img,
 video {
 	max-width: 100%;
