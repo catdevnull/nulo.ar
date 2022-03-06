@@ -37,8 +37,12 @@ blockquote {
 }
 
 ul {
-	background: rgba(0, 0, 255, 0.05);
+	padding: 0;
+	padding-left: 1.5rem;
+}
+li {
 	margin: 0.5rem 0;
+	padding: 0 0.2rem;
 }
 
 @media (prefers-color-scheme: dark) {
