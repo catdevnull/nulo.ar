@@ -1,4 +1,13 @@
+:root {
+	--background: white;
+	--foreground: #111;
+}
+
 body {
+	background: white;
+	background: var(--background);
+	color: #111;
+	color: var(--foreground);
 	font-family: sans-serif;
 	max-width: 45rem;
 	margin: 0;
@@ -32,6 +41,8 @@ pre {
 
 blockquote {
 	border-left: solid 3px;
+	border-color: #111;
+	border-color: var(--foreground);
 	margin: auto 0.5em;
 	padding-left: 1em;
 }
@@ -47,8 +58,8 @@ li {
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background: black;
-		color: #eee;
+		--background: black;
+		--foreground: #eee;
 	}
 	abbr {
 		color: lightgray;
@@ -58,8 +69,5 @@ li {
 	}
 	a:visited {
 		color: #ff9;
-	}
-	ul {
-		background: rgba(255, 0, 0, 0.2);
 	}
 }
