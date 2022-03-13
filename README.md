@@ -1,4 +1,4 @@
-Este es el README para [el repositorio del sitio](https://cgit.nulo.in/sitio).
+Este es el README para [el repositorio del sitio](https://gitea.nulo.in/Nulo/sitio).
 
 Escuché [HOT DEMON B!TCHES NEAR U ! ! ! (de CORPSE y Night Lovell)](https://youtu.be/wqZnO71PBis) en loop para hacer la versión inicial del sitio.
 

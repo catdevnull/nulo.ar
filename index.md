@@ -11,7 +11,7 @@ Algunas cosas que escribí recientemente:
 
 Algunos de mis proyectos:
 
--	[Este sitio](https://cgit.nulo.in/sitio)
+-	[Este sitio](https://gitea.nulo.in/Nulo/sitio)
 -	Juguetes:
 	-	[Cuarentena](https://cuarentena.nulo.in)
 	-	[[txt2txt]]
