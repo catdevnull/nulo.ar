@@ -1,0 +1,92 @@
+<!doctype html>
+<meta charset=utf8>
+<meta name=viewport content='width=device-width, initial-scale=1.0'>
+<style>
+  body {
+    background: white;
+    color: #111;
+    font-family: sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    overflow: hidden;
+  }
+
+  #controls {
+    position: absolute;
+  }
+</style>
+<title>atr</title>
+
+<div id=controls>
+  <div class=coso>
+    <label for=rect-width>rect width</label>
+    <input name=rect-width id=rect-width type=range min=2 max=100>
+  </div>
+  <div class=coso>
+    <label for=rect-height>rect height</label>
+    <input name=rect-height id=rect-height type=range min=2 max=100>
+  </div>
+  <div class=coso>
+    <label for=diff-x>diff x</label>
+    <input name=diff-x id=diff-x type=range min=-100 max=100 step=0.1 value=10>
+  </div>
+  <div class=coso>
+    <label for=diff-y>diff y</label>
+    <input name=diff-y id=diff-y type=range min=-100 max=100 step=0.1 value=10>
+  </div>
+</div>
+
+<canvas></canvas>
+<script>
+  const canvas = document.querySelector("canvas")
+  const ctx = canvas.getContext("2d", {
+    alpha: false,
+  })
+
+  function resizeCanvas () {
+    canvas.width = window.innerWidth
+    canvas.height = window.innerHeight
+  }
+  window.addEventListener("resize", resizeCanvas)
+  resizeCanvas()
+
+  function setupInput(inputId, setFunc) {
+    const input = document.getElementById(inputId)
+    input.addEventListener('input', event => {
+      setFunc(parseFloat(event.target.value))
+    })
+    setFunc(parseFloat(input.value))
+  }
+
+  let rect = { width: 50, height: 100 }
+  let diff = { x: 1, y: 1 }
+
+  setupInput('rect-width', val => rect.width = val)
+  setupInput('rect-height', val => rect.height = val)
+
+  setupInput('diff-x', val => diff.x = val)
+  setupInput('diff-y', val => diff.y = val)
+
+  function draw (time) {
+    const i = time / 10
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+    const actualDiff = { x: diff.x / rect.width, y: diff.y / rect.height }
+
+    for (let x = 0; x < canvas.width; x += rect.width) {
+      for (let y = 0; y < canvas.height; y += rect.height) {
+        ctx.fillStyle = `hsl(${i + x/rect.width*actualDiff.x + y/rect.height*actualDiff.y}, 100%, 50%)`
+        ctx.fillRect(x, y, rect.width, rect.height)
+      }
+    }
+
+    window.requestAnimationFrame(draw)
+  }
+  window.requestAnimationFrame(draw)
+</script>
