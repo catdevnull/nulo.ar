@@ -20,7 +20,7 @@ header {
 }
 
 h2 {
-	border-bottom: black solid 1px;
+	border-bottom: var(--foreground) solid 1px;
 }
 
 img,
