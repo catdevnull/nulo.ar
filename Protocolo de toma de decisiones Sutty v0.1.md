@@ -3,8 +3,6 @@ Dos niveles:
 1.  Decisiones **rápidas** que son definición de horarios, aprobaciones, etc.
 2.  Decisiones **profundas** como aceptar clientes, cambios de procesos internos, etc.
 
-Definir canal y nivel de notificaciones, formato de opciones, nivel de consenso requerido para lograr un acuerdo, tiempo límite para recibir respuestas.
-
 -   Canal: Zulip con menciones a @all. Estas aparecen en la pestaña de menciones en Zulip.
      
     Como alternativa, se propone la posibilidad de hacer bots que notifiquen por otros medios (Telegram) o por privado a cada persona. Esto implica un desarrollo y vamos a evaluar el interés.
