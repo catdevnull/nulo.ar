@@ -1,1 +1,2 @@
 -   [How to fix: Thinkpad X230 fails to enter sleep mode, fan keeps running](https://old.reddit.com/r/thinkpad/comments/a1mai6/how_to_fix_thinkpad_x230_fails_to_enter_sleep/) - TL;DR No usar la placa de red Intel 6205.
+-   [Leah Rowe: como flashear la BIOS entera de una X230 (borrando IME) *sin* un flasher externo (HDA_SDO/"pinmod")](https://twitter.com/n4of7/status/1509484333203136514)
