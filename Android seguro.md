@@ -4,6 +4,10 @@ Hay varios proyectos con el objetivo de hacer distribuciones de Android seguras.
 -   [DivestOS](https://divestos.org/): Soft fork de LineageOS. Trae muchas cosas de GrapheneOS. Soporta dispositivos que GrapheneOS y hasta LineageOS no soportan. Hace cosas interesantes para hacerlos "lo más seguro posible", como un [patcher de CVEs del kernel](https://gitlab.com/divested-mobile/cve_checker). No soporta MicroG (aunque tiene la opción al momento de compilar) ni Play Services.
 -   [CalyxOS](https://calyxos.org/): Fork de GrapheneOS con muchas funcionalidades de seguridad removidas. Solo soporta Google Pixels y Xiaomi Redmi A2 ([betas para OnePlus nuevos y FairPhone 4](https://calyxos.org/news/2022/05/04/fp-op-may-update/)). Incluye MicroG opcional.
 
+## Dump
+
+-   [Plexus](https://plexus.techlore.tech/): Base de datos de aplicaciones que funcionan sin Play Services o con MicroG.
+
 ## Conflictos actuales
 
 CalyxOS (¿junto a MicroG?) está peleado con GrapheneOS ([hilo de Twitter de GrapheneOS](https://web.archive.org/web/20220430044111/https://twitter.com/GrapheneOS/status/1520193441770188810), [hilo de GitHub sobre la seguridad de MicroG con Daniel Micay (desarrollador de Graphene)](https://web.archive.org/web/20210808002006/https://github.com/microg/GmsCore/issues/1467)).
