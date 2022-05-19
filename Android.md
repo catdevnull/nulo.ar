@@ -1,3 +1,8 @@
+## Relacionado
+
+-   [[Android seguro]]
+-   [Battery Historian](https://developer.android.com/topic/performance/power/setup-battery-historian): Herramienta para analizar el uso de batería
+
 ## Desarrollo en Alpine
 
 Estas instrucciones están parcialmente tomadas de [esta respuesta en StackOverflow](https://stackoverflow.com/a/66316335).
