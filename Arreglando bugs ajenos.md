@@ -1,3 +1,7 @@
+_Actualización 2022-06-02_: después de reportar lo que encontré, DW arregló el primer bug y asumo el segundo (no me acuerdo que ejercicios estaban rotos, por lo que no puedo testear). Y lo mejor: no borraron los source maps, permitiendome mantener haciendo cambios de funcionalidad (por ejemplo, mis modificaciones permiten acelerar audios) 💓
+
+A continuación, el post original:
+
 <small>2021/10/11</small>
 
 Estoy aprendiendo alemán y mi principal recurso es el "Aprender Alemán" de la Deutsche Welle ([learngerman.dw.com](https://learngerman.dw.com/es/overview)). Sin embargo, en una de las recientes actualizaciones al sitio/app, rompieron _varias_ cosas.
