@@ -27,3 +27,9 @@ git log -S <string> archivo
 ```
 
 [StackOverflow](https://stackoverflow.com/a/4404551)
+
+## Borrar archivos sin trackear
+
+```
+git clean
+```
