@@ -16,3 +16,9 @@ En su estado actual, tiene serios problemas técnicos que impiden su uso para el
 ### Implementaciones
 
 -   Recuerdo que [ZeroNet](https://zeronet.io) usa BitTorrent para distribuir sitios.
+
+## Otras ideas
+
+-   [Ink & Switch](https://www.inkandswitch.com/) investiga y crea tecnologías distribuidas como:
+    -   [Peritext](https://www.inkandswitch.com/peritext/), un CRDT para un editor colaborativo rico
+    -   [Automerge](https://automerge.org/), estructuras de datos para aplicaciones distribuidas
