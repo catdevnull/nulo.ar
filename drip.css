@@ -46,9 +46,11 @@ blockquote {
 	padding-left: 1em;
 }
 
-ul {
+ul,
+ol {
 	padding: 0;
 	padding-left: 1.5rem;
+	padding-top: 0.5rem;
 }
 li {
 	margin: 0.5rem 0;
