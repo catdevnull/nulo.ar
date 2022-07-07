@@ -1,3 +1,7 @@
+## Recetas
+
+-   [[CHINESE GOD OIL]], tofu con salsita rica (el GOD OIL)
+
 ## Sitios copados
 
 -   Inglés
