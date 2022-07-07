@@ -7,6 +7,7 @@ Hay varios proyectos con el objetivo de hacer distribuciones de Android seguras.
 ## Dump
 
 -   [Plexus](https://plexus.techlore.tech/): Base de datos de aplicaciones que funcionan sin Play Services o con MicroG.
+-   [Problemas con F-Droid según Daniel Micay](https://github.com/GrapheneOS/Camera/issues/227#issuecomment-1147386415)
 
 ## Conflictos actuales
 
