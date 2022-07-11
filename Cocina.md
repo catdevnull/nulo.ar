@@ -2,6 +2,10 @@
 
 -   [[CHINESE GOD OIL]], tofu con salsita rica (el GOD OIL)
 
+## Cosas
+
+-   [[Olla a presión]]
+
 ## Sitios copados
 
 -   Inglés
