@@ -1,0 +1,1 @@
+-   [Major DNSSEC Outages and Validation Failures](https://ianix.com/pub/dnssec-outages.html)
