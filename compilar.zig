@@ -71,7 +71,7 @@ pub fn main() !void {
         if (entry.kind != .File) continue;
 
         // Autocopiarnos :)
-        if (endsWith(u8, entry.name, ".sh") or
+        if (endsWith(u8, entry.name, ".zig") or
             endsWith(u8, entry.name, ".md") or
             endsWith(u8, entry.name, ".css") or
             endsWith(u8, entry.name, ".png") or
