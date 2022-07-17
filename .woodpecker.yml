@@ -6,7 +6,7 @@ pipeline:
       - apk add musl-dev cmark-dev lua5.1 zig gcc
       - zig run compilar.zig -lc -lcmark
   deploy:
-    image: docker.io/alpine:3.14
+    image: docker.io/alpine:3.16
     commands:
       - apk add rsync openssh-client-default
 
