@@ -144,7 +144,7 @@ fn generateMarkdown(
     const html = c.cmark_markdown_to_html(
         markdown.ptr,
         markdown.len,
-        c.CMARK_OPT_UNSAFE, //| c.CMARK_OPT_SMART,
+        c.CMARK_OPT_UNSAFE | c.CMARK_OPT_SMART,
     );
     defer std.c.free(html);
 
