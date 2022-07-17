@@ -1,11 +1,10 @@
 pipeline:
   build:
-    image: docker.io/alpine:3.16
+    image: docker.io/alpine:edge
     commands:
-      - apk add cmark git cmd:setup-timezone lua5.1
-      # Para generar las fechas bien
-      - setup-timezone -z America/Argentina/Buenos_Aires
-      - base_uri=https://nulo.in/ ./build.sh
+      - echo "https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
+      - apk add musl-dev cmark-dev lua5.1 zig gcc
+      - zig run compilar.zig -lc -lcmark
   deploy:
     image: docker.io/alpine:3.14
     commands:

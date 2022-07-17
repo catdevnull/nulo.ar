@@ -1,6 +1,12 @@
 Este es el README para [el repositorio del sitio](https://gitea.nulo.in/Nulo/sitio).
 
-Escuché [HOT DEMON B!TCHES NEAR U ! ! ! (de CORPSE y Night Lovell)](https://youtu.be/wqZnO71PBis) en loop para hacer la versión inicial del sitio.
+## Compilar
+
+Require [Zig](https://ziglang.org), shell, cmark (con cmark-dev) y Lua 5.1.
+
+```
+zig run compilar.zig -lc -lcmark
+```
 
 ---
 
