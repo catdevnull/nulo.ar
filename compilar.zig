@@ -67,6 +67,10 @@ pub fn main() !void {
     var build_dir = try cwd.makeOpenPath("build", .{});
     defer build_dir.close();
 
+    var page_list = std.ArrayList([]const u8).init(allocator);
+    defer page_list.deinit();
+    defer for (page_list.items) |item| allocator.free(item);
+
     while (try cwd_iterator.next()) |entry| {
         if (entry.kind != .File) continue;
 
@@ -83,11 +87,17 @@ pub fn main() !void {
             try cwd.copyFile(entry.name, build_dir, entry.name, .{});
         }
 
+        if (endsWith(u8, entry.name, ".md") or endsWith(u8, entry.name, ".gen")) {
+            try page_list.append(try allocator.dupe(u8, try stripExtension(entry.name)));
+        }
+
         if (endsWith(u8, entry.name, ".md"))
             try generateMarkdown(allocator, cwd, entry.name, build_dir);
         if (endsWith(u8, entry.name, ".gen"))
             try generateExecutable(allocator, cwd, entry.name, build_dir);
     }
+
+    try generatePageList(allocator, build_dir, page_list.items);
 }
 
 const Writer = std.io.BufferedWriter(4096, std.fs.File.Writer).Writer;
@@ -220,4 +230,24 @@ fn generateExecutable(
         else => unreachable,
     }
     try output.writeAll(result.stdout);
+}
+
+fn generatePageList(
+    allocator: std.mem.Allocator,
+    build_dir: std.fs.Dir,
+    page_list: []const []const u8,
+) !void {
+    _ = allocator;
+    const name = "Lista de páginas";
+    var output = try build_dir.createFile(name ++ ".html", .{});
+    defer output.close();
+    try header(output.writer(), name, "compilar.zig", .{});
+
+    try output.writeAll("<ul>");
+    for (page_list) |page| {
+        try output.writer().print(
+            \\<li><a href="{0s}.html">{0s}</a></li>
+        , .{page});
+    }
+    try output.writeAll("</ul>");
 }
