@@ -9,3 +9,4 @@
         -   Reducir el tráfico es importante.
             -   Esto no lo dice en el artículo, pero quizás reducir la _distancia_ del tráfico también importa. Ejemplo: es mejor que un dispositivo descarge cosas de un servidor en su mismo país (o en su mismo barrio) que en uno terciarizado.
                 -   ¡Web distribuida!
+-   [[Lenguajes de programación]]
