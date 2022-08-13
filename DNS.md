@@ -1,1 +1,3 @@
 -   [Major DNSSEC Outages and Validation Failures](https://ianix.com/pub/dnssec-outages.html)
+-   [Njalla's DNS Checker](https://check.njal.la/dns/)
+-   [Njalla's Public DNS](https://dns.njal.la/)
