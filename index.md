@@ -5,6 +5,8 @@
 
 Este es mi hogar. ¿Estás perdidx? [[Lista de páginas]]
 
+¿[[Quién soy]]?
+
 Algunas cosas que escribí recientemente:
 
 -	[[Arreglando bugs ajenos]]
