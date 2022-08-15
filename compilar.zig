@@ -55,10 +55,32 @@ fn header(
     }
 }
 
+const Connection = struct {
+    linker: []const u8,
+    linked: []const u8,
+    pub fn make(allocator: std.mem.Allocator, linker: []const u8, linked: []const u8) !Connection {
+        return Connection{
+            .linker = try allocator.dupe(u8, linker),
+            .linked = try allocator.dupe(u8, linked),
+        };
+    }
+};
+
 pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
     defer _ = gpa.deinit();
     const allocator = gpa.allocator();
+
+    var connections = std.ArrayList(Connection).init(allocator);
+    defer connections.deinit();
+    defer for (connections.items) |connection| {
+        allocator.free(connection.linker);
+        allocator.free(connection.linked);
+    };
+
+    var page_list = std.ArrayList([]const u8).init(allocator);
+    defer page_list.deinit();
+    defer for (page_list.items) |item| allocator.free(item);
 
     var cwd = try std.fs.cwd().openDir(".", .{ .iterate = true });
     defer cwd.close();
@@ -67,9 +89,13 @@ pub fn main() !void {
     var build_dir = try cwd.makeOpenPath("build", .{});
     defer build_dir.close();
 
-    var page_list = std.ArrayList([]const u8).init(allocator);
-    defer page_list.deinit();
-    defer for (page_list.items) |item| allocator.free(item);
+    while (try cwd_iterator.next()) |entry| {
+        if (entry.kind != .File) continue;
+        if (endsWith(u8, entry.name, ".md"))
+            try scanForConnections(allocator, cwd, &connections, entry.name);
+    }
+
+    cwd_iterator = cwd.iterate();
 
     while (try cwd_iterator.next()) |entry| {
         if (entry.kind != .File) continue;
@@ -92,7 +118,7 @@ pub fn main() !void {
         }
 
         if (endsWith(u8, entry.name, ".md"))
-            try generateMarkdown(allocator, cwd, entry.name, build_dir);
+            try generateMarkdown(allocator, cwd, entry.name, build_dir, connections);
         if (endsWith(u8, entry.name, ".gen"))
             try generateExecutable(allocator, cwd, entry.name, build_dir);
     }
@@ -101,6 +127,44 @@ pub fn main() !void {
 }
 
 const Writer = std.io.BufferedWriter(4096, std.fs.File.Writer).Writer;
+
+fn scanForConnections(
+    allocator: std.mem.Allocator,
+    cwd: std.fs.Dir,
+    connections: *std.ArrayList(Connection),
+    file_name: []const u8,
+) !void {
+    var file = try cwd.openFile(file_name, .{});
+    defer file.close();
+
+    const name = try stripExtension(file_name);
+
+    const markdown = try file.readToEndAllocOptions(
+        allocator,
+        69696969,
+        null,
+        @alignOf(u32),
+        0,
+    );
+    defer allocator.free(markdown);
+    var iter = std.mem.split(u8, markdown, "\n");
+
+    while (iter.next()) |line| {
+        var index: usize = 0;
+        while (index < line.len) : (index += 1) {
+            const rest = line[index..];
+
+            if (std.mem.startsWith(u8, rest, "[[")) {
+                if (std.mem.indexOf(u8, rest, "]]")) |end| {
+                    const linked = rest[2..end];
+                    index += 2 + linked.len + 2 - 1;
+                    try connections.append(try Connection.make(allocator, name, linked));
+                    continue;
+                }
+            }
+        }
+    }
+}
 
 fn hackilyTransformHtml(input: []const u8, writer: Writer) !void {
     var iter = std.mem.split(u8, input, "\n");
@@ -140,6 +204,7 @@ fn generateMarkdown(
     cwd: std.fs.Dir,
     src_name: []const u8,
     build_dir: std.fs.Dir,
+    connections: std.ArrayList(Connection),
 ) !void {
     var file = try cwd.openFile(src_name, .{});
     defer file.close();
@@ -183,6 +248,29 @@ fn generateMarkdown(
         std.mem.span(html),
         buffered_writer.writer(),
     );
+
+    var connection_count: u16 = 0;
+    for (connections.items) |connection| {
+        if (std.mem.eql(u8, try stripExtension(src_name), connection.linked))
+            connection_count += 1;
+    }
+
+    if (connection_count > 0) {
+        try buffered_writer.writer().print(
+            \\<footer>
+            \\<h2>🔗 Backlinks ({})</h2>
+            \\<ul>
+        , .{connection_count});
+        for (connections.items) |connection|
+            if (std.mem.eql(u8, try stripExtension(src_name), connection.linked))
+                try buffered_writer.writer().print(
+                    \\<li><a href="{0s}.html">{0s}</a></li>
+                , .{connection.linker});
+        try buffered_writer.writer().print(
+            \\</ul>
+            \\</footer>
+        , .{});
+    }
     try buffered_writer.flush();
 }
 
