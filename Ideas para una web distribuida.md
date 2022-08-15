@@ -8,7 +8,7 @@ En su estado actual, tiene serios problemas técnicos que impiden su uso para el
 -   Leí que las distintas implementaciones ({go,js}-ipfs) todavía no interoperan.
 -   El desarrollo está financiado por organizaciones que creen en los criptopatacones (Filecoin y otras cosas como Ethereum/Web3/NFTs).
 
-## [[BitTorrent]]
+## BitTorrent
 
 -   El protocolo funciona pero quizás sea un poco lento para una web.
 -   Ver [[BitTorrent]] para ver ideas de como mejorarlo en general.
