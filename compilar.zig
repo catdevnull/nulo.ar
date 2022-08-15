@@ -16,6 +16,8 @@ const HeaderOptions = struct {
     ir_al_inicio: bool = true,
     // Si esto es true, se muestra un <header>.
     header: bool = true,
+    // Si esto es true, se muestra un link a #conexiones en el header.
+    has_connections: bool = false,
 };
 fn header(
     writer: std.fs.File.Writer,
@@ -49,9 +51,18 @@ fn header(
             \\<header>
             \\<h1>{s}</h1>
             \\<a href="https://gitea.nulo.in/Nulo/sitio/commits/branch/ANTIFASCISTA/{s}">Historial</a>
-            \\</header>
             \\
         , .{ title, src_name });
+        if (options.has_connections) {
+            try writer.print(
+                \\/
+                \\<a href="#conexiones">Conexiones</a>
+            , .{});
+        }
+        try writer.print(
+            \\</header>
+            \\
+        , .{});
     }
 }
 
@@ -237,11 +248,18 @@ fn generateMarkdown(
     else
         try stripExtension(src_name);
 
+    var connection_count: u16 = 0;
+    for (connections.items) |connection| {
+        if (std.mem.eql(u8, try stripExtension(src_name), connection.linked))
+            connection_count += 1;
+    }
+
     var output = try build_dir.createFile(output_file_name, .{});
     defer output.close();
     try header(output.writer(), title, src_name, .{
         .ir_al_inicio = !is_index,
         .header = !is_index,
+        .has_connections = connection_count > 0,
     });
     var buffered_writer = std.io.bufferedWriter(output.writer());
     try hackilyTransformHtml(
@@ -249,16 +267,10 @@ fn generateMarkdown(
         buffered_writer.writer(),
     );
 
-    var connection_count: u16 = 0;
-    for (connections.items) |connection| {
-        if (std.mem.eql(u8, try stripExtension(src_name), connection.linked))
-            connection_count += 1;
-    }
-
     if (connection_count > 0) {
         try buffered_writer.writer().print(
-            \\<footer>
-            \\<h2>🔗 Backlinks ({})</h2>
+            \\<section id=conexiones>
+            \\<h2>⥆ Conexiones ({})</h2>
             \\<ul>
         , .{connection_count});
         for (connections.items) |connection|
@@ -268,7 +280,7 @@ fn generateMarkdown(
                 , .{connection.linker});
         try buffered_writer.writer().print(
             \\</ul>
-            \\</footer>
+            \\</section>
         , .{});
     }
     try buffered_writer.flush();

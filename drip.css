@@ -72,3 +72,16 @@ li {
 		color: #ff9;
 	}
 }
+
+#conexiones ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#conexiones li {
+	padding: 0;
+	margin: 0;
+}
+#conexiones li::before {
+	content: "↜ ";
+}
