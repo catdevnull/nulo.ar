@@ -2,6 +2,7 @@
 
 -   [[Android seguro]]
 -   [Battery Historian](https://developer.android.com/topic/performance/power/setup-battery-historian): Herramienta para analizar el uso de batería
+-   [Android tiene problemas de accesibilidad](https://write.as/devinprater/six-months-with-android-a-journey-from-a-blind-perspective)
 
 ## Desarrollo en Alpine
 
