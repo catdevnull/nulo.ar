@@ -11,15 +11,7 @@ Algunas cosas que escribí recientemente:
 
 -	[[Arreglando bugs ajenos]]
 
-Algunos de mis proyectos:
-
--	[Este sitio](https://gitea.nulo.in/Nulo/sitio)
--	Juguetes:
-	-	[Cuarentena](https://cuarentena.nulo.in)
-	-	[[txt2txt]]
--	[Manejador de Tareas](https://tareas.nulo.in)
--	Laburos:
-	-	[Salvá la costanera](https://salvalacostanera.com.ar), [código](https://gitea.nulo.in/Nulo/salva-la-costanera)
+A veces hago [[Proyectos]].
 
 Webamigx: [nadie@nulo.in](mailto:nadie@nulo.in) <small>no gods no webmasters</small>
 
