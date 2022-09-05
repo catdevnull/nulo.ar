@@ -14,6 +14,8 @@ Esto lo haría el programa que cree el torrent. Cuando detecta un archivo grande
 
 Esta sería una extensión incompatible con los clientes actuales ya que no descargarían automáticamente el archivo. Aunque... podría armarse el torrent separado pero también agregar el archivo al torrent madre. Lx peer que soporta esta extensión puede detectar el hipervínculo y descargarlo de ahí. A partir de eso hasta podría detectar cuando otrx peer le pide el archivo del torrent madre y servirle el del torrent separado, haciendo un uso eficiente de disco y beneficiando también a peers desactualizados.
 
+Creo que [[BitTorrent v2]] implementa algo similar, lo que es importante porque significaría que no lo tendría que reeimplementar.
+
 ## Clientes
 
 -   [sircmpwn/btqd](https://git.sr.ht/~sircmpwn/btqd) en Hare
