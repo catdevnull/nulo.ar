@@ -1,5 +1,6 @@
 Ordenado aproximadamente por última vez activo.
 
+-   [[Ideas para un sistema operativo propio en Chromebooks]]
 -   [[Archivar los archivos de la dictadura militar]]
 -   [Este sitio](https://gitea.nulo.in/Nulo/sitio)
 -   Juguetes:
