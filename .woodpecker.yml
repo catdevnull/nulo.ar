@@ -2,7 +2,10 @@ pipeline:
   build:
     image: docker.io/alpine:edge
     commands:
-      - echo "https://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
+      - echo "172.17.0.1 alpine.proxy.coso" >> /etc/hosts
+      - echo "http://alpine.proxy.coso/alpine/edge/main" > /etc/apk/repositories
+      - echo "http://alpine.proxy.coso/alpine/edge/community" >> /etc/apk/repositories
+      - echo "http://alpine.proxy.coso/alpine/edge/testing" >> /etc/apk/repositories
       - apk add musl-dev cmark-dev lua5.1 zig gcc
       - zig run compilar.zig -lc -lcmark
   deploy:
