@@ -45,3 +45,9 @@ xbps-remove -O
 ```
 rm -r /var/cache/xbps/*
 ```
+
+### Borrar kernels viejos
+
+```
+vkpurge rm all
+```
