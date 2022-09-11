@@ -1,7 +1,6 @@
 <h1 style=color:red;margin-top:0>nulo❥in</h1>
 
-<p><abbr title="adjetivo">adj.</abbr> inexistente (que carece de existencia).
-<small>¿pero nos importa lo que dice la RAE?</small></p>
+>What's bizarre? I mean, we're all pretty bizarre.<br>Some of us are just better at hiding it, that's all.
 
 Este es mi hogar. ¿Estás perdidx? [[Lista de páginas]]
 
