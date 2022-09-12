@@ -19,3 +19,5 @@ Creo que [[BitTorrent v2]] implementa algo similar, lo que es importante porque 
 ## Clientes
 
 -   [sircmpwn/btqd](https://git.sr.ht/~sircmpwn/btqd) en Hare
+-   [Agregore](https://agregore.mauve.moe/) es un navegador distribuido, que soporta BitTorrent y BitTorrents mutables.
+-   [RangerMauve/bt-fetch](https://github.com/rangermauve/bt-fetch): usar BitTorrent como `fetch()`
