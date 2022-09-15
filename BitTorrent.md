@@ -2,7 +2,7 @@
 
 ## Ideas
 
--   [[Magents o torrents reproducibles]]
+-   [[Magnets o torrents reproducibles]]
 
 ## Clientes
 
