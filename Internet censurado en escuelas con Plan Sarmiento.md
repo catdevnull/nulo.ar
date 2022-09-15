@@ -1,3 +1,3 @@
--   `pad.riseup.net` (no está censurado `riseup.net`)
+-   `pad.riseup.net` y `share.riseup.net` (no está censurado `riseup.net`)
 -   Puerto 22 de SSH (yo uso puerto 993, de IMAPS, para saltarlo)
 -   [[YouTube]]
