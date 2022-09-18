@@ -1,0 +1,4 @@
+- [luafun/luafun](https://github.com/luafun/luafun) (enfoque en performance dentro de LuaJIT)
+- [lua-stdlib/functional](https://github.com/lua-stdlib/functional)
+- [ezerfernandes/funkmoon](https://github.com/ezerfernandes/funkmoon)
+- [jhoonb/functional-lua](https://github.com/jhoonb/functional-lua)
