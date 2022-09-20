@@ -1,0 +1,3 @@
+-   [Open Observatory of Network Interference](https://ooni.org/) monitorea internacionalmente con crowdsourcing usando [OONI Probe](https://ooni.org/install/).
+-   [NetBlocks.org](https://netblocks.org/) monitorea internacionalmente con crowdsourcing usando [su herramienta web](https://api.webprobe.org/scan/). Postean mucha data en vivo en [su Twitter](https://twitter.com/netblocks) particularmente relacionado a hechos políticos, etc.
+-   [No Thought is a Crime (ntc.party)](https://ntc.party/) es un foro para "la discusión de la censura de redes en todo el mundo, junto a desarrolladores e investigadores de software anti-censura y usuarixs tecnicxs". Particularmente hablan sobre censura en Rusia, pero también en otros países.
