@@ -1,6 +1,8 @@
 -   `pad.riseup.net` y `share.riseup.net` (no está censurado `riseup.net`)
 -   [[YouTube]] está en [[YouTube Restricted Mode]] que censura "contenido potencialmente maduro" (básicamente la mitad del contenido)
--   `mediafire.com`
+-   Sitios de "file sharing"
+    -   `mediafire.com`
+    -   `imgur.com`/`imgur.io`
 -   La red de Tor parece estar bloqueado a nivel protocolo. Ni pude usar pluggable transports.
 -   Puerto 22 de SSH (yo uso puerto 993, de IMAPS, para saltarlo)
 -   Todos estos parecen ser sitios de una lista de Fortinet (firewall yanki)
