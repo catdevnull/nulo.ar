@@ -26,3 +26,5 @@
 Me funcionó [Psiphon](https://psiphon.ca) (que tiene muchas publicidades y boludeces) y [VpnHood](https://www.vpnhood.com/).
 
 YouTube se puede descensurar usando [Piped](https://piped.kavin.rocks) o forzando la IP (ver [[YouTube Restricted Mode]]).
+
+Para usuarix avanzados, se puede usar SSH via puerto 993 (SMTP), 443 (HTTPS) y 123 (NTP).
