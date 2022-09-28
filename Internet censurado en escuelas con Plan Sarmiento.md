@@ -3,12 +3,19 @@
 -   Sitios de "file sharing"
     -   `mediafire.com`
     -   `imgur.com`/`imgur.io`
+    -   `put.io`
 -   La red de Tor parece estar bloqueado a nivel protocolo. Ni pude usar pluggable transports.
 -   Puerto 22 de SSH (yo uso puerto 993, de IMAPS, para saltarlo)
 -   `futbollibre.net`
+-   `nitter.cz`, `nitter.pussthecat.org`, `nitter.kavin.rocks` y similares
 -   Todos estos parecen ser sitios de una lista de Fortinet (firewall yanki)
     -   `privacyinternational.org`
+    -   Extinction Rebellion: `rebellion.global`
+    -   `feminist.com`
+    -   `birthcontrol.com`
+    -   `powertodecide.org`
     -   `righttodie.ca`
+    -   `ebaumsworld.com`
     -   Medios rusos
         -   `rt.com`
         -   `sputniknews.cn`
@@ -19,6 +26,8 @@
         -   `uproxy.org`
         -   `tunnelbear.com`
         -   `xroxy.com`
+        -   `proton.me`
+    -   8chan: `8kun.top`
     -   `wilpf.org`
 
 ## Saltear restricciones
