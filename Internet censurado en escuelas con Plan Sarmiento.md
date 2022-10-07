@@ -4,6 +4,7 @@
     -   `mediafire.com`
     -   `imgur.com`/`imgur.io`
     -   `put.io`
+    -   `wetransfer.com`
 -   La red de Tor parece estar bloqueado a nivel protocolo. Ni pude usar pluggable transports.
 -   Puerto 22 de SSH (yo uso puerto 993, de IMAPS, para saltarlo)
 -   `futbollibre.net`
