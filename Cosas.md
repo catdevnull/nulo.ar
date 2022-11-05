@@ -2,3 +2,4 @@
 content -> art/video/music/comics/games etc, whatever the actual media is<br>
 consume -> watch/listen/read/play etc<br>
 IP -> franchise, series, universe, property](https://twitter.com/vectorpoem/status/1575183167497023490)
+- ![Gráfico si deberías hacer proyecto](https://nitter.cz/pic/orig/media%2FFdB-uLIWAAgUKZo.jpg)
