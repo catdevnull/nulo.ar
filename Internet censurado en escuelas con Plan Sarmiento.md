@@ -8,6 +8,9 @@
 -   La red de Tor parece estar bloqueado a nivel protocolo. Ni pude usar pluggable transports.
 -   Puerto 22 de SSH (yo uso puerto 993, de IMAPS, para saltarlo)
 -   `futbollibre.net`
+-   Sitios de manga pirateados
+    -   `mangadex.org`
+    -   `mangabuddy.com`
 -   `nitter.cz`, `nitter.pussthecat.org`, `nitter.kavin.rocks` y similares
 -   Todos estos parecen ser sitios de una lista de Fortinet (firewall yanki)
     -   `privacyinternational.org`
