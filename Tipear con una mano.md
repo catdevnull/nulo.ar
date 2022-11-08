@@ -1,4 +1,5 @@
 - Espejar QWERTY
     - [Swap-Hands Action - QMK](https://docs.qmk.fm/#/feature_swap_hands)
     - [Matias Half Keyboard](https://matias.ca/halfkeyboard/)
+    - [One-Handed Touch-Typing on a QWERTY Keyboard (1996)](http://edgarmatias.com/papers/hci96/)
 - [ARTSEY.IO](https://artsey.io)
