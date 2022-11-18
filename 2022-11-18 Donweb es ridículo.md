@@ -4,7 +4,7 @@ Me pareció raro/sospechoso que la instalación de Debian por defecto venía con
 
 Bootié una imágen de otro de mis proyectos experimentales, [define-alpine](https://gitea.nulo.in/Nulo/define-alpine), ya que quería ver que tan complicado era hacerlo funcionar en un entorno poco flexible como este. Por las 23 horas, lo logré, mandando esta captura de pantalla de victoria a un amigo:
 
-![Captura de pantalla de una terminal de Linux con una sesión recién iniciada](2022-11-18 Donweb es ridículo.md-captura-pre.jpg)
+![Captura de pantalla de una terminal de Linux con una sesión recién iniciada](2022-11-18%20Donweb%20es%20ridículo.md-captura-pre.jpg)
 
 Me fui a dormir victorioso. Al día siguiente, por las 10 de la mañana, recibo este mail:
 
@@ -14,10 +14,10 @@ Me fui a dormir victorioso. Al día siguiente, por las 10 de la mañana, recibo 
 >
 >Quedo a tu disposición y te agradezco califiques mi respuesta porque nos ayudará a mejorar la calidad de atención.
 >
->---------------------------------------------<br>
+><pre>---------------------------------------------</pre><br>
 >[CENSURADO]<br>
 >Cloud & IaaS Technical Support - Donweb.cloud<br>
->---------------------------------------------
+><pre>---------------------------------------------</pre>
 
 En ese momento estaba encerrado en una institución educativa, pero mi amigo descubrió que efectivamente sus terminos y condiciones lo prohibian entre otras cosas.
 
@@ -31,6 +31,6 @@ En ese momento estaba encerrado en una institución educativa, pero mi amigo des
 
 DonYuta o RatiWeb, bue. Cuando logre escapar de dicha institución educativa y llegué a mi computador portable, descubrí que Donweb se había tomado la libertad de entrar al VNC de mi servidor a clavarse unos comandos:
 
-![Captura de pantalla de una terminal de Linux con varios comandos consultando información sobre el sistema operativo que corría, entre otras cosas](2022-11-18 Donweb es ridículo.md-captura-post.jpg)
+![Captura de pantalla de una terminal de Linux con varios comandos consultando información sobre el sistema operativo que corría, entre otras cosas](2022-11-18%20Donweb%20es%20ridículo.md-captura-post.jpg)
 
 No recomiendo.
