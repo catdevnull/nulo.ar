@@ -1,4 +1,4 @@
-De [Copiona](https://copiona.com/proyectos/2020/05/10/txt-txt.html)
+De [Copiona](https://copiona.com/txt-txt/)
 
 > ```
 > jj un parate en nuestras acw
