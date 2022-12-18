@@ -12,6 +12,14 @@ Algunas cosas que escribí recientemente:
 
 A veces hago [[Proyectos]].
 
+## Amigxs
+
+-	[Copiona](https://copiona.com) de librenauta
+-	[Bajada de línea](https://fauno.endefensadelsl.org/) de fauno
+-	¿Me olvidé de vos o tenés un proyecto nuevo? ¡Contactame!
+
+## Contacto
+
 Webamigx: [nadie@nulo.in](mailto:nadie@nulo.in) <small>no gods no webmasters</small>
 
 <a rel="me noopener noreferrer" href="https://todon.eu/@Nulo">Mastodon</a>
