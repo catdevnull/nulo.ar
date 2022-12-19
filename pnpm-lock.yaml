@@ -1,0 +1,49 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@types/commonmark': ^0.27.5
+  '@types/node': ^18.11.17
+  commonmark: ^0.30.0
+
+dependencies:
+  commonmark: 0.30.0
+
+devDependencies:
+  '@types/commonmark': 0.27.5
+  '@types/node': 18.11.17
+
+packages:
+
+  /@types/commonmark/0.27.5:
+    resolution: {integrity: sha512-vIqgmHyLsc8Or3EWLz6QkhI8/v61FNeH0yxRupA7VqSbA2eFMoHHJAhZSHudplAV89wqg1CKSmShE016ziRXuw==}
+    dev: true
+
+  /@types/node/18.11.17:
+    resolution: {integrity: sha512-HJSUJmni4BeDHhfzn6nF0sVmd1SMezP7/4F0Lq+aXzmp2xm9O7WXrUtHW/CHlYVtZUbByEvWidHqRtcJXGF2Ng==}
+    dev: true
+
+  /commonmark/0.30.0:
+    resolution: {integrity: sha512-j1yoUo4gxPND1JWV9xj5ELih0yMv1iCWDG6eEQIPLSWLxzCXiFoyS7kvB+WwU+tZMf4snwJMMtaubV0laFpiBA==}
+    hasBin: true
+    dependencies:
+      entities: 2.0.3
+      mdurl: 1.0.1
+      minimist: 1.2.7
+      string.prototype.repeat: 0.2.0
+    dev: false
+
+  /entities/2.0.3:
+    resolution: {integrity: sha512-MyoZ0jgnLvB2X3Lg5HqpFmn1kybDiIfEQmKzTb5apr51Rb+T3KdmMiqa70T+bhGnyv7bQ6WMj2QMHpGMmlrUYQ==}
+    dev: false
+
+  /mdurl/1.0.1:
+    resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
+    dev: false
+
+  /minimist/1.2.7:
+    resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
+    dev: false
+
+  /string.prototype.repeat/0.2.0:
+    resolution: {integrity: sha512-1BH+X+1hSthZFW+X+JaUkjkkUPwIlLEMJBLANN3hOob3RhEk5snLWNECDnYbgn/m5c5JV7Ersu1Yubaf+05cIA==}
+    dev: false

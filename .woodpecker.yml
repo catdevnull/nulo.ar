@@ -1,20 +1,17 @@
 pipeline:
   build:
-    image: docker.io/alpine:edge
+    image: docker.io/alpine:3.17
     commands:
       - echo "172.17.0.1 alpine.proxy.coso" >> /etc/hosts
-      - echo "http://alpine.proxy.coso/alpine/edge/main" > /etc/apk/repositories
-      - echo "http://alpine.proxy.coso/alpine/edge/community" >> /etc/apk/repositories
-      - echo "http://alpine.proxy.coso/alpine/edge/testing" >> /etc/apk/repositories
-      - apk add musl-dev cmark-dev lua5.1 zig gcc
+      - echo "http://alpine.proxy.coso/alpine/v3.17/main" > /etc/apk/repositories
+      - echo "http://alpine.proxy.coso/alpine/v3.17/community" >> /etc/apk/repositories
+      - apk add curl nodejs npm lua5.1
+      - curl -fsSL "https://github.com/pnpm/pnpm/releases/latest/download/pnpm-linuxstatic-x64" -o /bin/pnpm; chmod +x /bin/pnpm
 
-      - zig run compilar.zig -lc -lcmark
-  deploy:
-    image: docker.io/alpine:3.16
-    commands:
-      - echo "172.17.0.1 alpine.proxy.coso" >> /etc/hosts
-      - echo "http://alpine.proxy.coso/alpine/v3.16/main" > /etc/apk/repositories
-      - echo "http://alpine.proxy.coso/alpine/v3.16/community" >> /etc/apk/repositories
+      - pnpm set registry http://npm.proxy.coso
+      - pnpm install
+      - node compilar.js
+
       - apk add rsync openssh-client-default
 
       - eval $(ssh-agent -s)
