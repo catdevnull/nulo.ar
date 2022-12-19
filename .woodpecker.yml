@@ -2,7 +2,7 @@ pipeline:
   build:
     image: docker.io/alpine:3.17
     commands:
-      - echo "172.17.0.1 alpine.proxy.coso" >> /etc/hosts
+      - echo "172.17.0.1 npm.proxy.coso alpine.proxy.coso" >> /etc/hosts
       - echo "http://alpine.proxy.coso/alpine/v3.17/main" > /etc/apk/repositories
       - echo "http://alpine.proxy.coso/alpine/v3.17/community" >> /etc/apk/repositories
       - apk add curl nodejs npm lua5.1
