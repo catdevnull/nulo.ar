@@ -6,7 +6,7 @@ pipeline:
       - echo "http://alpine.proxy.coso/alpine/v3.17/main" > /etc/apk/repositories
       - echo "http://alpine.proxy.coso/alpine/v3.17/community" >> /etc/apk/repositories
       - apk add curl nodejs npm lua5.1
-      - curl -fsSL "https://github.com/pnpm/pnpm/releases/latest/download/pnpm-linuxstatic-x64" -o /bin/pnpm; chmod +x /bin/pnpm
+      - npm install -g pnpm
 
       - pnpm set registry http://npm.proxy.coso
       - pnpm install
