@@ -66,10 +66,20 @@ async function scanForConnections(sourcePath: string) {
   return connections;
 }
 
-function hackilyTransformHtml(html: string) {
-  return html
+async function hackilyTransformHtml(html: string): Promise<string> {
+  html = html
     .replaceAll("<a h", '<a rel="noopener noreferrer" h')
     .replaceAll(wikilinkExp, `<a href="$1.html">$1</a>`);
+  for (const [match, archivo] of html.matchAll(
+    /<nulo-sitio-reemplazar-con archivo="(.+?)" \/>/g
+  )) {
+    if (!promises[archivo])
+      throw new Error(
+        `<nulo-sitio-reemplazar-con archivo="${archivo}" /> no existe!`
+      );
+    html = html.replace(match, await promises[archivo]);
+  }
+  return html;
 }
 
 const connections = await scanForConnections(config.sourcePath);
@@ -78,16 +88,16 @@ await mkdir(config.buildPath, { recursive: true });
 
 const dir = await opendir(config.sourcePath);
 let pageList: string[] = [];
-let promises = [];
+let promises: { [key: string]: Promise<string> } = {};
 for await (const entry of dir) {
   if (!entry.isFile()) continue;
-  promises.push(compileFile(entry.name));
+  promises[entry.name] = compileFile(entry.name);
 }
-await Promise.all(promises);
+await Promise.all(Object.values(promises));
 
 await compilePageList(config, pageList);
 
-async function compileFile(name: string) {
+async function compileFile(name: string): Promise<string> {
   const extension = extname(name);
   if (
     [".js", ".md", ".css", ".png", ".jpg", ".mp4", ".svg", ".html"].includes(
@@ -100,8 +110,9 @@ async function compileFile(name: string) {
     pageList.push(basename(name, extension));
   }
 
-  if (extension === ".md") await compileMarkdown(config, name);
-  else if (extension === ".gen") await compileExecutable(config, name);
+  if (extension === ".md") return await compileMarkdown(config, name);
+  else if (extension === ".gen") return await compileExecutable(config, name);
+  return "";
 }
 
 async function compilePageList(config: Config, pageList: string[]) {
@@ -118,7 +129,10 @@ async function compilePageList(config: Config, pageList: string[]) {
 `;
   await writeFile(outputPath, html);
 }
-async function compileMarkdown(config: Config, sourceFileName: string) {
+async function compileMarkdown(
+  config: Config,
+  sourceFileName: string
+): Promise<string> {
   const name = basename(sourceFileName, ".md");
   const markdown = await readFile(
     join(config.sourcePath, sourceFileName),
@@ -130,10 +144,11 @@ async function compileMarkdown(config: Config, sourceFileName: string) {
 
   const isIndex = sourceFileName === "index.md";
   const title = isIndex ? "nulo.in" : name;
+  const contentHtml = await hackilyTransformHtml(markdownHtml);
   const html =
     head(title, sourceFileName) +
     (isIndex ? "" : header(title, sourceFileName, fileConnections.length > 0)) +
-    hackilyTransformHtml(markdownHtml) +
+    contentHtml +
     (fileConnections.length > 0
       ? `
 <section id=conexiones>
@@ -151,9 +166,13 @@ async function compileMarkdown(config: Config, sourceFileName: string) {
     basename(sourceFileName, ".md") + ".html"
   );
   await writeFile(outputPath, html);
+  return contentHtml;
 }
 
-async function compileExecutable(config: Config, sourceFileName: string) {
+async function compileExecutable(
+  config: Config,
+  sourceFileName: string
+): Promise<string> {
   const name = basename(sourceFileName, ".gen");
 
   const { stdout, stderr } = await execFile(
@@ -168,6 +187,7 @@ async function compileExecutable(config: Config, sourceFileName: string) {
     basename(sourceFileName, ".gen") + ".html"
   );
   await writeFile(outputPath, html);
+  return stdout;
 }
 
 // ==============================================
