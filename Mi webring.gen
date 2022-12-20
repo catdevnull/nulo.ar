@@ -24,7 +24,10 @@ local template = [[
 </section>
 ]]
 
-os.execute("echo '"..template..[[' | openring \
+local code = os.execute("echo '"..template..[[' | openring \
   -s file:cached-feeds/fauno.xml \
   -s file:cached-feeds/copiona.xml
 ]])
+if code ~= 0 then
+  os.exit(1)
+end
