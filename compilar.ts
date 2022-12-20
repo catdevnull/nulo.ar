@@ -9,12 +9,16 @@ const execFile = promisify(execFileCallback);
 const reader = new commonmark.Parser({ smart: true });
 const writer = new commonmark.HtmlRenderer({ safe: false, smart: true });
 
-const config = {
+interface Config {
+  sourcePath: string;
+  buildPath: string;
+}
+const config: Config = {
   sourcePath: ".",
   buildPath: "build",
 };
 
-function head(title, outputName) {
+function head(title: string, outputName: string) {
   // TODO: deshardcodear og:url
   return `<!doctype html>
 <meta charset=utf-8>
@@ -30,7 +34,7 @@ function head(title, outputName) {
 `;
 }
 
-function header(title, sourceCodePath, linkConexiones = false) {
+function header(title: string, sourceCodePath: string, linkConexiones = false) {
   return (
     `<a href=.>☚ Volver al inicio</a>` +
     `<header>
@@ -46,7 +50,7 @@ function header(title, sourceCodePath, linkConexiones = false) {
 }
 const wikilinkExp = /\[\[(.+?)\]\]/giu;
 
-async function scanForConnections(sourcePath) {
+async function scanForConnections(sourcePath: string) {
   const dir = await opendir(sourcePath);
   let connections = [];
   for await (const entry of dir) {
@@ -62,7 +66,7 @@ async function scanForConnections(sourcePath) {
   return connections;
 }
 
-function hackilyTransformHtml(html) {
+function hackilyTransformHtml(html: string) {
   return html
     .replaceAll("<a h", '<a rel="noopener noreferrer" h')
     .replaceAll(wikilinkExp, `<a href="$1.html">$1</a>`);
@@ -73,7 +77,7 @@ const connections = await scanForConnections(config.sourcePath);
 await mkdir(config.buildPath, { recursive: true });
 
 const dir = await opendir(config.sourcePath);
-let pageList = [];
+let pageList: string[] = [];
 let promises = [];
 for await (const entry of dir) {
   if (!entry.isFile()) continue;
@@ -83,7 +87,7 @@ await Promise.all(promises);
 
 await compilePageList(config, pageList);
 
-async function compileFile(name) {
+async function compileFile(name: string) {
   const extension = extname(name);
   if (
     [".js", ".md", ".css", ".png", ".jpg", ".mp4", ".svg", ".html"].includes(
@@ -100,7 +104,7 @@ async function compileFile(name) {
   else if (extension === ".gen") await compileExecutable(config, name);
 }
 
-async function compilePageList(config, pageList) {
+async function compilePageList(config: Config, pageList: string[]) {
   const name = "Lista de páginas";
   const outputPath = join(config.buildPath, name + ".html");
   const html =
@@ -114,7 +118,7 @@ async function compilePageList(config, pageList) {
 `;
   await writeFile(outputPath, html);
 }
-async function compileMarkdown(config, sourceFileName) {
+async function compileMarkdown(config: Config, sourceFileName: string) {
   const name = basename(sourceFileName, ".md");
   const markdown = await readFile(
     join(config.sourcePath, sourceFileName),
@@ -149,7 +153,7 @@ async function compileMarkdown(config, sourceFileName) {
   await writeFile(outputPath, html);
 }
 
-async function compileExecutable(config, sourceFileName) {
+async function compileExecutable(config: Config, sourceFileName: string) {
   const name = basename(sourceFileName, ".gen");
 
   const { stdout, stderr } = await execFile(
@@ -170,7 +174,7 @@ async function compileExecutable(config, sourceFileName) {
 // Markdown utils
 // ==============================================
 
-function renderMarkdown(markdown) {
+function renderMarkdown(markdown: string) {
   const parsed = reader.parse(markdown);
   return writer.render(parsed);
 }

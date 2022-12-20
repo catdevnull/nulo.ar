@@ -10,7 +10,8 @@ pipeline:
 
       - pnpm set registry http://npm.proxy.coso
       - pnpm install
-      - node compilar.js
+      - pnpm check
+      - pnpm build
 
       - apk add rsync openssh-client-default
 
