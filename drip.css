@@ -1,92 +1,92 @@
 :root {
-	--background: white;
-	--foreground: #111;
+  --background: white;
+  --foreground: #111;
 }
 
 body {
-	background: white;
-	background: var(--background);
-	color: #111;
-	color: var(--foreground);
-	font-family: sans-serif;
-	max-width: 45rem;
-	margin: 0;
-	padding: 1rem;
+  background: white;
+  background: var(--background);
+  color: #111;
+  color: var(--foreground);
+  font-family: sans-serif;
+  max-width: 45rem;
+  margin: 0;
+  padding: 1rem;
 }
 
 header {
-	margin: 2rem 0;
-	text-align: center;
+  margin: 2rem 0;
+  text-align: center;
 }
 
 h2 {
-	border-bottom: var(--foreground) solid 1px;
+  border-bottom: var(--foreground) solid 1px;
 }
 
 img,
 video {
-	max-width: 100%;
-	border-radius: 12px;
+  max-width: 100%;
+  border-radius: 12px;
 }
 
 abbr {
-	color: gray;
+  color: gray;
 }
 
 pre {
-	overflow-x: auto;
-	white-space: break-spaces;
+  overflow-x: auto;
+  white-space: break-spaces;
 }
 
 blockquote {
-	border-left: solid 3px;
-	border-color: #111;
-	border-color: var(--foreground);
-	margin: auto 0.5em;
-	padding-left: 1em;
+  border-left: solid 3px;
+  border-color: #111;
+  border-color: var(--foreground);
+  margin: auto 0.5em;
+  padding-left: 1em;
 }
 
 ul,
 ol {
-	padding: 0;
-	padding-left: 1.5rem;
-	margin: 1rem 0;
+  padding: 0;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
 }
 li {
-	margin: 0.5rem 0;
-	padding: 0 0.2rem;
+  margin: 0.5rem 0;
+  padding: 0 0.2rem;
 }
 
 a {
-	background: #e7e7e7;
-	padding: .0em .35em;
-	border-radius: .4rem;
-	color: inherit;
-	text-decoration: inherit;
+  background: #e7e7e7;
+  padding: 0em 0.35em;
+  border-radius: 0.4rem;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
-		--background: black;
-		--foreground: #eee;
-	}
-	abbr {
-		color: lightgray;
-	}
-	a {
-		background: #221f2d;
-	}
+  body {
+    --background: black;
+    --foreground: #eee;
+  }
+  abbr {
+    color: lightgray;
+  }
+  a {
+    background: #221f2d;
+  }
 }
 
 #conexiones ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 #conexiones li {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 #conexiones li::before {
-	content: "↜ ";
+  content: "↜ ";
 }
