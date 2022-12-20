@@ -45,7 +45,7 @@ await compilePageList(config, pageList);
 async function compileFile(name: string) {
   const extension = extname(name);
   if (
-    [".js", ".md", ".css", ".png", ".jpg", ".mp4", ".svg", ".html"].includes(
+    [".ts", ".md", ".css", ".png", ".jpg", ".mp4", ".svg", ".html"].includes(
       extension
     )
   ) {
