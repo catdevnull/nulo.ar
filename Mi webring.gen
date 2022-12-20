@@ -1,0 +1,32 @@
+#!/usr/bin/env lua5.1
+
+local template = [[
+<!-- License-Id: CC0-1.0 -->
+<section class="webring">
+  <section class="articles">
+    {{range .Articles}}
+    <div class="article">
+      <h4 class="title">
+        <a href="{{.Link}}" target="_blank" rel="noopener">{{.Title}}</a>
+      </h4>
+      <p class="summary">{{.Summary}}</p>
+      <small class="source">
+        via <a href="{{.SourceLink}}">{{.SourceTitle}}</a>
+      </small>
+      <small class="date">{{.Date | datef "January 2, 2006"}}</small>
+    </div>
+    {{end}}
+  </section>
+  <p class="attribution">
+    Generado usando
+    <a href="https://git.sr.ht/~sircmpwn/openring">openring</a>💕
+  </p>
+</section>
+<!--style>
+</style-->
+]]
+
+os.execute("echo '"..template..[[' | openring \
+  -s file:cached-feeds/fauno.xml \
+  -s file:cached-feeds/copiona.xml
+]])

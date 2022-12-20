@@ -12,11 +12,9 @@ Algunas cosas que escribí recientemente:
 
 A veces hago [[Proyectos]].
 
-## Amigxs
+## Mis amigxs ([[Mi webring]])
 
--	[Copiona](https://copiona.com) de librenauta
--	[Bajada de línea](https://fauno.endefensadelsl.org/) de fauno
--	¿Me olvidé de vos o tenés un proyecto nuevo? ¡Contactame!
+<nulo-sitio-reemplazar-con archivo="Mi webring.gen" />
 
 ## Contacto
 

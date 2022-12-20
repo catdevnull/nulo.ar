@@ -10,6 +10,7 @@ pipeline:
 
       - pnpm set registry http://npm.proxy.coso
       - pnpm install
+      - ./tool refresh_feeds
       - ./tool check
       - ./tool build
 

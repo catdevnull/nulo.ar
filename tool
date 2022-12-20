@@ -10,11 +10,19 @@ build() {
 check() {
     ./node_modules/.bin/tsc --noEmit
 }
+refresh_feeds() {
+    wget -nv -O cached-feeds/fauno.xml https://fauno.endefensadelsl.org/feed.xml
+    wget -nv -O cached-feeds/copiona.xml https://copiona.com/feed.xml
+}
 
 fatal() {
     echo "$1"
     exit 1
 }
 
-test "$1" = build_ts -o "$1" = build -o "$1" = check || fatal "Comando no válido"
+test "$1" = build_ts \
+    -o "$1" = build \
+    -o "$1" = check \
+    -o "$1" = refresh_feeds \
+    || fatal "Comando no válido"
 "$1"

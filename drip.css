@@ -1,5 +1,6 @@
 :root {
   --background: white;
+  --backgroundish: #f0f0f0;
   --foreground: #111;
 }
 
@@ -68,6 +69,7 @@ a {
 @media (prefers-color-scheme: dark) {
   body {
     --background: black;
+    --backgroundish: #111;
     --foreground: #eee;
   }
   abbr {
@@ -89,4 +91,29 @@ a {
 }
 #conexiones li::before {
   content: "↜ ";
+}
+
+.webring .articles {
+  display: flex;
+  flex-wrap: wrap;
+}
+.webring .title {
+  margin: 0;
+}
+.webring .article {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background: var(--backgroundish);
+  min-width: 10rem;
+}
+.webring .summary {
+  font-size: 0.8rem;
+  flex: 1 1 0;
+}
+.webring .attribution {
+  text-align: right;
+  font-size: 0.8rem;
 }
