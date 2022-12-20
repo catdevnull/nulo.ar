@@ -10,6 +10,7 @@ pipeline:
       - npm install -g pnpm
       # https://gitea.nulo.in/Nulo/openring/releases/tag/1.0.1-nulo-sitio-1
       - wget -nv -O /bin/openring https://gitea.nulo.in/attachments/c07b8560-5d35-4844-9844-226aa769a8e4
+      - chmod +x /bin/openring
 
       - pnpm install
       - ./tool refresh_feeds
