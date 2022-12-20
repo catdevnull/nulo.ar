@@ -9,6 +9,8 @@ const execFile = promisify(execFileCallback);
 const reader = new commonmark.Parser({ smart: true });
 const writer = new commonmark.HtmlRenderer({ safe: false, smart: true });
 
+const wikilinkExp = /\[\[(.+?)\]\]/giu;
+
 const compilers: {
   [key: string]: (config: Config, sourceFileName: string) => Promise<string>;
 } = {
@@ -186,8 +188,6 @@ interface Connection {
   linked: string;
   linker: string;
 }
-
-const wikilinkExp = /\[\[(.+?)\]\]/giu;
 
 async function scanForConnections(sourcePath: string): Promise<Connection[]> {
   const dir = await opendir(sourcePath);
