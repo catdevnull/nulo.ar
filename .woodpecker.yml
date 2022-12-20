@@ -7,8 +7,8 @@ pipeline:
       - echo "http://alpine.proxy.coso/alpine/v3.17/community" >> /etc/apk/repositories
       - apk add nodejs npm lua5.1
       - npm install -g pnpm
-        # https://gitea.nulo.in/Nulo/openring/releases/tag/1.0.1-nulo-sitio-1
-      - wget -nvO /bin/openring https://gitea.nulo.in/attachments/c07b8560-5d35-4844-9844-226aa769a8e4
+      # https://gitea.nulo.in/Nulo/openring/releases/tag/1.0.1-nulo-sitio-1
+      - wget -nv -O /bin/openring https://gitea.nulo.in/attachments/c07b8560-5d35-4844-9844-226aa769a8e4
 
       - pnpm set registry http://npm.proxy.coso
       - pnpm install
