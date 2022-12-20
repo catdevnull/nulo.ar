@@ -25,53 +25,18 @@ const config: Config = {
   buildPath: "build",
 };
 
-const wikilinkExp = /\[\[(.+?)\]\]/giu;
-
-interface Connection {
-  linked: string;
-  linker: string;
-}
-
-async function scanForConnections(sourcePath: string): Promise<Connection[]> {
-  const dir = await opendir(sourcePath);
-  let connections: Connection[] = [];
-  for await (const entry of dir) {
-    const extension = extname(entry.name);
-    if (extension === ".md") {
-      const name = basename(entry.name, ".md");
-      const file = await readFile(join(config.sourcePath, entry.name), "utf-8");
-      for (const [, linked] of file.matchAll(wikilinkExp)) {
-        connections.push({ linked, linker: name });
-      }
-    }
-  }
-  return connections;
-}
-
-async function hackilyTransformHtml(html: string): Promise<string> {
-  html = html
-    .replaceAll("<a h", '<a rel="noopener noreferrer" h')
-    .replaceAll(wikilinkExp, `<a href="$1.html">$1</a>`);
-  for (const [match, archivo] of html.matchAll(
-    /<nulo-sitio-reemplazar-con archivo="(.+?)" \/>/g
-  )) {
-    html = html.replace(match, await compileContentHtml(config, archivo));
-  }
-  return html;
-}
-
 const connections = await scanForConnections(config.sourcePath);
 
 await mkdir(config.buildPath, { recursive: true });
 
 const dir = await opendir(config.sourcePath);
 let pageList: string[] = [];
-let promises: { [key: string]: Promise<void> } = {};
+let promises: Promise<void>[] = [];
 for await (const entry of dir) {
   if (!entry.isFile()) continue;
-  promises[entry.name] = compileFile(entry.name);
+  promises.push(compileFile(entry.name));
 }
-await Promise.all(Object.values(promises));
+await Promise.all(promises);
 
 await compilePageList(config, pageList);
 
@@ -86,27 +51,11 @@ async function compileFile(name: string) {
   }
   if ([".md", ".gen"].includes(extension)) {
     pageList.push(basename(name, extension));
-    await compileFullHtml(config, name);
+    await compilePage(config, name);
   }
 }
 
-async function compilePageList(config: Config, pageList: string[]) {
-  const name = "Lista de páginas";
-  const outputPath = join(config.buildPath, name + ".html");
-  const html =
-    generateHead(name, name) +
-    generateHeader(name, "compilar.ts") +
-    `<ul>
-  ${pageList
-    .sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }))
-    .map((name) => `<li><a href="${name}.html">${name}</a></li>`)
-    .join("\n")}
-</ul>
-`;
-  await writeFile(outputPath, html);
-}
-
-async function compileFullHtml(config: Config, sourceFileName: string) {
+async function compilePage(config: Config, sourceFileName: string) {
   const name = basename(sourceFileName, extname(sourceFileName));
   const isIndex = name === "index";
   const title = isIndex ? "nulo.in" : name;
@@ -130,7 +79,7 @@ async function compileFullHtml(config: Config, sourceFileName: string) {
 // Get HTML
 // ==============================================
 
-//TODO: memoize
+// TODO: memoize
 function compileContentHtml(
   config: Config,
   sourceFileName: string
@@ -213,6 +162,49 @@ function generateConnectionsSection(fileConnections: Connection[]): string {
     : "";
 }
 
+async function compilePageList(config: Config, pageList: string[]) {
+  const name = "Lista de páginas";
+  const outputPath = join(config.buildPath, name + ".html");
+  const html =
+    generateHead(name, name) +
+    generateHeader(name, "compilar.ts") +
+    `<ul>
+  ${pageList
+    .sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }))
+    .map((name) => `<li><a href="${name}.html">${name}</a></li>`)
+    .join("\n")}
+</ul>
+`;
+  await writeFile(outputPath, html);
+}
+
+// ==============================================
+// Conexiones
+// ==============================================
+
+interface Connection {
+  linked: string;
+  linker: string;
+}
+
+const wikilinkExp = /\[\[(.+?)\]\]/giu;
+
+async function scanForConnections(sourcePath: string): Promise<Connection[]> {
+  const dir = await opendir(sourcePath);
+  let connections: Connection[] = [];
+  for await (const entry of dir) {
+    const extension = extname(entry.name);
+    if (extension === ".md") {
+      const name = basename(entry.name, ".md");
+      const file = await readFile(join(config.sourcePath, entry.name), "utf-8");
+      for (const [, linked] of file.matchAll(wikilinkExp)) {
+        connections.push({ linked, linker: name });
+      }
+    }
+  }
+  return connections;
+}
+
 // ==============================================
 // Markdown utils
 // ==============================================
@@ -220,4 +212,16 @@ function generateConnectionsSection(fileConnections: Connection[]): string {
 function renderMarkdown(markdown: string) {
   const parsed = reader.parse(markdown);
   return writer.render(parsed);
+}
+
+async function hackilyTransformHtml(html: string): Promise<string> {
+  html = html
+    .replaceAll("<a h", '<a rel="noopener noreferrer" h')
+    .replaceAll(wikilinkExp, `<a href="$1.html">$1</a>`);
+  for (const [match, archivo] of html.matchAll(
+    /<nulo-sitio-reemplazar-con archivo="(.+?)" \/>/g
+  )) {
+    html = html.replace(match, await compileContentHtml(config, archivo));
+  }
+  return html;
 }
