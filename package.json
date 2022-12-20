@@ -5,9 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-ts": "esbuild compilar.ts --target=node18 --outdir=build.js --sourcemap",
-    "build": "pnpm build-ts && node build.js/compilar.js",
-    "check": "tsc --noEmit"
+    "build-ts": "./tool build_ts",
+    "build": "./tool build",
+    "check": "./tool tsc"
   },
   "keywords": [],
   "author": "",
