@@ -1,14 +1,14 @@
 #!/bin/sh
 
 build_ts() {
-    ./node_modules/.bin/esbuild compilar.ts --target=node18 --outdir=build.js --sourcemap
+    ./node_modules/.bin/esbuild compilar.ts --target=node18 --outdir=build.js --sourcemap || exit $?
 }
 build() {
     build_ts
-    node --enable-source-maps build.js/compilar.js
+    node --enable-source-maps build.js/compilar.js || exit $?
 }
 check() {
-    ./node_modules/.bin/tsc --noEmit
+    ./node_modules/.bin/tsc --noEmit || exit $?
 }
 refresh_feed() {
     echo "Refreshing $1"
