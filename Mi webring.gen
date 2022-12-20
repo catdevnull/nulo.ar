@@ -25,8 +25,8 @@ local template = [[
 ]]
 
 local code = os.execute("echo '"..template..[[' | openring \
-  -s file:cached-feeds/fauno.xml \
-  -s file:cached-feeds/copiona.xml
+  -s file:cached-feeds/fauno.xml?url=https://fauno.endefensadelsl.org/feed.xml \
+  -s file:cached-feeds/copiona.xml?url=https://copiona.com/feed.xml
 ]])
 if code ~= 0 then
   os.exit(1)
