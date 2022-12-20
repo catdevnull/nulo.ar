@@ -5,7 +5,7 @@ build_ts() {
 }
 build() {
     build_ts
-    node build.js/compilar.js
+    node --enable-source-maps build.js/compilar.js
 }
 check() {
     ./node_modules/.bin/tsc --noEmit
