@@ -22,8 +22,6 @@ local template = [[
     <a href="https://git.sr.ht/~sircmpwn/openring">openring</a>💕
   </p>
 </section>
-<!--style>
-</style-->
 ]]
 
 os.execute("echo '"..template..[[' | openring \
