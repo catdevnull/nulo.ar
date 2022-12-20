@@ -10,9 +10,13 @@ build() {
 check() {
     ./node_modules/.bin/tsc --noEmit
 }
+refresh_feed() {
+    echo "Refreshing $1"
+    busybox wget -qO "cached-feeds/$1.xml" "$2" || exit $?
+}
 refresh_feeds() {
-    wget -nv -O cached-feeds/fauno.xml https://fauno.endefensadelsl.org/feed.xml
-    wget -nv -O cached-feeds/copiona.xml https://copiona.com/feed.xml
+    refresh_feed fauno https://fauno.endefensadelsl.org/feed.xml
+    refresh_feed copiona https://copiona.com/feed.xml
 }
 
 fatal() {
