@@ -98,6 +98,7 @@ async function compilePageList(config: Config, pageList: string[]) {
     generateHeader(name, "compilar.ts") +
     `<ul>
   ${pageList
+    .sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }))
     .map((name) => `<li><a href="${name}.html">${name}</a></li>`)
     .join("\n")}
 </ul>
