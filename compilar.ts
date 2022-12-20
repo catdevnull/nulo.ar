@@ -9,6 +9,13 @@ const execFile = promisify(execFileCallback);
 const reader = new commonmark.Parser({ smart: true });
 const writer = new commonmark.HtmlRenderer({ safe: false, smart: true });
 
+const compilers: {
+  [key: string]: (config: Config, sourceFileName: string) => Promise<string>;
+} = {
+  ".md": compileMarkdownHtml,
+  ".gen": compileExecutableHtml,
+};
+
 interface Config {
   sourcePath: string;
   buildPath: string;
@@ -18,41 +25,16 @@ const config: Config = {
   buildPath: "build",
 };
 
-function head(title: string, outputName: string) {
-  // TODO: deshardcodear og:url
-  return `<!doctype html>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width, initial-scale=1.0">
-<meta name=author content=Nulo>
-<meta property=og:title content="${title}">
-<meta property=og:type content=website>
-<meta property=og:url content="https://nulo.in/${outputName}.html">
-<meta property=og:image content=cowboy.svg>
-<link rel=stylesheet href=drip.css>
-<link rel=icon href=cowboy.svg>
-<title>${title}</title>
-`;
-}
-
-function header(title: string, sourceCodePath: string, linkConexiones = false) {
-  return (
-    `<a href=.>☚ Volver al inicio</a>` +
-    `<header>
-  <h1>${title}</h1>
-  <a href="https://gitea.nulo.in/Nulo/sitio/commits/branch/ANTIFASCISTA/${sourceCodePath}">Historial</a>${
-      linkConexiones
-        ? ` / 
-<a href="#conexiones">Conexiones</a>`
-        : ""
-    }
-</header>`
-  );
-}
 const wikilinkExp = /\[\[(.+?)\]\]/giu;
 
-async function scanForConnections(sourcePath: string) {
+interface Connection {
+  linked: string;
+  linker: string;
+}
+
+async function scanForConnections(sourcePath: string): Promise<Connection[]> {
   const dir = await opendir(sourcePath);
-  let connections = [];
+  let connections: Connection[] = [];
   for await (const entry of dir) {
     const extension = extname(entry.name);
     if (extension === ".md") {
@@ -73,11 +55,7 @@ async function hackilyTransformHtml(html: string): Promise<string> {
   for (const [match, archivo] of html.matchAll(
     /<nulo-sitio-reemplazar-con archivo="(.+?)" \/>/g
   )) {
-    if (!promises[archivo])
-      throw new Error(
-        `<nulo-sitio-reemplazar-con archivo="${archivo}" /> no existe!`
-      );
-    html = html.replace(match, await promises[archivo]);
+    html = html.replace(match, await compileContentHtml(config, archivo));
   }
   return html;
 }
@@ -88,7 +66,7 @@ await mkdir(config.buildPath, { recursive: true });
 
 const dir = await opendir(config.sourcePath);
 let pageList: string[] = [];
-let promises: { [key: string]: Promise<string> } = {};
+let promises: { [key: string]: Promise<void> } = {};
 for await (const entry of dir) {
   if (!entry.isFile()) continue;
   promises[entry.name] = compileFile(entry.name);
@@ -97,7 +75,7 @@ await Promise.all(Object.values(promises));
 
 await compilePageList(config, pageList);
 
-async function compileFile(name: string): Promise<string> {
+async function compileFile(name: string) {
   const extension = extname(name);
   if (
     [".js", ".md", ".css", ".png", ".jpg", ".mp4", ".svg", ".html"].includes(
@@ -108,19 +86,16 @@ async function compileFile(name: string): Promise<string> {
   }
   if ([".md", ".gen"].includes(extension)) {
     pageList.push(basename(name, extension));
+    await compileFullHtml(config, name);
   }
-
-  if (extension === ".md") return await compileMarkdown(config, name);
-  else if (extension === ".gen") return await compileExecutable(config, name);
-  return "";
 }
 
 async function compilePageList(config: Config, pageList: string[]) {
   const name = "Lista de páginas";
   const outputPath = join(config.buildPath, name + ".html");
   const html =
-    head(name, name) +
-    header(name, "compilar.js") +
+    generateHead(name, name) +
+    generateHeader(name, "compilar.ts") +
     `<ul>
   ${pageList
     .map((name) => `<li><a href="${name}.html">${name}</a></li>`)
@@ -129,28 +104,103 @@ async function compilePageList(config: Config, pageList: string[]) {
 `;
   await writeFile(outputPath, html);
 }
-async function compileMarkdown(
+
+async function compileFullHtml(config: Config, sourceFileName: string) {
+  const name = basename(sourceFileName, extname(sourceFileName));
+  const isIndex = name === "index";
+  const title = isIndex ? "nulo.in" : name;
+  const fileConnections = connections.filter(({ linked }) => linked === name);
+
+  const contentHtml = await compileContentHtml(config, sourceFileName);
+
+  const html =
+    generateHead(title, name) +
+    (isIndex
+      ? ""
+      : generateHeader(title, sourceFileName, fileConnections.length > 0)) +
+    contentHtml +
+    generateConnectionsSection(fileConnections);
+
+  const outputPath = join(config.buildPath, name + ".html");
+  await writeFile(outputPath, html);
+}
+
+// ==============================================
+// Get HTML
+// ==============================================
+
+//TODO: memoize
+function compileContentHtml(
   config: Config,
   sourceFileName: string
 ): Promise<string> {
-  const name = basename(sourceFileName, ".md");
+  return compilers[extname(sourceFileName)](config, sourceFileName);
+}
+
+async function compileMarkdownHtml(
+  config: Config,
+  sourceFileName: string
+): Promise<string> {
   const markdown = await readFile(
     join(config.sourcePath, sourceFileName),
     "utf-8"
   );
   const markdownHtml = renderMarkdown(markdown);
-
-  const fileConnections = connections.filter(({ linked }) => linked === name);
-
-  const isIndex = sourceFileName === "index.md";
-  const title = isIndex ? "nulo.in" : name;
   const contentHtml = await hackilyTransformHtml(markdownHtml);
-  const html =
-    head(title, sourceFileName) +
-    (isIndex ? "" : header(title, sourceFileName, fileConnections.length > 0)) +
-    contentHtml +
-    (fileConnections.length > 0
-      ? `
+  return contentHtml;
+}
+
+async function compileExecutableHtml(
+  config: Config,
+  sourceFileName: string
+): Promise<string> {
+  const { stdout, stderr } = await execFile(
+    "./" + join(config.sourcePath, sourceFileName)
+  );
+  if (stderr.length > 0) console.error(`${sourceFileName} stderr: ${stderr}`);
+
+  return stdout;
+}
+
+// ==============================================
+// Generated HTML
+// ==============================================
+
+function generateHead(title: string, outputName: string) {
+  // TODO: deshardcodear og:url
+  return `<!doctype html>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta name=author content=Nulo>
+<meta property=og:title content="${title}">
+<meta property=og:type content=website>
+<meta property=og:url content="https://nulo.in/${outputName}.html">
+<meta property=og:image content=cowboy.svg>
+<link rel=stylesheet href=drip.css>
+<link rel=icon href=cowboy.svg>
+<title>${title}</title>
+`;
+}
+
+function generateHeader(
+  title: string,
+  sourceCodePath: string,
+  linkConexiones = false
+) {
+  return `<a href=.>☚ Volver al inicio</a><header>
+  <h1>${title}</h1>
+  <a href="https://gitea.nulo.in/Nulo/sitio/commits/branch/ANTIFASCISTA/${sourceCodePath}">Historial</a>${
+    linkConexiones
+      ? ` / 
+<a href="#conexiones">Conexiones</a>`
+      : ""
+  }
+</header>`;
+}
+
+function generateConnectionsSection(fileConnections: Connection[]): string {
+  return fileConnections.length > 0
+    ? `
 <section id=conexiones>
   <h2>⥆ Conexiones (${fileConnections.length})</h2>
   <ul>
@@ -159,35 +209,7 @@ async function compileMarkdown(
       .join("\n")}
   </ul>
 </section>`
-      : "");
-
-  const outputPath = join(
-    config.buildPath,
-    basename(sourceFileName, ".md") + ".html"
-  );
-  await writeFile(outputPath, html);
-  return contentHtml;
-}
-
-async function compileExecutable(
-  config: Config,
-  sourceFileName: string
-): Promise<string> {
-  const name = basename(sourceFileName, ".gen");
-
-  const { stdout, stderr } = await execFile(
-    "./" + join(config.sourcePath, sourceFileName)
-  );
-  if (stderr.length > 0) console.error(`${sourceFileName} stderr: ${stderr}`);
-
-  const html = head(name, name) + header(name, sourceFileName) + stdout;
-
-  const outputPath = join(
-    config.buildPath,
-    basename(sourceFileName, ".gen") + ".html"
-  );
-  await writeFile(outputPath, html);
-  return stdout;
+    : "";
 }
 
 // ==============================================
