@@ -19,6 +19,7 @@
     "typescript": "^4.9.4"
   },
   "dependencies": {
+    "@nulo/html.js": "^0.0.2",
     "commonmark": "^0.30.0"
   }
 }

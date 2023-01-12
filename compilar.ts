@@ -3,6 +3,23 @@ import { basename, extname, join } from "path";
 import { execFile as execFileCallback } from "child_process";
 import { promisify } from "util";
 import * as commonmark from "commonmark";
+import {
+  a,
+  doctype,
+  h1,
+  header,
+  section,
+  li,
+  link,
+  meta,
+  metaUtf8,
+  render,
+  Renderable,
+  title,
+  ul,
+  h2,
+  raw,
+} from "@nulo/html.js";
 
 const execFile = promisify(execFileCallback);
 
@@ -65,13 +82,14 @@ async function compilePage(config: Config, sourceFileName: string) {
 
   const contentHtml = await compileContentHtml(config, sourceFileName);
 
-  const html =
-    generateHead(title, name) +
-    (isIndex
-      ? ""
-      : generateHeader(title, sourceFileName, fileConnections.length > 0)) +
-    contentHtml +
-    generateConnectionsSection(fileConnections);
+  const html = render(
+    ...generateHead(title, name),
+    ...(isIndex
+      ? []
+      : generateHeader(title, sourceFileName, fileConnections.length > 0)),
+    raw(contentHtml),
+    ...generateConnectionsSection(fileConnections)
+  );
 
   const outputPath = join(config.buildPath, name + ".html");
   await writeFile(outputPath, html);
@@ -118,65 +136,97 @@ async function compileExecutableHtml(
 // Generated HTML
 // ==============================================
 
-function generateHead(title: string, outputName: string) {
+function generateHead(titlee: string, outputName: string): Renderable[] {
   // TODO: deshardcodear og:url
-  return `<!doctype html>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width, initial-scale=1.0">
-<meta name=author content=Nulo>
-<meta property=og:title content="${title}">
-<meta property=og:type content=website>
-<meta property=og:url content="https://nulo.in/${outputName}.html">
-<meta property=og:image content=cowboy.svg>
-<link rel=stylesheet href=drip.css>
-<link rel=icon href=cowboy.svg>
-<title>${title}</title>
-`;
+  return [
+    doctype(),
+    metaUtf8,
+    meta({
+      name: "viewport",
+      content: "width=device-width, initial-scale=1.0",
+    }),
+    meta({
+      name: "author",
+      content: "Nulo",
+    }),
+    meta({
+      property: "og:title",
+      content: titlee,
+    }),
+    meta({
+      property: "og:type",
+      content: "website",
+    }),
+    meta({
+      property: "og:url",
+      content: `https://nulo.in/${outputName}.html`,
+    }),
+    meta({
+      property: "og:image",
+      content: "cowboy.svg",
+    }),
+    link({
+      rel: "stylesheet",
+      href: "drip.css",
+    }),
+    link({
+      rel: "icon",
+      href: "cowboy.svg",
+    }),
+    title(titlee),
+  ];
 }
 
 function generateHeader(
   title: string,
   sourceCodePath: string,
   linkConexiones = false
-) {
-  return `<a href=.>☚ Volver al inicio</a><header>
-  <h1>${title}</h1>
-  <a href="https://gitea.nulo.in/Nulo/sitio/commits/branch/ANTIFASCISTA/${sourceCodePath}">Historial</a>${
-    linkConexiones
-      ? ` / 
-<a href="#conexiones">Conexiones</a>`
-      : ""
-  }
-</header>`;
+): Renderable[] {
+  return [
+    a({ href: "." }, "☚ Volver al inicio"),
+    header(
+      h1(title),
+      a(
+        {
+          href: `https://gitea.nulo.in/Nulo/sitio/commits/branch/ANTIFASCISTA/${sourceCodePath}`,
+        },
+        "Historial"
+      ),
+      ...(linkConexiones ? [a({ href: "#conexiones" }, "Conexiones")] : [])
+    ),
+  ];
 }
 
-function generateConnectionsSection(fileConnections: Connection[]): string {
+function generateConnectionsSection(
+  fileConnections: Connection[]
+): Renderable[] {
   return fileConnections.length > 0
-    ? `
-<section id=conexiones>
-  <h2>⥆ Conexiones (${fileConnections.length})</h2>
-  <ul>
-    ${fileConnections
-      .map(({ linker }) => `<li><a href="${linker}.html">${linker}</a></li>`)
-      .join("\n")}
-  </ul>
-</section>`
-    : "";
+    ? [
+        section(
+          { id: "conexiones" },
+          h2(`⥆ Conexiones (${fileConnections.length})`),
+          ul(
+            ...fileConnections.map(({ linker }) =>
+              li(a({ href: `${linker}.html` }, linker))
+            )
+          )
+        ),
+      ]
+    : [];
 }
 
 async function compilePageList(config: Config, pageList: string[]) {
   const name = "Lista de páginas";
   const outputPath = join(config.buildPath, name + ".html");
-  const html =
-    generateHead(name, name) +
-    generateHeader(name, "compilar.ts") +
-    `<ul>
-  ${pageList
-    .sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }))
-    .map((name) => `<li><a href="${name}.html">${name}</a></li>`)
-    .join("\n")}
-</ul>
-`;
+  const html = render(
+    ...generateHead(name, name),
+    ...generateHeader(name, "compilar.ts"),
+    ul(
+      ...pageList
+        .sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }))
+        .map((name) => li(a({ href: `${name}.html` }, name)))
+    )
+  );
   await writeFile(outputPath, html);
 }
 

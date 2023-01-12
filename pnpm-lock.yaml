@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@nulo/html.js': ^0.0.2
   '@types/commonmark': ^0.27.5
   '@types/node': ^18.11.17
   commonmark: ^0.30.0
@@ -8,6 +9,7 @@ specifiers:
   typescript: ^4.9.4
 
 dependencies:
+  '@nulo/html.js': link:../html.js
   commonmark: 0.30.0
 
 devDependencies:
