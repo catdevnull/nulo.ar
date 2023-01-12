@@ -7,7 +7,7 @@
   "scripts": {
     "build-ts": "./tool build_ts",
     "build": "./tool build",
-    "check": "./tool tsc"
+    "check": "./tool check"
   },
   "keywords": [],
   "author": "",
