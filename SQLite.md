@@ -1,1 +1,2 @@
 -   [Consider SQLite](https://blog.wesleyac.com/posts/consider-sqlite)
+-   [sqlite-zstd](https://phiresky.github.io/blog/2022/sqlite-zstd/)
