@@ -1,3 +1,4 @@
 -   [Wren is a small, fast, class-based concurrent scripting language](https://wren.io/)
 -   [[Lua]]
 -   [[JavaScript]]
+-   [[Go]]
