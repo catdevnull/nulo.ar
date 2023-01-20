@@ -117,3 +117,8 @@ a {
   text-align: right;
   font-size: 0.8rem;
 }
+
+.main-title {
+  style=color: red;
+  margin-top: 0;
+}
