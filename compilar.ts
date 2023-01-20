@@ -62,9 +62,17 @@ await compilePageList(config, pageList);
 async function compileFile(name: string) {
   const extension = extname(name);
   if (
-    [".ts", ".md", ".css", ".png", ".jpg", ".mp4", ".svg", ".html"].includes(
-      extension
-    )
+    [
+      ".ts",
+      ".md",
+      ".css",
+      ".js",
+      ".png",
+      ".jpg",
+      ".mp4",
+      ".svg",
+      ".html",
+    ].includes(extension)
   ) {
     await copyFile(join(config.sourcePath, name), join(config.buildPath, name));
   }
