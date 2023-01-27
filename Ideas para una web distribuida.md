@@ -22,3 +22,4 @@ En su estado actual, tiene serios problemas técnicos que impiden su uso para el
 -   [Ink & Switch](https://www.inkandswitch.com/) investiga y crea tecnologías distribuidas como:
     -   [Peritext](https://www.inkandswitch.com/peritext/), un CRDT para un editor colaborativo rico
     -   [Automerge](https://automerge.org/), estructuras de datos para aplicaciones distribuidas
+-   [Logux](https://logux.io/) is an WebSocket client/server framework (offline-first; CRDT-inspired)
