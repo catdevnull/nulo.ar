@@ -1,3 +1,6 @@
 build/
 node_modules/
 build.js/
+.env
+cache/
+rootfs/

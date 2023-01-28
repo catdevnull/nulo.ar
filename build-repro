@@ -1,0 +1,37 @@
+#!/bin/sh -e
+
+runprint() {
+  echo "==> $@"
+  "$@"
+}
+
+runprint apk add --quiet nodejs npm git icu-data-full lua5.1
+
+runprint npm install --silent -g pnpm
+export PATH="$PATH:/usr/local/bin"
+
+# https://gitea.nulo.in/Nulo/openring/releases/tag/1.0.1-nulo-sitio-2
+runprint wget -nv -O /usr/local/bin/openring https://gitea.nulo.in/attachments/3ddb2799-3af7-4239-a7fd-9d31670aefb8
+chmod +x /usr/local/bin/openring
+
+runprint git clone file:///src sitio
+cd sitio
+
+runprint pnpm install --store-dir ~/pnpm-store --package-import-method copy
+runprint ./tool refresh_feeds
+runprint ./tool check
+runprint ./tool build
+
+runprint apk add --quiet rsync openssh-client-default
+
+if test -n "$SSH_KEY"; then
+  eval $(ssh-agent -s)
+  # https://stackoverflow.com/questions/46147228/dotenv-multiline-variables
+  echo "${SSH_KEY}" | tr -d '\r' | ssh-add -
+  mkdir -p ~/.ssh
+  echo "[nulo.in]:420,[186.136.121.7]:420 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGPkgRVWYcVcgjI0xAjDgZQsYuXU9edcya8zna01ibyUMlfKHIMD9yOoq0R+fQPTCqwiol/2tKMPJ2hlKshc+H8=" > ~/.ssh/known_hosts
+
+  runprint ./upload
+else
+  echo ==> No tengo SSH_KEY, no voy a subir el sitio.
+fi
