@@ -200,7 +200,9 @@ function generateHeader(
         },
         "Historial"
       ),
-      ...(linkConexiones ? [a({ href: "#conexiones" }, "Conexiones")] : [])
+      ...(linkConexiones
+        ? [" / ", a({ href: "#conexiones" }, "Conexiones")]
+        : [])
     ),
   ];
 }
