@@ -1,4 +1,4 @@
-¿Les pasa que sienten _vergüenza algorítmica? Es algo que siento todo el tiempo, y creo que no soy el único.
+¿Les pasa que sienten _vergüenza algorítmica_? Es algo que siento todo el tiempo, y creo que no soy el único.
 
 Cuando estoy scrolleando en Instagram (y también aplica para TikTok o Twitter o lo que sea), a veces evito apretar en publicaciones que me interesan porque no quiero que quede guardado mi interés por esa cosa. En los _Reels_ (la copia que hizo Instagram de TikTok) es aún peor, porque quedarse mirando algún video queda guardado en la app como un interés, entonces tenés que pasar el video rápido para evitarlo.
 
