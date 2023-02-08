@@ -18,3 +18,5 @@ Gente más inteligente que pensaron en esto mucho antes que yo:
 - [Whose Speech Is Chilled by Surveillance? (2017)](https://slate.com/technology/2017/07/women-young-people-experience-the-chilling-effects-of-surveillance-at-higher-rates.html)
 - Alguien me mandó a leer Foucault. Se ve que no se enteraron que no se leer.
 
+Gracias a Agus y a [fauno](https://fauno.endefensadelsl.org/) por ayudar a escribir esto.
+
