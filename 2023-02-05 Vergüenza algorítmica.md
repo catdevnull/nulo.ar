@@ -16,7 +16,7 @@ Personas que pensaron en esto mucho antes que yo (por supuesto):
     <https://www.tijmenschep.com/socialcooling/>
 - [Algorithm shame (2018)](https://nymag.com/intelligencer/2018/10/algorithm-shame-the-feeling-of-being-seen-by-the-algorithm.html) es sobre intereses, similar al primer párrafo de esta página.
 - [Whose Speech Is Chilled by Surveillance? (2017)](https://slate.com/technology/2017/07/women-young-people-experience-the-chilling-effects-of-surveillance-at-higher-rates.html)
-- Alguien me mandó a leer Foucault. Se ve que no se enteraron que no se leer.
+- Alguien me mandó a leer Foucault (1975). Se ve que no se enteraron que no se leer.
 
 Gracias a Agus y a [fauno](https://fauno.endefensadelsl.org/) por ayudar a escribir esto.
 
