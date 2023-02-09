@@ -6,9 +6,9 @@ Que guarde los datos sobre mis intereses implica que va a mostrarme más conteni
 
 Es aún peor cuando ya pasa de vergüenza a riesgo: quizás "eligo" no mirar un posteo sobre un tema político que me interesa porque se que queda guardado y podría ser utilizado en alguna investigación criminal.
 
-Y es aún aún peor cuando tenés miedo de postear algo por la posibilidad de que se monitoree y te prohiba tener un trabajo u préstamo o hasta de metan en cana.
+Y es aún aún peor cuando tenés miedo de postear algo por la posibilidad de que se monitoree y te prohiba tener un trabajo, un préstamo o hasta te metan en cana.
 
-Gente más inteligente que pensaron en esto mucho antes que yo:
+Personas que pensaron en esto mucho antes que yo (por supuesto):
 
 - [Social Cooling (2017)](https://www.socialcooling.com/) aplica este concepto más generalmente, incluyendo por ejemplo el rastreo masivo via cámaras de seguridad y utilizadas en marchas.
   - > Already there is the rise of “click fear” (“klikvrees”), where people hesitate to click on links because they are afraid ‘someone’ will remember it, and it may look bad.
