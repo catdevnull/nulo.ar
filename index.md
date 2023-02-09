@@ -8,6 +8,7 @@ Este es mi hogar. ¿Estás perdidx? [[Lista de páginas]]
 
 Algunas cosas que escribí recientemente:
 
+- [[2023-02-05 Vergüenza algorítmica]]
 -	[[Arreglando bugs ajenos]]
 
 A veces hago [[Proyectos]].
