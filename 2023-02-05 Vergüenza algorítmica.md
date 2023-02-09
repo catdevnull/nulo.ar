@@ -4,7 +4,7 @@ Cuando estoy scrolleando en Instagram (y también aplica para TikTok o Twitter o
 
 Que guarde los datos sobre mis intereses implica que va a mostrarme más contenidos sobre eso, que puede o no ser algo que quiera. Pero más importante es como queda guardada información muy especifica sobre tus intereses. ¿Miraste ese video sobre interrupción voluntaria del embarazo? Probablemente seas de izquierda y eso se refleje en la propaganda política que te muestre la aplicación.
 
-Es aún peor cuando ya pasa de vergüenza a riesgo: quizás "eligo" no mirar un posteo sobre un tema político que me interesa porque se que queda guardado y podría ser utilizado en alguna investigación criminal.
+Es aún peor cuando ya pasa de vergüenza a riesgo: quizás "elijo" no mirar un posteo sobre un tema político que me interesa porque se que queda guardado y podría ser utilizado en alguna investigación criminal.
 
 Y es aún aún peor cuando tenés miedo de postear algo por la posibilidad de que se monitoree y te prohiba tener un trabajo, un préstamo o hasta te metan en cana.
 
