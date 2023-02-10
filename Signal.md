@@ -1,0 +1,1 @@
+- [Problemas con Signal](https://github.com/privacytools/privacytools.io/issues/779)
