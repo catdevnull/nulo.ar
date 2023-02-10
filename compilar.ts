@@ -234,7 +234,7 @@ async function compilePageList(config: Config, pageList: string[]) {
     ul(
       ...pageList
         .sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }))
-        .map((name) => li(a({ href: `${name}.html` }, name)))
+        .map((name) => li(a({ href: encodeURI(`${name}.html`) }, name)))
     )
   );
   await writeFile(outputPath, html);
