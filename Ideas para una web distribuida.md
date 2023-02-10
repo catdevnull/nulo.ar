@@ -23,3 +23,4 @@ En su estado actual, tiene serios problemas técnicos que impiden su uso para el
     -   [Peritext](https://www.inkandswitch.com/peritext/), un CRDT para un editor colaborativo rico
     -   [Automerge](https://automerge.org/), estructuras de datos para aplicaciones distribuidas
 -   [Logux](https://logux.io/) is an WebSocket client/server framework (offline-first; CRDT-inspired)
+-   [Local-First Web Development](https://localfirstweb.dev/) tiene distintas propuestas.
