@@ -217,7 +217,7 @@ function generateConnectionsSection(
           h2(`⥆ Conexiones (${fileConnections.length})`),
           ul(
             ...fileConnections.map(({ linker }) =>
-              li(a({ href: `${linker}.html` }, linker))
+              li(a({ href: internalLink(linker) }, linker))
             )
           )
         ),
@@ -234,7 +234,7 @@ async function compilePageList(config: Config, pageList: string[]) {
     ul(
       ...pageList
         .sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }))
-        .map((name) => li(a({ href: encodeURI(`${name}.html`) }, name)))
+        .map((name) => li(a({ href: internalLink(name) }, name)))
     )
   );
   await writeFile(outputPath, html);
@@ -277,11 +277,19 @@ function renderMarkdown(markdown: string) {
 async function hackilyTransformHtml(html: string): Promise<string> {
   html = html
     .replaceAll("<a h", '<a rel="noopener noreferrer" h')
-    .replaceAll(wikilinkExp, `<a href="$1.html">$1</a>`);
+    .replaceAll(wikilinkExp, (_, l) => render(a({ href: internalLink(l) }, l)));
   for (const [match, archivo] of html.matchAll(
     /<nulo-sitio-reemplazar-con archivo="(.+?)" \/>/g
   )) {
     html = html.replace(match, await compileContentHtml(config, archivo));
   }
   return html;
+}
+
+// ==============================================
+// Linking
+// ==============================================
+
+function internalLink(path: string) {
+  return encodeURI(`./${path}.html`);
 }
