@@ -5,6 +5,8 @@
     -   `imgur.com`/`imgur.io`
     -   `put.io`
     -   `wetransfer.com`
+    -   `backblaze.com` (!!)
+-   Pareciera que hasta [Notion](https://notion.so) está bloqueado, aunque no lo chequié extensivamente
 -   La red de Tor parece estar bloqueado a nivel protocolo. Ni pude usar pluggable transports.
 -   Puerto 22 de SSH (yo uso puerto 993, de IMAPS, para saltarlo)
 -   `futbollibre.net`
