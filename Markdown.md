@@ -1,0 +1,1 @@
+-   [Markdown no es un exchange format](https://nytpu.com/gemlog/2022-01-30.gmi)
