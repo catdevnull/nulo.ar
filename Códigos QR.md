@@ -1,0 +1,1 @@
+-   [Sharesnip](https://sharesnip.rosano.ca/): Quickly create or scan QR codes.
