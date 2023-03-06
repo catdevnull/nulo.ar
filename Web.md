@@ -6,3 +6,7 @@
 ## Proyectos interesantes
 
 -   [kawipiko -- blazingly fast static HTTP server -- focused on low latency and high concurrency, by leveraging Go, `fasthttp` and the CDB embedded database](https://github.com/volution/kawipiko)
+
+## Otras cosas
+
+-   [[PWA]]

@@ -1,0 +1,1 @@
+-   [a2hs.js](https://github.com/koddr/a2hs.js): A useful modern JavaScript solution that helps your website users to add (install) a progressive web application (PWA) to the Home Screen of their mobile iOS devices.
