@@ -19,12 +19,21 @@ import {
   ul,
   h2,
   raw,
+  p,
+  VirtualElement,
 } from "@nulo/html.js";
 
 const execFile = promisify(execFileCallback);
 
 const reader = new commonmark.Parser({ smart: true });
 const writer = new commonmark.HtmlRenderer({ safe: false, smart: true });
+
+const dateFormatter = new Intl.DateTimeFormat("es-AR", {
+  weekday: "long",
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+});
 
 const wikilinkExp = /\[\[(.+?)\]\]/giu;
 
@@ -85,7 +94,7 @@ async function compileFile(name: string) {
 async function compilePage(config: Config, sourceFileName: string) {
   const name = basename(sourceFileName, extname(sourceFileName));
   const isIndex = name === "index";
-  const title = isIndex ? "nulo.in" : name;
+  const title = isIndex ? "nulo.in" : formatTitleToPlainText(name);
   const fileConnections = connections.filter(({ linked }) => linked === name);
 
   const contentHtml = await compileContentHtml(config, sourceFileName);
@@ -94,7 +103,7 @@ async function compilePage(config: Config, sourceFileName: string) {
     ...generateHead(title, name),
     ...(isIndex
       ? []
-      : generateHeader(title, sourceFileName, fileConnections.length > 0)),
+      : generateHeader(name, sourceFileName, fileConnections.length > 0)),
     raw(contentHtml),
     ...generateConnectionsSection(fileConnections)
   );
@@ -185,15 +194,78 @@ function generateHead(titlee: string, outputName: string): Renderable[] {
   ];
 }
 
+function formatDate(dateish: Dateish): string {
+  const date = new Date(dateish.year, dateish.month - 1, dateish.day);
+  return dateFormatter.format(date);
+}
+
+interface Dateish {
+  year: number;
+  month: number;
+  day: number;
+}
+interface TitleMetadata {
+  // title puede tener length == 0 y por lo tanto ser falseish
+  title: string;
+  date?: Dateish;
+}
+function parseTitle(name: string): TitleMetadata {
+  const titleWithDate =
+    /^((?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2}))? ?(?<title>.*)$/;
+
+  const found = name.match(titleWithDate);
+  if (!found || !found.groups) throw new Error("Algo raro pasó");
+  const { title } = found.groups;
+
+  const date =
+    (found.groups.year && {
+      year: parseInt(found.groups.year),
+      month: parseInt(found.groups.month),
+      day: parseInt(found.groups.day),
+    }) ||
+    undefined;
+  return { title, date };
+}
+
+// formatTitle formattea un title para ser mostrado.
+// si existe una date pero no un titulo (por ejemplo, un archivo tipo `2023-03-09.md`) usa la fecha como título.
+// si si existe un titulo, la pone como date para ponerse en un subtitulo o entre paréntesis
+function formatTitle(title: TitleMetadata): { title: string; date?: string } {
+  if (title.title) {
+    let date: string | undefined;
+    if (title.date) date = formatDate(title.date);
+    return { title: title.title, date };
+  } else {
+    if (title.date) {
+      const date = formatDate(title.date);
+      // no le digan a la policía del unicode!
+      return { title: date[0].toUpperCase() + date.slice(1) };
+    } else {
+      console.debug(title);
+      throw new Error("Imposible: TitleMetadata totalmente vacío");
+    }
+  }
+}
+
+function formatTitleToPlainText(title: string): string {
+  const formattedTitle = formatTitle(parseTitle(title));
+  return (
+    formattedTitle.title +
+    (formattedTitle.date ? ` (${formattedTitle.date})` : "")
+  );
+}
+
 function generateHeader(
-  title: string,
+  name: string,
   sourceCodePath: string,
   linkConexiones = false
 ): Renderable[] {
+  const formattedTitle = formatTitle(parseTitle(name));
   return [
     a({ href: "." }, "☚ Volver al inicio"),
     header(
-      h1(title),
+      h1(formattedTitle.title),
+      ...(formattedTitle.date ? [p(formattedTitle.date)] : []),
       a(
         {
           href: `https://gitea.nulo.in/Nulo/sitio/commits/branch/ANTIFASCISTA/${sourceCodePath}`,
@@ -215,11 +287,7 @@ function generateConnectionsSection(
         section(
           { id: "conexiones" },
           h2(`⥆ Conexiones (${fileConnections.length})`),
-          ul(
-            ...fileConnections.map(({ linker }) =>
-              li(a({ href: internalLink(linker) }, linker))
-            )
-          )
+          ul(...fileConnections.map(({ linker }) => li(internalLink(linker))))
         ),
       ]
     : [];
@@ -234,7 +302,7 @@ async function compilePageList(config: Config, pageList: string[]) {
     ul(
       ...pageList
         .sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }))
-        .map((name) => li(a({ href: internalLink(name) }, name)))
+        .map((name) => li(internalLink(name)))
     )
   );
   await writeFile(outputPath, html);
@@ -277,7 +345,7 @@ function renderMarkdown(markdown: string) {
 async function hackilyTransformHtml(html: string): Promise<string> {
   html = html
     .replaceAll("<a h", '<a rel="noopener noreferrer" h')
-    .replaceAll(wikilinkExp, (_, l) => render(a({ href: internalLink(l) }, l)));
+    .replaceAll(wikilinkExp, (_, l) => render(internalLink(l)));
   for (const [match, archivo] of html.matchAll(
     /<nulo-sitio-reemplazar-con archivo="(.+?)" \/>/g
   )) {
@@ -290,6 +358,7 @@ async function hackilyTransformHtml(html: string): Promise<string> {
 // Linking
 // ==============================================
 
-function internalLink(path: string) {
-  return encodeURI(`./${path}.html`);
+function internalLink(path: string): VirtualElement {
+  const href = encodeURI(`./${path}.html`);
+  return a({ href }, formatTitleToPlainText(path));
 }
