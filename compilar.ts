@@ -96,7 +96,7 @@ async function compileFile(name: string) {
 async function compilePage(config: Config, sourceFileName: string) {
   const name = basename(sourceFileName, extname(sourceFileName));
   const isIndex = name === "index";
-  const title = isIndex ? "nulo.in" : formatNameToPlainText(name);
+  const title = isIndex ? "nulo.ar" : formatNameToPlainText(name);
   const fileConnections = connections.filter(({ linked }) => linked === name);
 
   const contentHtml = await compileContentHtml(config, sourceFileName);
@@ -181,7 +181,7 @@ function generateHead(titlee: string, outputName: string): Renderable[] {
     }),
     meta({
       property: "og:url",
-      content: `https://nulo.in/${outputName}.html`,
+      content: `https://nulo.ar/${outputName}.html`,
     }),
     meta({
       property: "og:image",

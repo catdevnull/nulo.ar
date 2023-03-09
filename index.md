@@ -1,4 +1,4 @@
-<h1 class="main-title">nulo❥in</h1>
+<h1 class="main-title">nulo❥ar</h1>
 
 > What's bizarre? I mean, we're all pretty bizarre.<br>Some of us are just better at hiding it, that's all.
 
