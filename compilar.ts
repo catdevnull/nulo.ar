@@ -23,6 +23,7 @@ import {
   VirtualElement,
   time,
   article,
+  main,
 } from "@nulo/html.js";
 
 const execFile = promisify(execFileCallback);
@@ -104,11 +105,11 @@ async function compilePage(config: Config, sourceFileName: string) {
   const html = render(
     ...generateHead(title, name),
     article(
-      { itemscope: "", itemtype: "https://schema.org/CreativeWork" },
+      { itemscope: "", itemtype: "https://schema.org/Article" },
       ...(isIndex
         ? []
         : generateHeader(name, sourceFileName, fileConnections.length > 0)),
-      raw(contentHtml),
+      main({ itemprop: "articleBody" }, raw(contentHtml)),
       ...generateConnectionsSection(fileConnections)
     )
   );
