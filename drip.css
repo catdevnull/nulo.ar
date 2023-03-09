@@ -10,17 +10,22 @@ body {
   color: #111;
   color: var(--foreground);
   font-family: sans-serif;
-  max-width: 45rem;
-  margin: 0;
+  max-width: 75rem;
+  margin: 0 auto;
   padding: 1rem;
 }
 
 article header {
   margin: 2rem 0;
   text-align: center;
+  max-width: 75rem;
 }
 article h1 {
   font-size: 32px;
+}
+article main {
+  max-width: 45rem;
+  margin: 0 auto;
 }
 
 h2 {

@@ -24,6 +24,7 @@ import {
   time,
   article,
   main,
+  img,
 } from "@nulo/html.js";
 
 const execFile = promisify(execFileCallback);
@@ -93,10 +94,13 @@ async function compilePage(config: Config, sourceFileName: string) {
   const title = isIndex ? "nulo.ar" : formatNameToPlainText(name);
   const fileConnections = connections.filter(({ linked }) => linked === name);
 
-  let contentHtml;
-  if (extname(sourceFileName) === ".md")
-    contentHtml = await compileMarkdownHtml(config, sourceFileName);
-  else if (extname(sourceFileName) === ".gen")
+  let contentHtml, image;
+  if (extname(sourceFileName) === ".md") {
+    ({ html: contentHtml, image } = await compileMarkdownHtml(
+      config,
+      sourceFileName
+    ));
+  } else if (extname(sourceFileName) === ".gen")
     contentHtml = await compileExecutableHtml(config, sourceFileName);
   else throw false;
 
@@ -106,7 +110,12 @@ async function compilePage(config: Config, sourceFileName: string) {
       { itemscope: "", itemtype: "https://schema.org/Article" },
       ...(isIndex
         ? []
-        : generateHeader(name, sourceFileName, fileConnections.length > 0)),
+        : generateHeader(
+            name,
+            sourceFileName,
+            fileConnections.length > 0,
+            image
+          )),
       main({ itemprop: "articleBody" }, raw(contentHtml)),
       ...generateConnectionsSection(fileConnections)
     )
@@ -120,17 +129,41 @@ async function compilePage(config: Config, sourceFileName: string) {
 // Get HTML
 // ==============================================
 
+type Image = {
+  src: string;
+  alt: string;
+};
+
 async function compileMarkdownHtml(
   config: Config,
   sourceFileName: string
-): Promise<string> {
-  const markdown = await readFile(
+): Promise<{ html: string; image?: Image }> {
+  let markdown = await readFile(
     join(config.sourcePath, sourceFileName),
     "utf-8"
   );
-  const markdownHtml = renderMarkdown(markdown);
+
+  let image;
+  if (markdown.startsWith("!!")) {
+    const node = reader.parse(markdown.slice(1, markdown.indexOf("\n")));
+    const imageNode = node.firstChild?.firstChild;
+    if (!imageNode || !imageNode.destination)
+      throw new Error("Intenté parsear un ^!! pero no era una imágen");
+    if (!imageNode.firstChild?.literal)
+      console.warn(`El ^!! de ${sourceFileName} no tiene alt`);
+
+    image = {
+      src: imageNode.destination,
+      alt: imageNode.firstChild?.literal || "",
+    };
+    markdown = markdown.slice(markdown.indexOf("\n"));
+  }
+
+  const parsed = reader.parse(markdown);
+  const markdownHtml = writer.render(parsed);
+
   const contentHtml = await hackilyTransformHtml(markdownHtml);
-  return contentHtml;
+  return { html: contentHtml, image };
 }
 
 async function compileExecutableHtml(
@@ -270,12 +303,14 @@ function formatNameToPlainText(name: string): string {
 function generateHeader(
   name: string,
   sourceCodePath: string,
-  linkConexiones = false
+  linkConexiones = false,
+  image?: Image
 ): Renderable[] {
   const parsedTitle = parseName(name);
   return [
     a({ href: "." }, "☚ Volver al inicio"),
     header(
+      ...(image ? [img({ ...image, itemprop: "image" })] : []),
       ...("title" in parsedTitle
         ? [
             h1(parsedTitle.title),
@@ -366,11 +401,6 @@ async function scanForConnections(sourcePath: string): Promise<Connection[]> {
 // ==============================================
 // Markdown utils
 // ==============================================
-
-function renderMarkdown(markdown: string) {
-  const parsed = reader.parse(markdown);
-  return writer.render(parsed);
-}
 
 async function hackilyTransformHtml(html: string): Promise<string> {
   html = html
