@@ -1,6 +1,6 @@
 <h1 class="main-title">nulo❥in</h1>
 
->What's bizarre? I mean, we're all pretty bizarre.<br>Some of us are just better at hiding it, that's all.
+> What's bizarre? I mean, we're all pretty bizarre.<br>Some of us are just better at hiding it, that's all.
 
 Este es mi hogar. ¿Estás perdidx? [[Lista de páginas]]
 
@@ -8,8 +8,9 @@ Este es mi hogar. ¿Estás perdidx? [[Lista de páginas]]
 
 Algunas cosas que escribí recientemente:
 
-- [[2023-02-05 Vergüenza algorítmica]]
--	[[Arreglando bugs ajenos]]
+-   [[2023-02-05 Vergüenza algorítmica]]
+-   [[2022-10-15 Analisis de la extracción de datos del teléfono de Fernando André Sabag Montiel]]
+-   [[Arreglando bugs ajenos]]
 
 A veces hago [[Proyectos]].
 
