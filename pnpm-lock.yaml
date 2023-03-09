@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@nulo/html.js': ^0.0.7
+  '@nulo/html.js': ^0.0.8
   '@types/commonmark': ^0.27.5
   '@types/node': ^18.11.18
   commonmark: ^0.30.0
@@ -9,7 +9,7 @@ specifiers:
   typescript: ^4.9.4
 
 dependencies:
-  '@nulo/html.js': 0.0.7
+  '@nulo/html.js': 0.0.8
   commonmark: 0.30.0
 
 devDependencies:
@@ -218,8 +218,8 @@ packages:
     dev: true
     optional: true
 
-  /@nulo/html.js/0.0.7:
-    resolution: {integrity: sha512-4xzxbrovLRlS36RrQx9AtEc6OQZSIOK1cWuda7AYQFv3aQSkGAIuEgJK3FvvtgHMIi9AOcQuD/T9c9VpK4NAkA==, tarball: https://gitea.nulo.in/api/packages/Nulo/npm/%40nulo%2Fhtml.js/-/0.0.7/html.js-0.0.7.tgz}
+  /@nulo/html.js/0.0.8:
+    resolution: {integrity: sha512-fi2VrrdTx2ivWPyUuZpnuBxelGoxWzbvyo/iki222AfYlPa9/xMwAXz+9q8vdtHOP5/3E/z30YDp+Sq5TkRZhg==, tarball: https://gitea.nulo.in/api/packages/Nulo/npm/%40nulo%2Fhtml.js/-/0.0.8/html.js-0.0.8.tgz}
     dev: false
 
   /@types/commonmark/0.27.5:

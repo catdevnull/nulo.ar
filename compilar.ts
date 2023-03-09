@@ -21,6 +21,8 @@ import {
   raw,
   p,
   VirtualElement,
+  time,
+  article,
 } from "@nulo/html.js";
 
 const execFile = promisify(execFileCallback);
@@ -94,18 +96,21 @@ async function compileFile(name: string) {
 async function compilePage(config: Config, sourceFileName: string) {
   const name = basename(sourceFileName, extname(sourceFileName));
   const isIndex = name === "index";
-  const title = isIndex ? "nulo.in" : formatTitleToPlainText(name);
+  const title = isIndex ? "nulo.in" : formatNameToPlainText(name);
   const fileConnections = connections.filter(({ linked }) => linked === name);
 
   const contentHtml = await compileContentHtml(config, sourceFileName);
 
   const html = render(
     ...generateHead(title, name),
-    ...(isIndex
-      ? []
-      : generateHeader(name, sourceFileName, fileConnections.length > 0)),
-    raw(contentHtml),
-    ...generateConnectionsSection(fileConnections)
+    article(
+      { itemscope: "", itemtype: "https://schema.org/CreativeWork" },
+      ...(isIndex
+        ? []
+        : generateHeader(name, sourceFileName, fileConnections.length > 0)),
+      raw(contentHtml),
+      ...generateConnectionsSection(fileConnections)
+    )
   );
 
   const outputPath = join(config.buildPath, name + ".html");
@@ -194,9 +199,13 @@ function generateHead(titlee: string, outputName: string): Renderable[] {
   ];
 }
 
-function formatDate(dateish: Dateish): string {
+function formatDate(dateish: Dateish, upper: boolean = false): string {
   const date = new Date(dateish.year, dateish.month - 1, dateish.day);
-  return dateFormatter.format(date);
+  const formatted = dateFormatter.format(date);
+  if (upper) {
+    // no le digan a la policía del unicode!
+    return formatted[0].toUpperCase() + formatted.slice(1);
+  } else return formatted;
 }
 
 interface Dateish {
@@ -204,12 +213,21 @@ interface Dateish {
   month: number;
   day: number;
 }
-interface TitleMetadata {
-  // title puede tener length == 0 y por lo tanto ser falseish
-  title: string;
-  date?: Dateish;
+function dateishToString({ year, month, day }: Dateish): string {
+  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(
+    2,
+    "0"
+  )}`;
 }
-function parseTitle(name: string): TitleMetadata {
+
+type TitleMetadata =
+  | {
+      // title puede tener length == 0 y por lo tanto ser falseish
+      title: string;
+      date?: Dateish;
+    }
+  | { date: Dateish };
+function parseName(name: string): TitleMetadata {
   const titleWithDate =
     /^((?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2}))? ?(?<title>.*)$/;
 
@@ -224,35 +242,38 @@ function parseTitle(name: string): TitleMetadata {
       day: parseInt(found.groups.day),
     }) ||
     undefined;
+  // no definir title si es length == 0
+  if (!title && date) return { date };
   return { title, date };
 }
 
-// formatTitle formattea un title para ser mostrado.
-// si existe una date pero no un titulo (por ejemplo, un archivo tipo `2023-03-09.md`) usa la fecha como título.
-// si si existe un titulo, la pone como date para ponerse en un subtitulo o entre paréntesis
-function formatTitle(title: TitleMetadata): { title: string; date?: string } {
-  if (title.title) {
-    let date: string | undefined;
-    if (title.date) date = formatDate(title.date);
-    return { title: title.title, date };
-  } else {
-    if (title.date) {
-      const date = formatDate(title.date);
-      // no le digan a la policía del unicode!
-      return { title: date[0].toUpperCase() + date.slice(1) };
-    } else {
-      console.debug(title);
-      throw new Error("Imposible: TitleMetadata totalmente vacío");
-    }
-  }
+function dateishToElement(
+  dateish: Dateish,
+  { itemprop, upper }: { itemprop?: string; upper?: boolean } = {}
+): VirtualElement {
+  return time(
+    { datetime: dateishToString(dateish), ...(itemprop ? { itemprop } : {}) },
+    formatDate(dateish, upper)
+  );
 }
 
-function formatTitleToPlainText(title: string): string {
-  const formattedTitle = formatTitle(parseTitle(title));
-  return (
-    formattedTitle.title +
-    (formattedTitle.date ? ` (${formattedTitle.date})` : "")
-  );
+function formatNameToInline(name: string): Renderable[] {
+  const parsed = parseName(name);
+  if ("title" in parsed) {
+    const { title, date } = parsed;
+    return [title, ...(date ? [` (`, dateishToElement(date), `)`] : [])];
+  } else {
+    return [dateishToElement(parsed.date, { upper: true })];
+  }
+}
+function formatNameToPlainText(name: string): string {
+  const parsed = parseName(name);
+  if ("title" in parsed) {
+    const { title, date } = parsed;
+    return title + (date ? ` (${formatDate(date)})` : "");
+  } else {
+    return formatDate(parsed.date, true);
+  }
 }
 
 function generateHeader(
@@ -260,12 +281,30 @@ function generateHeader(
   sourceCodePath: string,
   linkConexiones = false
 ): Renderable[] {
-  const formattedTitle = formatTitle(parseTitle(name));
+  const parsedTitle = parseName(name);
   return [
     a({ href: "." }, "☚ Volver al inicio"),
     header(
-      h1(formattedTitle.title),
-      ...(formattedTitle.date ? [p(formattedTitle.date)] : []),
+      ...("title" in parsedTitle
+        ? [
+            h1(parsedTitle.title),
+            ...(parsedTitle.date
+              ? [
+                  dateishToElement(parsedTitle.date, {
+                    itemprop: "datePublished",
+                  }),
+                  " / ",
+                ]
+              : []),
+          ]
+        : [
+            h1(
+              dateishToElement(parsedTitle.date, {
+                itemprop: "datePublished",
+                upper: true,
+              })
+            ),
+          ]),
       a(
         {
           href: `https://gitea.nulo.in/Nulo/sitio/commits/branch/ANTIFASCISTA/${sourceCodePath}`,
@@ -360,5 +399,5 @@ async function hackilyTransformHtml(html: string): Promise<string> {
 
 function internalLink(path: string): VirtualElement {
   const href = encodeURI(`./${path}.html`);
-  return a({ href }, formatTitleToPlainText(path));
+  return a({ href }, ...formatNameToInline(path));
 }

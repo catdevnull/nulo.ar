@@ -15,9 +15,12 @@ body {
   padding: 1rem;
 }
 
-header {
+article header {
   margin: 2rem 0;
   text-align: center;
+}
+article h1 {
+  font-size: 32px;
 }
 
 h2 {
