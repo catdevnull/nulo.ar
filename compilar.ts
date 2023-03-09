@@ -40,13 +40,6 @@ const dateFormatter = new Intl.DateTimeFormat("es-AR", {
 
 const wikilinkExp = /\[\[(.+?)\]\]/giu;
 
-const compilers: {
-  [key: string]: (config: Config, sourceFileName: string) => Promise<string>;
-} = {
-  ".md": compileMarkdownHtml,
-  ".gen": compileExecutableHtml,
-};
-
 interface Config {
   sourcePath: string;
   buildPath: string;
@@ -100,7 +93,12 @@ async function compilePage(config: Config, sourceFileName: string) {
   const title = isIndex ? "nulo.ar" : formatNameToPlainText(name);
   const fileConnections = connections.filter(({ linked }) => linked === name);
 
-  const contentHtml = await compileContentHtml(config, sourceFileName);
+  let contentHtml;
+  if (extname(sourceFileName) === ".md")
+    contentHtml = await compileMarkdownHtml(config, sourceFileName);
+  else if (extname(sourceFileName) === ".gen")
+    contentHtml = await compileExecutableHtml(config, sourceFileName);
+  else throw false;
 
   const html = render(
     ...generateHead(title, name),
@@ -121,14 +119,6 @@ async function compilePage(config: Config, sourceFileName: string) {
 // ==============================================
 // Get HTML
 // ==============================================
-
-// TODO: memoize
-function compileContentHtml(
-  config: Config,
-  sourceFileName: string
-): Promise<string> {
-  return compilers[extname(sourceFileName)](config, sourceFileName);
-}
 
 async function compileMarkdownHtml(
   config: Config,
@@ -389,7 +379,8 @@ async function hackilyTransformHtml(html: string): Promise<string> {
   for (const [match, archivo] of html.matchAll(
     /<nulo-sitio-reemplazar-con archivo="(.+?)" \/>/g
   )) {
-    html = html.replace(match, await compileContentHtml(config, archivo));
+    if (extname(archivo) !== ".gen") throw false;
+    html = html.replace(match, await compileExecutableHtml(config, archivo));
   }
   return html;
 }
