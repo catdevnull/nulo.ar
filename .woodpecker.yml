@@ -4,7 +4,7 @@ pipeline:
     commands:
       - echo "http://host.containers.internal/alpine/alpine/v3.17/main" > /etc/apk/repositories
       - echo "http://host.containers.internal/alpine/alpine/v3.17/community" >> /etc/apk/repositories
-      - apk add nodejs npm lua5.1
+      - apk add nodejs icu-data-full npm lua5.1
       - npm config set -g registry http://host.containers.internal/npm
       - npm install -g pnpm
       # https://gitea.nulo.in/Nulo/openring/releases/tag/1.0.1-nulo-sitio-2
