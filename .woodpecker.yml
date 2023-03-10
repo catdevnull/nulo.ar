@@ -2,6 +2,7 @@ pipeline:
   build:
     image: docker.io/alpine:3.17
     commands:
+      - echo "172.17.0.1 host.containers.internal" >> /etc/hosts
       - echo "http://host.containers.internal/alpine/alpine/v3.17/main" > /etc/apk/repositories
       - echo "http://host.containers.internal/alpine/alpine/v3.17/community" >> /etc/apk/repositories
       - apk add nodejs icu-data-full npm lua5.1
