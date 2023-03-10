@@ -1,11 +1,14 @@
 pipeline:
   build-image:
-    image: r.j3ss.co/img:latest
-    commands:
-      - echo $REGISTRY_SECRET | img login --username Nulo --password-stdin gitea.nulo.in
-      - img build -t gitea.nulo.in/nulo/sitio-build:latest tooling/Containerfile
-      - img push gitea.nulo.in/nulo/sitio-build:latest
-    secrets: [REGISTRY_SECRET]
+    image: docker.io/woodpeckerci/plugin-docker-buildx
+    secrets: [docker_username, docker_password]
+    # commands:
+    #   - echo $REGISTRY_SECRET | img login --username Nulo --password-stdin gitea.nulo.in
+    #   - img build -t gitea.nulo.in/nulo/sitio-build:latest tooling/Containerfile
+    #   - img push gitea.nulo.in/nulo/sitio-build:latest
+    settings:
+      repo: gitea.nulo.in/nulo/sitio-build
+      dockerfile: tooling/Containerfile
     when:
       path:
         include: ["tooling/*", ".woodpecker.yml"]
