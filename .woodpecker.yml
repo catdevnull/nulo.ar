@@ -7,6 +7,8 @@ pipeline:
     #   - img build -t gitea.nulo.in/nulo/sitio-build:latest tooling/Containerfile
     #   - img push gitea.nulo.in/nulo/sitio-build:latest
     settings:
+      registry: https://gitea.nulo.in
+      username: Nulo
       repo: gitea.nulo.in/nulo/sitio-build
       dockerfile: tooling/Containerfile
     when:
