@@ -5,7 +5,7 @@ runprint() {
   "$@"
 }
 
-runprint apk add --quiet nodejs npm git icu-data-full lua5.1
+runprint apk add --quiet nodejs npm git git-lfs icu-data-full lua5.1
 
 runprint npm install --silent -g pnpm
 export PATH="$PATH:/usr/local/bin"
