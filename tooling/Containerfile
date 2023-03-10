@@ -1,0 +1,9 @@
+FROM docker.io/alpine:3.17
+
+RUN apk add --no-cache nodejs icu-data-all npm lua5.1
+
+# https://gitea.nulo.in/Nulo/openring/releases/tag/1.0.1-nulo-sitio-2
+RUN wget -nv -O /bin/openring https://gitea.nulo.in/attachments/3ddb2799-3af7-4239-a7fd-9d31670aefb8 && \
+    chmod +x /bin/openring
+
+RUN npm install --global pnpm
