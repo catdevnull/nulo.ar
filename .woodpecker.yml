@@ -2,27 +2,34 @@ pipeline:
   build:
     image: docker.io/alpine:3.17
     commands:
-      - echo "172.17.0.1 host.containers.internal" >> /etc/hosts
-      - echo "http://host.containers.internal/alpine/alpine/v3.17/main" > /etc/apk/repositories
-      - echo "http://host.containers.internal/alpine/alpine/v3.17/community" >> /etc/apk/repositories
+      - |
+        echo "172.17.0.1 host.containers.internal" >> /etc/hosts
+        echo "http://host.containers.internal/alpine/alpine/v3.17/main
+        http://host.containers.internal/alpine/alpine/v3.17/community" > /etc/apk/repositories
+
       - apk add nodejs icu-data-full npm lua5.1
-      - npm config set -g registry http://host.containers.internal/npm
-      - npm install -g pnpm
+
+      - |
+        npm config set -g registry http://host.containers.internal/npm
+        npm install -g pnpm
+
       # https://gitea.nulo.in/Nulo/openring/releases/tag/1.0.1-nulo-sitio-2
-      - wget -nv -O /bin/openring https://gitea.nulo.in/attachments/3ddb2799-3af7-4239-a7fd-9d31670aefb8
-      - chmod +x /bin/openring
+      - |
+        wget -nv -O /bin/openring https://gitea.nulo.in/attachments/3ddb2799-3af7-4239-a7fd-9d31670aefb8
+        chmod +x /bin/openring
 
       - pnpm install
       - ./tool refresh_feeds
       - ./tool check
       - ./tool build
 
-      - apk add rsync openssh-client-default
+      - |
+        apk add rsync openssh-client-default
 
-      - eval $(ssh-agent -s)
-      - echo "$${SSH_KEY}" | tr -d '\r' | ssh-add -
-      - mkdir -p ~/.ssh
-      - echo "[nulo.in]:420,[186.136.121.7]:420 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGPkgRVWYcVcgjI0xAjDgZQsYuXU9edcya8zna01ibyUMlfKHIMD9yOoq0R+fQPTCqwiol/2tKMPJ2hlKshc+H8=" > ~/.ssh/known_hosts
+        eval $(ssh-agent -s)
+        echo "$${SSH_KEY}" | tr -d '\r' | ssh-add -
+        mkdir -p ~/.ssh
+        echo "[nulo.in]:420,[186.136.121.7]:420 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBGPkgRVWYcVcgjI0xAjDgZQsYuXU9edcya8zna01ibyUMlfKHIMD9yOoq0R+fQPTCqwiol/2tKMPJ2hlKshc+H8=" > ~/.ssh/known_hosts
 
       - ./upload
     when:
