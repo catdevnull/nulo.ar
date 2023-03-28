@@ -17,6 +17,7 @@ pipeline:
 
   build:
     image: gitea.nulo.in/nulo/sitio-build:latest
+    pull: true
     commands:
       - pnpm install
       - ./tool refresh_feeds
