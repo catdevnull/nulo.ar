@@ -2,12 +2,11 @@
 
 > What's bizarre? I mean, we're all pretty bizarre.<br>Some of us are just better at hiding it, that's all.
 
-Este es mi hogar. ¿Estás perdidx? [[Lista de páginas]]
+¡Buenas! Este es mi mundo, bienvenidx. ¿Que, [[Quién soy]]? Soy Nulo :)
 
-¿[[Quién soy]]?
+- Perdete en la [[Lista de páginas]]
 
 Algunas cosas que escribí:
-
 -   [[2023-02-05 Vergüenza algorítmica]]
 -   [[2022-10-15 Analisis de la extracción de datos del teléfono de Fernando André Sabag Montiel]]
 -   [[Arreglando bugs ajenos]]
