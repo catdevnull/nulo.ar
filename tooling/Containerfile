@@ -1,6 +1,6 @@
 FROM docker.io/alpine:3.17
 
-RUN apk add --no-cache nodejs npm lua5.1 \
+RUN apk add --no-cache nodejs npm lua5.1 icu-data-full \
     rsync openssh-client-default
 
 # https://gitea.nulo.in/Nulo/openring/releases/tag/1.0.1-nulo-sitio-2
