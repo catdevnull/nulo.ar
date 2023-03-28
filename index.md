@@ -6,13 +6,21 @@ Este es mi hogar. ¿Estás perdidx? [[Lista de páginas]]
 
 ¿[[Quién soy]]?
 
-Algunas cosas que escribí recientemente:
+Algunas cosas que escribí:
 
 -   [[2023-02-05 Vergüenza algorítmica]]
 -   [[2022-10-15 Analisis de la extracción de datos del teléfono de Fernando André Sabag Montiel]]
 -   [[Arreglando bugs ajenos]]
 
-A veces hago [[Proyectos]].
+Algunas cosas que hice:
+-   [Este sitio](https://gitea.nulo.in/Nulo/sitio)
+-   Juguetes:
+    -   [Cuarentena](https://cuarentena.nulo.in)
+    -   [[txt2txt]]
+-   [Manejador de Tareas](https://tareas.nulo.in)
+-   Laburos:
+    -   [Salvá la costanera](https://salvalacostanera.com.ar), [código](https://gitea.nulo.in/Nulo/salva-la-costanera)
+- Y otros [[Proyectos]].
 
 ## Mis amigxs ([[Mi webring]])
 
