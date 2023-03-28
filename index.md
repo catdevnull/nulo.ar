@@ -21,6 +21,9 @@ Algunas cosas que hice:
     -   [Salvá la costanera](https://salvalacostanera.com.ar), [código](https://gitea.nulo.in/Nulo/salva-la-costanera)
 - Y otros [[Proyectos]].
 
+Algunas cosas de las que soy parte:
+- [Sutty](https://sutty.coop.ar/)
+
 ## Mis amigxs ([[Mi webring]])
 
 <nulo-sitio-reemplazar-con archivo="Mi webring.gen" />
