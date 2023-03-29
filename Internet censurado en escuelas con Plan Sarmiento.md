@@ -1,5 +1,6 @@
 -   `pad.riseup.net` y `share.riseup.net` (no está censurado `riseup.net`)
 -   [[YouTube]] está en [[YouTube Restricted Mode]] que censura "contenido potencialmente maduro" (básicamente la mitad del contenido)
+-   `netflix.com`
 -   [Notion](https://notion.so)
 -   Sitios de "file sharing"
     -   `mediafire.com`
