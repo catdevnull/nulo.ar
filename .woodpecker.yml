@@ -2,10 +2,6 @@ pipeline:
   build-image:
     image: docker.io/woodpeckerci/plugin-docker-buildx
     secrets: [docker_username, docker_password]
-    # commands:
-    #   - echo $REGISTRY_SECRET | img login --username Nulo --password-stdin gitea.nulo.in
-    #   - img build -t gitea.nulo.in/nulo/sitio-build:latest tooling/Containerfile
-    #   - img push gitea.nulo.in/nulo/sitio-build:latest
     settings:
       registry: https://gitea.nulo.in
       username: Nulo
