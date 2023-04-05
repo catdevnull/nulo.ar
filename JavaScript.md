@@ -1,1 +1,2 @@
 -  [Just.js](https://github.com/just-js/just)
+- [TypeScript JSDoc](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
