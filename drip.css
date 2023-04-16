@@ -81,30 +81,6 @@ a {
   content: "↜ ";
 }
 
-.webring .articles {
-  display: flex;
-  flex-wrap: wrap;
-}
-.webring .title {
-  margin: 0;
-}
-.webring .article {
-  flex: 1 1 0;
-  display: flex;
-  flex-direction: column;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  min-width: 10rem;
-}
-.webring .summary {
-  font-size: 0.8rem;
-  flex: 1 1 0;
-}
-.webring .attribution {
-  text-align: right;
-  font-size: 0.8rem;
-}
-
 .main-title {
   color: red;
   margin-top: 0;

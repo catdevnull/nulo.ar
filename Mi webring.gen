@@ -1,21 +1,20 @@
-#!/usr/bin/env lua5.1
+#!/usr/bin/env lua
 
 local template = [[
 <!-- License-Id: CC0-1.0 -->
 <section class="webring">
   <section class="articles">
+    <ul>
     {{range .Articles}}
-    <div class="article">
-      <h4 class="title">
-        <a href="{{.Link}}" target="_blank" rel="noopener">{{.Title}}</a>
-      </h4>
-      <p class="summary">{{.Summary}}</p>
+    <li class="article">
+      <a href="{{.Link}}" target="_blank" rel="noopener">{{.Title}}</a>
       <small class="source">
         via <a href="{{.SourceLink}}">{{.SourceTitle}}</a>
       </small>
-      <small class="date">{{.Date | datef "January 2, 2006"}}</small>
-    </div>
+      <small class="date">({{.Date | datef "January 2, 2006"}})</small>
+    </li>
     {{end}}
+    </ul>
   </section>
   <p class="attribution">
     Generado usando
