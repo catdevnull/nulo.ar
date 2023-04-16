@@ -8,6 +8,8 @@ import { getElementsByTagName } from "domutils";
 const feeds = {
   fauno: "https://fauno.endefensadelsl.org/feed.xml",
   copiona: "https://copiona.com/feed.xml",
+  j3s: "https://j3s.sh/feed.atom",
+  icyphox: "https://icyphox.sh/blog/feed.xml",
 };
 
 export default async () => {
@@ -56,10 +58,19 @@ function parseFeed(rawFeed) {
   const item = feed?.items[0];
 
   const dom = parseDocument(rawFeed);
-  const feedDom = getElementsByTagName("feed", dom.childNodes, false)[0];
+  const feedDom = getElementsByTagName(
+    (n) => n === "rss" || n === "feed" || n === "rdf:RDF",
+    dom.childNodes,
+    false
+  )[0];
   const linksDom = getElementsByTagName("link", feedDom.childNodes, false);
-  const linkDom = linksDom.find((d) => d.attribs.rel === "alternate");
-
+  const linkDom = linksDom.find(
+    (d) =>
+      d.attribs.rel === "alternate" ||
+      // https://datatracker.ietf.org/doc/html/rfc4287#section-4.2.7.2
+      // >If the "rel" attribute is not present, the link element MUST be interpreted as if the link relation type is "alternate".
+      !("rel" in d.attribs)
+  );
   if (
     !feed ||
     !feed.link ||

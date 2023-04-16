@@ -27,7 +27,7 @@ Algunas cosas de las que soy parte:
 
 -   [Sutty](https://sutty.coop.ar/)
 
-## Mis amigxs ([[Mi webring.gen]])
+## Feed de personas que me parecen copadas ([[Mi webring.gen]])
 
 <nulo-sitio-reemplazar-con archivo="Mi webring.gen.js" />
 

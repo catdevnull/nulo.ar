@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="es" /><updated>2023-02-06T18:15:42-03:00</updated><id>/feed.xml</id><title type="html">copiona.com | un bunker biteario de @librenauta</title><entry><title type="html">Migrar bots a mastodon</title><link href="/migrar-bots-a-mastodon/" rel="alternate" type="text/html" title="Migrar bots a mastodon" /><published>2023-02-06T00:00:00-03:00</published><updated>2023-02-06T17:20:21-03:00</updated><id>/migrar-bots-a-mastodon</id><content type="html" xml:base="/migrar-bots-a-mastodon/"><![CDATA[<h1>Migrar bots de tw a mastodon</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="es" /><updated>2023-04-10T08:56:41-03:00</updated><id>/feed.xml</id><title type="html">copiona.com | un bunker biteario de @librenauta</title><entry><title type="html">Risografía - internet es una poesía sin terminar</title><link href="/internet-es-una-poes%C3%ADa-sin-terminar/" rel="alternate" type="text/html" title="Risografía - internet es una poesía sin terminar" /><published>2023-04-08T00:00:00-03:00</published><updated>2023-01-23T20:20:21-03:00</updated><id>/internet-es-una-poes%C3%ADa-sin-terminar</id><content type="html" xml:base="/internet-es-una-poes%C3%ADa-sin-terminar/"><![CDATA[<p>Viajé a barcelona y unos días antes pude contactarme con <a href="https://dotheprint.es/">dotheprint</a> un pequeño estudio de impresión de risografía para hacer algunas copias locales. La verdad no sabía muy bien como sería el resultado de la impresión asi que me vi unos tutoriales de como generar cada capa en youtube color por color y mande a imprimir un fanzine que diseñe en viaje llamado: <em>internet es una poesía sin terminar</em></p>
+<blockquote>
+<p>Un poco engloba cuál es la internet que quiero y por qué :F</p>
+</blockquote>
+<p><img src="public/6af6ba20-de51-4247-a233-2ac562552cf4/internet-es-una-poes%C3%ADa-sin-terminar.png" alt="internet-es-una-poesía-sin-terminar" /></p>
+<hr />
+<p><a href="public/6af6ba20-de51-4247-a233-2ac562552cf4/riso_colores_internet-es-una-poes%C3%ADa-in-terminar.pdf">acá</a> se puede puede bajar el pdf para leerlo online</p>
+<p><a href="public/6af6ba20-de51-4247-a233-2ac562552cf4/internet-es-una-poes%C3%ADa-sin-terminar-riso-layer.zip">acá</a> se pueden bajar un .zip con los archivos separados por color para imprimir en risografía.</p>
+<p>Acá una muestra de las capas, el diseño esta hecho en inkscape en 2 colores + opacidades y luego procesado en gimp separando cada color en una máscara y exportandolo :D</p>
+<p>Es importante saber que la máquina de risografía sólo lee valores en escala de grises. por eso las placas siguientes están en negro, el color lo aplica cuando imprime cada tambor. ∩｀-´)⊃━( . °°. )</p>]]></content><author><name>Librenauta</name></author><category term="proyectos" /><category term="fanzine" /><category term="risograph" /><category term="barcelona" /><summary type="html"><![CDATA[Fanzine de internet es una poesía sin terminar impreso con la tecnica de risografía]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/6af6ba20-de51-4247-a233-2ac562552cf4/cover.jpg" /><media:content medium="image" url="/public/6af6ba20-de51-4247-a233-2ac562552cf4/cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Log 020</title><link href="/log-20/" rel="alternate" type="text/html" title="Log 020" /><published>2023-04-08T00:00:00-03:00</published><updated>2023-04-08T17:30:05-03:00</updated><id>/log-20</id><content type="html" xml:base="/log-20/"><![CDATA[<ul>
+<li>mirar el movimiento, se escapa de nuestros músculos</li>
+</ul>]]></content><author><name>librenauta</name></author><category term="log" /><category term="log" /><summary type="html"><![CDATA[mirar el movimiento, se escapa de nuestros músculos]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/log/medusa.jpg" /><media:content medium="image" url="/public/log/medusa.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">EU-librenauta</title><link href="/EU-librenauta/" rel="alternate" type="text/html" title="EU-librenauta" /><published>2023-03-15T00:00:00-03:00</published><updated>2023-01-20T20:20:21-03:00</updated><id>/EU-librenauta</id><content type="html" xml:base="/EU-librenauta/"><![CDATA[<h1>Roadtrip</h1>
+<blockquote>
+<p>tiempo: [16.03.2023] al [30.04.2023]</p>
+</blockquote>
+<ul>
+<li>
+<p>15.03.2023 Buenos Aires &gt; Madrid ~ aeropuerto</p>
+</li>
+<li>
+<p>16.03.2023 Madrid &gt; Valencia en tren renfe. El primer lugar que voy a visitar es Carcaixent.</p>
+</li>
+<li>
+<p>22.03.2023 Valencia &gt; Barcelona en tren renfe. me cruzo con sofie &amp; milton en su casa. y después un piso en el centro de bcn</p>
+</li>
+<li>
+<p>03.04.2023 Barcelona &gt; Berlin en avión ~ tren a Berlin Friedrichstraße station para llegar caminando al hostel</p>
+</li>
+<li>
+<p>10.04.2023 Berlin &gt; Rotterdam ~ tren hasta la rotterdam central station</p>
+</li>
+<li>
+<p>16.04.2023 Rotterdam &gt; Bruselas ~ tren de rotterdam central station a Brusells-Mid</p>
+</li>
+<li>
+<p>16.04.2023 Bruselas &gt; Londres ~  salgo para londres en el Eurostar, llego a St Pancras International y luego hostel</p>
+</li>
+<li>
+<p>22.04.2023 Londres &gt; Valencia ~ avión</p>
+</li>
+<li>
+<p>29.04.2023 Valencia &gt; Madrid ~ tren para la estación</p>
+</li>
+<li>
+<p>29.04.2023 Madrid &gt; Argentina</p>
+</li>
+</ul>
+<blockquote>
+<p>EZE&gt;MAD&gt;VLC&gt;BCN&gt;BER&gt;BRU&gt;STN&gt;VLC&gt;MAD&gt;EZE</p>
+</blockquote>]]></content><author><name>Librenauta</name></author><category term="proyectos" /><category term="viaje" /><category term="eu" /><summary type="html"><![CDATA[roadtrip de librenauta viajando al viejo mundo]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/a2088214-d68d-443e-a260-621bfe646c6d/eze.png" /><media:content medium="image" url="/public/a2088214-d68d-443e-a260-621bfe646c6d/eze.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Quemar un libro 8 [ Un jardín by Cian ]</title><link href="/quemar-un-libro-un-jardin/" rel="alternate" type="text/html" title="Quemar un libro 8 [ Un jardín by Cian ]" /><published>2023-03-14T00:00:00-03:00</published><updated>2023-03-15T18:25:21-03:00</updated><id>/quemar-un-libro-un-jardin</id><content type="html" xml:base="/quemar-un-libro-un-jardin/"><![CDATA[<h1>Un Jardín by <a href="https://instagram.com/soycian">@soycian</a></h1>
+<p>Es un pequeño pero muy meticuloso fanzine: permite jugar, mirar a través de las ventanitas y conocer a cian desde el ángulo perfecto: la sensibilidad.</p>
+<p>aquí el <a href="public/406c3ff2-dacf-4e5e-9d97-5dfcd03e4f41/un-jardin.pdf">scann para descarga &lt;3</a> para mirar de cerquita, imprimir, copiar y compartir.</p>]]></content><author><name>librenauta</name></author><category term="scann" /><category term="papercut" /><category term="soycian" /><category term="la plata" /><category term="primavera" /><summary type="html"><![CDATA[Un jardin, libro de poesia visual y escrita de @soycian]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/406c3ff2-dacf-4e5e-9d97-5dfcd03e4f41/cover.jpg" /><media:content medium="image" url="/public/406c3ff2-dacf-4e5e-9d97-5dfcd03e4f41/cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Migrar bots a mastodon</title><link href="/migrar-bots-a-mastodon/" rel="alternate" type="text/html" title="Migrar bots a mastodon" /><published>2023-02-06T00:00:00-03:00</published><updated>2023-02-06T17:20:21-03:00</updated><id>/migrar-bots-a-mastodon</id><content type="html" xml:base="/migrar-bots-a-mastodon/"><![CDATA[<h1>Migrar bots de tw a mastodon</h1>
 <p>El 7.02.2023 la API<sup class="footnote-ref"><a href="feed.xml#fn1" id="fnref1">1</a></sup> de tw se <a href="https://twitter.com/TwitterDev/status/1621026986784337922">cierrá</a>, musk (el dueño de tw) cerrará el acceso de forma gratuita, esto constituye la muerte muchísimos bots que mejoraban mi experiencia en esa plataforma. definitivamente era una de las pocas cosas que me acercaban a tw. todos los bots creados con <a href="https://cheapbotsdonequick.com/">cheapbotsdonequick.com/</a> morirán a partir de mañana. tanto como los crossposters como <a href="https://crossposter.masto.donte.com.br/">crossposter.masto.donte.com.br/</a> y las <a href="https://smallworld.kiwi/">paginas</a> para encontrar gente cerca en tw.</p>
 <p>Por suerte para cada decision individual de una empresa hay una propuesta colectiva</p>
 <ul>
@@ -31,37 +82,4 @@
 </ul>
 <p><img src="public/a080cb37-6ef6-42a2-90bb-7ebb637a5d29/una-flor-en-2d-1.jpg" alt="flores" />
 <img src="public/a080cb37-6ef6-42a2-90bb-7ebb637a5d29/una-flor-en-2d-2.jpg" alt="flores" />
-<img src="public/a080cb37-6ef6-42a2-90bb-7ebb637a5d29/una-flor-en-2d-3.jpg" alt="flores" /></p>]]></content><author><name>Librenauta</name></author><category term="proyectos" /><category term="una flor" /><category term="recolección" /><category term="flora" /><summary type="html"><![CDATA[como una figurita de flor]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/a080cb37-6ef6-42a2-90bb-7ebb637a5d29/cover.jpg" /><media:content medium="image" url="/public/a080cb37-6ef6-42a2-90bb-7ebb637a5d29/cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Restos</title><link href="/restos/" rel="alternate" type="text/html" title="Restos" /><published>2023-01-23T00:00:00-03:00</published><updated>2023-01-23T20:20:21-03:00</updated><id>/restos</id><content type="html" xml:base="/restos/"><![CDATA[<p>Sintetizar el suelo con una paleta de colores de restos.</p>]]></content><author><name>Librenauta</name></author><category term="proyectos" /><category term="naturaleza" /><category term="piedras" /><category term="restos" /><summary type="html"><![CDATA[restos del mundo]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/ccee077e-7dca-46a3-bd0c-0dd8f455b2dd/cover.jpg" /><media:content medium="image" url="/public/ccee077e-7dca-46a3-bd0c-0dd8f455b2dd/cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">veo veo</title><link href="/veo-veo/" rel="alternate" type="text/html" title="veo veo" /><published>2023-01-18T00:00:00-03:00</published><updated>2023-01-18T17:20:21-03:00</updated><id>/veo-veo</id><content type="html" xml:base="/veo-veo/"><![CDATA[<h1>el amor :D</h1>
-<p>El amor puede ser de a varies</p>
-<p><img src="public/ef5ad0b1-eeb4-4afe-96b2-1ddb88b9c541/juntxs-1.jpg" alt="el-amor" />
-<img src="public/ef5ad0b1-eeb4-4afe-96b2-1ddb88b9c541/juntxs-2.jpg" alt="el-amor" /></p>
-<hr />
-<p>Descripción gráfica de cuando me gusta una chica
-<img src="public/ef5ad0b1-eeb4-4afe-96b2-1ddb88b9c541/el-amor-1.jpg" alt="el-amor" /></p>
-<p>Descripción gráfica de cuando me gustan dos chicas
-<img src="public/ef5ad0b1-eeb4-4afe-96b2-1ddb88b9c541/el-amor-2.jpg" alt="el-amor" /></p>
-<p>Descripción gráfica de cuando
-<img src="public/ef5ad0b1-eeb4-4afe-96b2-1ddb88b9c541/el-amor-3.jpg" alt="el-amor" /></p>
-<p>Descripción gráfica de cuando te gusta una chica pero no te da bola</p>
-<p><img src="public/ef5ad0b1-eeb4-4afe-96b2-1ddb88b9c541/el-amor-4.jpg" alt="el-amor" /></p>
-<hr />
-<p>el amor se derrama, me encantó esto en plan: se mueve, cambia, transforma y es imparable</p>
-<hr />
-<p>el amor es:</p>
-<ul>
-<li>risa cómplice</li>
-<li>regalar  un fanzine</li>
-<li>esperar un tren</li>
-<li>actuar con normalidad</li>
-<li>saber que un regalo salió bien</li>
-<li>dejar de sostener la mirada</li>
-<li>leer poesía no academica</li>
-<li>enviar coordenadas precisas</li>
-<li>contar los dedos de tu mano</li>
-<li>creer que estás enamoradx.</li>
-</ul>
-<hr />]]></content><author><name>Librenauta</name></author><category term="proyectos" /><category term="love" /><category term="el amor" /><summary type="html"><![CDATA[a veces el amor te]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/ef5ad0b1-eeb4-4afe-96b2-1ddb88b9c541/cover.jpg" /><media:content medium="image" url="/public/ef5ad0b1-eeb4-4afe-96b2-1ddb88b9c541/cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Un acto</title><link href="/nube-10/" rel="alternate" type="text/html" title="Un acto" /><published>2023-01-18T00:00:00-03:00</published><updated>2023-01-18T00:00:00-03:00</updated><id>/nube-10</id><content type="html" xml:base="/nube-10/"><![CDATA[<p>La inteligencia no es sólo ser útil para el capitalismo</p>]]></content><author><name>Librenauta</name></author><category term="nube" /><category term="blog" /><summary type="html"><![CDATA[La inteligencia no es sólo ser útil para el capitalismo]]></summary></entry><entry><title type="html">Quemar un libro 6 [ Trizas Trazos Trazas ]</title><link href="/quemar-un-libro-6-trizas-trazos-trazas/" rel="alternate" type="text/html" title="Quemar un libro 6 [ Trizas Trazos Trazas ]" /><published>2023-01-16T00:00:00-03:00</published><updated>2023-01-16T12:20:21-03:00</updated><id>/quemar-un-libro-6-trizas-trazos-trazas</id><content type="html" xml:base="/quemar-un-libro-6-trizas-trazos-trazas/"><![CDATA[<h1>Trizas Trazos Trazas by Victoria Burgos, Gaby Peral, Bárbara Stark and Ángeles Torino</h1>
-<p>Cuando estuve en la <a href="https://www.manifestivalgrafico.ar/">mani</a> en córdoba previamente charlamos con <a href="https://www.instagram.com/victoriabch/">victoria</a> y nos encontramos para hacer un <em>trueque</em> <strong>hermoso</strong>. Se llevó algunas cosas y me dejó esta joyita en risografía licenciada en CC 4.0 internacional. Lamentablemente no se pueden hacer obras derivadas de este material por la licencia pero si se puede compartir.</p>
-<p>aquí el <a href="public/f7580462-d3b9-474f-b001-1b797b906df3/trizas-trazos-trazas.pdf">scann para descarga &lt;3</a> para mirar de cerquita y copiar</p>]]></content><author><name>librenauta</name></author><category term="scann" /><category term="risografía" /><category term="book" /><category term="córdoba" /><summary type="html"><![CDATA[Trizas Trazos Trazas by Victoria Burgos, Gaby Peral, Bárbara Stark and Ángeles Torino]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/f7580462-d3b9-474f-b001-1b797b906df3/cover.jpg" /><media:content medium="image" url="/public/f7580462-d3b9-474f-b001-1b797b906df3/cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">BRC - Frey</title><link href="/brc-frey/" rel="alternate" type="text/html" title="BRC - Frey" /><published>2023-01-11T00:00:00-03:00</published><updated>2022-12-30T19:20:21-03:00</updated><id>/brc-frey</id><content type="html" xml:base="/brc-frey/"><![CDATA[<h1>BRC - Frey</h1>]]></content><author><name>Librenauta</name></author><category term="proyectos" /><category term="brc" /><category term="naturaleza" /><category term="sur" /><category term="isla" /><summary type="html"><![CDATA[log de imágenes de una travesía en brc camino al Frey]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/aa1a80e2-8b6e-485e-9c94-4e0ec7bc8168/cover.jpg" /><media:content medium="image" url="/public/aa1a80e2-8b6e-485e-9c94-4e0ec7bc8168/cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Log 018</title><link href="/log-18/" rel="alternate" type="text/html" title="Log 018" /><published>2023-01-08T00:00:00-03:00</published><updated>2023-01-08T10:00:05-03:00</updated><id>/log-18</id><content type="html" xml:base="/log-18/"><![CDATA[<ul>
-<li>trabajar con esta shell. &lt;3</li>
-</ul>]]></content><author><name>librenauta</name></author><category term="log" /><category term="log" /><summary type="html"><![CDATA[trabajar con esta shell. &lt;3]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/log/brrr.jpg" /><media:content medium="image" url="/public/log/brrr.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<img src="public/a080cb37-6ef6-42a2-90bb-7ebb637a5d29/una-flor-en-2d-3.jpg" alt="flores" /></p>]]></content><author><name>Librenauta</name></author><category term="proyectos" /><category term="una flor" /><category term="recolección" /><category term="flora" /><summary type="html"><![CDATA[como una figurita de flor]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/a080cb37-6ef6-42a2-90bb-7ebb637a5d29/cover.jpg" /><media:content medium="image" url="/public/a080cb37-6ef6-42a2-90bb-7ebb637a5d29/cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Restos</title><link href="/restos/" rel="alternate" type="text/html" title="Restos" /><published>2023-01-23T00:00:00-03:00</published><updated>2023-01-23T20:20:21-03:00</updated><id>/restos</id><content type="html" xml:base="/restos/"><![CDATA[<p>Sintetizar el suelo con una paleta de colores de restos.</p>]]></content><author><name>Librenauta</name></author><category term="proyectos" /><category term="naturaleza" /><category term="piedras" /><category term="restos" /><summary type="html"><![CDATA[restos del mundo]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/ccee077e-7dca-46a3-bd0c-0dd8f455b2dd/cover.jpg" /><media:content medium="image" url="/public/ccee077e-7dca-46a3-bd0c-0dd8f455b2dd/cover.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Un acto</title><link href="/nube-10/" rel="alternate" type="text/html" title="Un acto" /><published>2023-01-18T00:00:00-03:00</published><updated>2023-01-18T00:00:00-03:00</updated><id>/nube-10</id><content type="html" xml:base="/nube-10/"><![CDATA[<p>La inteligencia no es sólo ser útil para el capitalismo</p>]]></content><author><name>Librenauta</name></author><category term="nube" /><category term="blog" /><summary type="html"><![CDATA[La inteligencia no es sólo ser útil para el capitalismo]]></summary></entry></feed>

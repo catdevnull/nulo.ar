@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>j3s.sh</title>
+  <link rel="self" href="https://j3s.sh/feed.atom" />
+  <link href="https://j3s.sh/" />
+  <updated>2023-03-20T00:00:00.000Z</updated>
+  <author>
+    <name>Jes Olson</name>
+  </author>
+  <id>https://j3s.sh/</id>
+
+  <entry>
+    <title>vore: a new rss feed reader</title>
+    <link href="https://j3s.sh/thought/vore-a-new-rss-feed-reader.html"/>
+    <id>https://j3s.sh/thought/vore-a-new-rss-feed-reader.html</id>
+    <updated>2023-03-20T00:00:00.000Z</updated>
+  </entry>
+
+  <entry>
+    <title>write posix shell</title>
+    <link href="https://j3s.sh/thought/write-posix-shell.html"/>
+    <id>https://j3s.sh/thought/write-posix-shell.html</id>
+    <updated>2023-03-10T00:00:00.000Z</updated>
+  </entry>
+
+  <entry>
+    <title>.io domains considered harmful</title>
+    <link href="https://j3s.sh/thought/.io-domains-considered-harmful.html"/>
+    <id>https://j3s.sh/thought/.io-domains-considered-harmful.html</id>
+    <updated>2022-11-14T00:00:00.000Z</updated>
+  </entry>
+
+  <entry>
+    <title>drones run linux: the free software movement isn't enough</title>
+    <link href="https://j3s.sh/thought/drones-run-linux-free-software-isnt-enough.html"/>
+    <id>https://j3s.sh/thought/drones-run-linux-free-software-isnt-enough.html</id>
+    <updated>2022-09-16T00:00:00.000Z</updated>
+  </entry>
+
+  <entry>
+    <title>the constantly collapsing horizon</title>
+    <link href="https://j3s.sh/thought/the-constantly-collapsing-horizon.html"/>
+    <id>https://j3s.sh/thought/the-constantly-collapsing-horizon.html</id>
+    <updated>2022-07-31T00:00:00.000Z</updated>
+  </entry>
+
+  <entry>
+    <title>my website is one binary</title>
+    <link href="https://j3s.sh/thought/my-website-is-one-binary.html"/>
+    <id>https://j3s.sh/thought/my-website-is-one-binary.html</id>
+    <updated>2022-04-06T00:00:00.000Z</updated>
+  </entry>
+
+  <entry>
+    <title>there is beauty in the minimalism of email</title>
+    <link href="https://j3s.sh/thought/there-is-beauty-in-the-minimalism-of-email.html"/>
+    <id>https://j3s.sh/thought/there-is-beauty-in-the-minimalism-of-email.html</id>
+    <updated>2022-03-23T00:00:00.000Z</updated>
+  </entry>
+
+  <entry>
+    <title>storing passwords with age</title>
+    <link href="https://j3s.sh/thought/storing-passwords-with-age.html"/>
+    <id>https://j3s.sh/thought/storing-passwords-with-age.html</id>
+    <updated>2021-04-20T00:00:00.000Z</updated>
+  </entry>
+
+  <entry>
+    <title>building a fixed gear bicycle</title>
+    <link href="https://j3s.sh/thought/building-a-fixed-gear-bicycle.html"/>
+    <id>https://j3s.sh/thought/building-a-fixed-gear-bicycle.html</id>
+    <updated>2020-12-20T00:00:00.000Z</updated>
+  </entry>
+
+  <entry>
+    <title>something is different</title>
+    <link href="https://j3s.sh/thought/something-is-different.html"/>
+    <id>https://j3s.sh/thought/something-is-different.html</id>
+    <updated>2020-04-20T00:00:00.000Z</updated>
+  </entry>
+
+</feed>
