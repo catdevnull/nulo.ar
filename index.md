@@ -4,14 +4,16 @@
 
 ¡Buenas! Este es mi mundo, bienvenidx. ¿Que, [[Quién soy]]? Soy Nulo :)
 
-- Perdete en la [[Lista de páginas]]
+-   Perdete en la [[Lista de páginas]]
 
 Algunas cosas que escribí:
+
 -   [[2023-02-05 Vergüenza algorítmica]]
 -   [[2022-10-15 Analisis de la extracción de datos del teléfono de Fernando André Sabag Montiel]]
 -   [[Arreglando bugs ajenos]]
 
 Algunas cosas que hice:
+
 -   [Este sitio](https://gitea.nulo.in/Nulo/sitio)
 -   Juguetes:
     -   [Cuarentena](https://cuarentena.nulo.in)
@@ -19,12 +21,13 @@ Algunas cosas que hice:
 -   [Manejador de Tareas](https://tareas.nulo.in)
 -   Laburos:
     -   [Salvá la costanera](https://salvalacostanera.com.ar), [código](https://gitea.nulo.in/Nulo/salva-la-costanera)
-- Y otros [[Proyectos]].
+-   Y otros [[Proyectos]].
 
 Algunas cosas de las que soy parte:
-- [Sutty](https://sutty.coop.ar/)
 
-## Mis amigxs ([[Mi webring]])
+-   [Sutty](https://sutty.coop.ar/)
+
+## Mis amigxs ([[Mi webring.gen]])
 
 <nulo-sitio-reemplazar-con archivo="Mi webring.gen.js" />
 
