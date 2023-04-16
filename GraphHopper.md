@@ -1,6 +1,6 @@
-Da direcciones a lugares a partir de los datos de [[OpenStreetMap]]. Disponible como [servicio comercial](https://graphhopper.com) y como [self-hosted](https://github.com/graphhopper/graphhopper).
+Da direcciones a lugares a partir de los datos de OpenStreetMap. Disponible como [servicio comercial](https://graphhopper.com) y como [self-hosted](https://github.com/graphhopper/graphhopper).
 
-Tip: usar la [interfaz web](https://openstreetmap.org) de [[OpenStreetMap]] o [GraphHopper Maps](https://graphhopper.com/maps/) para hacer pedidos a la API fácil.
+Tip: usar la [interfaz web](https://openstreetmap.org) de OpenStreetMap o [GraphHopper Maps](https://graphhopper.com/maps/) para hacer pedidos a la API fácil.
 
 ## API
 
