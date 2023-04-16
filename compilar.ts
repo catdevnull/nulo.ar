@@ -1,4 +1,11 @@
-import { copyFile, mkdir, opendir, readFile, writeFile } from "fs/promises";
+import {
+  copyFile,
+  mkdir,
+  opendir,
+  readFile,
+  readdir,
+  writeFile,
+} from "fs/promises";
 import { basename, extname, join } from "path";
 import { execFile as execFileCallback } from "child_process";
 import { promisify } from "util";
@@ -54,19 +61,13 @@ const connections = await scanForConnections(config.sourcePath);
 
 await mkdir(config.buildPath, { recursive: true });
 
-const dir = await opendir(config.sourcePath);
-let pageList: string[] = [];
-let promises: Promise<void>[] = [];
-for await (const entry of dir) {
+const dir = await readdir(config.sourcePath, { withFileTypes: true });
+let pageList: { src: string }[] = [];
+for (const entry of dir) {
   if (!entry.isFile()) continue;
-  promises.push(compileFile(entry.name));
-}
-await Promise.all(promises);
-
-await compilePageList(config, pageList);
-
-async function compileFile(name: string) {
+  const { name } = entry;
   const extension = extname(name);
+
   if (
     [
       ".ts",
@@ -82,11 +83,14 @@ async function compileFile(name: string) {
   ) {
     await copyFile(join(config.sourcePath, name), join(config.buildPath, name));
   }
+
   if ([".md"].includes(extension) || name.endsWith(".gen.js")) {
-    pageList.push(basename(name, extension));
-    await compilePage(config, name);
+    pageList.push({ src: name });
   }
 }
+await Promise.all(pageList.map(({ src }) => compilePage(config, src)));
+
+await compilePageList(config, pageList);
 
 async function compilePage(config: Config, sourceFileName: string) {
   const name = basename(sourceFileName, extname(sourceFileName));
@@ -162,6 +166,7 @@ async function compileMarkdownHtml(
   const parsed = reader.parse(markdown);
   const markdownHtml = writer.render(parsed);
 
+  checkLinks(sourceFileName, markdownHtml);
   const contentHtml = await hackilyTransformHtml(markdownHtml);
   return { html: contentHtml, image };
 }
@@ -354,7 +359,7 @@ function generateConnectionsSection(
     : [];
 }
 
-async function compilePageList(config: Config, pageList: string[]) {
+async function compilePageList(config: Config, pageList: { src: string }[]) {
   const name = "Lista de páginas";
   const outputPath = join(config.buildPath, name + ".html");
   const html = render(
@@ -362,6 +367,7 @@ async function compilePageList(config: Config, pageList: string[]) {
     ...generateHeader(name, "compilar.ts"),
     ul(
       ...pageList
+        .map(({ src: name }) => basename(name, extname(name)))
         .sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }))
         .map((name) => li(internalLink(name)))
     )
@@ -409,6 +415,17 @@ async function hackilyTransformHtml(html: string): Promise<string> {
     html = html.replace(match, await compileJavascript(config, archivo));
   }
   return html;
+}
+
+function checkLinks(srcName: string, html: string) {
+  const matches = html.matchAll(wikilinkExp);
+  const list = pageList.map(({ src }) => basename(src, extname(src)));
+  if (!matches) return;
+  for (const match of matches) {
+    if (!list.some((n) => n === match[1])) {
+      console.warn(`${srcName} linkea a ${match[1]}, pero no existe`);
+    }
+  }
 }
 
 // ==============================================
