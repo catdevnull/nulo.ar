@@ -2,10 +2,11 @@
 
 build_ts() {
     ./node_modules/.bin/esbuild compilar.ts --target=node18 --outdir=build.js --sourcemap || exit $?
+    cp *.js build.js/
 }
 build() {
     build_ts
-    node --enable-source-maps build.js/compilar.js || exit $?
+    node --enable-source-maps --trace-uncaught build.js/compilar.js || exit $?
 }
 check() {
     ./node_modules/.bin/tsc --noEmit || exit $?

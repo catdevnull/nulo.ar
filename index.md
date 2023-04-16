@@ -26,7 +26,7 @@ Algunas cosas de las que soy parte:
 
 ## Mis amigxs ([[Mi webring]])
 
-<nulo-sitio-reemplazar-con archivo="Mi webring.gen" />
+<nulo-sitio-reemplazar-con archivo="Mi webring.gen.js" />
 
 ## Contacto
 

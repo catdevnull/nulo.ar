@@ -4,6 +4,8 @@
     "module": "es2022",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "strict": true
+    "strict": true,
+    "allowJs": true,
+    "checkJs": true
   }
 }

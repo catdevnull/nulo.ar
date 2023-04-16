@@ -82,7 +82,7 @@ async function compileFile(name: string) {
   ) {
     await copyFile(join(config.sourcePath, name), join(config.buildPath, name));
   }
-  if ([".md", ".gen"].includes(extension)) {
+  if ([".md"].includes(extension) || name.endsWith(".gen.js")) {
     pageList.push(basename(name, extension));
     await compilePage(config, name);
   }
@@ -100,8 +100,8 @@ async function compilePage(config: Config, sourceFileName: string) {
       config,
       sourceFileName
     ));
-  } else if (extname(sourceFileName) === ".gen")
-    contentHtml = await compileExecutableHtml(config, sourceFileName);
+  } else if (sourceFileName.endsWith(".gen.js"))
+    contentHtml = await compileJavascript(config, sourceFileName);
   else throw false;
 
   const html = render(
@@ -166,16 +166,12 @@ async function compileMarkdownHtml(
   return { html: contentHtml, image };
 }
 
-async function compileExecutableHtml(
+async function compileJavascript(
   config: Config,
   sourceFileName: string
 ): Promise<string> {
-  const { stdout, stderr } = await execFile(
-    "./" + join(config.sourcePath, sourceFileName)
-  );
-  if (stderr.length > 0) console.error(`${sourceFileName} stderr: ${stderr}`);
-
-  return stdout;
+  const fn = await import("./" + join(config.sourcePath, sourceFileName));
+  return await fn.default();
 }
 
 // ==============================================
@@ -409,8 +405,8 @@ async function hackilyTransformHtml(html: string): Promise<string> {
   for (const [match, archivo] of html.matchAll(
     /<nulo-sitio-reemplazar-con archivo="(.+?)" \/>/g
   )) {
-    if (extname(archivo) !== ".gen") throw false;
-    html = html.replace(match, await compileExecutableHtml(config, archivo));
+    if (!archivo.endsWith(".gen.js")) throw false;
+    html = html.replace(match, await compileJavascript(config, archivo));
   }
   return html;
 }
