@@ -1,3 +1,4 @@
+// @ts-nocheck
 const guitaEl = document.querySelector("#guita");
 const porHoraEl = document.querySelector("#por-hora");
 const personasEl = document.querySelector("#personas");
