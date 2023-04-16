@@ -4,13 +4,7 @@ import { parseFeed as _parseFeed } from "htmlparser2";
 import { a, li, raw, render, ul } from "@nulo/html.js";
 import { parseDocument } from "htmlparser2";
 import { getElementsByTagName } from "domutils";
-
-const feeds = {
-  fauno: "https://fauno.endefensadelsl.org/feed.xml",
-  copiona: "https://copiona.com/feed.xml",
-  j3s: "https://j3s.sh/feed.atom",
-  icyphox: "https://icyphox.sh/blog/feed.xml",
-};
+import { feeds, readFeed } from "./feeds";
 
 export default async () => {
   const articles = [];
@@ -22,10 +16,7 @@ export default async () => {
      */
     const relativeLink = (link) => new URL(link, baseUrl).toString();
 
-    const rawFeed = await readFile(
-      path.join("cached-feeds/", name + ".xml"),
-      "utf-8"
-    );
+    const rawFeed = await readFeed(name);
     const { title, item, link } = parseFeed(rawFeed);
 
     articles.push(

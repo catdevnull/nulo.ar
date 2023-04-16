@@ -11,15 +11,8 @@ build() {
 check() {
     ./node_modules/.bin/tsc --noEmit || exit $?
 }
-refresh_feed() {
-    echo "Refreshing $1"
-    wget -qO "cached-feeds/$1.xml" "$2" || exit $?
-}
 refresh_feeds() {
-    refresh_feed fauno https://fauno.endefensadelsl.org/feed.xml
-    refresh_feed copiona https://copiona.com/feed.xml
-    refresh_feed j3s https://j3s.sh/feed.atom
-    refresh_feed icyphox https://icyphox.sh/blog/feed.xml
+    node feeds.js refresh
 }
 
 fatal() {
