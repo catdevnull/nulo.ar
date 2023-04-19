@@ -27,6 +27,11 @@ Algunas cosas de las que soy parte:
 
 -   [Sutty](https://sutty.coop.ar/)
 
+Algunos links mios:
+
+- <a rel="me noopener noreferrer" href="https://todon.eu/@Nulo">Mastodon</a>
+- Mi [Gitea](https://gitea.nulo.in/Nulo)
+
 ## Feed de personas que me parecen copadas ([[Mi webring.gen]])
 
 <nulo-sitio-reemplazar-con archivo="Mi webring.gen.js" />
@@ -34,7 +39,5 @@ Algunas cosas de las que soy parte:
 ## Contacto
 
 Webamigx: [nadie@nulo.in](mailto:nadie@nulo.in) <small>no gods no webmasters</small>
-
-<a rel="me noopener noreferrer" href="https://todon.eu/@Nulo">Mastodon</a>
 
 > De este sitio se desprenden graves falencias tales como simbología confusa, cuestionamientos ideológicos-sociales, objetivos no adecuados al hecho estético, ilimitada fantasía...
