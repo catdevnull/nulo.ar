@@ -4,7 +4,7 @@ import { parseFeed as _parseFeed } from "htmlparser2";
 import { a, li, raw, render, ul } from "@nulo/html.js";
 import { parseDocument } from "htmlparser2";
 import { getElementsByTagName } from "domutils";
-import { feeds, readFeed } from "./feeds";
+import { feeds, readFeed } from "./feeds.js";
 
 export default async () => {
   const articles = [];
