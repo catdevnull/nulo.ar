@@ -60,14 +60,6 @@ li {
   padding: 0 0.2rem;
 }
 
-a {
-  background: ButtonFace;
-  padding: 0em 0.35em;
-  border-radius: 0.4rem;
-  color: inherit;
-  text-decoration: inherit;
-}
-
 #conexiones ul {
   list-style: none;
   padding: 0;
