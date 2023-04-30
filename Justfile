@@ -4,7 +4,7 @@ builder := "gitea.nulo.in/nulo/sitio-build"
 build_builder_image:
 	podman build -t {{builder}} tooling/
 _run command: build_builder_image
-	podman run -it \
+	podman run -it --rm \
 		-v ".:/sitio:Z" --workdir /sitio \
 		{{builder}} sh -c "{{command}}"
 run command: (_run "pnpm install") (_run command)
