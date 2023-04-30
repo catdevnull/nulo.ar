@@ -15,5 +15,5 @@ refresh_feeds: (run './tool refresh_feeds')
 
 ready_to_upload: check refresh_feeds build
 upload: ready_to_upload
-	
+	rsync --rsh='ssh -p443' --recursive --chmod=644 build/ root@nulo.ar:/var/www/nulo.ar/
 
