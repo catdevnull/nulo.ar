@@ -13,7 +13,10 @@ build: (run './tool build')
 check: (run './tool check')
 refresh_feeds: (run './tool refresh_feeds')
 
+clean:
+	if [ ! -z "$(git status --porcelain)" ]; then echo "not clean!"; exit 1; fi
+
 ready_to_upload: check refresh_feeds build
-upload: ready_to_upload
+upload: clean ready_to_upload
 	rsync --rsh='ssh -p443' --recursive --chmod=644 build/ root@nulo.ar:/var/www/nulo.ar/
 
