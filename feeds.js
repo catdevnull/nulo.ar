@@ -5,7 +5,7 @@ export const feeds = {
   fauno: "https://fauno.endefensadelsl.org/feed.xml",
   copiona: "https://copiona.com/feed.xml",
   j3s: "https://j3s.sh/feed.atom",
-  icyphox: "https://icyphox.sh/blog/feed.xml",
+  // icyphox: "https://icyphox.sh/blog/feed.xml",
 };
 
 if (process.argv[2] === "refresh") {
