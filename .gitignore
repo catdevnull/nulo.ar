@@ -4,3 +4,4 @@ build.js/
 .env
 cache/
 rootfs/
+.pnpm-store/
