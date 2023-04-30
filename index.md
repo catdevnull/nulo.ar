@@ -8,6 +8,7 @@
 
 Algunas cosas que escribí:
 
+-   [[2023-04-30 Donweb quiere tu cripto]]
 -   [[2023-02-05 Vergüenza algorítmica]]
 -   [[2022-10-15 Analisis de la extracción de datos del teléfono de Fernando André Sabag Montiel]]
 -   [[Arreglando bugs ajenos]]

@@ -1,3 +1,5 @@
+_[Parte 2](2023-04-30%20Donweb%20quiere%20tu%20cripto.html)_
+
 Hace unos días compre el "Cloud Server" (VPS) más barato que ofrece [[Donweb]] para experimentar ya que no había visto hosting en Argentina tan barato antes. No ofrecían la posibilidad de bootear distros alternativas a las que te ofrecen (Debian, Ubuntu, CentOS y Rocky) que me pareció raro, pero todo se puede hackear.
 
 Me pareció raro/sospechoso que la instalación de Debian por defecto venía con las llaves SSH de muchisimxs empleadxs de Donweb en el authorized_keys de root dandoles acceso de superusuario, por lo que las borré.
