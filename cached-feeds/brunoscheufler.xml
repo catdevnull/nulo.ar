@@ -1,0 +1,1394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bruno Scheufler</title>
+    <link>https://brunoscheufler.com</link>
+    <description>Blog posts by Bruno Scheufler</description>
+    <atom:link href="https://brunoscheufler.com/rss.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Apr 2023 19:03:13 GMT</lastBuildDate>
+    <pubDate>Sun, 30 Apr 2023 19:03:13 GMT</pubDate>
+    <ttl>60</ttl>
+    
+    <item>
+      <title>Reproducible VMs for Local Development</title>
+      <link>https://brunoscheufler.com/blog/2023-04-30-reproducible-vms-for-local-development</link>
+      <pubDate>Sun, 30 Apr 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-04-30-reproducible-vms-for-local-development</guid>
+    </item>
+    
+    <item>
+      <title>Extending the Kubernetes Scheduler</title>
+      <link>https://brunoscheufler.com/blog/2023-04-23-extending-the-kubernetes-scheduler</link>
+      <pubDate>Sun, 23 Apr 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-04-23-extending-the-kubernetes-scheduler</guid>
+    </item>
+    
+    <item>
+      <title>Adding Context: The First Weeks</title>
+      <link>https://brunoscheufler.com/blog/2023-03-26-adding-context-the-first-weeks</link>
+      <pubDate>Sun, 26 Mar 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-03-26-adding-context-the-first-weeks</guid>
+    </item>
+    
+    <item>
+      <title>Generating Subtitles in Real-Time with OpenAI Whisper and PyAudio</title>
+      <link>https://brunoscheufler.com/blog/2023-03-12-generating-subtitles-in-real-time-with-openai-whisper-and-pyaudio</link>
+      <pubDate>Sun, 12 Mar 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-03-12-generating-subtitles-in-real-time-with-openai-whisper-and-pyaudio</guid>
+    </item>
+    
+    <item>
+      <title>The OS for building products</title>
+      <link>https://brunoscheufler.com/blog/2023-03-01-the-os-for-building-products</link>
+      <pubDate>Wed, 01 Mar 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-03-01-the-os-for-building-products</guid>
+    </item>
+    
+    <item>
+      <title>Improving Local Development with Atlas</title>
+      <link>https://brunoscheufler.com/blog/2023-02-05-improving-local-development-with-atlas</link>
+      <pubDate>Sun, 05 Feb 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-02-05-improving-local-development-with-atlas</guid>
+    </item>
+    
+    <item>
+      <title>The most memorable computer science education is applied</title>
+      <link>https://brunoscheufler.com/blog/2023-01-29-the-most-memorable-computer-science-education-is-applied</link>
+      <pubDate>Sun, 29 Jan 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-01-29-the-most-memorable-computer-science-education-is-applied</guid>
+    </item>
+    
+    <item>
+      <title>Using Static Code Analysis to Share Types Between Services</title>
+      <link>https://brunoscheufler.com/blog/2023-01-15-using-static-code-analysis-to-share-types-between-services</link>
+      <pubDate>Sun, 15 Jan 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-01-15-using-static-code-analysis-to-share-types-between-services</guid>
+    </item>
+    
+    <item>
+      <title>Nested Flags with Bitwise Operators</title>
+      <link>https://brunoscheufler.com/blog/2023-01-08-nested-flags-with-bitwise-operators</link>
+      <pubDate>Sun, 08 Jan 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-01-08-nested-flags-with-bitwise-operators</guid>
+    </item>
+    
+    <item>
+      <title>What&apos;s Next</title>
+      <link>https://brunoscheufler.com/blog/2022-12-31-whats-next</link>
+      <pubDate>Sat, 31 Dec 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-12-31-whats-next</guid>
+    </item>
+    
+    <item>
+      <title>Looking Back on 2022</title>
+      <link>https://brunoscheufler.com/blog/2022-12-26-looking-back-on-2022</link>
+      <pubDate>Mon, 26 Dec 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-12-26-looking-back-on-2022</guid>
+    </item>
+    
+    <item>
+      <title>Calculating Rolling Billing Periods</title>
+      <link>https://brunoscheufler.com/blog/2022-12-18-calculating-rolling-billing-periods</link>
+      <pubDate>Sun, 18 Dec 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-12-18-calculating-rolling-billing-periods</guid>
+    </item>
+    
+    <item>
+      <title>Storing User-Defined Attributes in ClickHouse with Nested Types</title>
+      <link>https://brunoscheufler.com/blog/2022-12-11-storing-user-defined-attributes-in-clickhouse-with-nested-types</link>
+      <pubDate>Sun, 11 Dec 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-12-11-storing-user-defined-attributes-in-clickhouse-with-nested-types</guid>
+    </item>
+    
+    <item>
+      <title>Building delightful React applications has never been easier</title>
+      <link>https://brunoscheufler.com/blog/2022-12-04-building-delightful-react-applications</link>
+      <pubDate>Sun, 04 Dec 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-12-04-building-delightful-react-applications</guid>
+    </item>
+    
+    <item>
+      <title>Indirection is the antithesis of velocity</title>
+      <link>https://brunoscheufler.com/blog/2022-11-27-indirection-is-the-antithesis-of-velocity</link>
+      <pubDate>Sun, 27 Nov 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-11-27-indirection-is-the-antithesis-of-velocity</guid>
+    </item>
+    
+    <item>
+      <title>Serializing Data between Systems with Anzu Values</title>
+      <link>https://brunoscheufler.com/blog/2022-11-20-serializing-data-between-systems-anzu-values</link>
+      <pubDate>Sun, 20 Nov 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-11-20-serializing-data-between-systems-anzu-values</guid>
+    </item>
+    
+    <item>
+      <title>Betting on Delightful Products</title>
+      <link>https://brunoscheufler.com/blog/2022-11-06-betting-on-delightful-products</link>
+      <pubDate>Sun, 06 Nov 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-11-06-betting-on-delightful-products</guid>
+    </item>
+    
+    <item>
+      <title>Experiencing How Big Corporations Work for 240€</title>
+      <link>https://brunoscheufler.com/blog/2022-10-30-experiencing-how-big-companies-work</link>
+      <pubDate>Sun, 30 Oct 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-10-30-experiencing-how-big-companies-work</guid>
+    </item>
+    
+    <item>
+      <title>Observations on Successful Companies</title>
+      <link>https://brunoscheufler.com/blog/2022-10-23-observations-on-successful-companies</link>
+      <pubDate>Sun, 23 Oct 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-10-23-observations-on-successful-companies</guid>
+    </item>
+    
+    <item>
+      <title>Offloading Execution Flow to the Database</title>
+      <link>https://brunoscheufler.com/blog/2022-10-10-offloading-execution-flow-to-the-database</link>
+      <pubDate>Mon, 10 Oct 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-10-10-offloading-execution-flow-to-the-database</guid>
+    </item>
+    
+    <item>
+      <title>Running untrusted code in short-lived environments for Anzu v1</title>
+      <link>https://brunoscheufler.com/blog/2022-10-02-running-untrusted-code-in-short-lived-environments</link>
+      <pubDate>Sun, 02 Oct 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-10-02-running-untrusted-code-in-short-lived-environments</guid>
+    </item>
+    
+    <item>
+      <title>Building Sortable Relations with PostgreSQL</title>
+      <link>https://brunoscheufler.com/blog/2022-09-26-building-sortable-relations-with-postgresql</link>
+      <pubDate>Mon, 26 Sep 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-09-26-building-sortable-relations-with-postgresql</guid>
+    </item>
+    
+    <item>
+      <title>Making Architects work in Software Teams</title>
+      <link>https://brunoscheufler.com/blog/2022-09-18-making-architects-work-in-software-teams</link>
+      <pubDate>Sun, 18 Sep 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-09-18-making-architects-work-in-software-teams</guid>
+    </item>
+    
+    <item>
+      <title>Anzu Behind the Scenes: Why Resource Management Wasn’t It</title>
+      <link>https://brunoscheufler.com/blog/2022-09-11-why-resource-management-wasnt-it</link>
+      <pubDate>Sun, 11 Sep 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-09-11-why-resource-management-wasnt-it</guid>
+    </item>
+    
+    <item>
+      <title>Steady State means Continuous Rewriting</title>
+      <link>https://brunoscheufler.com/blog/2022-09-04-steady-state-means-continuous-rewriting</link>
+      <pubDate>Sun, 04 Sep 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-09-04-steady-state-means-continuous-rewriting</guid>
+    </item>
+    
+    <item>
+      <title>Sharing Code in TypeScript is (Still) a Mess</title>
+      <link>https://brunoscheufler.com/blog/2022-08-28-sharing-code-in-typescript-is-still-a-mess</link>
+      <pubDate>Sun, 28 Aug 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-08-28-sharing-code-in-typescript-is-still-a-mess</guid>
+    </item>
+    
+    <item>
+      <title>Balancing Normalization and Revision History</title>
+      <link>https://brunoscheufler.com/blog/2022-08-21-balancing-normalization-and-revision-history</link>
+      <pubDate>Sun, 21 Aug 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-08-21-balancing-normalization-and-revision-history</guid>
+    </item>
+    
+    <item>
+      <title>Handling Long-Running Jobs with AWS SQS</title>
+      <link>https://brunoscheufler.com/blog/2022-08-14-handling-long-running-jobs-with-aws-sqs</link>
+      <pubDate>Sun, 14 Aug 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-08-14-handling-long-running-jobs-with-aws-sqs</guid>
+    </item>
+    
+    <item>
+      <title>Deploying Containers on AWS ECS Using the SDK</title>
+      <link>https://brunoscheufler.com/blog/2022-08-07-deploying-containers-on-aws-ecs-using-the-sdk</link>
+      <pubDate>Sun, 07 Aug 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-08-07-deploying-containers-on-aws-ecs-using-the-sdk</guid>
+    </item>
+    
+    <item>
+      <title>Reducing Database Round-Trips with Boring Queries</title>
+      <link>https://brunoscheufler.com/blog/2022-07-24-reducing-database-round-trips-with-boring-queries</link>
+      <pubDate>Sun, 24 Jul 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-07-24-reducing-database-round-trips-with-boring-queries</guid>
+    </item>
+    
+    <item>
+      <title>Measuring Popularity or How Likes Don’t Tell the Full Story</title>
+      <link>https://brunoscheufler.com/blog/2022-07-17-measuring-popularity</link>
+      <pubDate>Sun, 17 Jul 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-07-17-measuring-popularity</guid>
+    </item>
+    
+    <item>
+      <title>Running Container Workloads on Anzu with Managed Containers</title>
+      <link>https://brunoscheufler.com/blog/2022-07-10-running-container-workloads-on-anzu-with-managed-containers</link>
+      <pubDate>Sun, 10 Jul 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-07-10-running-container-workloads-on-anzu-with-managed-containers</guid>
+    </item>
+    
+    <item>
+      <title>Improving Cache Hit Ratios with Connected DataLoaders</title>
+      <link>https://brunoscheufler.com/blog/2022-06-26-improving-cache-hit-ratios-with-connected-dataloaders</link>
+      <pubDate>Sun, 26 Jun 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-06-26-improving-cache-hit-ratios-with-connected-dataloaders</guid>
+    </item>
+    
+    <item>
+      <title>Introducing Anzu Dev Environments</title>
+      <link>https://brunoscheufler.com/blog/2022-06-19-introducing-anzu-dev-environments</link>
+      <pubDate>Sun, 19 Jun 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-06-19-introducing-anzu-dev-environments</guid>
+    </item>
+    
+    <item>
+      <title>Bridging the Gap between the Cloud and Your Codebase with Anzu Services</title>
+      <link>https://brunoscheufler.com/blog/2022-06-13-bridging-the-gap-between-the-cloud-and-your-codebase-with-anzu-services</link>
+      <pubDate>Mon, 13 Jun 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-06-13-bridging-the-gap-between-the-cloud-and-your-codebase-with-anzu-services</guid>
+    </item>
+    
+    <item>
+      <title>Deploying Docker Containers over SSH</title>
+      <link>https://brunoscheufler.com/blog/2022-06-05-deploying-docker-containers-over-ssh</link>
+      <pubDate>Sun, 05 Jun 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-06-05-deploying-docker-containers-over-ssh</guid>
+    </item>
+    
+    <item>
+      <title>Modeling Polymorphic Relations in Postgres</title>
+      <link>https://brunoscheufler.com/blog/2022-05-22-modeling-polymorphic-relations-in-postgres</link>
+      <pubDate>Sun, 22 May 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-05-22-modeling-polymorphic-relations-in-postgres</guid>
+    </item>
+    
+    <item>
+      <title>Making teams move faster, happier.</title>
+      <link>https://brunoscheufler.com/blog/2022-05-08-making-teams-move-faster-happier</link>
+      <pubDate>Sun, 08 May 2022 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-05-08-making-teams-move-faster-happier</guid>
+    </item>
+    
+    <item>
+      <title>Required GitHub Actions Jobs in a Monorepo</title>
+      <link>https://brunoscheufler.com/blog/2022-04-24-required-github-actions-jobs-in-a-monorepo</link>
+      <pubDate>Sun, 24 Apr 2022 13:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-04-24-required-github-actions-jobs-in-a-monorepo</guid>
+    </item>
+    
+    <item>
+      <title>Routing Traffic for Dynamic Deployments using Traefik</title>
+      <link>https://brunoscheufler.com/blog/2022-04-17-routing-traffic-for-dynamic-deployments-using-traefik</link>
+      <pubDate>Sun, 17 Apr 2022 15:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-04-17-routing-traffic-for-dynamic-deployments-using-traefik</guid>
+    </item>
+    
+    <item>
+      <title>The Required GitHub Status Check That Wasn&apos;t</title>
+      <link>https://brunoscheufler.com/blog/2022-04-09-the-required-github-status-check-that-wasnt</link>
+      <pubDate>Sat, 09 Apr 2022 15:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-04-09-the-required-github-status-check-that-wasnt</guid>
+    </item>
+    
+    <item>
+      <title>Building and pushing Docker images within GitHub Actions</title>
+      <link>https://brunoscheufler.com/blog/2022-03-27-building-and-pushing-docker-images-within-github-actions</link>
+      <pubDate>Sun, 27 Mar 2022 15:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-03-27-building-and-pushing-docker-images-within-github-actions</guid>
+    </item>
+    
+    <item>
+      <title>Understanding Deferred Foreign Key Constraints in PostgreSQL</title>
+      <link>https://brunoscheufler.com/blog/2022-03-20-understanding-deferred-foreign-key-constraints-in-postgresql</link>
+      <pubDate>Sun, 20 Mar 2022 15:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-03-20-understanding-deferred-foreign-key-constraints-in-postgresql</guid>
+    </item>
+    
+    <item>
+      <title>Looking back on Introduction to CS</title>
+      <link>https://brunoscheufler.com/blog/2022-03-13-looking-back-on-introduction-to-cs</link>
+      <pubDate>Sun, 13 Mar 2022 15:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-03-13-looking-back-on-introduction-to-cs</guid>
+    </item>
+    
+    <item>
+      <title>The Complexity of Building Software in 2022</title>
+      <link>https://brunoscheufler.com/blog/2022-02-26-the-complexity-of-building-software-in-2022</link>
+      <pubDate>Sat, 26 Feb 2022 20:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-02-26-the-complexity-of-building-software-in-2022</guid>
+    </item>
+    
+    <item>
+      <title>Getting the hang of Polymorphism in object-oriented languages</title>
+      <link>https://brunoscheufler.com/blog/2022-02-20-getting-the-hang-of-polymorphism-in-object-oriented-languages</link>
+      <pubDate>Sun, 20 Feb 2022 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-02-20-getting-the-hang-of-polymorphism-in-object-oriented-languages</guid>
+    </item>
+    
+    <item>
+      <title>Reviewing User-Generated Content with Interactive Slack Messages</title>
+      <link>https://brunoscheufler.com/blog/2022-02-12-reviewing-user-generated-content-with-interactive-slack-messages</link>
+      <pubDate>Sat, 12 Feb 2022 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-02-12-reviewing-user-generated-content-with-interactive-slack-messages</guid>
+    </item>
+    
+    <item>
+      <title>Offloading Program Flow into PostgreSQL with Temporary Tables</title>
+      <link>https://brunoscheufler.com/blog/2022-02-06-offloading-program-flow-into-postgresql-with-temporary-tables</link>
+      <pubDate>Sun, 06 Feb 2022 13:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-02-06-offloading-program-flow-into-postgresql-with-temporary-tables</guid>
+    </item>
+    
+    <item>
+      <title>Layouting across platforms</title>
+      <link>https://brunoscheufler.com/blog/2022-01-30-layouting-across-platforms</link>
+      <pubDate>Sun, 30 Jan 2022 13:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-01-30-layouting-across-platforms</guid>
+    </item>
+    
+    <item>
+      <title>Important Rules of Embedding Types in Go</title>
+      <link>https://brunoscheufler.com/blog/2022-01-23-important-rules-of-embedding-types-in-go</link>
+      <pubDate>Sun, 23 Jan 2022 13:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-01-23-important-rules-of-embedding-types-in-go</guid>
+    </item>
+    
+    <item>
+      <title>Indexing Pages Programmatically Using the Indexing API</title>
+      <link>https://brunoscheufler.com/blog/2022-01-16-indexing-pages-programmatically-using-the-indexing-api</link>
+      <pubDate>Sun, 16 Jan 2022 13:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-01-16-indexing-pages-programmatically-using-the-indexing-api</guid>
+    </item>
+    
+    <item>
+      <title>Communicating between services with gRPC</title>
+      <link>https://brunoscheufler.com/blog/2022-01-10-communicating-between-services-with-grpc</link>
+      <pubDate>Mon, 10 Jan 2022 20:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-01-10-communicating-between-services-with-grpc</guid>
+    </item>
+    
+    <item>
+      <title>Paginating Large, Ordered Data Sets with Cursor-Based Pagination</title>
+      <link>https://brunoscheufler.com/blog/2022-01-01-paginating-large-ordered-datasets-with-cursor-based-pagination</link>
+      <pubDate>Sat, 01 Jan 2022 20:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2022-01-01-paginating-large-ordered-datasets-with-cursor-based-pagination</guid>
+    </item>
+    
+    <item>
+      <title>Looking Back on 2021</title>
+      <link>https://brunoscheufler.com/blog/2021-12-26-looking-back-on-2021</link>
+      <pubDate>Sun, 26 Dec 2021 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-12-26-looking-back-on-2021</guid>
+    </item>
+    
+    <item>
+      <title>Choosing an Implementation for Unique Identifiers</title>
+      <link>https://brunoscheufler.com/blog/2021-12-18-choosing-an-implementation-for-unique-ids</link>
+      <pubDate>Sat, 18 Dec 2021 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-12-18-choosing-an-implementation-for-unique-ids</guid>
+    </item>
+    
+    <item>
+      <title>Exploring the Geometric Mean</title>
+      <link>https://brunoscheufler.com/blog/2021-12-11-exploring-the-geometric-mean</link>
+      <pubDate>Sat, 11 Dec 2021 14:30:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-12-11-exploring-the-geometric-mean</guid>
+    </item>
+    
+    <item>
+      <title>Decreasing Graph Complexity with Transitive Reductions</title>
+      <link>https://brunoscheufler.com/blog/2021-12-05-decreasing-graph-complexity-with-transitive-reductions</link>
+      <pubDate>Sun, 05 Dec 2021 14:30:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-12-05-decreasing-graph-complexity-with-transitive-reductions</guid>
+    </item>
+    
+    <item>
+      <title>Scheduling Tasks with Topological Sorting</title>
+      <link>https://brunoscheufler.com/blog/2021-11-27-scheduling-tasks-with-topological-sorting</link>
+      <pubDate>Sat, 27 Nov 2021 21:30:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-11-27-scheduling-tasks-with-topological-sorting</guid>
+    </item>
+    
+    <item>
+      <title>Running Untrusted Workloads with Firecracker and containerd</title>
+      <link>https://brunoscheufler.com/blog/2021-11-20-running-untrusted-workloads-with-firecracker-and-containerd</link>
+      <pubDate>Sat, 20 Nov 2021 19:30:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-11-20-running-untrusted-workloads-with-firecracker-and-containerd</guid>
+    </item>
+    
+    <item>
+      <title>Solving the unexecutable executable</title>
+      <link>https://brunoscheufler.com/blog/2021-11-14-solving-the-unexecutable-executable</link>
+      <pubDate>Sun, 14 Nov 2021 19:30:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-11-14-solving-the-unexecutable-executable</guid>
+    </item>
+    
+    <item>
+      <title>Accessing Workouts with HealthKit and Swift</title>
+      <link>https://brunoscheufler.com/blog/2021-11-07-accessing-workouts-with-healthkit-and-swift</link>
+      <pubDate>Sun, 07 Nov 2021 12:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-11-07-accessing-workouts-with-healthkit-and-swift</guid>
+    </item>
+    
+    <item>
+      <title>Reducing SaaS Complexity</title>
+      <link>https://brunoscheufler.com/blog/2021-10-31-reducing-saas-complexity</link>
+      <pubDate>Sun, 31 Oct 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-10-31-reducing-saas-complexity</guid>
+    </item>
+    
+    <item>
+      <title>Infrastructure-as-Code as Single Source of Truth</title>
+      <link>https://brunoscheufler.com/blog/2021-10-23-infrastructure-as-code-as-single-source-of-truth</link>
+      <pubDate>Sat, 23 Oct 2021 16:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-10-23-infrastructure-as-code-as-single-source-of-truth</guid>
+    </item>
+    
+    <item>
+      <title>Updating Notion Pages on a Schedule with GitHub Actions</title>
+      <link>https://brunoscheufler.com/blog/2021-10-17-updating-notion-pages-on-a-schedule-with-github-actions</link>
+      <pubDate>Sun, 17 Oct 2021 13:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-10-17-updating-notion-pages-on-a-schedule-with-github-actions</guid>
+    </item>
+    
+    <item>
+      <title>Generating Dynamic GitHub Actions Workflows with the Job Matrix Strategy</title>
+      <link>https://brunoscheufler.com/blog/2021-10-09-generating-dynamic-github-actions-workflows-with-the-job-matrix-strategy</link>
+      <pubDate>Sat, 09 Oct 2021 13:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-10-09-generating-dynamic-github-actions-workflows-with-the-job-matrix-strategy</guid>
+    </item>
+    
+    <item>
+      <title>Preview Environments for every Pull Request with Pulumi and Vercel</title>
+      <link>https://brunoscheufler.com/blog/2021-10-03-preview-environments-for-every-pull-request</link>
+      <pubDate>Sun, 03 Oct 2021 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-10-03-preview-environments-for-every-pull-request</guid>
+    </item>
+    
+    <item>
+      <title>Containers as Code with Pulumi and Docker</title>
+      <link>https://brunoscheufler.com/blog/2021-09-26-containers-as-code-with-pulumi-and-docker</link>
+      <pubDate>Sun, 26 Sep 2021 13:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-09-26-containers-as-code-with-pulumi-and-docker</guid>
+    </item>
+    
+    <item>
+      <title>Cutting Production Release Duration By 80%</title>
+      <link>https://brunoscheufler.com/blog/2021-09-19-cutting-production-release-duration-by-80-percent</link>
+      <pubDate>Sun, 19 Sep 2021 13:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-09-19-cutting-production-release-duration-by-80-percent</guid>
+    </item>
+    
+    <item>
+      <title>Implementing Transactions with Side Effects</title>
+      <link>https://brunoscheufler.com/blog/2021-09-12-implementing-transactions-with-side-effects</link>
+      <pubDate>Sun, 12 Sep 2021 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-09-12-implementing-transactions-with-side-effects</guid>
+    </item>
+    
+    <item>
+      <title>An introduction to R</title>
+      <link>https://brunoscheufler.com/blog/2021-09-03-an-introduction-to-r</link>
+      <pubDate>Fri, 03 Sep 2021 15:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-09-03-an-introduction-to-r</guid>
+    </item>
+    
+    <item>
+      <title>Communicating between Java and Go using gRPC</title>
+      <link>https://brunoscheufler.com/blog/2021-08-27-communicating-between-java-and-go-using-grpc</link>
+      <pubDate>Fri, 27 Aug 2021 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-08-27-communicating-between-java-and-go-using-grpc</guid>
+    </item>
+    
+    <item>
+      <title>Built it, but nobody came</title>
+      <link>https://brunoscheufler.com/blog/2021-08-22-built-it-but-nobody-came</link>
+      <pubDate>Sun, 22 Aug 2021 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-08-22-built-it-but-nobody-came</guid>
+    </item>
+    
+    <item>
+      <title>Analyzing Blog Performance Using R</title>
+      <link>https://brunoscheufler.com/blog/2021-08-15-analyzing-blog-performance-using-r</link>
+      <pubDate>Sun, 15 Aug 2021 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-08-15-analyzing-blog-performance-using-r</guid>
+    </item>
+    
+    <item>
+      <title>Setting up Algolia DocSearch with Next.js</title>
+      <link>https://brunoscheufler.com/blog/2021-08-08-setting-up-algolia-docsearch-with-nextjs</link>
+      <pubDate>Sun, 08 Aug 2021 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-08-08-setting-up-algolia-docsearch-with-nextjs</guid>
+    </item>
+    
+    <item>
+      <title>Multi-Stage Markdown Processing with remark</title>
+      <link>https://brunoscheufler.com/blog/2021-08-01-multi-stage-markdown-processing-with-remark</link>
+      <pubDate>Sun, 01 Aug 2021 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-08-01-multi-stage-markdown-processing-with-remark</guid>
+    </item>
+    
+    <item>
+      <title>Improving DataLoader Stack Traces</title>
+      <link>https://brunoscheufler.com/blog/2021-07-25-improving-dataloader-stack-traces</link>
+      <pubDate>Sun, 25 Jul 2021 14:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-07-25-improving-dataloader-stack-traces</guid>
+    </item>
+    
+    <item>
+      <title>Transforming Exponents, Radicals &amp; Fractions</title>
+      <link>https://brunoscheufler.com/blog/2021-07-18-transforming-exponents-radicals-fractions</link>
+      <pubDate>Sun, 18 Jul 2021 14:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-07-18-transforming-exponents-radicals-fractions</guid>
+    </item>
+    
+    <item>
+      <title>Motivating Employees with Stock Options</title>
+      <link>https://brunoscheufler.com/blog/2021-07-11-motivating-employees-with-stock-options</link>
+      <pubDate>Sun, 11 Jul 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-07-11-motivating-employees-with-stock-options</guid>
+    </item>
+    
+    <item>
+      <title>Faster TypeScript Feedback Loops with esbuild</title>
+      <link>https://brunoscheufler.com/blog/2021-07-04-shorter-typescript-feedback-loops-with-esbuild</link>
+      <pubDate>Sun, 04 Jul 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-07-04-shorter-typescript-feedback-loops-with-esbuild</guid>
+    </item>
+    
+    <item>
+      <title>Designing APIs to Last</title>
+      <link>https://brunoscheufler.com/blog/2021-06-27-designing-apis-to-last</link>
+      <pubDate>Sun, 27 Jun 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-06-27-designing-apis-to-last</guid>
+    </item>
+    
+    <item>
+      <title>Observing WebSocket infrastructure with Socket Inspector</title>
+      <link>https://brunoscheufler.com/blog/2021-06-19-observing-websocket-infrastructure-with-socket-inspector</link>
+      <pubDate>Sat, 19 Jun 2021 12:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-06-19-observing-websocket-infrastructure-with-socket-inspector</guid>
+    </item>
+    
+    <item>
+      <title>Rendering Remote Images with AsyncImage</title>
+      <link>https://brunoscheufler.com/blog/2021-06-07-rendering-remote-images-with-asyncimage</link>
+      <pubDate>Mon, 07 Jun 2021 21:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-06-07-rendering-remote-images-with-asyncimage</guid>
+    </item>
+    
+    <item>
+      <title>Versioning Features for Sustainable Product Evolution</title>
+      <link>https://brunoscheufler.com/blog/2021-06-05-versioning-features-for-sustainable-product-evolution</link>
+      <pubDate>Sat, 05 Jun 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-06-05-versioning-features-for-sustainable-product-evolution</guid>
+    </item>
+    
+    <item>
+      <title>Improving Content Discoverability with Topics</title>
+      <link>https://brunoscheufler.com/blog/2021-06-01-improving-content-discoverability-with-topics</link>
+      <pubDate>Tue, 01 Jun 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-06-01-improving-content-discoverability-with-topics</guid>
+    </item>
+    
+    <item>
+      <title>Locking and Synchronization for Node.js</title>
+      <link>https://brunoscheufler.com/blog/2021-05-31-locking-and-synchronization-for-nodejs</link>
+      <pubDate>Mon, 31 May 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-05-31-locking-and-synchronization-for-nodejs</guid>
+    </item>
+    
+    <item>
+      <title>A primer on SSO with SAML</title>
+      <link>https://brunoscheufler.com/blog/2021-05-26-a-primer-on-sso-with-saml</link>
+      <pubDate>Wed, 26 May 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-05-26-a-primer-on-sso-with-saml</guid>
+    </item>
+    
+    <item>
+      <title>Picking Monitoring Methods to Increase Observability</title>
+      <link>https://brunoscheufler.com/blog/2021-05-22-picking-monitoring-methods-to-increase-observability</link>
+      <pubDate>Sat, 22 May 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-05-22-picking-monitoring-methods-to-increase-observability</guid>
+    </item>
+    
+    <item>
+      <title>Improving observability with annotated build information</title>
+      <link>https://brunoscheufler.com/blog/2021-05-16-improving-observability-with-build-information</link>
+      <pubDate>Sun, 16 May 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-05-16-improving-observability-with-build-information</guid>
+    </item>
+    
+    <item>
+      <title>Sending Contact Form Submissions to Notion</title>
+      <link>https://brunoscheufler.com/blog/2021-05-13-sending-contact-form-submissions-to-notion</link>
+      <pubDate>Thu, 13 May 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-05-13-sending-contact-form-submissions-to-notion</guid>
+    </item>
+    
+    <item>
+      <title>Improving releases with service-splitting</title>
+      <link>https://brunoscheufler.com/blog/2021-05-09-improving-releases-with-service-splitting</link>
+      <pubDate>Sun, 09 May 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-05-09-improving-releases-with-service-splitting</guid>
+    </item>
+    
+    <item>
+      <title>Running a commit-based release infrastructure</title>
+      <link>https://brunoscheufler.com/blog/2021-05-02-running-a-commit-based-release-infrastructure</link>
+      <pubDate>Sun, 02 May 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-05-02-running-a-commit-based-release-infrastructure</guid>
+    </item>
+    
+    <item>
+      <title>My 2021 Swift Student Challenge Submission</title>
+      <link>https://brunoscheufler.com/blog/2021-04-24-my-2021-swift-student-challenge-submission</link>
+      <pubDate>Sat, 24 Apr 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-04-24-my-2021-swift-student-challenge-submission</guid>
+    </item>
+    
+    <item>
+      <title>Processing Markdown with remark and unified plugins</title>
+      <link>https://brunoscheufler.com/blog/2021-04-18-processing-markdown-with-remark-and-unified-plugins</link>
+      <pubDate>Sun, 18 Apr 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-04-18-processing-markdown-with-remark-and-unified-plugins</guid>
+    </item>
+    
+    <item>
+      <title>The Future of Multiplayer: Cloudflare Durable Objects</title>
+      <link>https://brunoscheufler.com/blog/2021-04-11-the-future-of-multiplayer-cloudflare-durable-objects</link>
+      <pubDate>Sun, 11 Apr 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-04-11-the-future-of-multiplayer-cloudflare-durable-objects</guid>
+    </item>
+    
+    <item>
+      <title>SwiftUI Meets Swift Playgrounds</title>
+      <link>https://brunoscheufler.com/blog/2021-04-01-swiftui-meets-swift-playgrounds</link>
+      <pubDate>Thu, 01 Apr 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-04-01-swiftui-meets-swift-playgrounds</guid>
+    </item>
+    
+    <item>
+      <title>Visualize Regressions with Playwright Video Recording</title>
+      <link>https://brunoscheufler.com/blog/2021-03-23-visualize-regressions-with-playwright-video-recording</link>
+      <pubDate>Tue, 23 Mar 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-03-23-visualize-regressions-with-playwright-video-recording</guid>
+    </item>
+    
+    <item>
+      <title>When Velocity Implies Simplicity</title>
+      <link>https://brunoscheufler.com/blog/2021-03-18-when-velocity-implies-simplicity</link>
+      <pubDate>Thu, 18 Mar 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-03-18-when-velocity-implies-simplicity</guid>
+    </item>
+    
+    <item>
+      <title>Efficient Caching with Reduced Roundtrips</title>
+      <link>https://brunoscheufler.com/blog/2021-03-10-efficient-caching-with-reduced-roundtrips</link>
+      <pubDate>Wed, 10 Mar 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-03-10-efficient-caching-with-reduced-roundtrips</guid>
+    </item>
+    
+    <item>
+      <title>One Semester In, Five To Go</title>
+      <link>https://brunoscheufler.com/blog/2021-03-04-one-semester-in</link>
+      <pubDate>Thu, 04 Mar 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-03-04-one-semester-in</guid>
+    </item>
+    
+    <item>
+      <title>Preventing Increasing Fragmentation</title>
+      <link>https://brunoscheufler.com/blog/2021-02-26-preventing-increasing-fragmentation</link>
+      <pubDate>Fri, 26 Feb 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-02-26-preventing-increasing-fragmentation</guid>
+    </item>
+    
+    <item>
+      <title>Instant Full-Stack Insights with NewRelic</title>
+      <link>https://brunoscheufler.com/blog/2021-02-21-full-stack-insights-with-newrelic</link>
+      <pubDate>Sun, 21 Feb 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-02-21-full-stack-insights-with-newrelic</guid>
+    </item>
+    
+    <item>
+      <title>Secure Asset Management and Upload with S3</title>
+      <link>https://brunoscheufler.com/blog/2021-02-12-managing-user-media-assets</link>
+      <pubDate>Fri, 12 Feb 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-02-12-managing-user-media-assets</guid>
+    </item>
+    
+    <item>
+      <title>GraphQL-powered API Integration Tests</title>
+      <link>https://brunoscheufler.com/blog/2021-02-04-graphql-powered-integration-tests</link>
+      <pubDate>Thu, 04 Feb 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-02-04-graphql-powered-integration-tests</guid>
+    </item>
+    
+    <item>
+      <title>Exploring State: State Machines</title>
+      <link>https://brunoscheufler.com/blog/2021-01-28-exploring-state-state-machines</link>
+      <pubDate>Thu, 28 Jan 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-01-28-exploring-state-state-machines</guid>
+    </item>
+    
+    <item>
+      <title>Finding The First Iteration</title>
+      <link>https://brunoscheufler.com/blog/2021-01-22-finding-the-first-iteration</link>
+      <pubDate>Fri, 22 Jan 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-01-22-finding-the-first-iteration</guid>
+    </item>
+    
+    <item>
+      <title>Centralized Validation with GraphQL Scalar Types</title>
+      <link>https://brunoscheufler.com/blog/2021-01-17-centralized-validation-with-graphql-scalar-types</link>
+      <pubDate>Sun, 17 Jan 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-01-17-centralized-validation-with-graphql-scalar-types</guid>
+    </item>
+    
+    <item>
+      <title>Deliver context-aware navigation with Push Evaluation</title>
+      <link>https://brunoscheufler.com/blog/2021-01-10-deliver-context-aware-navigation-with-push-evaluation</link>
+      <pubDate>Sun, 10 Jan 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-01-10-deliver-context-aware-navigation-with-push-evaluation</guid>
+    </item>
+    
+    <item>
+      <title>Building Functional Stack Navigation</title>
+      <link>https://brunoscheufler.com/blog/2021-01-05-building-functional-stack-navigation</link>
+      <pubDate>Tue, 05 Jan 2021 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2021-01-05-building-functional-stack-navigation</guid>
+    </item>
+    
+    <item>
+      <title>Introducing Stapel</title>
+      <link>https://brunoscheufler.com/blog/2020-12-30-introducing-stapel</link>
+      <pubDate>Wed, 30 Dec 2020 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-12-30-introducing-stapel</guid>
+    </item>
+    
+    <item>
+      <title>Looking Back on 2020</title>
+      <link>https://brunoscheufler.com/blog/2020-12-29-looking-back-on-2020</link>
+      <pubDate>Tue, 29 Dec 2020 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-12-29-looking-back-on-2020</guid>
+    </item>
+    
+    <item>
+      <title>Multiple App Environments Using Xcode Schemes</title>
+      <link>https://brunoscheufler.com/blog/2020-12-22-multiple-app-environments-using-xcode-schemes</link>
+      <pubDate>Tue, 22 Dec 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-12-22-multiple-app-environments-using-xcode-schemes</guid>
+    </item>
+    
+    <item>
+      <title>Supporting Universal Links with SwiftUI</title>
+      <link>https://brunoscheufler.com/blog/2020-12-13-supporting-universal-links-with-swiftui</link>
+      <pubDate>Sun, 13 Dec 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-12-13-supporting-universal-links-with-swiftui</guid>
+    </item>
+    
+    <item>
+      <title>APNs Environments and Push Notification Delivery</title>
+      <link>https://brunoscheufler.com/blog/2020-12-07-apns-environments-and-push-notifications</link>
+      <pubDate>Mon, 07 Dec 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-12-07-apns-environments-and-push-notifications</guid>
+    </item>
+    
+    <item>
+      <title>It&apos;s About Time</title>
+      <link>https://brunoscheufler.com/blog/2020-11-29-its-about-time</link>
+      <pubDate>Sun, 29 Nov 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-11-29-its-about-time</guid>
+    </item>
+    
+    <item>
+      <title>Preview-Driven Development with SwiftUI</title>
+      <link>https://brunoscheufler.com/blog/2020-11-23-preview-driven-development-with-swiftui</link>
+      <pubDate>Mon, 23 Nov 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-11-23-preview-driven-development-with-swiftui</guid>
+    </item>
+    
+    <item>
+      <title>State and View Composition in SwiftUI</title>
+      <link>https://brunoscheufler.com/blog/2020-11-18-state-and-view-composition-in-swiftui</link>
+      <pubDate>Wed, 18 Nov 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-11-18-state-and-view-composition-in-swiftui</guid>
+    </item>
+    
+    <item>
+      <title>Scraping Country Codes</title>
+      <link>https://brunoscheufler.com/blog/2020-11-15-scraping-country-codes</link>
+      <pubDate>Sun, 15 Nov 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-11-15-scraping-country-codes</guid>
+    </item>
+    
+    <item>
+      <title>Boring Technologies, Reliable Foundations</title>
+      <link>https://brunoscheufler.com/blog/2020-11-12-boring-technologies-reliable-foundations</link>
+      <pubDate>Thu, 12 Nov 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-11-12-boring-technologies-reliable-foundations</guid>
+    </item>
+    
+    <item>
+      <title>Getting Into iOS Development with SwiftUI</title>
+      <link>https://brunoscheufler.com/blog/2020-11-09-getting-into-ios-development-with-swiftui</link>
+      <pubDate>Mon, 09 Nov 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-11-09-getting-into-ios-development-with-swiftui</guid>
+    </item>
+    
+    <item>
+      <title>Starting Lasting Side Projects</title>
+      <link>https://brunoscheufler.com/blog/2020-11-05-starting-lasting-side-projects</link>
+      <pubDate>Thu, 05 Nov 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-11-05-starting-lasting-side-projects</guid>
+    </item>
+    
+    <item>
+      <title>The Pace of Studying in 2020</title>
+      <link>https://brunoscheufler.com/blog/2020-11-02-the-pace-of-studying-in-2020</link>
+      <pubDate>Mon, 02 Nov 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-11-02-the-pace-of-studying-in-2020</guid>
+    </item>
+    
+    <item>
+      <title>When (not) to use pg_dump</title>
+      <link>https://brunoscheufler.com/blog/2020-10-30-when-not-to-use-pg-dump</link>
+      <pubDate>Fri, 30 Oct 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-10-30-when-not-to-use-pg-dump</guid>
+    </item>
+    
+    <item>
+      <title>Building Productive Habits</title>
+      <link>https://brunoscheufler.com/blog/2020-10-28-building-productive-habits</link>
+      <pubDate>Wed, 28 Oct 2020 10:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-10-28-building-productive-habits</guid>
+    </item>
+    
+    <item>
+      <title>Digitizing My Maths Studies with TeX</title>
+      <link>https://brunoscheufler.com/blog/2020-10-23-digitizing-my-maths-studies-with-tex</link>
+      <pubDate>Fri, 23 Oct 2020 10:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-10-23-digitizing-my-maths-studies-with-tex</guid>
+    </item>
+    
+    <item>
+      <title>Rebuilding my portfolio using Next.js &amp; TailwindCSS</title>
+      <link>https://brunoscheufler.com/blog/2020-10-20-rebuilding-my-portfolio-using-nextjs-tailwind</link>
+      <pubDate>Tue, 20 Oct 2020 10:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-10-20-rebuilding-my-portfolio-using-nextjs-tailwind</guid>
+    </item>
+    
+    <item>
+      <title>My Favorite Tools in 2020</title>
+      <link>https://brunoscheufler.com/blog/2020-10-16-my-favorite-tools-in-2020</link>
+      <pubDate>Fri, 16 Oct 2020 10:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-10-16-my-favorite-tools-in-2020</guid>
+    </item>
+    
+    <item>
+      <title>Reaching Remote Acceptance</title>
+      <link>https://brunoscheufler.com/blog/2020-10-13-reaching-remote-acceptance</link>
+      <pubDate>Tue, 13 Oct 2020 10:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-10-13-reaching-remote-acceptance</guid>
+    </item>
+    
+    <item>
+      <title>Rapid TypeScript Development with esbuild and Estrella</title>
+      <link>https://brunoscheufler.com/blog/2020-10-04-rapid-typescript-development-with-esbuild-estrella</link>
+      <pubDate>Sun, 04 Oct 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-10-04-rapid-typescript-development-with-esbuild-estrella</guid>
+    </item>
+    
+    <item>
+      <title>The End of an Era for Public Container Image Registries</title>
+      <link>https://brunoscheufler.com/blog/2020-09-19-public-image-registries-end-of-an-era</link>
+      <pubDate>Sat, 19 Sep 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-09-19-public-image-registries-end-of-an-era</guid>
+    </item>
+    
+    <item>
+      <title>Common Pitfalls in Go Application Development</title>
+      <link>https://brunoscheufler.com/blog/2020-09-12-common-go-application-development-pitfalls</link>
+      <pubDate>Sat, 12 Sep 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-09-12-common-go-application-development-pitfalls</guid>
+    </item>
+    
+    <item>
+      <title>Fundamental Design Decisions for Scalable Systems</title>
+      <link>https://brunoscheufler.com/blog/2020-09-01-fundamental-design-decisions-for-scalable-systems</link>
+      <pubDate>Tue, 01 Sep 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-09-01-fundamental-design-decisions-for-scalable-systems</guid>
+    </item>
+    
+    <item>
+      <title>Forwarding Incoming Mails with AWS Lambda and SES</title>
+      <link>https://brunoscheufler.com/blog/2020-08-28-forwarding-emails-with-ses</link>
+      <pubDate>Fri, 28 Aug 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-08-28-forwarding-emails-with-ses</guid>
+    </item>
+    
+    <item>
+      <title>Building Powerful Integrations with GitHub Apps</title>
+      <link>https://brunoscheufler.com/blog/2020-08-16-building-github-apps</link>
+      <pubDate>Sun, 16 Aug 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-08-16-building-github-apps</guid>
+    </item>
+    
+    <item>
+      <title>Seamless End-To-End Browser Tests with QA Wolf</title>
+      <link>https://brunoscheufler.com/blog/2020-08-03-seamless-browser-tests-with-qawolf</link>
+      <pubDate>Mon, 03 Aug 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-08-03-seamless-browser-tests-with-qawolf</guid>
+    </item>
+    
+    <item>
+      <title>Accessing ECS Task Metadata at Runtime</title>
+      <link>https://brunoscheufler.com/blog/2020-07-31-aws-ecs-task-metadata</link>
+      <pubDate>Fri, 31 Jul 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-07-31-aws-ecs-task-metadata</guid>
+    </item>
+    
+    <item>
+      <title>Tunneling Local Applications with SSH and Caddy</title>
+      <link>https://brunoscheufler.com/blog/2020-07-26-tunneling-local-applications-with-ssh-caddy</link>
+      <pubDate>Sun, 26 Jul 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-07-26-tunneling-local-applications-with-ssh-caddy</guid>
+    </item>
+    
+    <item>
+      <title>Handling GraphQL Errors using Sentry</title>
+      <link>https://brunoscheufler.com/blog/2020-07-22-handling-graphql-errors-using-sentry</link>
+      <pubDate>Wed, 22 Jul 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-07-22-handling-graphql-errors-using-sentry</guid>
+    </item>
+    
+    <item>
+      <title>The Weirdest Error I Ever Debugged</title>
+      <link>https://brunoscheufler.com/blog/2020-07-17-the-weirdest-error-i-ever-debugged</link>
+      <pubDate>Fri, 17 Jul 2020 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-07-17-the-weirdest-error-i-ever-debugged</guid>
+    </item>
+    
+    <item>
+      <title>Documenting Design Decisions using RFCs and ADRs</title>
+      <link>https://brunoscheufler.com/blog/2020-07-04-documenting-design-decisions-using-rfcs-and-adrs</link>
+      <pubDate>Sat, 04 Jul 2020 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-07-04-documenting-design-decisions-using-rfcs-and-adrs</guid>
+    </item>
+    
+    <item>
+      <title>Scaling Release Systems</title>
+      <link>https://brunoscheufler.com/blog/2020-06-26-scaling-release-systems</link>
+      <pubDate>Fri, 26 Jun 2020 15:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-06-26-scaling-release-systems</guid>
+    </item>
+    
+    <item>
+      <title>Ship Early and Ship Often</title>
+      <link>https://brunoscheufler.com/blog/2020-06-20-ship-early-and-ship-often</link>
+      <pubDate>Sat, 20 Jun 2020 15:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-06-20-ship-early-and-ship-often</guid>
+    </item>
+    
+    <item>
+      <title>Getting Started with Electron Application Development for macOS</title>
+      <link>https://brunoscheufler.com/blog/2020-06-14-getting-started-with-building-macos-electron-apps</link>
+      <pubDate>Sun, 14 Jun 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-06-14-getting-started-with-building-macos-electron-apps</guid>
+    </item>
+    
+    <item>
+      <title>Picking the perfect Serif typeface</title>
+      <link>https://brunoscheufler.com/blog/2020-06-07-picking-the-perfect-serif-typeface</link>
+      <pubDate>Sun, 07 Jun 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-06-07-picking-the-perfect-serif-typeface</guid>
+    </item>
+    
+    <item>
+      <title>Bootstrapping a Portable Cypress Setup for Blazing-Fast Browser Tests</title>
+      <link>https://brunoscheufler.com/blog/2020-05-31-bootstrapping-a-portable-cypress-setup-for-blazing-fast-browser-tests</link>
+      <pubDate>Sun, 31 May 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-05-31-bootstrapping-a-portable-cypress-setup-for-blazing-fast-browser-tests</guid>
+    </item>
+    
+    <item>
+      <title>Measuring Velocity: The Case for Electron</title>
+      <link>https://brunoscheufler.com/blog/2020-05-24-the-case-for-electron</link>
+      <pubDate>Sun, 24 May 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-05-24-the-case-for-electron</guid>
+    </item>
+    
+    <item>
+      <title>Deno and the future of Node.js</title>
+      <link>https://brunoscheufler.com/blog/2020-05-16-deno-and-the-future-of-node</link>
+      <pubDate>Sat, 16 May 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-05-16-deno-and-the-future-of-node</guid>
+    </item>
+    
+    <item>
+      <title>Building a Testing Culture</title>
+      <link>https://brunoscheufler.com/blog/2020-05-09-building-a-testing-culture</link>
+      <pubDate>Sat, 09 May 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-05-09-building-a-testing-culture</guid>
+    </item>
+    
+    <item>
+      <title>Managing Your Infrastructure as Code with Pulumi</title>
+      <link>https://brunoscheufler.com/blog/2020-04-26-managing-your-infrastructure-as-code-with-pulumi</link>
+      <pubDate>Sun, 26 Apr 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-04-26-managing-your-infrastructure-as-code-with-pulumi</guid>
+    </item>
+    
+    <item>
+      <title>Rapidly Setting up GraphQL Data Fetching in React</title>
+      <link>https://brunoscheufler.com/blog/2020-04-25-setting-up-graphql-data-fetching-react</link>
+      <pubDate>Sat, 25 Apr 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-04-25-setting-up-graphql-data-fetching-react</guid>
+    </item>
+    
+    <item>
+      <title>Building Go Test Suites using Testify</title>
+      <link>https://brunoscheufler.com/blog/2020-04-12-building-go-test-suites-using-testify</link>
+      <pubDate>Sun, 12 Apr 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-04-12-building-go-test-suites-using-testify</guid>
+    </item>
+    
+    <item>
+      <title>Verifying Asymmetrically-Signed JWTs in Go</title>
+      <link>https://brunoscheufler.com/blog/2020-04-11-verifying-asymmetrically-signed-jwts-in-go</link>
+      <pubDate>Sat, 11 Apr 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-04-11-verifying-asymmetrically-signed-jwts-in-go</guid>
+    </item>
+    
+    <item>
+      <title>Building Composable Go Applications With Interfaces</title>
+      <link>https://brunoscheufler.com/blog/2020-04-05-building-composable-go-applications-with-interfaces</link>
+      <pubDate>Sun, 05 Apr 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-04-05-building-composable-go-applications-with-interfaces</guid>
+    </item>
+    
+    <item>
+      <title>Conquering Randomness with Composable Go Application Design</title>
+      <link>https://brunoscheufler.com/blog/2020-03-29-conquering-randomness-with-composable-go-application-design</link>
+      <pubDate>Sun, 29 Mar 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-03-29-conquering-randomness-with-composable-go-application-design</guid>
+    </item>
+    
+    <item>
+      <title>Testing Web Applications in Go</title>
+      <link>https://brunoscheufler.com/blog/2020-03-28-testing-web-applications-in-go</link>
+      <pubDate>Sat, 28 Mar 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-03-28-testing-web-applications-in-go</guid>
+    </item>
+    
+    <item>
+      <title>Recovering HTTP Handlers In Go</title>
+      <link>https://brunoscheufler.com/blog/2020-03-22-recovering-http-handlers-in-go</link>
+      <pubDate>Sun, 22 Mar 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-03-22-recovering-http-handlers-in-go</guid>
+    </item>
+    
+    <item>
+      <title>Browser-Only React Components With Suspense</title>
+      <link>https://brunoscheufler.com/blog/2020-03-21-browser-only-react-components-with-suspense</link>
+      <pubDate>Sat, 21 Mar 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-03-21-browser-only-react-components-with-suspense</guid>
+    </item>
+    
+    <item>
+      <title>Redesigning My Portfolio for 2020</title>
+      <link>https://brunoscheufler.com/blog/2020-03-15-redesigning-my-portfolio-for-2020</link>
+      <pubDate>Sun, 15 Mar 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-03-15-redesigning-my-portfolio-for-2020</guid>
+    </item>
+    
+    <item>
+      <title>Configuring Jest Snapshot Resolvers</title>
+      <link>https://brunoscheufler.com/blog/2020-03-08-configuring-jest-snapshot-resolvers</link>
+      <pubDate>Sun, 08 Mar 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-03-08-configuring-jest-snapshot-resolvers</guid>
+    </item>
+    
+    <item>
+      <title>Real-Time Postgres Change-Streaming With lode</title>
+      <link>https://brunoscheufler.com/blog/2020-03-01-real-time-postgres-change-streaming-with-lode</link>
+      <pubDate>Sun, 01 Mar 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-03-01-real-time-postgres-change-streaming-with-lode</guid>
+    </item>
+    
+    <item>
+      <title>Utilizing the data layer: Deadlock Relations with Deferred Constraints</title>
+      <link>https://brunoscheufler.com/blog/2020-02-23-deadlock-relations-with-deferred-constraints</link>
+      <pubDate>Sun, 23 Feb 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-02-23-deadlock-relations-with-deferred-constraints</guid>
+    </item>
+    
+    <item>
+      <title>Utilizing the data layer: Complex UPSERTs in Postgres</title>
+      <link>https://brunoscheufler.com/blog/2020-02-16-complex-upserts-in-postgres</link>
+      <pubDate>Sun, 16 Feb 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-02-16-complex-upserts-in-postgres</guid>
+    </item>
+    
+    <item>
+      <title>Supercharging Jest with Custom Reporters</title>
+      <link>https://brunoscheufler.com/blog/2020-02-14-supercharging-jest-with-custom-reporters</link>
+      <pubDate>Fri, 14 Feb 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-02-14-supercharging-jest-with-custom-reporters</guid>
+    </item>
+    
+    <item>
+      <title>Utilizing the data layer: Conditional INSERTs in Postgres</title>
+      <link>https://brunoscheufler.com/blog/2020-02-08-conditional-inserts-in-postgres</link>
+      <pubDate>Sat, 08 Feb 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-02-08-conditional-inserts-in-postgres</guid>
+    </item>
+    
+    <item>
+      <title>Building an Authoritative DNS Nameserver</title>
+      <link>https://brunoscheufler.com/blog/2020-01-19-building-an-authoritative-dns-nameserver</link>
+      <pubDate>Sun, 19 Jan 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-01-19-building-an-authoritative-dns-nameserver</guid>
+    </item>
+    
+    <item>
+      <title>Global Service Deployments with Anycast and BGP</title>
+      <link>https://brunoscheufler.com/blog/2020-01-05-global-service-deployments-with-anycast-bgp</link>
+      <pubDate>Sun, 05 Jan 2020 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2020-01-05-global-service-deployments-with-anycast-bgp</guid>
+    </item>
+    
+    <item>
+      <title>Goodbye 2019, Welcome 2020</title>
+      <link>https://brunoscheufler.com/blog/2019-12-28-goodbye-2019-welcome-2020</link>
+      <pubDate>Sat, 28 Dec 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-12-28-goodbye-2019-welcome-2020</guid>
+    </item>
+    
+    <item>
+      <title>Back to Bare-Metal: Building and Hosting my Metrics</title>
+      <link>https://brunoscheufler.com/blog/2019-12-22-building-and-hosting-my-metrics</link>
+      <pubDate>Sun, 22 Dec 2019 16:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-12-22-building-and-hosting-my-metrics</guid>
+    </item>
+    
+    <item>
+      <title>Improving Static Assertions with Snapshot Tests in Go</title>
+      <link>https://brunoscheufler.com/blog/2019-12-04-go-snapshot-tests</link>
+      <pubDate>Wed, 04 Dec 2019 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-12-04-go-snapshot-tests</guid>
+    </item>
+    
+    <item>
+      <title>Scaling Network Concurrency in Go</title>
+      <link>https://brunoscheufler.com/blog/2019-11-17-scaling-network-concurrency-in-go</link>
+      <pubDate>Sun, 17 Nov 2019 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-11-17-scaling-network-concurrency-in-go</guid>
+    </item>
+    
+    <item>
+      <title>Understanding Go&apos;s context package</title>
+      <link>https://brunoscheufler.com/blog/2019-11-03-understanding-the-go-context</link>
+      <pubDate>Sun, 03 Nov 2019 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-11-03-understanding-the-go-context</guid>
+    </item>
+    
+    <item>
+      <title>Tinkering with Global WireGuard Deployments</title>
+      <link>https://brunoscheufler.com/blog/2019-10-27-tinkering-with-wireguard-deployments</link>
+      <pubDate>Sun, 27 Oct 2019 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-10-27-tinkering-with-wireguard-deployments</guid>
+    </item>
+    
+    <item>
+      <title>Parallelized Batch Processing in Go</title>
+      <link>https://brunoscheufler.com/blog/2019-09-21-parallelized-batch-processing-in-go</link>
+      <pubDate>Sat, 21 Sep 2019 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-09-21-parallelized-batch-processing-in-go</guid>
+    </item>
+    
+    <item>
+      <title>A Brief GraphQL Day Bodensee Recap</title>
+      <link>https://brunoscheufler.com/blog/2019-09-12-graphql-day-bodensee-recap</link>
+      <pubDate>Thu, 12 Sep 2019 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-09-12-graphql-day-bodensee-recap</guid>
+    </item>
+    
+    <item>
+      <title>Handling Concurrent Go Workflows</title>
+      <link>https://brunoscheufler.com/blog/2019-09-01-handling-concurrent-go-workflows</link>
+      <pubDate>Sun, 01 Sep 2019 16:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-09-01-handling-concurrent-go-workflows</guid>
+    </item>
+    
+    <item>
+      <title>JavaScript Generators And What They&apos;re Used For</title>
+      <link>https://brunoscheufler.com/blog/2019-08-17-javascript-generators-and-what-theyre-used-for</link>
+      <pubDate>Sat, 17 Aug 2019 16:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-08-17-javascript-generators-and-what-theyre-used-for</guid>
+    </item>
+    
+    <item>
+      <title>Inspecting Kubernetes Deployment Logs with kail</title>
+      <link>https://brunoscheufler.com/blog/2019-08-11-inspecting-k8s-logs-with-kail</link>
+      <pubDate>Sun, 11 Aug 2019 16:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-08-11-inspecting-k8s-logs-with-kail</guid>
+    </item>
+    
+    <item>
+      <title>Boost Your Team&apos;s DX By Formatting All Git Commits</title>
+      <link>https://brunoscheufler.com/blog/2019-07-28-boost-team-dx-with-formatted-git-commits</link>
+      <pubDate>Sun, 28 Jul 2019 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-07-28-boost-team-dx-with-formatted-git-commits</guid>
+    </item>
+    
+    <item>
+      <title>JAMstack Conf London: That&apos;s My Jam!</title>
+      <link>https://brunoscheufler.com/blog/2019-07-11-jamstack-conf-london-recap</link>
+      <pubDate>Thu, 11 Jul 2019 22:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-07-11-jamstack-conf-london-recap</guid>
+    </item>
+    
+    <item>
+      <title>Retrospective on GraphQL Conf &amp; Prisma Day</title>
+      <link>https://brunoscheufler.com/blog/2019-06-26-graphql-conf-prisma-day-retro</link>
+      <pubDate>Wed, 26 Jun 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-06-26-graphql-conf-prisma-day-retro</guid>
+    </item>
+    
+    <item>
+      <title>Automating my open-source projects with CI/CD workflows</title>
+      <link>https://brunoscheufler.com/blog/2019-06-09-automating-open-source-projects-with-ci-cd</link>
+      <pubDate>Sun, 09 Jun 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-06-09-automating-open-source-projects-with-ci-cd</guid>
+    </item>
+    
+    <item>
+      <title>Accessing Kubernetes services locally using kubefwd</title>
+      <link>https://brunoscheufler.com/blog/2019-06-02-accessing-k8s-services-locally-using-kubefwd</link>
+      <pubDate>Sun, 02 Jun 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-06-02-accessing-k8s-services-locally-using-kubefwd</guid>
+    </item>
+    
+    <item>
+      <title>Reaching Consensus: GraphQL Input Unions</title>
+      <link>https://brunoscheufler.com/blog/2019-05-19-reaching-consensus-graphql-input-union</link>
+      <pubDate>Sun, 19 May 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-05-19-reaching-consensus-graphql-input-union</guid>
+    </item>
+    
+    <item>
+      <title>What&apos;s Next?</title>
+      <link>https://brunoscheufler.com/blog/2019-05-12-whats-next</link>
+      <pubDate>Sun, 12 May 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-05-12-whats-next</guid>
+    </item>
+    
+    <item>
+      <title>Choosing the Right Go Web Framework</title>
+      <link>https://brunoscheufler.com/blog/2019-04-26-choosing-the-right-go-web-framework</link>
+      <pubDate>Fri, 26 Apr 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-04-26-choosing-the-right-go-web-framework</guid>
+    </item>
+    
+    <item>
+      <title>Debugging Google Cloud Pub/Sub services in production</title>
+      <link>https://brunoscheufler.com/blog/2019-04-10-debugging-google-cloud-pubsub</link>
+      <pubDate>Wed, 10 Apr 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-04-10-debugging-google-cloud-pubsub</guid>
+    </item>
+    
+    <item>
+      <title>The Lifecycle of Side Projects: Planning &amp; Early Stages</title>
+      <link>https://brunoscheufler.com/blog/2019-03-24-lifecycle-of-side-projects-early-stages</link>
+      <pubDate>Sun, 24 Mar 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-03-24-lifecycle-of-side-projects-early-stages</guid>
+    </item>
+    
+    <item>
+      <title>Updating your GitHub status with ghstatus</title>
+      <link>https://brunoscheufler.com/blog/2019-03-17-updating-your-github-status-with-ghstatus</link>
+      <pubDate>Sun, 17 Mar 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-03-17-updating-your-github-status-with-ghstatus</guid>
+    </item>
+    
+    <item>
+      <title>The State of GraphQL × Go</title>
+      <link>https://brunoscheufler.com/blog/2019-03-03-state-of-graphql-golang</link>
+      <pubDate>Sun, 03 Mar 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-03-03-state-of-graphql-golang</guid>
+    </item>
+    
+    <item>
+      <title>Setting up Kubernetes Dashboard</title>
+      <link>https://brunoscheufler.com/blog/2019-02-28-setting-up-k8s-dashboard</link>
+      <pubDate>Thu, 28 Feb 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-02-28-setting-up-k8s-dashboard</guid>
+    </item>
+    
+    <item>
+      <title>Provisioning Kubernetes clusters</title>
+      <link>https://brunoscheufler.com/blog/2019-02-22-provisioning-k8s-cluster</link>
+      <pubDate>Fri, 22 Feb 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-02-22-provisioning-k8s-cluster</guid>
+    </item>
+    
+    <item>
+      <title>Empowering CI/CD workflows with compose-deploy</title>
+      <link>https://brunoscheufler.com/blog/2019-02-13-empowering-ci-cd-workflows-with-compose-deploy</link>
+      <pubDate>Wed, 13 Feb 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-02-13-empowering-ci-cd-workflows-with-compose-deploy</guid>
+    </item>
+    
+    <item>
+      <title>Simplifying Docker deployments with compose-deploy</title>
+      <link>https://brunoscheufler.com/blog/2019-02-09-simplifying-docker-deployments-with-compose-deploy</link>
+      <pubDate>Sat, 09 Feb 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-02-09-simplifying-docker-deployments-with-compose-deploy</guid>
+    </item>
+    
+    <item>
+      <title>Bootstrapping local Kubernetes clusters using kind</title>
+      <link>https://brunoscheufler.com/blog/2019-02-01-bootstrapping-local-k8s-clusters-using-kind</link>
+      <pubDate>Fri, 01 Feb 2019 17:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-02-01-bootstrapping-local-k8s-clusters-using-kind</guid>
+    </item>
+    
+    <item>
+      <title>Introducing aqueduct</title>
+      <link>https://brunoscheufler.com/blog/2019-01-27-introducing-aqueduct</link>
+      <pubDate>Sun, 27 Jan 2019 16:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-01-27-introducing-aqueduct</guid>
+    </item>
+    
+    <item>
+      <title>Introducing GraphQL Jaeger tracing middleware</title>
+      <link>https://brunoscheufler.com/blog/2019-01-20-introducing-graphql-middleware-jaeger</link>
+      <pubDate>Sun, 20 Jan 2019 16:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-01-20-introducing-graphql-middleware-jaeger</guid>
+    </item>
+    
+    <item>
+      <title>Adding tracing to your GraphQL services with Jaeger</title>
+      <link>https://brunoscheufler.com/blog/2019-01-19-adding-jaeger-tracing-to-node-gql-services</link>
+      <pubDate>Sat, 19 Jan 2019 18:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2019-01-19-adding-jaeger-tracing-to-node-gql-services</guid>
+    </item>
+    
+    <item>
+      <title>Designing my new portfolio</title>
+      <link>https://brunoscheufler.com/blog/2018-12-22-designing-my-new-portfolio</link>
+      <pubDate>Sat, 22 Dec 2018 21:00:20 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2018-12-22-designing-my-new-portfolio</guid>
+    </item>
+    
+  </channel>
+  </rss>
+  

@@ -17,7 +17,7 @@ export default async () => {
     const relativeLink = (link) => new URL(link, baseUrl).toString();
 
     const rawFeed = await readFeed(name);
-    const { title, item, link } = parseFeed(rawFeed);
+    const { title, item, link } = parseFeed(baseUrl, rawFeed);
 
     articles.push(
       li(
@@ -42,9 +42,10 @@ export default async () => {
 
 /**
  * parsea un feed de rss encontrando cosas que htmlparser2 solo no encuentra
+ * @param {string} feedUrl
  * @param {string} rawFeed
  */
-function parseFeed(rawFeed) {
+function parseFeed(feedUrl, rawFeed) {
   const feed = _parseFeed(rawFeed);
   const item = feed?.items[0];
 
@@ -54,7 +55,11 @@ function parseFeed(rawFeed) {
     dom.childNodes,
     false
   )[0];
-  const linksDom = getElementsByTagName("link", feedDom.childNodes, false);
+  const linksDom = getElementsByTagName(
+    (t) => ["link", "atom:link"].includes(t),
+    feedDom.childNodes,
+    false
+  );
   const linkDom = linksDom.find(
     (d) =>
       d.attribs.rel === "alternate" ||
@@ -62,6 +67,9 @@ function parseFeed(rawFeed) {
       // >If the "rel" attribute is not present, the link element MUST be interpreted as if the link relation type is "alternate".
       !("rel" in d.attribs)
   );
+
+  const feedUrll = new URL(feedUrl);
+  const link = linkDom?.attribs?.href || feedUrll.origin;
   if (
     !feed ||
     !feed.link ||
@@ -70,15 +78,14 @@ function parseFeed(rawFeed) {
     !item.link ||
     !item.title ||
     !item.pubDate ||
-    !linkDom ||
-    !linkDom.attribs.href
+    !link
   ) {
     throw "no pude parsear";
   }
 
   return {
     title: feed.title,
-    link: linkDom.attribs.href,
+    link,
     item: { title: item.title, link: item.link, pubDate: item.pubDate },
   };
 }
