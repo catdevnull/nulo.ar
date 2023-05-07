@@ -19,3 +19,10 @@ const item = anormalArray[1]; // is {b:'b'}
 anormalArray.splice(2);
 item; // is undefined :(
 ```
+
+Workaround by creating a new object:
+
+```js
+const item = { ...anormalArray[1] };
+// although if you have object or array children it may still break...
+```
