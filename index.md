@@ -16,10 +16,13 @@ Algunas cosas que escribí:
 Algunas cosas que hice:
 
 -   [Este sitio](https://gitea.nulo.in/Nulo/sitio)
+-   [DlBot](https://t.me/dlthefourthbot): un bot de Telegram que descarga videos de TikTok e Instagram ([código](https://gitea.nulo.in/Nulo/dlbot4))
+-   [Manejador de Tareas](https://tareas.nulo.in)
+-   Proyectos experimentales:
+    -   [Schreiben](https://beta.schreiben.nulo.ar): una aplicación para escribir cosas ([código](https://gitea.nulo.in/Nulo/schreiben))
 -   Juguetes:
     -   [Cuarentena](https://cuarentena.nulo.in)
     -   [[txt2txt]]
--   [Manejador de Tareas](https://tareas.nulo.in)
 -   Laburos:
     -   [Salvá la costanera](https://salvalacostanera.com.ar), [código](https://gitea.nulo.in/Nulo/salva-la-costanera)
 -   Y otros [[Proyectos]].
@@ -30,8 +33,8 @@ Algunas cosas de las que soy parte:
 
 Algunos links mios:
 
-- <a rel="me noopener noreferrer" href="https://todon.eu/@Nulo">Mastodon</a>
-- Mi [Gitea](https://gitea.nulo.in/Nulo)
+-   <a rel="me noopener noreferrer" href="https://todon.eu/@Nulo">Mastodon</a>
+-   Mis [repositorios de código en Gitea](https://gitea.nulo.in/Nulo) y en [GitHub](https://github.com/catdevnull)
 
 ## Feed de personas que me parecen copadas ([[Mi webring.gen]])
 
