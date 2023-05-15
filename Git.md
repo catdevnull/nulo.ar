@@ -33,3 +33,11 @@ git log -S <string> archivo
 ```
 git clean
 ```
+
+## Usar jump server
+
+Sirve para [[Internet censurado en escuelas con Plan Sarmiento]]
+
+```
+GIT_SSH_COMMAND="ssh -J ubuntu@10.0.0.1:993" git pull
+```
