@@ -1,14 +1,5 @@
-import {
-  copyFile,
-  mkdir,
-  opendir,
-  readFile,
-  readdir,
-  writeFile,
-} from "fs/promises";
+import { copyFile, mkdir, opendir, readFile, readdir, writeFile } from "fs/promises";
 import { basename, extname, join } from "path";
-import { execFile as execFileCallback } from "child_process";
-import { promisify } from "util";
 import * as commonmark from "commonmark";
 import {
   a,
@@ -33,8 +24,6 @@ import {
   main,
   img,
 } from "@nulo/html.js";
-
-const execFile = promisify(execFileCallback);
 
 const reader = new commonmark.Parser({ smart: true });
 const writer = new commonmark.HtmlRenderer({ safe: false, smart: true });
@@ -68,19 +57,7 @@ for (const entry of dir) {
   const { name } = entry;
   const extension = extname(name);
 
-  if (
-    [
-      ".ts",
-      ".md",
-      ".css",
-      ".js",
-      ".png",
-      ".jpg",
-      ".mp4",
-      ".svg",
-      ".html",
-    ].includes(extension)
-  ) {
+  if ([".ts", ".md", ".css", ".js", ".png", ".jpg", ".mp4", ".svg", ".html"].includes(extension)) {
     await copyFile(join(config.sourcePath, name), join(config.buildPath, name));
   }
 
@@ -100,10 +77,7 @@ async function compilePage(config: Config, sourceFileName: string) {
 
   let contentHtml, image;
   if (extname(sourceFileName) === ".md") {
-    ({ html: contentHtml, image } = await compileMarkdownHtml(
-      config,
-      sourceFileName
-    ));
+    ({ html: contentHtml, image } = await compileMarkdownHtml(config, sourceFileName));
   } else if (sourceFileName.endsWith(".gen.js"))
     contentHtml = await compileJavascript(config, sourceFileName);
   else throw false;
@@ -112,14 +86,7 @@ async function compilePage(config: Config, sourceFileName: string) {
     ...generateHead(title, name),
     article(
       { itemscope: "", itemtype: "https://schema.org/Article" },
-      ...(isIndex
-        ? []
-        : generateHeader(
-            name,
-            sourceFileName,
-            fileConnections.length > 0,
-            image
-          )),
+      ...(isIndex ? [] : generateHeader(name, sourceFileName, fileConnections.length > 0, image)),
       main({ itemprop: "articleBody" }, raw(contentHtml)),
       ...generateConnectionsSection(fileConnections)
     )
@@ -142,10 +109,7 @@ async function compileMarkdownHtml(
   config: Config,
   sourceFileName: string
 ): Promise<{ html: string; image?: Image }> {
-  let markdown = await readFile(
-    join(config.sourcePath, sourceFileName),
-    "utf-8"
-  );
+  let markdown = await readFile(join(config.sourcePath, sourceFileName), "utf-8");
 
   let image;
   if (markdown.startsWith("!!")) {
@@ -153,8 +117,7 @@ async function compileMarkdownHtml(
     const imageNode = node.firstChild?.firstChild;
     if (!imageNode || !imageNode.destination)
       throw new Error("Intenté parsear un ^!! pero no era una imágen");
-    if (!imageNode.firstChild?.literal)
-      console.warn(`El ^!! de ${sourceFileName} no tiene alt`);
+    if (!imageNode.firstChild?.literal) console.warn(`El ^!! de ${sourceFileName} no tiene alt`);
 
     image = {
       src: imageNode.destination,
@@ -171,10 +134,7 @@ async function compileMarkdownHtml(
   return { html: contentHtml, image };
 }
 
-async function compileJavascript(
-  config: Config,
-  sourceFileName: string
-): Promise<string> {
+async function compileJavascript(config: Config, sourceFileName: string): Promise<string> {
   const fn = await import("./" + join(config.sourcePath, sourceFileName));
   return await fn.default();
 }
@@ -192,34 +152,13 @@ function generateHead(titlee: string, outputName: string): Renderable[] {
       name: "viewport",
       content: "width=device-width, initial-scale=1.0",
     }),
-    meta({
-      name: "author",
-      content: "Nulo",
-    }),
-    meta({
-      property: "og:title",
-      content: titlee,
-    }),
-    meta({
-      property: "og:type",
-      content: "website",
-    }),
-    meta({
-      property: "og:url",
-      content: `https://nulo.ar/${outputName}.html`,
-    }),
-    meta({
-      property: "og:image",
-      content: "cowboy.svg",
-    }),
-    link({
-      rel: "stylesheet",
-      href: "drip.css",
-    }),
-    link({
-      rel: "icon",
-      href: "cowboy.svg",
-    }),
+    meta({ name: "author", content: "Nulo" }),
+    meta({ property: "og:title", content: titlee }),
+    meta({ property: "og:type", content: "website" }),
+    meta({ property: "og:url", content: `https://nulo.ar/${outputName}.html` }),
+    meta({ property: "og:image", content: "cowboy.svg" }),
+    link({ rel: "stylesheet", href: "drip.css" }),
+    link({ rel: "icon", href: "cowboy.svg" }),
     title(titlee),
   ];
 }
@@ -239,10 +178,7 @@ interface Dateish {
   day: number;
 }
 function dateishToString({ year, month, day }: Dateish): string {
-  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(
-    2,
-    "0"
-  )}`;
+  return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 }
 
 type TitleMetadata =
@@ -253,8 +189,7 @@ type TitleMetadata =
     }
   | { date: Dateish };
 function parseName(name: string): TitleMetadata {
-  const titleWithDate =
-    /^((?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2}))? ?(?<title>.*)$/;
+  const titleWithDate = /^((?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2}))? ?(?<title>.*)$/;
 
   const found = name.match(titleWithDate);
   if (!found || !found.groups) throw new Error("Algo raro pasó");
@@ -338,16 +273,12 @@ function generateHeader(
         },
         "Historial"
       ),
-      ...(linkConexiones
-        ? [" / ", a({ href: "#conexiones" }, "Conexiones")]
-        : [])
+      ...(linkConexiones ? [" / ", a({ href: "#conexiones" }, "Conexiones")] : [])
     ),
   ];
 }
 
-function generateConnectionsSection(
-  fileConnections: Connection[]
-): Renderable[] {
+function generateConnectionsSection(fileConnections: Connection[]): Renderable[] {
   return fileConnections.length > 0
     ? [
         section(
@@ -408,9 +339,7 @@ async function hackilyTransformHtml(html: string): Promise<string> {
   html = html
     .replaceAll("<a h", '<a rel="noopener noreferrer" h')
     .replaceAll(wikilinkExp, (_, l) => render(internalLink(l)));
-  for (const [match, archivo] of html.matchAll(
-    /<nulo-sitio-reemplazar-con archivo="(.+?)" \/>/g
-  )) {
+  for (const [match, archivo] of html.matchAll(/<nulo-sitio-reemplazar-con archivo="(.+?)" \/>/g)) {
     if (!archivo.endsWith(".gen.js")) throw false;
     html = html.replace(match, await compileJavascript(config, archivo));
   }
