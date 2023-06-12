@@ -6,9 +6,16 @@
     <description>Blog posts by Bruno Scheufler</description>
     <atom:link href="https://brunoscheufler.com/rss.xml" rel="self" type="application/rss+xml" />
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Apr 2023 19:03:13 GMT</lastBuildDate>
-    <pubDate>Sun, 30 Apr 2023 19:03:13 GMT</pubDate>
+    <lastBuildDate>Sat, 13 May 2023 20:36:02 GMT</lastBuildDate>
+    <pubDate>Sat, 13 May 2023 20:36:02 GMT</pubDate>
     <ttl>60</ttl>
+    
+    <item>
+      <title>Instant Linux VMs without the Installation</title>
+      <link>https://brunoscheufler.com/blog/2023-05-13-instant-linux-vms-without-the-installation</link>
+      <pubDate>Sat, 13 May 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-05-13-instant-linux-vms-without-the-installation</guid>
+    </item>
     
     <item>
       <title>Reproducible VMs for Local Development</title>

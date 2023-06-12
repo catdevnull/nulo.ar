@@ -4,11 +4,18 @@
   <title>j3s.sh</title>
   <link rel="self" href="https://j3s.sh/feed.atom" />
   <link href="https://j3s.sh/" />
-  <updated>2023-03-20T00:00:00.000Z</updated>
+  <updated>2023-06-06T00:00:00.000Z</updated>
   <author>
     <name>Jes Olson</name>
   </author>
   <id>https://j3s.sh/</id>
+
+  <entry>
+    <title>i will never participate in weird internet caste systems</title>
+    <link href="https://j3s.sh/thought/i-will-never-participate-in-weird-internet-caste-systems.html"/>
+    <id>https://j3s.sh/thought/i-will-never-participate-in-weird-internet-caste-systems.html</id>
+    <updated>2023-06-06T00:00:00.000Z</updated>
+  </entry>
 
   <entry>
     <title>vore: a new rss feed reader</title>
@@ -71,13 +78,6 @@
     <link href="https://j3s.sh/thought/building-a-fixed-gear-bicycle.html"/>
     <id>https://j3s.sh/thought/building-a-fixed-gear-bicycle.html</id>
     <updated>2020-12-20T00:00:00.000Z</updated>
-  </entry>
-
-  <entry>
-    <title>something is different</title>
-    <link href="https://j3s.sh/thought/something-is-different.html"/>
-    <id>https://j3s.sh/thought/something-is-different.html</id>
-    <updated>2020-04-20T00:00:00.000Z</updated>
   </entry>
 
 </feed>
