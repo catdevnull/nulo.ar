@@ -49,6 +49,11 @@ Esto nos deja saber si se sacaron certificados inautorizados, pero no nos deja p
 
 Gracias a [RFC8657] <small>Certification Authority Authorization (CAA) Record Extensions for Account URI and Automatic Certificate Management Environment (ACME) Method Binding</small>, podemos pedirles a los servidores de expedición de certificados que solo saquen certificados bajo ciertos proveedores y métodos. Esto nos permite limitar la expedición a un proveedor y al método `dns-01`. De esta manera, aún si pueden interceptar las conexiones a nuestra IP (via BGP hijacking o comprometiendo a nuestro ISP o...) no pueden generar certificados (tendrían que hackear nuestro DNS).
 
-GrapheneOS [implementa esto](https://github.com/GrapheneOS/ns1.grapheneos.org/blob/bc06ac067c5786180cceccdf8466b0a94a1a7e5c/zones.yaml#LL23C65-L23C65) pero usa http-01. Esto reduce las posibilidades de ataque (al menos solo tenés que confiar en Let's Encrypt) pero no es perfecto.
+Let's Encrypt lo implementó en su entorno de prueba [en 2018] y en producción [en diciembre 2022]. Osea: ¡ya lo podemos usar!
+
+[en 2018]: https://community.letsencrypt.org/t/acme-caa-validationmethods-support/63125
+[en diciembre 2022]: https://community.letsencrypt.org/t/enabling-acme-caa-account-and-method-binding/189588
+
+GrapheneOS [usa esto](https://github.com/GrapheneOS/ns1.grapheneos.org/blob/bc06ac067c5786180cceccdf8466b0a94a1a7e5c/zones.yaml#LL23C65-L23C65) pero usa http-01. Esto reduce las posibilidades de ataque (al menos solo tenés que confiar en Let's Encrypt) pero no es perfecto.
 
 [RFC8657]: https://datatracker.ietf.org/doc/html/rfc8657
