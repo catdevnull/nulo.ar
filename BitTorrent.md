@@ -3,6 +3,7 @@
 ## Ideas
 
 -   [[Magnets o torrents reproducibles]]
+-   [[BitTorrent v2]]
 
 ## Clientes
 
