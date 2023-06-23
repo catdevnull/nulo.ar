@@ -8,3 +8,26 @@ location /avatar {
     proxy_pass http://localhost:3000; # o la URL a tu Gitea
 }
 ```
+
+## robots.txt
+
+Generalmente no me importan los bots y no me preocupo por bloquearlos. Sin embargo, si no los bloqueas, Gitea/Forgejo genera archives (*.bundle y *.tar.gz) y te llena el disco con ellos. Por eso, copio parte del [robots.txt de Codeberg](https://codeberg.org/robots.txt):
+
+```
+User-agent: *
+Disallow: /api/*
+Disallow: /avatars
+Disallow: /user/*
+Disallow: /*/*/src/commit/*
+Disallow: /*/*/commit/*
+Disallow: /*/*/*/refs/*
+Disallow: /*/*/*/star
+Disallow: /*/*/*/watch
+Disallow: /*/*/labels
+Disallow: /*/*/activity/*
+Disallow: /vendor/*
+Disallow: /swagger.*.json
+
+# Language spam
+Disallow: /*?lang=
+```
