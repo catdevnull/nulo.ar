@@ -6,9 +6,23 @@
     <description>Blog posts by Bruno Scheufler</description>
     <atom:link href="https://brunoscheufler.com/rss.xml" rel="self" type="application/rss+xml" />
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Jun 2023 07:50:35 GMT</lastBuildDate>
-    <pubDate>Sun, 18 Jun 2023 07:50:35 GMT</pubDate>
+    <lastBuildDate>Thu, 13 Jul 2023 10:23:55 GMT</lastBuildDate>
+    <pubDate>Thu, 13 Jul 2023 10:23:55 GMT</pubDate>
     <ttl>60</ttl>
+    
+    <item>
+      <title>Writing damn good decks with LLMs</title>
+      <link>https://brunoscheufler.com/blog/2023-07-09-writing-good-decks</link>
+      <pubDate>Sun, 09 Jul 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-07-09-writing-good-decks</guid>
+    </item>
+    
+    <item>
+      <title>An engineer’s guide to UI design</title>
+      <link>https://brunoscheufler.com/blog/2023-07-02-designing-user-interfaces</link>
+      <pubDate>Sun, 02 Jul 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-07-02-designing-user-interfaces</guid>
+    </item>
     
     <item>
       <title>On the future of coding blogs in a world of LLMs</title>
