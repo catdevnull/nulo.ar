@@ -1,6 +1,5 @@
--   `pad.riseup.net` y `share.riseup.net` (no está censurado `riseup.net`)
 -   [[YouTube]] está en [[YouTube Restricted Mode]] que censura "contenido potencialmente maduro" (básicamente la mitad del contenido)
--   `netflix.com`
+-   Algunos servicios de streaming: `netflix.com`, Spotify
 -   [Notion](https://notion.so)
 -   Sitios de "file sharing"
     -   `mediafire.com`
@@ -8,6 +7,7 @@
     -   `put.io`
     -   `wetransfer.com`
     -   `backblaze.com` (!!)
+-   `pad.riseup.net` y `share.riseup.net` (no está censurado `riseup.net`)
 -   La red de Tor parece estar bloqueado a nivel protocolo. Ni pude usar pluggable transports.
 -   Puerto 22 de SSH (yo uso puerto 993, de IMAPS, para saltarlo)
 -   `futbollibre.net`
