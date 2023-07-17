@@ -10,12 +10,14 @@ export const feeds = {
 };
 
 if (process.argv[2] === "refresh") {
-  for (const [name, url] of Object.entries(feeds)) {
-    console.log(`Refreshing ${name}`);
-    const res = await fetch(url);
-    const txt = await res.text();
-    await writeFile(join("cached-feeds/", `${name}.xml`), txt);
-  }
+  await Promise.all(
+    Object.entries(feeds).map(async ([name, url]) => {
+      console.log(`Refreshing ${name}`);
+      const res = await fetch(url);
+      const txt = await res.text();
+      await writeFile(join("cached-feeds/", `${name}.xml`), txt);
+    })
+  );
 }
 
 /**
