@@ -5,9 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-ts": "./tool build_ts",
-    "build": "./tool build",
-    "check": "./tool check"
+    "build": "esbuild compilar.ts --target=node18 --outdir=build.js --sourcemap && cp *.js build.js/ && node --enable-source-maps --trace-uncaught build.js/compilar.js",
+    "check": "tsc",
+    "refresh-feeds": "node feeds.js refresh"
   },
   "keywords": [],
   "author": "",
