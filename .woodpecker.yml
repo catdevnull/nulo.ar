@@ -9,14 +9,11 @@ pipeline:
       - ./tool check
     when:
       path:
-        exclude: ["*.md"]
-  refresh-feeds:
-    image: gitea.nulo.in/nulo/super-image:3.18
-    commands:
-      - ./tool refresh_feeds
+        include: ["*.js", "*.ts", "package.json", "pnpm-lock.yaml", "tsconfig.json"]
   build:
     image: gitea.nulo.in/nulo/super-image:3.18
     commands:
+      - ./tool refresh_feeds
       - ./tool build
   upload:
     image: gitea.nulo.in/nulo/super-image:3.18
