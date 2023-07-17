@@ -1,12 +1,26 @@
 pipeline:
-  upload:
+  setup:
     image: gitea.nulo.in/nulo/super-image:3.18
     commands:
       - pnpm install
+  check:
+    image: gitea.nulo.in/nulo/super-image:3.18
+    commands:
       - ./tool check
+    when:
+      path:
+        exclude: ["*.md"]
+  refresh-feeds:
+    image: gitea.nulo.in/nulo/super-image:3.18
+    commands:
       - ./tool refresh_feeds
+  build:
+    image: gitea.nulo.in/nulo/super-image:3.18
+    commands:
       - ./tool build
-
+  upload:
+    image: gitea.nulo.in/nulo/super-image:3.18
+    commands:
       - |
         eval $(ssh-agent -s)
         echo "$${SSH_KEY}" | tr -d '\r' | ssh-add -
