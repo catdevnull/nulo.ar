@@ -19,5 +19,6 @@ clean:
 ready_to_upload: check refresh_feeds
 upload: clean ready_to_upload _dirty_upload
 _dirty_upload: build
-	rsync --rsh='ssh -p443' --recursive --chmod=644 build/ root@nulo.ar:/var/www/nulo.ar/
+	rsync --rsh='ssh -p2223 -J root@dorsiblanco.nulo.in:993' --recursive --chmod=644 build/ root@localhost:/data/nulo_ar/
+	# rsync --rsh='ssh -p443' --recursive --chmod=644 build/ root@nulo.ar:/var/www/nulo.ar/
 
