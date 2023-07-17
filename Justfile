@@ -7,7 +7,7 @@ _run command: build_builder_image
 	podman run -it --rm \
 		-v ".:/sitio:Z" --workdir /sitio \
 		{{builder}} sh -c "{{command}}"
-run command: (_run "pnpm install") (_run command)
+run command: (_run "pnpm install --prefer-offline") (_run command)
 
 build: (run './tool build')
 check: (run './tool check')
