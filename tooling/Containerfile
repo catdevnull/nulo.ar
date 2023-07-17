@@ -1,6 +1,0 @@
-FROM docker.io/alpine:3.17
-
-RUN apk add --no-cache nodejs npm icu-data-full \
-    rsync openssh-client-default
-
-RUN npm install --global pnpm
