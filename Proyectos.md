@@ -3,6 +3,7 @@ Ordenado aproximadamente por última vez activo.
 -   [[Herramienta de monitoreo de medios]]
 -   [[Ideas para un sistema operativo propio en Chromebooks]]
 -   [[Archivar los archivos de la dictadura militar]]
+-   [[FakeSMTP]]
 -   [Este sitio](https://gitea.nulo.in/Nulo/sitio)
 -   Juguetes:
     -   [Cuarentena](https://cuarentena.nulo.in)
