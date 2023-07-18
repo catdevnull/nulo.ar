@@ -2,6 +2,16 @@
   color-scheme: dark light;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: #111;
+    color: #eee;
+  }
+  a {
+    color: lightblue;
+  }
+}
+
 body {
   font-family: sans-serif;
   max-width: 70ch;
