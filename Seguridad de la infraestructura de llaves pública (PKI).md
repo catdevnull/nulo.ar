@@ -57,3 +57,5 @@ Let's Encrypt lo implementó en su entorno de prueba [en 2018] y en producción 
 GrapheneOS [usa esto](https://github.com/GrapheneOS/ns1.grapheneos.org/blob/bc06ac067c5786180cceccdf8466b0a94a1a7e5c/zones.yaml#LL23C65-L23C65) pero usa http-01. Esto reduce las posibilidades de ataque (al menos solo tenés que confiar en Let's Encrypt) pero no es perfecto.
 
 [RFC8657]: https://datatracker.ietf.org/doc/html/rfc8657
+
+[CAA Mandated by CA/Browser Forum](https://blog.qualys.com/product-tech/2017/03/13/caa-mandated-by-cabrowser-forum)
