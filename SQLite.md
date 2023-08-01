@@ -1,2 +1,3 @@
 -   [Consider SQLite](https://blog.wesleyac.com/posts/consider-sqlite)
+-   [SQLite no es una base de datos de juguete](https://sysarmy.com/blog/posts/sqlite-no-es-una-base-de-datos-de-juguete/) <3
 -   [sqlite-zstd](https://phiresky.github.io/blog/2022/sqlite-zstd/)
