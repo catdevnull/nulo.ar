@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild compilar.ts *.js --target=node18 --outdir=build-js --sourcemap && node --enable-source-maps --trace-uncaught build-js/compilar.js",
+    "build": "esbuild compilar.ts *.js --target=node18 --outdir=build-js --sourcemap && node --enable-source-maps --trace-uncaught build-js/compilar.js && pagefind --source build",
     "check": "tsc",
     "refresh-feeds": "node feeds.js refresh"
   },
@@ -22,6 +22,7 @@
     "@nulo/html.js": "^0.0.8",
     "commonmark": "^0.30.0",
     "domutils": "^3.0.1",
-    "htmlparser2": "^8.0.2"
+    "htmlparser2": "^8.0.2",
+    "pagefind": "^0.12.0"
   }
 }

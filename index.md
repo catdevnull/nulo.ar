@@ -2,6 +2,8 @@
 
 > What's bizarre? I mean, we're all pretty bizarre.<br>Some of us are just better at hiding it, that's all.
 
+<nulo-sitio-reemplazar-con archivo="buscador.htm" />
+
 ¡Buenas! Este es mi mundo, bienvenidx. ¿Que, [[Quién soy]]? Soy Nulo :)
 
 -   Perdete en la [[Lista de páginas]]

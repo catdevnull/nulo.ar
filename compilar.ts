@@ -23,7 +23,13 @@ import {
   article,
   main,
   img,
+  script,
+  basicElement,
+  nav,
+  source,
 } from "@nulo/html.js";
+
+const div = basicElement("div");
 
 const reader = new commonmark.Parser({ smart: true });
 const writer = new commonmark.HtmlRenderer({ safe: false, smart: true });
@@ -45,6 +51,8 @@ const config: Config = {
   sourcePath: ".",
   buildPath: "build",
 };
+
+const buscadorHtml = await readFile("buscador.htm", "utf-8");
 
 const connections = await scanForConnections(config.sourcePath);
 
@@ -69,25 +77,35 @@ await Promise.all(pageList.map(({ src }) => compilePage(config, src)));
 
 await compilePageList(config, pageList);
 
+async function compileFile(
+  config: Config,
+  sourceFileName: string
+): Promise<{ contentHtml: string; image?: Image }> {
+  if (extname(sourceFileName) === ".md") {
+    const { html: contentHtml, image } = await compileMarkdownHtml(config, sourceFileName);
+    return { contentHtml, image };
+  } else if (sourceFileName.endsWith(".gen.js")) {
+    const contentHtml = await compileJavascript(config, sourceFileName);
+    return { contentHtml };
+  } else if (sourceFileName.endsWith(".htm"))
+    return { contentHtml: await readFile(sourceFileName, "utf-8") };
+  else throw false;
+}
+
 async function compilePage(config: Config, sourceFileName: string) {
   const name = basename(sourceFileName, extname(sourceFileName));
   const isIndex = name === "index";
   const title = isIndex ? "nulo.ar" : formatNameToPlainText(name);
   const fileConnections = connections.filter(({ linked }) => linked === name);
 
-  let contentHtml, image;
-  if (extname(sourceFileName) === ".md") {
-    ({ html: contentHtml, image } = await compileMarkdownHtml(config, sourceFileName));
-  } else if (sourceFileName.endsWith(".gen.js"))
-    contentHtml = await compileJavascript(config, sourceFileName);
-  else throw false;
+  const { contentHtml, image } = await compileFile(config, sourceFileName);
 
-  const html = render(
+  const html = renderHtml(
     ...generateHead(title, name),
     article(
       { itemscope: "", itemtype: "https://schema.org/Article" },
       ...(isIndex ? [] : generateHeader(name, sourceFileName, fileConnections.length > 0, image)),
-      main({ itemprop: "articleBody" }, raw(contentHtml)),
+      main({ itemprop: "articleBody", "data-pagefind-body": "" }, raw(contentHtml)),
       ...generateConnectionsSection(fileConnections)
     )
   );
@@ -143,10 +161,13 @@ async function compileJavascript(config: Config, sourceFileName: string): Promis
 // Generated HTML
 // ==============================================
 
+function renderHtml(...world: Renderable[]): string {
+  return `<!doctype html><html lang="es">` + render(...world) + "</html>";
+}
+
 function generateHead(titlee: string, outputName: string): Renderable[] {
   // TODO: deshardcodear og:url
   return [
-    doctype(),
     metaUtf8,
     meta({
       name: "viewport",
@@ -244,7 +265,7 @@ function generateHeader(
 ): Renderable[] {
   const parsedTitle = parseName(name);
   return [
-    a({ href: "." }, "☚ Volver al inicio"),
+    nav(a({ href: "." }, "☚ Volver al inicio"), raw(buscadorHtml)),
     header(
       ...(image ? [img({ ...image, itemprop: "image" })] : []),
       ...("title" in parsedTitle
@@ -293,7 +314,7 @@ function generateConnectionsSection(fileConnections: Connection[]): Renderable[]
 async function compilePageList(config: Config, pageList: { src: string }[]) {
   const name = "Lista de páginas";
   const outputPath = join(config.buildPath, name + ".html");
-  const html = render(
+  const html = renderHtml(
     ...generateHead(name, name),
     ...generateHeader(name, "compilar.ts"),
     ul(
@@ -340,8 +361,7 @@ async function hackilyTransformHtml(html: string): Promise<string> {
     .replaceAll("<a h", '<a rel="noopener noreferrer" h')
     .replaceAll(wikilinkExp, (_, l) => render(internalLink(l)));
   for (const [match, archivo] of html.matchAll(/<nulo-sitio-reemplazar-con archivo="(.+?)" \/>/g)) {
-    if (!archivo.endsWith(".gen.js")) throw false;
-    html = html.replace(match, await compileJavascript(config, archivo));
+    html = html.replace(match, (await compileFile(config, archivo)).contentHtml);
   }
   return html;
 }
