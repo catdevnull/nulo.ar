@@ -88,3 +88,8 @@ li {
   color: red;
   margin-top: 0;
 }
+
+#search {
+  padding: 1rem;
+  border: 1px black solid;
+}
