@@ -22,11 +22,8 @@ Algunas cosas que hice:
 -   [Manejador de Tareas](https://tareas.nulo.in)
 -   Proyectos experimentales:
     -   [Schreiben](https://beta.schreiben.nulo.ar): una aplicación para escribir cosas ([código](https://gitea.nulo.in/Nulo/schreiben))
--   Juguetes:
-    -   [Cuarentena](https://cuarentena.nulo.in)
-    -   [[txt2txt]]
 -   Laburos:
-    -   [Salvá la costanera](https://salvalacostanera.com.ar), [código](https://gitea.nulo.in/Nulo/salva-la-costanera)
+    -   [Salvá la costanera](https://salva-la-costanera.netlify.app/), [código](https://gitea.nulo.in/Nulo/salva-la-costanera)
 -   Y otros [[Proyectos]].
 
 Algunas cosas de las que soy parte:
