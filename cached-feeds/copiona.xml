@@ -1,11 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="es" /><updated>2023-07-16T13:55:53-03:00</updated><id>/feed.xml</id><title type="html">copiona.com | un bunker biteario de @librenauta</title><entry><title type="html">Log 021</title><link href="/log-21/" rel="alternate" type="text/html" title="Log 021" /><published>2023-07-15T00:00:00-03:00</published><updated>2023-07-16T11:30:05-03:00</updated><id>/log-21</id><content type="html" xml:base="/log-21/"><![CDATA[<ul>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" hreflang="es" /><updated>2023-08-03T20:43:10-03:00</updated><id>/feed.xml</id><title type="html">copiona.com | un bunker biteario de @librenauta</title><entry><title type="html">Log 021</title><link href="/log-21/" rel="alternate" type="text/html" title="Log 021" /><published>2023-07-15T00:00:00-03:00</published><updated>2023-07-16T11:30:05-03:00</updated><id>/log-21</id><content type="html" xml:base="/log-21/"><![CDATA[<ul>
 <li>rayos solares contemporaneos</li>
-</ul>]]></content><author><name>librenauta</name></author><category term="log" /><category term="log" /><summary type="html"><![CDATA[rayos solares contemporaneos]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/log/rayos-solares-contemporaneos.jpg" /><media:content medium="image" url="/public/log/rayos-solares-contemporaneos.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Qué lenguaje hablan las cosas del mundo [LIC]</title><link href="/que-lenguaje-hablan-las-cosas-del-mundo-lic/" rel="alternate" type="text/html" title="Qué lenguaje hablan las cosas del mundo [LIC]" /><published>2023-07-07T00:00:00-03:00</published><updated>2023-07-07T10:20:21-03:00</updated><id>/que-lenguaje-hablan-las-cosas-del-mundo-lic</id><content type="html" xml:base="/que-lenguaje-hablan-las-cosas-del-mundo-lic/"><![CDATA[<p>Después de cruzar ideas con <a href="https://maq-arena.com.ar/vistatrabajo.html">MAQ</a> en barcelona, quedamos en contacto para poder pensar algo en conjunto cuando tengamos la posibilidad ya que veíamos que tenemos algunas perspectivas similares sobre cómo leer cosas del mundo.</p>
-<p>MAQ tiene una vision transversal del sonido. Queríamos hacer algo que pueda inundar el espacio de transformación: sonido y gráfica.</p>
+</ul>]]></content><author><name>librenauta</name></author><category term="log" /><category term="log" /><summary type="html"><![CDATA[rayos solares contemporaneos]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="/public/log/rayos-solares-contemporaneos.jpg" /><media:content medium="image" url="/public/log/rayos-solares-contemporaneos.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Qué lenguaje hablan las cosas del mundo [LIC]</title><link href="/que-lenguaje-hablan-las-cosas-del-mundo-lic/" rel="alternate" type="text/html" title="Qué lenguaje hablan las cosas del mundo [LIC]" /><published>2023-07-07T00:00:00-03:00</published><updated>2023-07-07T10:20:21-03:00</updated><id>/que-lenguaje-hablan-las-cosas-del-mundo-lic</id><content type="html" xml:base="/que-lenguaje-hablan-las-cosas-del-mundo-lic/"><![CDATA[<p>Después de cruzar ideas con <a href="https://maq-arena.com.ar/vistatrabajo.html">MAQ</a> en barcelona, quedamos en contacto para poder pensar algo en conjunto ya que veíamos que tenemos algunas perspectivas similares sobre cómo leer cosas del mundo~.</p>
+<p>MAQ tiene una visión transversal del sonido y la performance. Queríamos hacer algo que pueda inundar el espacio de transformación: sonido y gráfica</p>
 <p>Gracias a la invitación de <a href="http://andresbelfanti.com/">Andrés Belfanti</a> a exponer en <a href="https://www.instagram.com/rgenerales">Ramos Generales</a> pudimos ponernos a pensar algo para la muestra: ¿Qué lenguajes hablan las cosas del mundo?</p>
-<p>Acá un registro de lo que hicimos:</p>
+<p>Acá un registro de lo que hicimos con varias imagenes y videos de <a href="https://instagram.com/arania.tvroom">Aina</a> :</p>
 <figure class="w-100">
-  <video src="public/171f23c3-3011-4083-8006-75aacb220c7a/lic-1.mp4" autoplay="autoplay" loop="loop" controls="controls"  >
+  <video src="public/171f23c3-3011-4083-8006-75aacb220c7a/lic-0.mp4" autoplay="autoplay" loop="loop" controls="controls"  >
+  </video>
+</figure>
+<hr />
+<figure class="w-100">
+  <video src="public/171f23c3-3011-4083-8006-75aacb220c7a/lic-3.mp4" autoplay="autoplay" loop="loop" controls="controls"  >
+  </video>
+</figure>
+<figure class="w-100">
+  <video src="public/171f23c3-3011-4083-8006-75aacb220c7a/lic-1.mp4" autoplay="autoplay" loop="loop" muted="muted" controls="controls"  >
+  </video>
+</figure>
+<figure class="w-100">
+  <video src="public/171f23c3-3011-4083-8006-75aacb220c7a/lic-4.mp4" autoplay="autoplay" loop="loop" controls="controls"  >
   </video>
 </figure>
 <figure class="w-100">
