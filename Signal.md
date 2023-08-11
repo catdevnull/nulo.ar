@@ -1,1 +1,2 @@
 - [Problemas con Signal](https://github.com/privacytools/privacytools.io/issues/779)
+- [I don't trust Signal](https://blog.dijit.sh/i-don-t-trust-signal)
