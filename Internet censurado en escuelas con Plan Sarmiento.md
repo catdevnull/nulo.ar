@@ -7,6 +7,7 @@
     -   `put.io`
     -   `wetransfer.com`
     -   `backblaze.com` (!!)
+    -   `ipfs.tech` (?)
 -   `pad.riseup.net` y `share.riseup.net` (no está censurado `riseup.net`)
 -   La red de Tor parece estar bloqueado a nivel protocolo. Ni pude usar pluggable transports.
 -   Puerto 22 de SSH (yo uso puerto 993, de IMAPS, para saltarlo)
