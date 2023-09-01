@@ -6,9 +6,16 @@
     <description>Blog posts by Bruno Scheufler</description>
     <atom:link href="https://brunoscheufler.com/rss.xml" rel="self" type="application/rss+xml" />
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jul 2023 09:55:31 GMT</lastBuildDate>
-    <pubDate>Wed, 26 Jul 2023 09:55:31 GMT</pubDate>
+    <lastBuildDate>Wed, 30 Aug 2023 20:10:09 GMT</lastBuildDate>
+    <pubDate>Wed, 30 Aug 2023 20:10:09 GMT</pubDate>
     <ttl>60</ttl>
+    
+    <item>
+      <title>Building Canvas-Based Web Applications</title>
+      <link>https://brunoscheufler.com/blog/2023-08-30-building-canvas-based-web-applications</link>
+      <pubDate>Wed, 30 Aug 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-08-30-building-canvas-based-web-applications</guid>
+    </item>
     
     <item>
       <title>From regression to neural networks</title>

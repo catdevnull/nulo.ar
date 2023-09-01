@@ -7,6 +7,7 @@ export const feeds = {
   j3s: "https://j3s.sh/feed.atom",
   // icyphox: "https://icyphox.sh/blog/feed.xml",
   brunoscheufler: "https://brunoscheufler.com/rss.xml",
+  taylor: "https://taylor.town/feed.xml",
 };
 
 if (process.argv[2] === "refresh") {
