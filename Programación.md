@@ -10,3 +10,9 @@
             -   Esto no lo dice en el artículo, pero quizás reducir la _distancia_ del tráfico también importa. Ejemplo: es mejor que un dispositivo descarge cosas de un servidor en su mismo país (o en su mismo barrio) que en uno terciarizado.
                 -   ¡Web distribuida!
 -   [[Lenguajes de programación]]
+
+
+## Estilo
+
+- [Using {Blocks} in Rust & Go for Fun & Profit](https://taylor.town/code-blocks)
+- [Why JavaScript’s Secret Comma Operator is So Darn Useful](https://taylor.town/js-comma-operator)
