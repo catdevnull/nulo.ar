@@ -1,8 +1,8 @@
 ¿Les pasa que sienten _vergüenza algorítmica_? Es algo que siento todo el tiempo, y creo que no soy el único.
 
-Cuando estoy scrolleando en Instagram (y también aplica para TikTok o Twitter o lo que sea), a veces evito apretar en publicaciones que me interesan porque no quiero que quede guardado mi interés por esa cosa. En los _Reels_ (la copia que hizo Instagram de TikTok) es aún peor, porque quedarse mirando algún video queda guardado en la app como un interés, entonces tenés que pasar el video rápido para evitarlo.
+Cuando estoy scrolleando en Instagram (o TikTok u Instagram), a veces evito apretar en publicaciones que me interesan porque no quiero que quede guardado mi interés por esa cosa. En TikTok u Instagram Reels es aún peor, porque quedarse mirando algún video queda guardado en la app como un interés, entonces tenés que pasar el video rápido para evitarlo.
 
-Que guarde los datos sobre mis intereses implica que va a mostrarme más contenidos sobre eso, que puede o no ser algo que quiera. Pero más importante es como queda guardada información muy especifica sobre tus intereses. ¿Miraste ese video sobre interrupción voluntaria del embarazo? Probablemente seas de izquierda y eso se refleje en la propaganda política que te muestre la aplicación.
+Que guarde los datos sobre mis intereses implica que va a mostrarme más contenidos sobre eso, que puede o no ser algo que quiera. Pero más importante es como queda guardada información muy especifica sobre tus intereses. ¿Miraste hasta el final ese video sobre interrupción voluntaria del embarazo? Probablemente seas de izquierda y eso se refleje en la propaganda política que te muestre la aplicación. ¿Entraste a los comentarios de ese video sobre Milei diciendo que hay que cerrar todos los ministerios? Listo, acá tenés otros 15 videos de Milei gritando.
 
 Es aún peor cuando ya pasa de vergüenza a riesgo: quizás "elijo" no mirar un posteo sobre un tema político que me interesa porque se que queda guardado y podría ser utilizado en alguna investigación criminal.
 
