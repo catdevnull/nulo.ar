@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build": "esbuild compilar.ts *.js --target=node18 --outdir=build-js --sourcemap && node --enable-source-maps --trace-uncaught build-js/compilar.js && pagefind --source build",
+    "build-bun": "bun build compilar.ts --target bun > build-js/bun.js && bun build-js/bun.js && pagefind --source build",
     "check": "tsc",
     "refresh-feeds": "node feeds.js refresh"
   },
