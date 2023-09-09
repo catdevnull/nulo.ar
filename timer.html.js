@@ -13,8 +13,7 @@ buttonEl.addEventListener("click", (event) => {
   } else {
     interval = setInterval(() => {
       guitaEl.dataset.guita =
-        parseFloat(guitaEl.dataset.guita) +
-        (porHoraEl.value / 60 / 60) * personasEl.value;
+        parseFloat(guitaEl.dataset.guita) + (porHoraEl.value / 60 / 60) * personasEl.value;
       guitaEl.textContent = `$ ${parseFloat(guitaEl.dataset.guita).toFixed(2)}`;
     }, 1000);
     buttonEl.textContent = "Parar";

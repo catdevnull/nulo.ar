@@ -28,12 +28,12 @@ export default async () => {
             target: "_blank",
             rel: "noopener",
           },
-          item.title
+          item.title,
         ),
         // TODO: format date
         " via ",
-        a({ href: relativeLink(link), rel: "noopener" }, title)
-      )
+        a({ href: relativeLink(link), rel: "noopener" }, title),
+      ),
     );
   }
 
@@ -53,19 +53,19 @@ function parseFeed(feedUrl, rawFeed) {
   const feedDom = getElementsByTagName(
     (n) => n === "rss" || n === "feed" || n === "rdf:RDF",
     dom.childNodes,
-    false
+    false,
   )[0];
   const linksDom = getElementsByTagName(
     (t) => ["link", "atom:link"].includes(t),
     feedDom.childNodes,
-    false
+    false,
   );
   const linkDom = linksDom.find(
     (d) =>
       d.attribs.rel === "alternate" ||
       // https://datatracker.ietf.org/doc/html/rfc4287#section-4.2.7.2
       // >If the "rel" attribute is not present, the link element MUST be interpreted as if the link relation type is "alternate".
-      !("rel" in d.attribs)
+      !("rel" in d.attribs),
   );
 
   const feedUrll = new URL(feedUrl);

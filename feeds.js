@@ -17,7 +17,7 @@ if (process.argv[2] === "refresh") {
       const res = await fetch(url);
       const txt = await res.text();
       await writeFile(join("cached-feeds/", `${name}.xml`), txt);
-    })
+    }),
   );
 }
 

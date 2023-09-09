@@ -47,7 +47,7 @@ export default () => {
         const tema = random(temas);
         const adjetivo = random(adjetivos)[tipo[1]];
         return li(tipo[0], " ", adjetivo, " sobre ", tema);
-      })
+      }),
     ),
     h2("Tipos de obra"),
     ol(...tipos.map((t) => li(t[0]))),
@@ -59,7 +59,7 @@ export default () => {
       {
         href: "https://gitea.nulo.in/Nulo/sitio/src/branch/ANTIFASCISTA/Men%C3%BA%20art%C3%ADstico.gen.js",
       },
-      "Código"
-    )
+      "Código",
+    ),
   );
 };

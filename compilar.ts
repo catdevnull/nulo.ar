@@ -79,7 +79,7 @@ await compilePageList(config, pageList);
 
 async function compileFile(
   config: Config,
-  sourceFileName: string
+  sourceFileName: string,
 ): Promise<{ contentHtml: string; image?: Image }> {
   if (extname(sourceFileName) === ".md") {
     const { html: contentHtml, image } = await compileMarkdownHtml(config, sourceFileName);
@@ -106,8 +106,8 @@ async function compilePage(config: Config, sourceFileName: string) {
       { itemscope: "", itemtype: "https://schema.org/Article" },
       ...(isIndex ? [] : generateHeader(name, sourceFileName, fileConnections.length > 0, image)),
       main({ itemprop: "articleBody", "data-pagefind-body": "" }, raw(contentHtml)),
-      ...generateConnectionsSection(fileConnections)
-    )
+      ...generateConnectionsSection(fileConnections),
+    ),
   );
 
   const outputPath = join(config.buildPath, name + ".html");
@@ -125,7 +125,7 @@ type Image = {
 
 async function compileMarkdownHtml(
   config: Config,
-  sourceFileName: string
+  sourceFileName: string,
 ): Promise<{ html: string; image?: Image }> {
   let markdown = await readFile(join(config.sourcePath, sourceFileName), "utf-8");
 
@@ -230,11 +230,11 @@ function parseName(name: string): TitleMetadata {
 
 function dateishToElement(
   dateish: Dateish,
-  { itemprop, upper }: { itemprop?: string; upper?: boolean } = {}
+  { itemprop, upper }: { itemprop?: string; upper?: boolean } = {},
 ): VirtualElement {
   return time(
     { datetime: dateishToString(dateish), ...(itemprop ? { itemprop } : {}) },
-    formatDate(dateish, upper)
+    formatDate(dateish, upper),
   );
 }
 
@@ -261,7 +261,7 @@ function generateHeader(
   name: string,
   sourceCodePath: string,
   linkConexiones = false,
-  image?: Image
+  image?: Image,
 ): Renderable[] {
   const parsedTitle = parseName(name);
   return [
@@ -285,16 +285,16 @@ function generateHeader(
               dateishToElement(parsedTitle.date, {
                 itemprop: "datePublished",
                 upper: true,
-              })
+              }),
             ),
           ]),
       a(
         {
           href: `https://gitea.nulo.in/Nulo/sitio/commits/branch/ANTIFASCISTA/${sourceCodePath}`,
         },
-        "Historial"
+        "Historial",
       ),
-      ...(linkConexiones ? [" / ", a({ href: "#conexiones" }, "Conexiones")] : [])
+      ...(linkConexiones ? [" / ", a({ href: "#conexiones" }, "Conexiones")] : []),
     ),
   ];
 }
@@ -305,7 +305,7 @@ function generateConnectionsSection(fileConnections: Connection[]): Renderable[]
         section(
           { id: "conexiones" },
           h2(`⥆ Conexiones (${fileConnections.length})`),
-          ul(...fileConnections.map(({ linker }) => li(internalLink(linker))))
+          ul(...fileConnections.map(({ linker }) => li(internalLink(linker)))),
         ),
       ]
     : [];
@@ -321,8 +321,8 @@ async function compilePageList(config: Config, pageList: { src: string }[]) {
       ...pageList
         .map(({ src: name }) => basename(name, extname(name)))
         .sort((a, b) => a.localeCompare(b, "es", { sensitivity: "base" }))
-        .map((name) => li(internalLink(name)))
-    )
+        .map((name) => li(internalLink(name))),
+    ),
   );
   await writeFile(outputPath, html);
 }
