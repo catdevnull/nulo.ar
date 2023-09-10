@@ -3,7 +3,6 @@ import { basename, extname, join } from "path";
 import * as commonmark from "commonmark";
 import {
   a,
-  doctype,
   h1,
   header,
   section,
@@ -17,19 +16,13 @@ import {
   ul,
   h2,
   raw,
-  p,
   VirtualElement,
   time,
   article,
   main,
   img,
-  script,
-  basicElement,
   nav,
-  source,
 } from "@nulo/html.js";
-
-const div = basicElement("div");
 
 const reader = new commonmark.Parser({ smart: true });
 const writer = new commonmark.HtmlRenderer({ safe: false, smart: true });
