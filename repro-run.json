@@ -1,8 +1,0 @@
-{
-  "Command": "/src/build-repro",
-  "Cache": [
-    "/home/repro/pnpm-store",
-    "/home/repro/.cache/pnpm",
-    "/home/repro/.npm"
-  ]
-}
