@@ -3,7 +3,7 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const automaticNoopener = require("eleventy-plugin-automatic-noopener");
 const markdownItWikilinks = require("markdown-it-wikilinks")({
   uriSuffix: "",
-  postProcessPagePath: (path) => path,
+  postProcessPagePath: (path) => path + "/",
   postProcessLabel: (path) => basename(path).match(/^(?:(?:\d{4})-(?:\d{2})-(?:\d{2})-)?(.+)$/)[1],
   relativeBaseURL: "../",
 });
