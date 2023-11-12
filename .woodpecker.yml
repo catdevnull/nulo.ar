@@ -1,4 +1,4 @@
-pipeline:
+steps:
   setup:
     image: gitea.nulo.in/nulo/super-image:3.18
     commands:
