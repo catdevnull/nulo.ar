@@ -16,6 +16,7 @@ module.exports = function config(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("drip.css");
   eleventyConfig.addPassthroughCopy("cowboy.svg");
   eleventyConfig.addPassthroughCopy("status/*");
+  eleventyConfig.addPassthroughCopy("redirects.caddy");
   eleventyConfig.addPassthroughCopy("x/**/*.png");
   eleventyConfig.addPassthroughCopy("x/**/*.jpg");
   eleventyConfig.addPassthroughCopy("x/**/*.mp4");
