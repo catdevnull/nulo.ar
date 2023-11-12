@@ -1,1 +1,11 @@
-{ http_port 8080 } localhost:8443 { log file_server browse root * ./build import redirects.caddy }
+{
+  http_port 8080
+}
+
+localhost:8443 {
+  log
+	file_server browse
+	root * ./build
+
+  import redirects.caddy
+}
