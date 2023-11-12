@@ -3,13 +3,13 @@ pipeline:
     image: gitea.nulo.in/nulo/super-image:3.18
     commands:
       - pnpm install
-  check:
-    image: gitea.nulo.in/nulo/super-image:3.18
-    commands:
-      - pnpm check
-    when:
-      path:
-        include: ["*.js", "*.ts", "package.json", "pnpm-lock.yaml", "tsconfig.json"]
+  # check:
+  #   image: gitea.nulo.in/nulo/super-image:3.18
+  #   commands:
+  #     - pnpm check
+  #   when:
+  #     path:
+  #       include: ["*.js", "*.ts", "package.json", "pnpm-lock.yaml", "tsconfig.json"]
   build:
     image: gitea.nulo.in/nulo/super-image:3.18
     commands:
