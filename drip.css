@@ -93,3 +93,6 @@ li {
   padding: 1rem;
   border: 1px solid;
 }
+#search form {
+  margin: 0;
+}

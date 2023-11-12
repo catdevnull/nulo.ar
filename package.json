@@ -1,12 +1,13 @@
 {
   "name": "sitio",
-  "type": "module",
+  "//type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild compilar.ts *.js --target=node18 --outdir=build-js --sourcemap && node --enable-source-maps --trace-uncaught build-js/compilar.js && pagefind --source build",
-    "build-bun": "bun build compilar.ts --target bun > build-js/bun.js && bun build-js/bun.js && pagefind --source build",
+    "pagefind": "pagefind --source build",
+    "build": "eleventy && pnpm pagefind",
+    "watch": "eleventy --watch",
     "check": "tsc",
     "refresh-feeds": "node feeds.js refresh"
   },
@@ -14,16 +15,17 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
     "@types/commonmark": "^0.27.5",
     "@types/node": "^18.11.18",
-    "esbuild": "^0.16.17",
-    "typescript": "^4.9.4"
+    "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@nulo/html.js": "^0.0.8",
-    "commonmark": "^0.30.0",
     "domutils": "^3.0.1",
+    "eleventy-plugin-automatic-noopener": "^2.0.2",
     "htmlparser2": "^8.0.2",
-    "pagefind": "^0.12.0"
+    "markdown-it-wikilinks": "^1.4.0",
+    "pagefind": "^0.12.0",
+    "zod": "^3.22.4"
   }
 }

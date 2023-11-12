@@ -1,3 +1,8 @@
+---
+link: "https://newso.ng/musiccypher"
+tags: diseño
+---
+
 SONG® Music LLC. es "un sello discográfico y una plataforma de distriverificacíon con sede en Nueva York, NY". Es una subsidiaria de Parent Company©.<sup>[songm.us][songm.us]</sup>
 
 [songm.us]: https://songm.us "El sitio de SONG® Music LLC"
@@ -7,7 +12,7 @@ SONG® Music LLC. es "un sello discográfico y una plataforma de distriverificac
 El sitio para elegir donde escuchar canciones de la discográfica genera opciones exclusivas para desbloquear con "NEWSONG® Pro+".<sup>[newso.ng/musiccypher][newso.ng/musiccypher]</sup>
 
 <figure>
-    <img alt="Unlock with NEWSONG® Pro+ with three options: Paulstretch this song, Pitch to Zedd and H&M In-Store Playlister" src="SONG® Music LLC.md-NEWSONG_Pro_ejemplo1.png">
+    <img alt="Unlock with NEWSONG® Pro+ with three options: Paulstretch this song, Pitch to Zedd and H&M In-Store Playlister" src="NEWSONG_Pro_ejemplo1.png">
     <figcaption>
     
 -   "Paulestirar" esta canción ([un método de estirar una canción sin cambiarle el tono](https://manual.audacityteam.org/man/paulstretch.html))
@@ -17,7 +22,7 @@ El sitio para elegir donde escuchar canciones de la discográfica genera opcione
 </figcaption>
 </figure>
 <figure>
-    <img alt="Unlock with NEWSONG® Pro+ with five options: Review on RateYourMusic, Rebirth in Correct Generation, Direct-to-CDJ Sync (sponsored), Create TikTok Audio (No Attribution) and thissongissick.com Premiere (sponsored)" src="SONG® Music LLC.md-NEWSONG_Pro_ejemplo2.png">
+    <img alt="Unlock with NEWSONG® Pro+ with five options: Review on RateYourMusic, Rebirth in Correct Generation, Direct-to-CDJ Sync (sponsored), Create TikTok Audio (No Attribution) and thissongissick.com Premiere (sponsored)" src="NEWSONG_Pro_ejemplo2.png">
     <figcaption>
 
 -   Opinar en RateYourMusic
@@ -29,7 +34,7 @@ El sitio para elegir donde escuchar canciones de la discográfica genera opcione
 </figcaption>
 </figure>
 <figure>
-    <img alt="Unlock with NEWSONG® Pro+ with three options: Sync to iPod Nano, AirDrop (Contacts Only) (sponsored) and Generate Type Beat of this audio" src="SONG® Music LLC.md-NEWSONG_Pro_ejemplo3.png">
+    <img alt="Unlock with NEWSONG® Pro+ with three options: Sync to iPod Nano, AirDrop (Contacts Only) (sponsored) and Generate Type Beat of this audio" src="NEWSONG_Pro_ejemplo3.png">
     <figcaption>
 
 -   Sincronizar a iPod Nano
@@ -39,7 +44,7 @@ El sitio para elegir donde escuchar canciones de la discográfica genera opcione
 </figcaption>
 </figure>
 <figure>
-    <img alt="Unlock with NEWSONG® Pro+ with four options: Request a Masterclass from this artist, Send to Kindle (sponsored), Archive this track on Discogs.com and Guitar Tabs" src="SONG® Music LLC.md-NEWSONG_Pro_ejemplo4.png">
+    <img alt="Unlock with NEWSONG® Pro+ with four options: Request a Masterclass from this artist, Send to Kindle (sponsored), Archive this track on Discogs.com and Guitar Tabs" src="NEWSONG_Pro_ejemplo4.png">
     <figcaption>
 
 -   Pedir una Masterclass de este artista (Masterclass es una empresa en donde artistas reconocidxs pueden dar clases en línea por precios absurdos)

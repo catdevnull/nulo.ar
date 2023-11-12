@@ -1,19 +1,24 @@
+---
+layout: base.hbs
+templateEngineOverride: hbs,md
+---
+
 <h1 class="main-title">nulo❥ar</h1>
 
 > What's bizarre? I mean, we're all pretty bizarre.<br>Some of us are just better at hiding it, that's all.
 
-<nulo-sitio-reemplazar-con archivo="buscador.htm" />
+{{> buscador}}
 
-¡Buenas! Este es mi mundo, bienvenidx. ¿Que, [[Quién soy]]? Soy Nulo :)
+¡Buenas! Este es mi mundo, bienvenidx. ¿Que, [[/x/Quién soy]]? Soy Nulo :)
 
--   Perdete en la [[Lista de páginas]]
+-   Perdete en la [[/x/Lista de páginas]]
 
 Algunas cosas que escribí:
 
--   [[2023-04-30 Donweb quiere tu cripto]]
--   [[2023-02-05 Vergüenza algorítmica]]
--   [[2022-10-15 Analisis de la extracción de datos del teléfono de Fernando André Sabag Montiel]]
--   [[Arreglando bugs ajenos]]
+-   [[/x/2023-04-30-Donweb quiere tu cripto]]
+-   [[/x/2023-02-05-Vergüenza algorítmica]]
+-   [[/x/2022-10-15-Analisis de la extracción de datos del teléfono de Fernando André Sabag Montiel]]
+-   [[/x/2021-10-11-Arreglando bugs ajenos]]
 
 Algunas cosas que hice:
 
@@ -24,7 +29,7 @@ Algunas cosas que hice:
     -   [Schreiben](https://beta.schreiben.nulo.ar): una aplicación para escribir cosas ([código](https://gitea.nulo.in/Nulo/schreiben))
 -   Laburos:
     -   [Salvá la costanera](https://salva-la-costanera.netlify.app/), [código](https://gitea.nulo.in/Nulo/salva-la-costanera)
--   Y otros [[Proyectos]].
+-   Y otros [[/x/Proyectos]].
 
 Algunas cosas de las que soy parte:
 
@@ -35,9 +40,17 @@ Algunos links mios:
 -   <a rel="me noopener noreferrer" href="https://todon.eu/@Nulo">Mastodon</a>
 -   Mis [repositorios de código en Gitea](https://gitea.nulo.in/Nulo) y en [GitHub](https://github.com/catdevnull)
 
-## Feed de personas que me parecen copadas ([[Mi webring.gen]])
+## Feed de personas que me parecen copadas (un webring)
 
-<nulo-sitio-reemplazar-con archivo="Mi webring.gen.js" />
+<ul>
+  {{#each articles as |article|}}
+    <li class="article">
+      <a href="{{relativeLink article.item.link article.baseUrl}}" target="_blank" rel="noopener">{{article.item.title}}</a>
+      via
+      <a href="{{article.link}}">{{article.title}}</a>
+    </li>
+  {{/each}}
+</ul>
 
 ## Contacto
 

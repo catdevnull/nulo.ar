@@ -1,6 +1,6 @@
 Término técnico para esta receta. [Viene de TikTok](https://www.tiktok.com/@foodiechina888/video/7071812170157198594). TRENDING **TOFU** RECIPE IN CHINA.
 
-<video src="CHINESE GOD OIL.md-tiktok.h264.mp4" controls></video>
+<video src="tiktok.h264.mp4" controls></video>
 
 1.  -   Harina de almidón de maíz (maicena) (la receta pide "potato starch" pero YOLO)
     -   Huevos revueltos (sin cocinar lol)

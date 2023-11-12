@@ -1,0 +1,36 @@
+---
+layout: base.hbs
+---
+<nav>
+  <a href="/">☚ Volver al inicio</a>
+  {{> buscador}}
+</nav>
+<article itemscope="" itemtype="https://schema.org/Article">
+  <header>
+    <h1>{{title}}</h1>
+    {{#unless dateInTitle}}
+      <time datetime="{{dateToISO page.date}}" itemprop="datePublished">
+        {{formatDate page.date false}}
+      </time> /
+    {{/unless}}
+    <a
+      href="https://gitea.nulo.in/Nulo/sitio/commits/branch/ANTIFASCISTA/{{{page.inputPath}}}"
+    >Historial</a>
+    {{#if backlinks.length}}
+      / <a href="#conexiones">Conexiones</a>
+    {{/if}}
+  </header>
+  <main itemprop="articleBody" data-pagefind-body>
+    {{{content}}}
+  </main>
+  {{#if backlinks.length}}
+    <section id="conexiones">
+      <h2>⥆ Conexiones ({{backlinks.length}})</h2>
+      <ul>
+        {{#each backlinks as |link|}}
+          <li><a href="{{link.url}}">{{link.title}}</a></li>
+        {{/each}}
+      </ul>
+    </section>
+  {{/if}}
+</article>

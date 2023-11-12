@@ -2,6 +2,5 @@
 -   Soy argentino & porteño.
 -   Uso pronombres él, a veces ella o cualquiera.
 -   Soy parte de [Sutty](https://sutty.coop.ar).
--   Soy nerd.
 -   Soy estudiante.
 -   Soy mucho más que esta página :O
