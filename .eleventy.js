@@ -3,7 +3,8 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const automaticNoopener = require("eleventy-plugin-automatic-noopener");
 const markdownItWikilinks = require("markdown-it-wikilinks")({
   uriSuffix: "",
-  postProcessPagePath: (path) => path + "/",
+  generatePagePathFromLabel: (label) => `${label}/`,
+  postProcessPagePath: (path) => path,
   postProcessLabel: (path) => basename(path).match(/^(?:(?:\d{4})-(?:\d{2})-(?:\d{2})-)?(.+)$/)[1],
   relativeBaseURL: "../",
 });
@@ -35,7 +36,7 @@ module.exports = function config(eleventyConfig) {
 
   eleventyConfig.addShortcode(
     "dateToISO",
-    /** @param {Date} date */ (date) => date.toISOString().slice(0, 10)
+    /** @param {Date} date */ (date) => date.toISOString().slice(0, 10),
   );
   eleventyConfig.addShortcode("formatDate", formatDate);
   eleventyConfig.addShortcode("relativeLink", (link, baseUrl) => new URL(link, baseUrl).toString());
