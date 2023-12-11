@@ -1,3 +1,7 @@
+---
+description: Regenerando el código fuente de una webapp a partir de los source maps y creando parches para problemas que me molestaban :)
+---
+
 _Actualización 2022-06-02_: después de reportar lo que encontré, DW arregló el primer bug y asumo el segundo (no me acuerdo que ejercicios estaban rotos, por lo que no puedo testear). Y lo mejor: no borraron los source maps, permitiendome mantener haciendo cambios de funcionalidad (por ejemplo, mis modificaciones permiten acelerar audios) 💓
 
 A continuación, el post original:

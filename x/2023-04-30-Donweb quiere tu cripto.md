@@ -1,3 +1,7 @@
+---
+description: Donweb envia mails de phishing para robar cuentas de Metamask desde direcciones de correo oficiales.
+---
+
 _[Parte 1](/x/2022-11-18-Donweb%20es%20rid%C3%ADculo/)_
 
 Como si no fuera suficiente, [[Donweb]] me sigue mandando mails por más que me desuscribí varias veces. No debería sorprenderme de la empresa que hace _[Email Marketing](https://envialosimple.com/es-ar)_ (Spam as a Service), pero es hinchapelotas.

@@ -1,3 +1,7 @@
+---
+description: "O: que es lo que la policía usa para hackear telefonos"
+---
+
 ## Prefacio
 
 Es importante analizar como las fuerzas policiales locales vuleran sistemas informáticos para obtener información. De esta manera, podemos protegernos de la policía y otros criminales utilizando las mismas herramientas.
@@ -8,20 +12,22 @@ El caso del [intento de asesinato de la vicepresidenta](https://es.wikipedia.org
 
 [Esta nota de Télam](https://www.telam.com.ar/notas/202210/607022-cristina-fernandez-ataque-investigacion-sabag-montiel-celular.html) cuenta detalles sobre como lograron "extraer datos del teléfono" después de tantos intentos fallidos: TL;DR el titulo está mal, no extrajeron nada del teléfono.
 
-- Usaron la SIM del teléfono para activar la cuenta de Telegram en otro dispositivo y extraer todo,
-    - que se podría haber prevenido con el uso de la [autenticación de dos pasos](https://telegram.org/blog/sessions-and-2-step-verification) de Telegram, en la que se te pide una contraseña al iniciar sesión.
-        - Aunque es importante mencionar que también podés opcionalmente poner una dirección de mail para recuperarla si la perdés, y como también le consiguieron las cuentas de Google también podría haber sido vulnerado.
-    - Por otro lado, si Telegram fuera realmente seguro como Signal (y a cierto punto WhatsApp, ver abajo) a través de la utilización de cifrado punta a punta, no podrían haber conseguido el historial entero de conversaciones (hasta diciembre de 2020) por lo que no hubiera sido vulnerado en este modelo de ataque (extracción de datos a través de hijackeo de cuentas).
+-   Usaron la SIM del teléfono para activar la cuenta de Telegram en otro dispositivo y extraer todo,
 
-- De alguna manera accedieron las cuentas de Google (que no entiendo como hicieron con solo la SIM, generalmente también necesitas la contraseña)
-    - y extrajeron un [takeout](https://takeout.google.com) (un archivo gigante con todos los datos de cada cuenta)
-        - para analizarlo con [UFED Cloud](https://cellebrite.com/en/ufed-cloud/) (software de compañía israelí utilizado por régimenes fascistas, [previamente vulnerada por Signal mismo](https://signal.org/blog/cellebrite-vulnerabilities/)).
+    -   que se podría haber prevenido con el uso de la [autenticación de dos pasos](https://telegram.org/blog/sessions-and-2-step-verification) de Telegram, en la que se te pide una contraseña al iniciar sesión.
+        -   Aunque es importante mencionar que también podés opcionalmente poner una dirección de mail para recuperarla si la perdés, y como también le consiguieron las cuentas de Google también podría haber sido vulnerado.
+    -   Por otro lado, si Telegram fuera realmente seguro como Signal (y a cierto punto WhatsApp, ver abajo) a través de la utilización de cifrado punta a punta, no podrían haber conseguido el historial entero de conversaciones (hasta diciembre de 2020) por lo que no hubiera sido vulnerado en este modelo de ataque (extracción de datos a través de hijackeo de cuentas).
 
-- Dice que accedieron a WhatsApp,
-    - pero dice explicitamente que no encontraron copias de seguridad de WhatsApp en Google
-    - pero que obtuvieron "los datos de la nube de WhatsApp".
-        - Si es de creer el E2EE de WhatsApp (yo, sinceramente, creo) solo obtuvieron metadatos.
-    - Si hubiera habido copias de seguridad (una de las principales vulerabilidades de WhatsApp) si podrían haber tenido sus mensajes.
+-   De alguna manera accedieron las cuentas de Google (que no entiendo como hicieron con solo la SIM, generalmente también necesitas la contraseña)
+
+    -   y extrajeron un [takeout](https://takeout.google.com) (un archivo gigante con todos los datos de cada cuenta)
+        -   para analizarlo con [UFED Cloud](https://cellebrite.com/en/ufed-cloud/) (software de compañía israelí utilizado por régimenes fascistas, [previamente vulnerada por Signal mismo](https://signal.org/blog/cellebrite-vulnerabilities/)).
+
+-   Dice que accedieron a WhatsApp,
+    -   pero dice explicitamente que no encontraron copias de seguridad de WhatsApp en Google
+    -   pero que obtuvieron "los datos de la nube de WhatsApp".
+        -   Si es de creer el E2EE de WhatsApp (yo, sinceramente, creo) solo obtuvieron metadatos.
+    -   Si hubiera habido copias de seguridad (una de las principales vulerabilidades de WhatsApp) si podrían haber tenido sus mensajes.
 
 ## Conclusión
 

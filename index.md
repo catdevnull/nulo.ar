@@ -1,5 +1,6 @@
 ---
 title: Nulo
+description: Mi sitio web personal
 layout: base.hbs
 templateEngineOverride: hbs,md
 ---
