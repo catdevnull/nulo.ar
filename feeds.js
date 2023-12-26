@@ -8,6 +8,7 @@ const feeds = {
   // icyphox: "https://icyphox.sh/blog/feed.xml",
   brunoscheufler: "https://brunoscheufler.com/rss.xml",
   taylor: "https://taylor.town/feed.xml",
+  nexxel: "https://www.nexxel.dev/rss.xml",
 };
 
 if (process.argv[2] === "refresh") {
@@ -18,7 +19,7 @@ if (process.argv[2] === "refresh") {
         const res = await fetch(url);
         const txt = await res.text();
         await writeFile(join("cached-feeds/", `${name}.xml`), txt);
-      })
+      }),
     );
   })();
 }

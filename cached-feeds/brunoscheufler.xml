@@ -6,9 +6,79 @@
     <description>Blog posts by Bruno Scheufler</description>
     <atom:link href="https://brunoscheufler.com/rss.xml" rel="self" type="application/rss+xml" />
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Aug 2023 20:10:09 GMT</lastBuildDate>
-    <pubDate>Wed, 30 Aug 2023 20:10:09 GMT</pubDate>
+    <lastBuildDate>Sun, 17 Dec 2023 20:59:05 GMT</lastBuildDate>
+    <pubDate>Sun, 17 Dec 2023 20:59:05 GMT</pubDate>
     <ttl>60</ttl>
+    
+    <item>
+      <title>Learning to enjoy trying new things and looking stupid</title>
+      <link>https://brunoscheufler.com/blog/2023-12-17-learning-to-enjoy-trying-new-things-and-looking-stupid</link>
+      <pubDate>Sun, 17 Dec 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-12-17-learning-to-enjoy-trying-new-things-and-looking-stupid</guid>
+    </item>
+    
+    <item>
+      <title>On Competition</title>
+      <link>https://brunoscheufler.com/blog/2023-12-10-on-competition</link>
+      <pubDate>Sun, 10 Dec 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-12-10-on-competition</guid>
+    </item>
+    
+    <item>
+      <title>Recording Better Demos</title>
+      <link>https://brunoscheufler.com/blog/2023-12-03-recording-better-demos</link>
+      <pubDate>Sun, 03 Dec 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-12-03-recording-better-demos</guid>
+    </item>
+    
+    <item>
+      <title>On Distraction and Procrastination</title>
+      <link>https://brunoscheufler.com/blog/2023-11-26-on-distraction-and-procrastination</link>
+      <pubDate>Sun, 26 Nov 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-11-26-on-distraction-and-procrastination</guid>
+    </item>
+    
+    <item>
+      <title>Product Versioning for Fast-Moving Teams</title>
+      <link>https://brunoscheufler.com/blog/2023-11-20-product-versioning-for-fast-moving-teams</link>
+      <pubDate>Mon, 20 Nov 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-11-20-product-versioning-for-fast-moving-teams</guid>
+    </item>
+    
+    <item>
+      <title>Setting up Hosted macOS GitHub Actions Workflows for Electron Builds</title>
+      <link>https://brunoscheufler.com/blog/2023-11-12-setting-up-hosted-macos-github-actions-workflows-for-electron-builds</link>
+      <pubDate>Sun, 12 Nov 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-11-12-setting-up-hosted-macos-github-actions-workflows-for-electron-builds</guid>
+    </item>
+    
+    <item>
+      <title>Releasing Electron apps for macOS</title>
+      <link>https://brunoscheufler.com/blog/2023-11-05-releasing-electron-apps-for-macos</link>
+      <pubDate>Sun, 05 Nov 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-11-05-releasing-electron-apps-for-macos</guid>
+    </item>
+    
+    <item>
+      <title>Syncing State between Electron Contexts</title>
+      <link>https://brunoscheufler.com/blog/2023-10-29-syncing-state-between-electron-contexts</link>
+      <pubDate>Sun, 29 Oct 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-10-29-syncing-state-between-electron-contexts</guid>
+    </item>
+    
+    <item>
+      <title>Go Embeds and JSON</title>
+      <link>https://brunoscheufler.com/blog/2023-10-22-go-embeds-and-json</link>
+      <pubDate>Sun, 22 Oct 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-10-22-go-embeds-and-json</guid>
+    </item>
+    
+    <item>
+      <title>Looking back on a decade in software engineering</title>
+      <link>https://brunoscheufler.com/blog/2023-09-03-looking-back-on-a-decade-in-software-engineering</link>
+      <pubDate>Sun, 03 Sep 2023 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-09-03-looking-back-on-a-decade-in-software-engineering</guid>
+    </item>
     
     <item>
       <title>Building Canvas-Based Web Applications</title>
