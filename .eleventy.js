@@ -14,16 +14,15 @@ const { formatDate } = require("./helpers/date");
  * @param {import("@11ty/eleventy").UserConfig} eleventyConfig
  */
 module.exports = function config(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("drip.css");
-  eleventyConfig.addPassthroughCopy("cowboy.svg");
-  eleventyConfig.addPassthroughCopy("status/*");
-  eleventyConfig.addPassthroughCopy("redirects.caddy");
-  eleventyConfig.addPassthroughCopy("x/**/*.png");
-  eleventyConfig.addPassthroughCopy("x/**/*.jpg");
-  eleventyConfig.addPassthroughCopy("x/**/*.mp4");
-  eleventyConfig.addPassthroughCopy("bookmarks/**/*.png");
-  eleventyConfig.addPassthroughCopy("bookmarks/**/*.jpg");
-  eleventyConfig.addPassthroughCopy("bookmarks/**/*.mp4");
+  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/status/*");
+  eleventyConfig.addPassthroughCopy("src/redirects.caddy");
+  eleventyConfig.addPassthroughCopy("src/x/**/*.png");
+  eleventyConfig.addPassthroughCopy("src/x/**/*.jpg");
+  eleventyConfig.addPassthroughCopy("src/x/**/*.mp4");
+  eleventyConfig.addPassthroughCopy("src/bookmarks/**/*.png");
+  eleventyConfig.addPassthroughCopy("src/bookmarks/**/*.jpg");
+  eleventyConfig.addPassthroughCopy("src/bookmarks/**/*.mp4");
 
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
   eleventyConfig.addPlugin(automaticNoopener, {
