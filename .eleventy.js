@@ -16,7 +16,7 @@ const { formatDate } = require("./helpers/date");
 module.exports = function config(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/status/*");
-  eleventyConfig.addPassthroughCopy("src/redirects.caddy");
+  eleventyConfig.addPassthroughCopy("src/_redirects");
   eleventyConfig.addPassthroughCopy("src/x/**/*.png");
   eleventyConfig.addPassthroughCopy("src/x/**/*.jpg");
   eleventyConfig.addPassthroughCopy("src/x/**/*.mp4");
