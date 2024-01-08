@@ -1,7 +1,7 @@
 ---
 title: Nulo
 description: Mi sitio web personal
-layout: base.hbs
+layout: prose.hbs
 templateEngineOverride: hbs,md
 ---
 

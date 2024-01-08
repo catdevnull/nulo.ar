@@ -12,8 +12,12 @@
     <meta property="og:url" content="https://nulo.ar{{{page.url}}}" />
     <meta property="og:image" content="/assets/cowboy.svg" />
     <meta content="index, follow" name="robots" />
-    <link rel="stylesheet" href="/assets/drip.css" />
     <link rel="icon" href="/assets/cowboy.svg" />
+    <style>
+      {{{ tailwind }}}
+    </style>
   </head>
-  {{{content}}}
+  <body class="dark:bg-neutral-800 dark:text-neutral-100">
+    {{{content}}}
+  </body>
 </html>

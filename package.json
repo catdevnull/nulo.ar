@@ -16,8 +16,12 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@tailwindcss/typography": "^0.5.10",
     "@types/commonmark": "^0.27.9",
     "@types/node": "^18.19.5",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   },
   "dependencies": {

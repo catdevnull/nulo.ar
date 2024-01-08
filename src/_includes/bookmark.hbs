@@ -1,19 +1,15 @@
 ---
 layout: base.hbs
 ---
-<nav>
-    <a href="/">☚ Volver al inicio</a> | En: bookmarks
-    {{> buscador}}
-</nav>
+
+<nav><a href="/">☚ Volver al inicio</a> | En: bookmarks {{> buscador}}</nav>
 <article itemscope="" itemtype="https://schema.org/Article">
-    <header>
-        <time datetime="{{dateToISO page.date}}" itemprop="datePublished">
-            {{formatDate page.date false}}
-        </time>
-        <h1><a href="{{link}}">{{link}}</a></h1>
-        <h3>{{page.fileSlug}}</h3>
-    </header>
-    <main itemprop="articleBody" data-pagefind-body>
-        {{{content}}}
-    </main>
+  <header>
+    <time datetime="{{dateToISO page.date}}" itemprop="datePublished">
+      {{formatDate page.date false}}
+    </time>
+    <h1><a href="{{link}}">{{link}}</a></h1>
+    <h3>{{page.fileSlug}}</h3>
+  </header>
+  <main itemprop="articleBody" data-pagefind-body>{{{content}}}</main>
 </article>
