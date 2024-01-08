@@ -46,6 +46,7 @@ module.exports = function config(eleventyConfig) {
 
   return {
     dir: {
+      input: "src",
       output: "build",
     },
   };

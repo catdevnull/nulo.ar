@@ -1,5 +1,5 @@
 const { basename, extname } = require("path");
-const { zDateish, formatDate, dateishToDate } = require("../helpers/date.js");
+const { zDateish, formatDate, dateishToDate } = require("../../helpers/date.js");
 
 // /**
 //  * @typedef {{
@@ -75,9 +75,9 @@ module.exports = {
                 .slice(2, -2)
                 .split("|")[0]
                 .replace(/.(md|markdown)\s?$/i, "")
-                .trim()
+                .trim(),
             )
-            .some((link) => caselessCompare(link, currentFileSlug))
+            .some((link) => caselessCompare(link, currentFileSlug)),
         )
         .map((otherNote) => ({
           url: otherNote.url,
