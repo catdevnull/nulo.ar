@@ -24,7 +24,7 @@ Algunas cosas que escribí:
 
 Algunas cosas que hice:
 
--   [Este sitio](https://gitea.nulo.in/Nulo/sitio)
+-   [Este sitio](https://github.com/catdevnull/nulo.ar)
 -   [DlBot](https://t.me/dlthefourthbot): un bot de Telegram que descarga videos de TikTok e Instagram ([código](https://gitea.nulo.in/Nulo/dlbot4))
 -   [Manejador de Tareas](https://tareas.nulo.in)
 -   Proyectos experimentales:

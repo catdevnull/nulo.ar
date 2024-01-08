@@ -57,7 +57,7 @@ export default () => {
     ol(...temas.map((t) => li(t))),
     a(
       {
-        href: "https://gitea.nulo.in/Nulo/sitio/src/branch/ANTIFASCISTA/Men%C3%BA%20art%C3%ADstico.gen.js",
+        href: "https://github.com/catdevnull/nulo.ar/blob/ANTIFASCISTA/src/x/Men%C3%BA%20art%C3%ADstico.gen.js",
       },
       "Código",
     ),
