@@ -20,8 +20,10 @@ layout: base.hbs
       / <a href="#conexiones">Conexiones</a>
     {{/if}}
   </header>
-  <main class="prose dark:invert-prose" itemprop="articleBody" data-pagefind-body>
-    {{{content}}}
+  <main itemprop="articleBody" data-pagefind-body>
+    {{#> prose}}
+      {{{content}}}
+    {{/prose}}
   </main>
   {{#if backlinks.length}}
     <section id="conexiones">

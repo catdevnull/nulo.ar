@@ -1,11 +1,11 @@
 ---
 title: Nulo
 description: Mi sitio web personal
-layout: prose.hbs
+layout: prose_base.hbs
 templateEngineOverride: hbs,md
 ---
 
-<h1 class="main-title">nulo❥ar</h1>
+# nulo❥ar
 
 > What's bizarre? I mean, we're all pretty bizarre.<br>Some of us are just better at hiding it, that's all.
 

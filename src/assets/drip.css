@@ -1,25 +1,3 @@
-:root {
-  color-scheme: dark light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    background: #111;
-    color: #eee;
-  }
-  a {
-    color: lightblue;
-  }
-}
-
-body {
-  font-family: sans-serif;
-  max-width: 70ch;
-  line-height: 1.5;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
 article header {
   margin: 2rem 0;
   text-align: center;
@@ -34,43 +12,6 @@ section#conexiones {
   margin: 0 auto;
 }
 
-h2 {
-  border-bottom: CanvasText solid 1px;
-}
-
-img,
-video {
-  max-width: 100%;
-  border-radius: 12px;
-}
-
-abbr {
-  color: gray;
-}
-
-pre {
-  overflow-x: auto;
-  white-space: break-spaces;
-}
-
-blockquote {
-  border-left: solid 3px;
-  border-color: CanvasText;
-  margin: auto 0.5em;
-  padding-left: 1em;
-}
-
-ul,
-ol {
-  padding: 0;
-  padding-left: 1.5rem;
-  margin: 1rem 0;
-}
-li {
-  margin: 0.5rem 0;
-  padding: 0 0.2rem;
-}
-
 #conexiones ul {
   list-style: none;
   padding: 0;
@@ -82,11 +23,6 @@ li {
 }
 #conexiones li::before {
   content: "↜ ";
-}
-
-.main-title {
-  color: red;
-  margin-top: 0;
 }
 
 #search {
