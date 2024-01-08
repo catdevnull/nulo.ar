@@ -2,4 +2,4 @@ Este es el README para [el repositorio del sitio](https://gitea.nulo.in/Nulo/sit
 
 ---
 
-[![Una captura de pantalla de unos mensajes diciendo "pero ponele css nulo, una linea tirate"](pero%20ponele%20css.png)](https://copiona.com)
+[![Una captura de pantalla de unos mensajes diciendo "pero ponele css nulo, una linea tirate"](assets/pero%20ponele%20css.png)](https://copiona.com)
