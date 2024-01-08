@@ -8,7 +8,8 @@ layout: base.hbs
 </nav>
 <article class="max-w-2xl mx-auto" itemscope="" itemtype="https://schema.org/Article">
   <header class="m-8 text-center">
-    <h1 class="font-bold text-3xl">{{title}}</h1>
+    <!-- https://github.com/CloudCannon/pagefind/issues/532 -->
+    <h1 data-pagefind-body class="font-bold text-3xl">{{title}}</h1>
     {{#unless dateInTitle}}
     <time datetime="{{dateToISO page.date}}" itemprop="datePublished">
       {{formatDate page.date false}}
