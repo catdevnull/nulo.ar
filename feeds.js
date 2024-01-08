@@ -11,6 +11,8 @@ const feeds = {
   nexxel: "https://www.nexxel.dev/rss.xml",
 };
 
+const cachedFeedsDir = ".cached-feeds/";
+
 if (process.argv[2] === "refresh") {
   (async () => {
     await Promise.all(
@@ -18,7 +20,7 @@ if (process.argv[2] === "refresh") {
         console.log(`Refreshing ${name}`);
         const res = await fetch(url);
         const txt = await res.text();
-        await writeFile(join("cached-feeds/", `${name}.xml`), txt);
+        await writeFile(join(cachedFeedsDir, `${name}.xml`), txt);
       }),
     );
   })();
@@ -30,7 +32,7 @@ if (process.argv[2] === "refresh") {
  * @returns string
  */
 async function readFeed(name) {
-  return await readFile(join("cached-feeds/", name + ".xml"), "utf-8");
+  return await readFile(join(cachedFeedsDir, name + ".xml"), "utf-8");
 }
 
 module.exports = { feeds, readFeed };
