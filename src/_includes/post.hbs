@@ -6,8 +6,8 @@ layout: base.hbs
   <a href="/" class="underline">☚ Volver al inicio</a>
   {{> buscador}}
 </nav>
-<article itemscope="" itemtype="https://schema.org/Article">
-  <header class="m-8 text-center max-w-6xl">
+<article class="max-w-2xl mx-auto" itemscope="" itemtype="https://schema.org/Article">
+  <header class="m-8 text-center">
     <h1 class="font-bold text-3xl">{{title}}</h1>
     {{#unless dateInTitle}}
     <time datetime="{{dateToISO page.date}}" itemprop="datePublished">
