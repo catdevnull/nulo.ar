@@ -1,38 +1,38 @@
 ---
 layout: base.hbs
 ---
-<nav>
-  <a href="/">☚ Volver al inicio</a>
+
+<nav class="max-w-2xl mx-auto">
+  <a href="/" class="underline">☚ Volver al inicio</a>
   {{> buscador}}
 </nav>
 <article itemscope="" itemtype="https://schema.org/Article">
-  <header>
-    <h1>{{title}}</h1>
+  <header class="m-8 text-center max-w-6xl">
+    <h1 class="font-bold text-3xl">{{title}}</h1>
     {{#unless dateInTitle}}
-      <time datetime="{{dateToISO page.date}}" itemprop="datePublished">
-        {{formatDate page.date false}}
-      </time> /
-    {{/unless}}
+    <time datetime="{{dateToISO page.date}}" itemprop="datePublished">
+      {{formatDate page.date false}}
+    </time>
+    / {{/unless}}
     <a
       href="https://github.com/catdevnull/nulo.ar/commits/ANTIFASCISTA/{{{page.inputPath}}}"
-    >Historial</a>
-    {{#if backlinks.length}}
-      / <a href="#conexiones">Conexiones</a>
+      class="underline"
+      >Historial</a
+    >
+    {{#if backlinks.length}} / <a href="#conexiones" class="underline">Conexiones</a>
     {{/if}}
   </header>
-  <main itemprop="articleBody" data-pagefind-body>
-    {{#> prose}}
-      {{{content}}}
-    {{/prose}}
-  </main>
+  <main itemprop="articleBody" data-pagefind-body>{{#> prose}} {{{content}}} {{/prose}}</main>
   {{#if backlinks.length}}
-    <section id="conexiones">
-      <h2>⥆ Conexiones ({{backlinks.length}})</h2>
-      <ul>
-        {{#each backlinks as |link|}}
-          <li><a href="{{link.url}}">{{link.title}}</a></li>
-        {{/each}}
-      </ul>
-    </section>
+  <section id="conexiones" class="max-w-2xl mx-auto">
+    <h2 class="font-bold text-2xl">⥆ Conexiones ({{backlinks.length}})</h2>
+    <ul class="my-2">
+      {{#each backlinks as |link|}}
+      <li class="prose prose-neutral dark:prose-invert before:content-['↜_']">
+        <a href="{{link.url}}">{{link.title}}</a>
+      </li>
+      {{/each}}
+    </ul>
+  </section>
   {{/if}}
 </article>

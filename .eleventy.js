@@ -31,7 +31,9 @@ module.exports = function config(eleventyConfig) {
 
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItWikilinks));
 
-  eleventyConfig.addCollection("x", (collectionApi) => collectionApi.getFilteredByGlob("x/**/*"));
+  eleventyConfig.addCollection("x", (collectionApi) =>
+    collectionApi.getFilteredByGlob("src/x/**/*"),
+  );
 
   eleventyConfig.addShortcode(
     "dateToISO",

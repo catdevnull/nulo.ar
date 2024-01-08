@@ -1,9 +1,9 @@
 Ordenado aproximadamente por última vez activo.
 
--   [[/x/Herramienta de monitoreo de medios]]
--   [[/x/Ideas para un sistema operativo propio en Chromebooks]]
--   [[/x/Archivar los archivos de la dictadura militar]]
--   [[/x/FakeSMTP]]
+-   [[../Herramienta de monitoreo de medios]]
+-   [[../Ideas para un sistema operativo propio en Chromebooks]]
+-   [[../Archivar los archivos de la dictadura militar]]
+-   [[../FakeSMTP]]
 -   [Este sitio](https://github.com/catdevnull/nulo.ar)
 -   Juguetes:
     -   [Cuarentena](https://cuarentena.nulo.in)

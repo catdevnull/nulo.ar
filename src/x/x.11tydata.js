@@ -69,7 +69,7 @@ module.exports = {
       const backlinks = notes
         .filter((otherNote) =>
           (otherNote.template.frontMatter.content.match(wikilinkRegExp) || [])
-            .map((link) =>
+            .map((/** @type {string} */ link) =>
               // Extract link location
               link
                 .slice(2, -2)
@@ -77,7 +77,13 @@ module.exports = {
                 .replace(/.(md|markdown)\s?$/i, "")
                 .trim(),
             )
-            .some((link) => caselessCompare(link, currentFileSlug)),
+            .map((/** @type {string} */ link) => {
+              const partes = link.split("/");
+              return partes[partes.length - 1];
+            })
+            .some((/** @type {string} */ link) => {
+              return caselessCompare(link, currentFileSlug);
+            }),
         )
         .map((otherNote) => ({
           url: otherNote.url,
