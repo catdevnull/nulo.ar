@@ -1,0 +1,48 @@
+---
+layout: base.liquid
+---
+
+<section class="min-h-screen flex flex-col lg:flex-row items-center justify-center">
+  <div class="p-6 lg:p-12 max-w-3xl flex flex-col gap-4">
+    <h1 class="font-black text-6xl lg:text-8xl">
+      <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">DlBot</span>
+    </h1>
+    <p class="text-3xl lg:text-5xl leading-tight lg:leading-tight">
+      {% assign class = "w-[.8em] h-auto inline align-middle mr-[.25em]" %}
+      Un bot para
+      <span class="inline-block font-semibold">
+        {% bootstrapIcon "telegram", class %}Telegram
+      </span>
+      que descarga videos de
+      <span class="inline-block">
+        {% bootstrapIcon "tiktok", class %}<span class="font-semibold">TikTok</span>,
+      </span>
+      <span class="inline-block font-semibold">
+        {% bootstrapIcon "instagram", class %}<span class="font-semibold">Instagram Reels</span> y
+      </span>
+      <span class="inline-block font-semibold">
+        {% bootstrapIcon "youtube", class %}YouTube Shorts.
+      </span>
+    </p>
+    <a href="https://t.me/dlthefourthbot" rel="noreferrer noopener" target="_blank"
+      class="flex mx-auto px-[.75em] py-[.5em] text-lg lg:text-3xl font-medium text-white transition-colors duration-200 bg-[#179cde] rounded-md hover:bg-[#179cde]/90 focus:ring-2 focus:ring-offset-2 focus:ring-blue-700 focus:shadow-outline focus:outline-none">
+      {% bootstrapIcon "telegram", "w-[1em] h-auto inline align-middle mr-3" %}
+      @dlthefourthbot
+    </a>
+  </div>
+  <div class="shrink-0 p-6 lg:p-12">
+    <picture>
+      <source srcset="screenshot-cropped-dark.webp" media="(prefers-color-scheme: dark)" />
+      <img class="rounded-lg drop-shadow-lg max-h-[90vh]" src="screenshot-cropped.webp" alt="Una captura de pantalla de Telegram de una conversación con DlBot, en la que se envía un link de Instagram Reels y DlBot le contesta con un video subido." />
+    </picture>
+  </div>
+</section>
+
+<!-- TODO: mostrar como agregar a grupos -->
+
+<footer class="flex flex-col w-full p-12 items-center">
+  <a class="flex gap-2 leading-none *:block text-lg" href="https://gitea.nulo.in/Nulo/dlbot4">
+    {% bootstrapIcon "git" %}
+    <span class="font-medium underline">Ver código fuente</span>
+  </a>
+</footer>
