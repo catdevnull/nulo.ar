@@ -76,7 +76,7 @@ Algunos links mios:
   {%- for article in articles -%}
     <li class="border-2 dark:border-neutral-600 rounded-lg p-3">
       <h3 class="font-bold text-xl leading-tight text-neutral-900 dark:text-neutral-50">
-        <a class="py-3" href="{{relativeLink article.item.link article.baseUrl}}" target="_blank" rel="noopener">{{article.item.title}}</a>
+        <a class="py-3" href="{% relativeLink article.item.link, article.baseUrl %}" target="_blank" rel="noopener">{{article.item.title}}</a>
       </h3>
       via
       <a class="underline" href="{{article.link}}">{{article.title}}</a>
