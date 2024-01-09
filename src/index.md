@@ -70,7 +70,7 @@ Algunos links mios:
 
 -   Mis [repositorios de código en Gitea](https://gitea.nulo.in/Nulo) y en [GitHub](https://github.com/catdevnull)
 
-## Textos de personas que me parecen copadas (un webring)
+## Textos de personas que me parecen copadas (un [webring](https://es.wikipedia.org/wiki/Anillo_web))
 
 <ul class="not-prose grid grid-cols-2 md:grid-cols-3 gap-4">
   {%- for article in articles -%}
