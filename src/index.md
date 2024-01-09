@@ -11,10 +11,13 @@ proyectos:
     - title: Archivo de datos
       description: Archivo de portales argentinos de datos abiertos.
       url: https://datos.nulo.ar
-      wip: false
     - title: DlBot
       description: Bot de Telegram para descargar videos de TikTok, Instagram Reels y más.
       url: /dlbot/
+    - title: Schreiben
+      description: Aplicación para escribir cosas.
+      url: https://schreiben.nulo.ar
+      wip: true
 ---
 
 # nulo❥ar
@@ -59,24 +62,12 @@ Algunas cosas que escribí:
 -   [[/x/2022-10-15-Analisis de la extracción de datos del teléfono de Fernando André Sabag Montiel]]
 -   [[/x/2021-10-11-Arreglando bugs ajenos]]
 
-Algunas cosas que hice:
-
--   [Este sitio](https://github.com/catdevnull/ nulo.ar)
--   [DlBot](https://t.me/dlthefourthbot): un bot de Telegram que descarga videos de TikTok e Instagram ([código](https://gitea.nulo.in/Nulo/dlbot4))
--   [Manejador de Tareas](https://tareas.nulo.in)
--   Proyectos experimentales:
-    -   [Schreiben](https://beta.schreiben.nulo.ar): una aplicación para escribir cosas ([código](https://gitea.nulo.in/Nulo/schreiben))
--   Laburos:
-    -   [Salvá la costanera](https://salva-la-costanera.netlify.app/), [código](https://gitea.nulo.in/Nulo/salva-la-costanera)
--   Y otros [[/x/Proyectos]].
-
 Algunas cosas de las que soy parte:
 
 -   [Sutty](https://sutty.coop.ar/)
 
 Algunos links mios:
 
--   <a rel="me noopener noreferrer" href="https://todon.eu/@Nulo">Mastodon</a>
 -   Mis [repositorios de código en Gitea](https://gitea.nulo.in/Nulo) y en [GitHub](https://github.com/catdevnull)
 
 ## Feed de personas que me parecen copadas (un webring)
@@ -96,3 +87,5 @@ Algunos links mios:
 Webamigx: [nadie@nulo.in](mailto:nadie@nulo.in) <small>no gods no webmasters</small>
 
 > De este sitio se desprenden graves falencias tales como simbología confusa, cuestionamientos ideológicos-sociales, objetivos no adecuados al hecho estético, ilimitada fantasía...
+
+<a rel="me noopener noreferrer" href="https://todon.eu/@Nulo">Mastodon</a>
