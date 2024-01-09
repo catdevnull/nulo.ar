@@ -32,7 +32,7 @@ proyectos:
   {%- for proyecto in proyectos -%}
     <a href="{{ proyecto.url }}" class="rounded-2xl shadow hover:shadow-lg transition-shadow bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 relative overflow-hidden">
       {%- if proyecto.wip -%}
-      <div class="bg-hazard w-64 font-black leading-none text-xl text-white text-center -rotate-45 z-20 absolute bottom-[10%] right-[-6rem]">WIP</div>
+        <div class="bg-hazard w-64 font-black leading-none text-xl text-white text-center -rotate-45 z-20 absolute bottom-[10%] right-[-6rem]">WIP</div>
       {%- endif -%}
       <div class="flex flex-col justify-between bg-neutral-50/85 dark:bg-neutral-800/85 z-10 relative h-full p-4">
         <div class="flex flex-col gap-2 px-1">
@@ -70,16 +70,18 @@ Algunos links mios:
 
 -   Mis [repositorios de código en Gitea](https://gitea.nulo.in/Nulo) y en [GitHub](https://github.com/catdevnull)
 
-## Feed de personas que me parecen copadas (un webring)
+## Textos de personas que me parecen copadas (un webring)
 
-<ul>
-  {% for article in articles %}
-    <li class="article">
-      <a href="{{relativeLink article.item.link article.baseUrl}}" target="_blank" rel="noopener">{{article.item.title}}</a>
+<ul class="not-prose grid grid-cols-2 md:grid-cols-3 gap-4">
+  {%- for article in articles -%}
+    <li class="border-2 dark:border-neutral-600 rounded-lg p-3">
+      <h3 class="font-bold text-xl leading-tight text-neutral-900 dark:text-neutral-50">
+        <a class="py-3" href="{{relativeLink article.item.link article.baseUrl}}" target="_blank" rel="noopener">{{article.item.title}}</a>
+      </h3>
       via
-      <a href="{{article.link}}">{{article.title}}</a>
+      <a class="underline" href="{{article.link}}">{{article.title}}</a>
     </li>
-  {% endfor %}
+  {%- endfor -%}
 </ul>
 
 ## Contacto
