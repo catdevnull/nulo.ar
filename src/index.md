@@ -2,22 +2,19 @@
 title: Nulo
 description: Mi sitio web personal
 layout: prose_base.hbs
-templateEngineOverride: hbs,md
+templateEngineOverride: liquid,md
 ---
 
 # nulo❥ar
 
 > Autor de código, hacedor de cosas
 
-{{> buscador}}
+{% include "buscador.hbs" %}
 
 ## Proyectos
 
 <div class="not-prose grid grid-cols-2 md:grid-cols-3 gap-4">
   <a href="https://preciazo.experimentos.nulo.ar" class="rounded-2xl shadow hover:shadow-lg transition-shadow bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 relative overflow-hidden">
-    <!-- <span class="absolute bottom-2 left-2 *:size-20 block">
-      {{{ bootstrapIcon "cart4" }}}
-    </span> -->
     <!-- <div class="absolute bottom-0 right-0 size-32 flex content-end flex-col"> -->
     <div class="bg-hazard w-64 font-black leading-none text-xl text-white text-center -rotate-45 z-20 absolute bottom-[10%] right-[-6rem]">WIP</div>
     <!-- </div> -->
@@ -29,30 +26,24 @@ templateEngineOverride: hbs,md
     </div>
   </a>
   <a href="https://datos.nulo.ar" class="rounded-2xl shadow hover:shadow-lg transition-shadow bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 relative overflow-hidden">
-    <!-- <span class="absolute bottom-2 left-2 *:size-20 block">
-      {{{ bootstrapIcon "cart4" }}}
-    </span> -->
     <div class="flex flex-col justify-between bg-neutral-50/85 dark:bg-neutral-800/85 z-10 relative h-full p-4">
       <div class="flex flex-col gap-2 px-1">
         <h3 class="font-semibold text-2xl">Archivo de datos</h3>
         <p class="leading-5">Archivo de portales argentinos de datos abiertos.</p>
       </div>
       <span class="size-8 block justify-self-end place-self-end">
-        {{{ evaIcon "arrow-forward" "outline" }}}
+        {% evaIcon "arrow-forward", "outline" %}
       </span>
     </div>
   </a>
   <a href="/dlbot/" class="rounded-2xl shadow hover:shadow-lg transition-shadow bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 relative overflow-hidden">
-    <!-- <span class="absolute bottom-2 left-2 *:size-20 block">
-      {{{ bootstrapIcon "cart4" }}}
-    </span> -->
     <div class="flex flex-col justify-between bg-neutral-50/85 dark:bg-neutral-800/85 z-10 relative h-full p-4">
       <div class="flex flex-col gap-2 px-1">
         <h3 class="font-semibold text-2xl">DlBot</h3>
         <p class="leading-5">Bot de Telegram para descargar videos de TikTok, Instagram Reels y más.</p>
       </div>
       <span class="size-8 block justify-self-end place-self-end">
-        {{{ evaIcon "arrow-forward" "outline" }}}
+        {% evaIcon "arrow-forward", "outline" %}
       </span>
     </div>
   </a>
@@ -73,7 +64,7 @@ Algunas cosas que escribí:
 
 Algunas cosas que hice:
 
--   [Este sitio](https://github.com/catdevnull/nulo.ar)
+-   [Este sitio](https://github.com/catdevnull/ nulo.ar)
 -   [DlBot](https://t.me/dlthefourthbot): un bot de Telegram que descarga videos de TikTok e Instagram ([código](https://gitea.nulo.in/Nulo/dlbot4))
 -   [Manejador de Tareas](https://tareas.nulo.in)
 -   Proyectos experimentales:
@@ -94,13 +85,13 @@ Algunos links mios:
 ## Feed de personas que me parecen copadas (un webring)
 
 <ul>
-  {{#each articles as |article|}}
+  {% for article in articles %}
     <li class="article">
       <a href="{{relativeLink article.item.link article.baseUrl}}" target="_blank" rel="noopener">{{article.item.title}}</a>
       via
       <a href="{{article.link}}">{{article.title}}</a>
     </li>
-  {{/each}}
+  {% endfor %}
 </ul>
 
 ## Contacto
