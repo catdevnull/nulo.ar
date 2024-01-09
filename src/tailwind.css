@@ -10,3 +10,13 @@
     "liga" 1,
     "calt" 1; /* fix for Chrome */
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --pagefind-ui-primary: theme(colors.neutral.50);
+    --pagefind-ui-text: theme(colors.neutral.50);
+    --pagefind-ui-background: theme(colors.neutral.900);
+    --pagefind-ui-border: theme(colors.neutral.700);
+    --pagefind-ui-tag: theme(colors.neutral.900);
+  }
+}
