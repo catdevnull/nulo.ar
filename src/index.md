@@ -3,6 +3,18 @@ title: Nulo
 description: Mi sitio web personal
 layout: prose_base.hbs
 templateEngineOverride: liquid,md
+proyectos:
+    - title: Preciazo
+      description: Monitoreo de precios en cadenas de supermercados argentinos.
+      url: https://preciazo.experimentos.nulo.ar
+      wip: true
+    - title: Archivo de datos
+      description: Archivo de portales argentinos de datos abiertos.
+      url: https://datos.nulo.ar
+      wip: false
+    - title: DlBot
+      description: Bot de Telegram para descargar videos de TikTok, Instagram Reels y más.
+      url: /dlbot/
 ---
 
 # nulo❥ar
@@ -14,39 +26,24 @@ templateEngineOverride: liquid,md
 ## Proyectos
 
 <div class="not-prose grid grid-cols-2 md:grid-cols-3 gap-4">
-  <a href="https://preciazo.experimentos.nulo.ar" class="rounded-2xl shadow hover:shadow-lg transition-shadow bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 relative overflow-hidden">
-    <!-- <div class="absolute bottom-0 right-0 size-32 flex content-end flex-col"> -->
-    <div class="bg-hazard w-64 font-black leading-none text-xl text-white text-center -rotate-45 z-20 absolute bottom-[10%] right-[-6rem]">WIP</div>
-    <!-- </div> -->
-    <div class="flex flex-col justify-between bg-neutral-50/85 dark:bg-neutral-800/85 z-10 relative h-full p-4">
-      <div class="flex flex-col gap-2 px-1">
-        <h3 class="font-semibold text-2xl">Preciazo</h3>
-        <p class="leading-5">Monitoreo de precios en cadenas de supermercados argentinos.</p>
+  {%- for proyecto in proyectos -%}
+    <a href="{{ proyecto.url }}" class="rounded-2xl shadow hover:shadow-lg transition-shadow bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 relative overflow-hidden">
+      {%- if proyecto.wip -%}
+      <div class="bg-hazard w-64 font-black leading-none text-xl text-white text-center -rotate-45 z-20 absolute bottom-[10%] right-[-6rem]">WIP</div>
+      {%- endif -%}
+      <div class="flex flex-col justify-between bg-neutral-50/85 dark:bg-neutral-800/85 z-10 relative h-full p-4">
+        <div class="flex flex-col gap-2 px-1">
+          <h3 class="font-semibold text-2xl">{{- proyecto.title -}}</h3>
+          <p class="leading-5">{{- proyecto.description -}}</p>
+        </div>
+        {%- unless proyecto.wip -%}
+        <span class="size-8 block justify-self-end place-self-end">
+          {%- evaIcon "arrow-forward", "outline" -%}
+        </span>
+        {%- endunless -%}
       </div>
-    </div>
-  </a>
-  <a href="https://datos.nulo.ar" class="rounded-2xl shadow hover:shadow-lg transition-shadow bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 relative overflow-hidden">
-    <div class="flex flex-col justify-between bg-neutral-50/85 dark:bg-neutral-800/85 z-10 relative h-full p-4">
-      <div class="flex flex-col gap-2 px-1">
-        <h3 class="font-semibold text-2xl">Archivo de datos</h3>
-        <p class="leading-5">Archivo de portales argentinos de datos abiertos.</p>
-      </div>
-      <span class="size-8 block justify-self-end place-self-end">
-        {% evaIcon "arrow-forward", "outline" %}
-      </span>
-    </div>
-  </a>
-  <a href="/dlbot/" class="rounded-2xl shadow hover:shadow-lg transition-shadow bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 relative overflow-hidden">
-    <div class="flex flex-col justify-between bg-neutral-50/85 dark:bg-neutral-800/85 z-10 relative h-full p-4">
-      <div class="flex flex-col gap-2 px-1">
-        <h3 class="font-semibold text-2xl">DlBot</h3>
-        <p class="leading-5">Bot de Telegram para descargar videos de TikTok, Instagram Reels y más.</p>
-      </div>
-      <span class="size-8 block justify-self-end place-self-end">
-        {% evaIcon "arrow-forward", "outline" %}
-      </span>
-    </div>
-  </a>
+    </a>
+  {%- endfor -%}
 </div>
 
 ## Acerca de
