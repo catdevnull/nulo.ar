@@ -40,9 +40,9 @@ proyectos:
           <p class="leading-5">{{- proyecto.description -}}</p>
         </div>
         {%- unless proyecto.wip -%}
-        <span class="size-8 block justify-self-end place-self-end">
-          {%- evaIcon "arrow-forward", "outline" -%}
-        </span>
+          <span class="fill-current size-8 block justify-self-end place-self-end">
+            {%- evaIcon "arrow-forward", "outline" -%}
+          </span>
         {%- endunless -%}
       </div>
     </a>
