@@ -79,7 +79,7 @@ Algunos links mios:
         <a class="py-3" href="{% relativeLink article.item.link, article.baseUrl %}" target="_blank" rel="noopener">{{article.item.title}}</a>
       </h3>
       via
-      <a class="underline" href="{{article.link}}">{{article.title}}</a>
+      <a class="underline" href="{% relativeLink article.link article.baseUrl %}">{{article.title}}</a>
     </li>
   {%- endfor -%}
 </ul>
