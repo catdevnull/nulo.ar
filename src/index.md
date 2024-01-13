@@ -16,7 +16,7 @@ proyectos:
       url: /dlbot/
     - title: Schreiben
       description: Aplicación para escribir cosas.
-      url: https://schreiben.nulo.ar
+      url: https://beta.schreiben.nulo.ar
       wip: true
 ---
 
