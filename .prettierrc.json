@@ -7,5 +7,6 @@
         "parser": "html"
       }
     }
-  ]
+  ],
+  "plugins": ["@shopify/prettier-plugin-liquid"]
 }

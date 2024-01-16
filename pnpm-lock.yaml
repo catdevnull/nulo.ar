@@ -37,6 +37,9 @@ devDependencies:
   '@11ty/eleventy':
     specifier: ^2.0.1
     version: 2.0.1
+  '@shopify/prettier-plugin-liquid':
+    specifier: ^1.4.1
+    version: 1.4.1(prettier@3.2.2)
   '@tailwindcss/typography':
     specifier: ^0.5.10
     version: 0.5.10(tailwindcss@3.4.1)
@@ -52,6 +55,9 @@ devDependencies:
   postcss:
     specifier: ^8.4.33
     version: 8.4.33
+  prettier:
+    specifier: ^3.2.2
+    version: 3.2.2
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.1
@@ -284,6 +290,23 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@shopify/liquid-html-parser@2.0.1:
+    resolution: {integrity: sha512-qq8dXvi9vDoNIb+Nh2eTKr/QKaITSZG7mbYuuzrWLGVFnzcmjS8bcwUpWecqi2oBCzUSB6ENnNA0jOBNcqMJXg==}
+    dependencies:
+      line-column: 1.0.2
+      ohm-js: 16.6.0
+    dev: true
+
+  /@shopify/prettier-plugin-liquid@1.4.1(prettier@3.2.2):
+    resolution: {integrity: sha512-iAN1GcxZ+fm2gvxg763QHDh80FJQQ/mt74199BbO5Vq0+KhlIbcctt0mMq0gSV/H72B4ey1kipfyPLbK2kgQXg==}
+    peerDependencies:
+      prettier: ^2.0.0 || ^3.0.0
+    dependencies:
+      '@shopify/liquid-html-parser': 2.0.1
+      html-styles: 1.0.0
+      prettier: 3.2.2
+    dev: true
 
   /@sindresorhus/slugify@1.1.2:
     resolution: {integrity: sha512-V9nR/W0Xd9TSGXpZ4iFUcFGhuOJtZX82Fzxj1YISlbSgKvIiNa7eLEZrT0vAraPOt++KHauIVNYgGRgjc13dXA==}
@@ -942,6 +965,10 @@ packages:
     dependencies:
       function-bind: 1.1.2
 
+  /html-styles@1.0.0:
+    resolution: {integrity: sha512-cDl5dcj73oI4Hy0DSUNh54CAwslNLJRCCoO+RNkVo+sBrjA/0+7E/xzvj3zH/GxbbBLGJhE0hBe1eg+0FINC6w==}
+    dev: true
+
   /htmlparser2@7.2.0:
     resolution: {integrity: sha512-H7MImA4MS6cw7nbyURtLPO1Tms7C5H602LRETv95z1MxO/7CP7rDVROehUYeYBUYEON94NXXDEPmZuq+hX4sog==}
     dependencies:
@@ -1037,12 +1064,23 @@ packages:
       call-bind: 1.0.5
       has-tostringtag: 1.0.0
 
+  /isarray@1.0.0:
+    resolution: {integrity: sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==}
+    dev: true
+
   /isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
   /iso-639-1@2.1.15:
     resolution: {integrity: sha512-7c7mBznZu2ktfvyT582E2msM+Udc1EjOyhVRE/0ZsjD9LBtWSm23h3PtiRh2a35XoUsTQQjJXaJzuLjXsOdFDg==}
     engines: {node: '>=6.0'}
+
+  /isobject@2.1.0:
+    resolution: {integrity: sha512-+OUdGJlgjOBZDfxnDjYYG6zp487z0JGNQq3cYQYg5f5hKR+syHMsaztzGeml/4kGG55CSpKSpWTY+jYGgsHLgA==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      isarray: 1.0.0
+    dev: true
 
   /jackspeak@2.3.6:
     resolution: {integrity: sha512-N3yCS/NegsOBokc8GAdM8UcmfsKiSS8cipheD/nivzr700H+nsMOxJjQnvwOcRYVuFkdH0wGUvW2WbXGmrZGbQ==}
@@ -1104,6 +1142,13 @@ packages:
   /lilconfig@3.0.0:
     resolution: {integrity: sha512-K2U4W2Ff5ibV7j7ydLr+zLAkIg5JJ4lPn1Ltsdt+Tz/IjQ8buJ55pZAxoP34lqIiwtF9iAvtLv3JGv7CAyAg+g==}
     engines: {node: '>=14'}
+    dev: true
+
+  /line-column@1.0.2:
+    resolution: {integrity: sha512-Ktrjk5noGYlHsVnYWh62FLVs4hTb8A3e+vucNZMgPeAOITdshMSgv4cCZQeRDjm7+goqmo6+liZwTXo+U3sVww==}
+    dependencies:
+      isarray: 1.0.0
+      isobject: 2.1.0
     dev: true
 
   /lines-and-columns@1.2.4:
@@ -1324,6 +1369,11 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
+  /ohm-js@16.6.0:
+    resolution: {integrity: sha512-X9P4koSGa7swgVQ0gt71UCYtkAQGOjciJPJAz74kDxWt8nXbH5HrDOQG6qBDH7SR40ktNv4x61BwpTDE9q4lRA==}
+    engines: {node: '>=0.12.1'}
+    dev: true
+
   /on-finished@2.4.1:
     resolution: {integrity: sha512-oVlzkg3ENAhCk2zdv7IJwd/QUD4z2RxRwpkcGY8psCVcCYZNq4wYnVWALHM+brtuJjePWiYF/ClmuDr8Ch5+kg==}
     engines: {node: '>= 0.8'}
@@ -1502,6 +1552,12 @@ packages:
     dependencies:
       posthtml-parser: 0.11.0
       posthtml-render: 3.0.0
+
+  /prettier@3.2.2:
+    resolution: {integrity: sha512-HTByuKZzw7utPiDO523Tt2pLtEyK7OibUD9suEJQrPUCYQqrHr74GGX6VidMrovbf/I50mPqr8j/II6oBAuc5A==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /promise-each@2.2.0:
     resolution: {integrity: sha512-67roqt1k3QDA41DZ8xi0V+rF3GoaMiX7QilbXu0vXimut+9RcKBNZ/t60xCRgcsihmNUsEjh48xLfNqOrKblUg==}
