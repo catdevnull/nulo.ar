@@ -62,4 +62,6 @@ function dateishToString({ year, month, day }) {
 //   )}</time>`;
 // }
 
-module.exports = { formatDate, zDateish, dateishToDate };
+const dateToISO = /** @param {Date} date */ (date) => date.toISOString().slice(0, 10);
+
+module.exports = { formatDate, zDateish, dateishToDate, dateToISO };
