@@ -34,6 +34,7 @@ module.exports = function config(eleventyConfig) {
   eleventyConfig.addPlugin(automaticNoopener, {
     noreferrer: false,
   });
+  eleventyConfig.addPlugin(require("eleventy-hast-jsx").plugin);
 
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItWikilinks));
 

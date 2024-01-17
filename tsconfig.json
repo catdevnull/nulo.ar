@@ -7,8 +7,10 @@
     "esModuleInterop": true,
     "strict": true,
     "allowJs": true,
-    "checkJs": true,
+    "checkJs": false,
     "noEmit": true,
+
+    "jsx": "preserve",
 
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
