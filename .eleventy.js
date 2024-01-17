@@ -8,7 +8,7 @@ const markdownItWikilinks = require("markdown-it-wikilinks")({
   postProcessLabel: (path) => basename(path).match(/^(?:(?:\d{4})-(?:\d{2})-(?:\d{2})-)?(.+)$/)[1],
   relativeBaseURL: "../",
 });
-const { formatDate } = require("./helpers/date");
+const { formatDate, dateToISO } = require("./helpers/date");
 const { readFileSync } = require("fs");
 
 /**
@@ -42,10 +42,7 @@ module.exports = function config(eleventyConfig) {
     collectionApi.getFilteredByGlob("src/x/**/*"),
   );
 
-  eleventyConfig.addShortcode(
-    "dateToISO",
-    /** @param {Date} date */ (date) => date.toISOString().slice(0, 10),
-  );
+  eleventyConfig.addShortcode("dateToISO", dateToISO);
   eleventyConfig.addShortcode("formatDate", formatDate);
   eleventyConfig.addShortcode("relativeLink", (link, baseUrl) => new URL(link, baseUrl).toString());
   eleventyConfig.addShortcode("evaIcon", (name, kind) =>

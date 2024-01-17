@@ -1,7 +1,7 @@
 ---
 title: Nulo
 description: Mi sitio web personal
-layout: prose_base.hbs
+layout: prose_base.jsx
 templateEngineOverride: liquid,md
 proyectos:
     - title: Preciazo
@@ -24,7 +24,7 @@ proyectos:
 
 > Autor de código, hacedor de cosas
 
-{% include "buscador.hbs" %}
+{% include "buscador.html" %}
 
 ## Proyectos
 
