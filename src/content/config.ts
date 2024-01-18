@@ -16,6 +16,7 @@ const marcadoresCollection = defineCollection({
   type: "content",
   schema: z.object({
     url: z.string(),
+    date: z.date(),
     title: z.string().optional(),
     tags: z.array(z.string()).optional(),
   }),
