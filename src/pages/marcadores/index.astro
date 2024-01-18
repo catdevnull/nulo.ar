@@ -27,7 +27,7 @@ const description = "Paginas web que voy recopilando";
         entries.map((entry) => (
           <li>
             <a href={`/marcadores/${entry.slug}/`}>
-              {entry.title || entry.data.url}
+              {entry.data.title || entry.data.url}
             </a>
           </li>
         ))
