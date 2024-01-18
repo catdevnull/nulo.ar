@@ -1,1 +1,0 @@
--   [Migrating trashserver.net from Prosody to Ejabberd](https://thomas-leister.de/en/migrating-trashserver-prosody-ejabberd/)
