@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Nav from "../../components/Nav.astro";
-import { getTitleFromId } from "../../getTitleFromId";
 import Prose from "../../components/Prose.astro";
 const entries = await getCollection("marcadores");
 
@@ -26,9 +25,20 @@ const description = "Paginas web que voy recopilando";
       {
         entries.map((entry) => (
           <li>
-            <a href={`/marcadores/${entry.slug}/`}>
-              {entry.data.title || entry.data.url}
-            </a>
+            {/* prettier-ignore */}
+            <a href={`/marcadores/${entry.slug}/`}>{entry.data.title || entry.data.url}</a>
+
+            {entry.data.tags && (
+              <ul class="not-prose inline-flex gap-1 mx-auto justify-center leading-none">
+                {entry.data.tags.map((tag) => (
+                  <li>
+                    <span class="text-green-600 dark:text-green-300">
+                      #{tag}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
         ))
       }
