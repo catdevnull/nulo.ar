@@ -1,1 +1,0 @@
--   [Kernel space: E-paper support for Linux](https://www.networkworld.com/article/2289160/kernel-space--e-paper-support-for-linux.html)
