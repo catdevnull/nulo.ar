@@ -3,10 +3,9 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Nav from "../../components/Nav.astro";
 import Prose from "../../components/Prose.astro";
-import { getTitleFromId } from "../../getTitleFromId";
 export async function getStaticPaths() {
-  const notasEntries = await getCollection("notas");
-  return notasEntries.map((entry) => ({
+  const marcadoresEntries = await getCollection("marcadores");
+  return marcadoresEntries.map((entry) => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
@@ -14,34 +13,36 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
-const title = getTitleFromId(entry.id);
+const title = entry.data.title ?? entry.data.url;
 ---
 
-<Layout title={title} description={`Notas sobre ${title}`}>
+<Layout title={title}>
   <div class="py-2">
-    <Nav active="notas" />
+    <Nav active="marcadores" />
   </div>
-  <article
-    class="max-w-2xl mx-auto"
-    itemscope=""
-    itemtype="https://schema.org/Article"
-  >
-    <header class="m-8 text-center">
+  <div class="max-w-2xl mx-auto">
+    <header data-pagefind-body class="m-8 text-center">
       {/* https://github.com/CloudCannon/pagefind/issues/532 */}
-      <h1 data-pagefind-body class="font-bold text-3xl">
-        {title}
+      <h1 class="font-bold text-3xl">
+        <a class="underline" href={entry.data.url}>{title}</a>
       </h1>
-      <a
-        href={`https://github.com/catdevnull/nulo.ar/commits/astro/src/content/notas/${entry.id}`}
-        class="underline"
-      >
-        Historial
-      </a>
+      {
+        entry.data.tags && (
+          <ul class="flex gap-2 mx-auto justify-center leading-none my-2">
+            Etiquetas:
+            {entry.data.tags.map((tag) => (
+              <li>
+                <span class="text-green-600 dark:text-green-300">#{tag}</span>
+              </li>
+            ))}
+          </ul>
+        )
+      }
     </header>
-    <main itemprop="articleBody" data-pagefind-body>
+    <main data-pagefind-body>
       <Prose>
         <Content />
       </Prose>
     </main>
-  </article>
+  </div>
 </Layout>

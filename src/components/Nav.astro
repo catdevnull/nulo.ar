@@ -1,5 +1,5 @@
 ---
-type Page = "inicio" | "blog" | "notas";
+type Page = "inicio" | "blog" | "notas" | "marcadores";
 interface Props {
   active?: Page;
   className?: string;
@@ -22,6 +22,11 @@ const items: { name: string; href: string; id: Page }[] = [
     name: "notas",
     href: "/notas/",
     id: "notas",
+  },
+  {
+    name: "marcadores",
+    href: "/marcadores/",
+    id: "marcadores",
   },
 ];
 ---
