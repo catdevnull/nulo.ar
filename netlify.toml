@@ -1,0 +1,6 @@
+
+# https://github.com/withastro/docs/blob/f7dfaca362a26e9af529030f6ca52b6acb9d08e5/netlify.toml
+[[headers]]
+  for = "/_astro/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, immutable"
