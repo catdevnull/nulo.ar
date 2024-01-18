@@ -26,7 +26,7 @@ const description = "Links, ideas y cosas interesantes que voy recopilando";
       {
         entries.map((entry) => (
           <li>
-            <a href={`/notas/${entry.slug}`}>{getTitleFromId(entry.id)}</a>
+            <a href={`/notas/${entry.slug}/`}>{getTitleFromId(entry.id)}</a>
           </li>
         ))
       }
