@@ -1,2 +1,0 @@
-- [Deta Space](https://deta.space)
-- [Fly.io](https://fly.io/)
