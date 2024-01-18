@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Prose from "../../components/Prose.astro";
+import { getTitleFromId } from "../../getTitleFromId";
+export async function getStaticPaths() {
+  const notasEntries = await getCollection("notas");
+  return notasEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const title = getTitleFromId(entry.id);
+---
+
+<Layout title={title} description={`Notas sobre ${title}`}>
+  <div class="py-2">
+    <Nav active="notas" />
+  </div>
+  <article
+    class="max-w-2xl mx-auto"
+    itemscope=""
+    itemtype="https://schema.org/Article"
+  >
+    <header class="m-8 text-center">
+      {/* https://github.com/CloudCannon/pagefind/issues/532 */}
+      <h1 data-pagefind-body class="font-bold text-3xl">
+        {title}
+      </h1>
+      <a
+        href={`https://github.com/catdevnull/nulo.ar/commits/ANTIFASCISTA/src/content/notas/${entry.id}`}
+        class="underline"
+      >
+        Historial
+      </a>
+    </header>
+    <main itemprop="articleBody" data-pagefind-body>
+      <Prose>
+        <Content />
+      </Prose>
+    </main>
+  </article>
+</Layout>

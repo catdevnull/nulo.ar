@@ -1,0 +1,32 @@
+---
+import "@fontsource-variable/inter/wght.css";
+import "../styles/global.css";
+import cowboy from "./cowboy.svg";
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Nulo" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`https://nulo.ar${Astro.url.pathname}`} />
+    <meta property="og:image" content="/public/assets/cowboy.svg" />
+    <meta content="index, follow" name="robots" />
+    <link rel="icon" href={cowboy.src} />
+  </head>
+  <body class="dark:bg-neutral-900 dark:text-neutral-50">
+    <slot />
+  </body>
+</html>

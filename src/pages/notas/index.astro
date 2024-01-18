@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import { getTitleFromId } from "../../getTitleFromId";
+import Prose from "../../components/Prose.astro";
+const entries = await getCollection("notas");
+
+const title = "Notas";
+const description = "Links, ideas y cosas interesantes que voy recopilando";
+---
+
+<Layout title={title} description={description}>
+  <div class="py-2">
+    <Nav active="notas" />
+  </div>
+
+  <header class="m-8 text-center">
+    {/* https://github.com/CloudCannon/pagefind/issues/532 */}
+    <h1 data-pagefind-body class="font-bold text-3xl">{title}</h1>
+    <p class="text-lg">{description}</p>
+  </header>
+
+  <Prose>
+    <ul>
+      {
+        entries.map((entry) => (
+          <li>
+            <a href={`/notas/${entry.slug}`}>{getTitleFromId(entry.id)}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </Prose>
+</Layout>

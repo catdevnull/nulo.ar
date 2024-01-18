@@ -1,0 +1,41 @@
+---
+import { type CollectionEntry, type ContentCollectionKey } from "astro:content";
+import FormattedDate from "./FormattedDate.astro";
+interface Props {
+  entries: CollectionEntry<"blog">[];
+  small?: boolean;
+}
+const { entries, small = false } = Astro.props;
+
+const sortedEntries = entries.sort((a, b) => +b.data.date - +a.data.date);
+---
+
+<ul class="flex flex-col gap-4 max-w-2xl mx-auto">
+  {
+    sortedEntries.map((entry) => (
+      <li>
+        <a
+          href={`/blog/${entry.slug}`}
+          class:list={[
+            "flex flex-col bg-neutral-50 text-neutral-900 dark:bg-neutral-800 dark:text-neutral-100 shadow hover:shadow-lg rounded-lg transition-shadow",
+            small ? "p-3" : "p-4",
+          ]}
+        >
+          <FormattedDate
+            date={entry.data.date}
+            class:list={["text-sm text-neutral-600 dark:text-neutral-400"]}
+          />
+
+          <h2 class:list={["font-bold", small ? "text-lg" : "text-2xl"]}>
+            {entry.data.title}
+          </h2>
+          {entry.data.description && (
+            <p class:list={[small ? "text-md" : "text-lg"]}>
+              {entry.data.description}
+            </p>
+          )}
+        </a>
+      </li>
+    ))
+  }
+</ul>

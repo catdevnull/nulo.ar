@@ -1,0 +1,134 @@
+import { getCollection } from "astro:content";
+import { Icon } from "astro-icon/components";
+
+import Layout from "../layouts/Layout.astro";
+import Prose from "../components/Prose.astro";
+import Nav from "../components/Nav.astro";
+import BlogList from "../components/BlogList.astro";
+import getFeeds from "./feeds";
+
+export const entries = await getCollection("blog");
+
+export const proyectos = [
+  {
+    title: "Preciazo",
+    description: "Monitoreo de precios en cadenas de supermercados argentinos.",
+    url: "https://preciazo.experimentos.nulo.ar",
+    wip: true,
+  },
+  {
+    title: "Archivo de datos",
+    description: "Archivo de portales argentinos de datos abiertos.",
+    url: "https://datos.nulo.ar",
+  },
+  {
+    title: "DlBot",
+    description:
+      "Bot de Telegram para descargar videos de TikTok, Instagram Reels y más.",
+    url: "/dlbot/",
+  },
+  {
+    title: "Schreiben",
+    description: "Aplicación para escribir cosas.",
+    url: "https://beta.schreiben.nulo.ar",
+    wip: true,
+  },
+];
+
+<Layout title="nulo.ar" description="Mi sitio web personal">
+<Prose>
+
+# nulo❥ar
+
+> Autor de código, hacedor de cosas
+
+<div class="not-prose">
+  <Nav active="inicio" />
+</div>
+
+## Proyectos
+
+<div class="not-prose grid grid-cols-2 md:grid-cols-3 gap-4">
+{proyectos.map(proyecto => (
+   <a href={ proyecto.url } class="rounded-2xl shadow hover:shadow-lg transition-shadow bg-neutral-50 text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100 relative overflow-hidden">
+      {proyecto.wip && 
+        <div class="bg-hazard w-64 font-black leading-none text-xl text-white text-center -rotate-45 z-20 absolute bottom-[10%] right-[-6rem]">WIP</div>}
+      <div class="flex flex-col justify-between bg-neutral-50/85 dark:bg-neutral-800/85 z-10 relative h-full p-4">
+        <div class="flex flex-col gap-2 px-1">
+          <h3 class="font-semibold text-2xl">{ proyecto.title }</h3>
+          <p class="leading-5">{ proyecto.description }</p>
+        </div>
+        {!proyecto.wip &&
+          <span class="fill-current size-8 block justify-self-end place-self-end">
+            <Icon name="eva:arrow-forward-fill" size="2rem" />
+          </span>}
+      </div>
+    </a>
+
+)
+)}
+
+</div>
+
+## Ultimos posts en el blog
+
+<div class="not-prose">
+  <BlogList entries={entries.slice(0, 3)} small />
+  <a
+    href="/blog"
+    class="font-semibold bg-neutral-100 dark:bg-neutral-800 inline-flex items-center leading-none rounded-lg px-4 py-2 my-4 gap-1 group"
+  >
+    {"Ver más"}
+    <Icon
+      name="eva:arrow-forward-fill"
+      class="group-hover:translate-x-1 transition-transform"
+      size="1.5rem"
+    />
+  </a>
+</div>
+
+Algunas cosas de las que soy parte:
+
+- [Sutty](https://sutty.coop.ar/)
+
+Algunos links mios:
+
+- Mis [repositorios de código en Gitea](https://gitea.nulo.in/Nulo) y en [GitHub](https://github.com/catdevnull)
+
+## Textos de personas que me parecen copadas (un [webring](https://es.wikipedia.org/wiki/Anillo_web))
+
+<ul class="not-prose grid grid-cols-2 md:grid-cols-3 gap-4">
+  {(await getFeeds()).articles.map((article) => (
+    <li class="border-2 dark:border-neutral-400 rounded-lg p-3 flex flex-col gap-1">
+      <h3 class="font-bold text-xl leading-tight text-neutral-900 dark:text-neutral-100">
+        <a
+          class="py-3 underline"
+          href={article.item.link}
+          target="_blank"
+          rel="noopener"
+        >
+          {article.item.title}
+        </a>
+      </h3>
+      <p class="leading-tight">
+        via{" "}
+        <a class="underline" href={article.link}>
+          {article.title}
+        </a>
+      </p>
+    </li>
+  ))}
+</ul>
+
+## Contacto
+
+Webamigx: [nadie@nulo.in](mailto:nadie@nulo.in) <small>no gods no webmasters</small>
+
+> De este sitio se desprenden graves falencias tales como simbología confusa, cuestionamientos ideológicos-sociales, objetivos no adecuados al hecho estético, ilimitada fantasía...
+
+<a rel="me noopener noreferrer" href="https://todon.eu/@Nulo">
+  Mastodon
+</a>
+
+</Prose>
+</Layout>

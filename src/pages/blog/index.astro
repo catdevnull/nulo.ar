@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import BlogList from "../../components/BlogList.astro";
+
+const entries = await getCollection("blog");
+
+const title = "Blog";
+const description = "Textos temporales o atemporales";
+---
+
+<Layout title={title} description={description}>
+  <div class="py-2">
+    <Nav active="blog" />
+  </div>
+
+  <header class="m-8 text-center">
+    {/* https://github.com/CloudCannon/pagefind/issues/532 */}
+    <h1 data-pagefind-body class="font-bold text-3xl">{title}</h1>
+    <p class="text-lg">{description}</p>
+  </header>
+
+  <div class="mb-8">
+    <BlogList entries={entries} />
+  </div>
+</Layout>

@@ -1,1 +1,0 @@
--   [Instant Pot Chickpeas](https://www.pressurecookrecipes.com/instant-pot-chickpeas/)

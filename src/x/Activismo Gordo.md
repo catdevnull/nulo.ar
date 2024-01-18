@@ -1,2 +1,0 @@
--   [Argentina es el segundo país con más casos de Trastornos de la Conducta Alimentaria](https://www.perfil.com/noticias/salud/por-que-argentina-es-segundo-pais-con-mas-casos-trastornos-de-la-conducta-alimentaria.phtml) después de Japón.
--   Se habla de la diversidad corporal, que incluye también a personas trans. De alguna manera, el activismo gordo está más relacionado al trans que al feminista.

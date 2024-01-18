@@ -1,0 +1,60 @@
+---
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import Layout from "../../layouts/Layout.astro";
+import Nav from "../../components/Nav.astro";
+import Prose from "../../components/Prose.astro";
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blog");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={entry.data.title} description={entry.data.description ?? ""}>
+  <div class="py-2">
+    <Nav active="blog" />
+  </div>
+  <article
+    class="max-w-2xl mx-auto"
+    itemscope=""
+    itemtype="https://schema.org/Article"
+  >
+    <header class="m-8 text-center">
+      {/* https://github.com/CloudCannon/pagefind/issues/532 */}
+      <h1 data-pagefind-body class="font-bold text-3xl">
+        {entry.data.title}
+      </h1>
+      <FormattedDate date={entry.data.date} itemprop="datePublished" />
+      {" "}
+      /{" "}
+      <a
+        href={`https://github.com/catdevnull/nulo.ar/commits/ANTIFASCISTA/src/content/blog/${entry.id}`}
+        class="underline"
+      >
+        Historial
+      </a>
+      {
+        entry.data.tags && (
+          <ul class="flex gap-2 mx-auto justify-center leading-none my-2">
+            Etiquetas:
+            {entry.data.tags.map((tag) => (
+              <li>
+                <span class="text-green-600 dark:text-green-300">#{tag}</span>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </header>
+    <main itemprop="articleBody" data-pagefind-body>
+      <Prose>
+        <Content />
+      </Prose>
+    </main>
+  </article>
+</Layout>

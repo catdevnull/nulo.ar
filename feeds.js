@@ -1,5 +1,5 @@
-const { readFile, writeFile } = require("fs/promises");
-const { join } = require("path");
+import { readFile, writeFile, mkdir } from "fs/promises";
+import { join } from "path";
 
 const feeds = {
   fauno: "https://fauno.endefensadelsl.org/feed.xml",
@@ -15,6 +15,7 @@ const cachedFeedsDir = ".cached-feeds/";
 
 if (process.argv[2] === "refresh") {
   (async () => {
+    await mkdir(cachedFeedsDir, { recursive: true });
     await Promise.all(
       Object.entries(feeds).map(async ([name, url]) => {
         console.log(`Refreshing ${name}`);
@@ -35,4 +36,4 @@ async function readFeed(name) {
   return await readFile(join(cachedFeedsDir, name + ".xml"), "utf-8");
 }
 
-module.exports = { feeds, readFeed };
+export { feeds, readFeed };

@@ -1,0 +1,24 @@
+---
+import Nav from "../components/Nav.astro";
+import Prose from "../components/Prose.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Not found">
+  <div class="py-2">
+    <Nav />
+  </div>
+
+  <Prose>
+    <h1>No encontré esa página :(</h1>
+
+    <script is:inline>
+      document.write(`
+        <p>
+          Quizás tengas suerte en
+          <a href="https://v1.archivo.nulo.ar${location.pathname}">el archivo del sitio viejo</a>.
+        </p>
+      `);
+    </script>
+  </Prose>
+</Layout>
