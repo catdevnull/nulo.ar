@@ -1,0 +1,49 @@
+---
+type Page = "inicio" | "blog" | "notas";
+interface Props {
+  active?: Page;
+}
+
+const { active } = Astro.props;
+
+const items: { name: string; href: string; id: Page }[] = [
+  {
+    name: "inicio",
+    href: "/",
+    id: "inicio",
+  },
+  {
+    name: "blog",
+    href: "/blog",
+    id: "blog",
+  },
+  {
+    name: "notas",
+    href: "/notas",
+    id: "notas",
+  },
+];
+---
+
+<nav class="max-w-2xl mx-auto not-prose">
+  <ul class="flex flex-wrap gap-2">
+    {
+      items.map(({ name, href, id }) => (
+        <li>
+          <a
+            href={href}
+            class:list={[
+              "block px-2 py-1",
+              active === id
+                ? "rounded bg-neutral-100 text-neutral-900 dark:bg-neutral-800 dark:text-neutral-100"
+                : "underline text-neutral-800 dark:text-neutral-200",
+            ]}
+          >
+            {name}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  {/* TODO: buscador */}
+</nav>

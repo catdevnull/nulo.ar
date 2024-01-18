@@ -6,9 +6,23 @@
     <description>Blog posts by Bruno Scheufler</description>
     <atom:link href="https://brunoscheufler.com/rss.xml" rel="self" type="application/rss+xml" />
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Dec 2023 20:59:05 GMT</lastBuildDate>
-    <pubDate>Sun, 17 Dec 2023 20:59:05 GMT</pubDate>
+    <lastBuildDate>Sun, 07 Jan 2024 21:28:30 GMT</lastBuildDate>
+    <pubDate>Sun, 07 Jan 2024 21:28:30 GMT</pubDate>
     <ttl>60</ttl>
+    
+    <item>
+      <title>Working with Parsers and ASTs</title>
+      <link>https://brunoscheufler.com/blog/2024-01-07-working-with-parsers-and-asts</link>
+      <pubDate>Sun, 07 Jan 2024 18:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2024-01-07-working-with-parsers-and-asts</guid>
+    </item>
+    
+    <item>
+      <title>Looking back on 2023</title>
+      <link>https://brunoscheufler.com/blog/2023-12-31-looking-back-on-2023</link>
+      <pubDate>Sun, 31 Dec 2023 23:00:00 GMT</pubDate>
+      <guid>https://brunoscheufler.com/blog/2023-12-31-looking-back-on-2023</guid>
+    </item>
     
     <item>
       <title>Learning to enjoy trying new things and looking stupid</title>

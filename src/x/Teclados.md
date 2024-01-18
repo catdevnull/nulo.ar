@@ -1,3 +1,0 @@
-- [[Teclados mecánicos]]
-- [[Tipear con una mano]]
-- [[Keyboard layouts de pocas teclas]]
