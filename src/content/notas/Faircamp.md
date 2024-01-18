@@ -1,1 +1,0 @@
-Alternativa a Bandcamp ([comprado por Epic Games](https://blog.bandcamp.com/2022/03/02/bandcamp-is-joining-epic/)) software libre y _estática_. Funciona confiando que lx usuarix si pagó. [Codeberg](https://codeberg.org/simonrepp/faircamp)
