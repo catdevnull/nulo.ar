@@ -1,1 +1,0 @@
--   [How to Use a Multimeter - Sparkfun](https://learn.sparkfun.com/tutorials/how-to-use-a-multimeter/all)
