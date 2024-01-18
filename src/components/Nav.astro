@@ -2,9 +2,10 @@
 type Page = "inicio" | "blog" | "notas";
 interface Props {
   active?: Page;
+  className?: string;
 }
 
-const { active } = Astro.props;
+const { active, className = "px-2" } = Astro.props;
 
 const items: { name: string; href: string; id: Page }[] = [
   {
@@ -25,7 +26,7 @@ const items: { name: string; href: string; id: Page }[] = [
 ];
 ---
 
-<nav class="max-w-2xl mx-auto not-prose">
+<nav class:list={["max-w-2xl mx-auto not-prose", className]}>
   <ul class="flex flex-wrap gap-2">
     {
       items.map(({ name, href, id }) => (
