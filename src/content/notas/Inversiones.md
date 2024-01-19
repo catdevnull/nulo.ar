@@ -1,1 +1,0 @@
--   [FAQ CEDEARs r/merval](https://old.reddit.com/r/merval/comments/lq5er8/faq_cedears_consultas_frecuentes/)
