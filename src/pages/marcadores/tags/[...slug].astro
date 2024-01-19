@@ -1,0 +1,41 @@
+---
+import { getCollection } from "astro:content";
+import { slug } from "github-slugger";
+import Layout from "../../../layouts/Layout.astro";
+import Nav from "../../../components/Nav.astro";
+import { Icon } from "astro-icon/components";
+import MarcadorList from "../../../components/MarcadorList.astro";
+export async function getStaticPaths() {
+  const marcadoresEntries = await getCollection("marcadores");
+  const tags = Array.from(
+    new Set(marcadoresEntries.flatMap((e) => e.data.tags || [])),
+  );
+  return tags.map((tag) => ({
+    params: { slug: slug(tag) },
+    props: { tag },
+  }));
+}
+const { tag } = Astro.props;
+const entries = await getCollection("marcadores");
+const ourEntries = entries.filter((entry) => entry.data.tags?.includes(tag));
+
+const title = `#${tag} - Marcadores`;
+const description = "Paginas web que voy recopilando";
+---
+
+<Layout title={title} description={description}>
+  <div class="py-2">
+    <Nav active="marcadores" />
+  </div>
+
+  <header data-pagefind-body class="m-8 text-center">
+    {/* https://github.com/CloudCannon/pagefind/issues/532 */}
+    <h1 class="font-bold text-3xl text-green-600 dark:text-green-300">
+      #{tag}
+    </h1>
+  </header>
+
+  <main class="mb-8 px-2">
+    <MarcadorList entries={ourEntries} />
+  </main>
+</Layout>
