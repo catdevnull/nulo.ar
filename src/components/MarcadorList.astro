@@ -31,14 +31,14 @@ function getHost(url: string): string {
           <Icon class="inline-block" name="eva:external-link-fill" />
         </a>
         <div class="mt-1">
-          {entry.body.length > 0 && (
-            <>
-              {/* prettier-ignore */}
-              <a class="text-neutral-500 dark:text-neutral-300 underline" href={`/marcadores/${entry.slug}`}>notas</a>
-            </>
-          )}
           {entry.data.tags && (
             <ul class="not-prose mx-auto leading-none inline">
+              {entry.body.length > 0 && (
+                <li class="inline mr-1">
+                  {/* prettier-ignore */}
+                  <a class="text-neutral-500 dark:text-neutral-300 underline" href={`/marcadores/${entry.slug}`}>notas</a>
+                </li>
+              )}
               {entry.data.tags.map((tag) => (
                 <li class="inline mr-1">
                   <TagLink tag={tag} />
