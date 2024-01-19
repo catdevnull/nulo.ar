@@ -9,6 +9,7 @@ const feeds = {
   brunoscheufler: "https://brunoscheufler.com/rss.xml",
   taylor: "https://taylor.town/feed.xml",
   nexxel: "https://www.nexxel.dev/rss.xml",
+  delroth: "https://delroth.net//posts/index.xml",
 };
 
 const cachedFeedsDir = ".cached-feeds/";
@@ -19,9 +20,13 @@ if (process.argv[2] === "refresh") {
     await Promise.all(
       Object.entries(feeds).map(async ([name, url]) => {
         console.log(`Refreshing ${name}`);
-        const res = await fetch(url);
-        const txt = await res.text();
-        await writeFile(join(cachedFeedsDir, `${name}.xml`), txt);
+        try {
+          const res = await fetch(url);
+          const txt = await res.text();
+          await writeFile(join(cachedFeedsDir, `${name}.xml`), txt);
+        } catch (error) {
+          console.error(`Fail on ${name}:`, error);
+        }
       }),
     );
   })();
