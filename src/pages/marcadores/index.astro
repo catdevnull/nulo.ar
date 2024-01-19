@@ -3,10 +3,21 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Nav from "../../components/Nav.astro";
 import Prose from "../../components/Prose.astro";
+import { Icon } from "astro-icon/components";
 const entries = await getCollection("marcadores");
 
 const title = "Marcadores";
 const description = "Paginas web que voy recopilando";
+
+function getHost(url: string): string {
+  try {
+    const u = new URL(url);
+    let host = u.hostname.replace(/^www\./, "");
+    return host;
+  } catch {
+    return "";
+  }
+}
 ---
 
 <Layout title={title} description={description}>
@@ -20,14 +31,23 @@ const description = "Paginas web que voy recopilando";
     <p class="text-lg">{description}</p>
   </header>
 
-  <Prose>
-    <ul>
-      {
-        entries.map((entry) => (
-          <li>
-            {/* prettier-ignore */}
-            <a href={`/marcadores/${entry.slug}/`}>{entry.data.title || entry.data.url}</a>
-
+  <ul class="list-disc max-w-2xl mx-auto">
+    {
+      entries.map((entry) => (
+        <li class="">
+          {/* prettier-ignore */}
+          <a href={entry.data.url}>
+            <span class="underline">{entry.data.title || entry.data.url}</span>
+            <span class="text-neutral-500 dark:text-neutral-300">({getHost(entry.data.url)})</span>
+            <Icon class="inline-block" name="eva:external-link-fill" />
+          </a>
+          <div>
+            {entry.body.length > 0 && (
+              <>
+                {/* prettier-ignore */}
+                <a class="text-neutral-500 dark:text-neutral-300 underline" href={`/marcadores/${entry.slug}`}>notas</a>
+              </>
+            )}
             {entry.data.tags && (
               <ul class="not-prose inline-flex gap-1 mx-auto justify-center leading-none">
                 {entry.data.tags.map((tag) => (
@@ -39,9 +59,9 @@ const description = "Paginas web que voy recopilando";
                 ))}
               </ul>
             )}
-          </li>
-        ))
-      }
-    </ul>
-  </Prose>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
 </Layout>
