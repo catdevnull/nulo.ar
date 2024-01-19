@@ -13,10 +13,11 @@ import Layout from "../layouts/Layout.astro";
     <h1>No encontré esa página :(</h1>
 
     <script is:inline>
+      let path = location.pathname.replace(/^\/notas\//, "/x/");
       document.write(`
         <p>
           Quizás tengas suerte en
-          <a href="https://v1.archivo.nulo.ar${location.pathname}">el archivo del sitio viejo</a>.
+          <a href="https://v1.archivo.nulo.ar${path}">el archivo del sitio viejo</a>.
         </p>
       `);
     </script>
