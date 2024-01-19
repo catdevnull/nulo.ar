@@ -15,7 +15,11 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout title={entry.data.title} description={entry.data.description ?? ""}>
+<Layout
+  title={entry.data.title}
+  description={entry.data.description ?? ""}
+  lang={entry.data.lang}
+>
   <div class="py-2">
     <Nav active="blog" />
   </div>
