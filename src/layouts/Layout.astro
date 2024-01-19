@@ -37,6 +37,11 @@ const { title, description, lang = "es" } = Astro.props;
     <meta property="og:image" content="/public/assets/cowboy.svg" />
     <meta content="index, follow" name="robots" />
     <link rel="icon" href={cowboy.src} />
+    <script
+      is:inline
+      async
+      src="https://umami-production-6583.up.railway.app/script.js"
+      data-website-id="b2ef24cb-74bf-4c0a-9fa2-e0557f722d28"></script>
   </head>
   <body class="dark:bg-neutral-900 dark:text-neutral-50">
     <slot />
