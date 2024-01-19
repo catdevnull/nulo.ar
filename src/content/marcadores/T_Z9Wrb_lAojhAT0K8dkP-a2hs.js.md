@@ -4,5 +4,5 @@ date: 2023-03-06
 url: https://github.com/koddr/a2hs.js
 tags:
   - desarrollo web
-  - web-apps
+  - web apps
 ---
