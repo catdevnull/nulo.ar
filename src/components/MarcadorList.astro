@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 import type { CollectionEntry } from "astro:content";
 import { slug } from "github-slugger";
+import TagLink from "./TagLink.astro";
 
 interface Props {
   entries: CollectionEntry<"marcadores">[];
@@ -40,12 +41,7 @@ function getHost(url: string): string {
             <ul class="not-prose mx-auto leading-none inline">
               {entry.data.tags.map((tag) => (
                 <li class="inline mr-1">
-                  <a
-                    href={`/marcadores/tags/${slug(tag)}`}
-                    class="text-green-700 dark:text-green-300"
-                  >
-                    #{tag}
-                  </a>
+                  <TagLink tag={tag} />
                 </li>
               ))}
             </ul>

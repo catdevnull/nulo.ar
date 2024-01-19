@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import Nav from "../../components/Nav.astro";
 import Prose from "../../components/Prose.astro";
 import { Icon } from "astro-icon/components";
+import TagLink from "../../components/TagLink.astro";
 export async function getStaticPaths() {
   const marcadoresEntries = await getCollection("marcadores");
   return marcadoresEntries.map((entry) => ({
@@ -36,7 +37,7 @@ const title = entry.data.title ?? entry.data.url;
             Etiquetas:
             {entry.data.tags.map((tag) => (
               <li>
-                <span class="text-green-700 dark:text-green-300">#{tag}</span>
+                <TagLink tag={tag} />
               </li>
             ))}
           </ul>
