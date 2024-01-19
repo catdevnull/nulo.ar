@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Carl Barenbrug RSS Feed</title>
+        <link>https://carlbarenbrug.com</link>
+        <description>Thoughts on design, minimalism, climbing and a few other topics. Only limited to latest 20 posts. Full archive is available on the site.</description>
+        <language>en-us</language>
+        <copyright>Copyright 2020-2024, Carl MH Barenbrug</copyright>
+        <pubDate></pubDate>
+        <lastBuildDate></lastBuildDate>
+        <generator>Kirby</generator>
+        <managingEditor>cmhbarenbrug@gmail.com (Carl Barenbrug)</managingEditor>
+        <webMaster>cmhbarenbrug@gmail.com (Carl Barenbrug)</webMaster>
+        <docs>https://www.rssboard.org/rss-specification</docs>
+        <ttl>1440</ttl>
+        <image>
+            <url>https://carlbarenbrug.com/media/site/f227c4c8c3-1690029212/avatar.jpg</url>
+            <title>Carl Barenbrug RSS Feed</title>
+            <link>https://carlbarenbrug.com</link>
+        </image>
+                <item>
+            <title>The Losing Battle Against Social Media</title>
+            <link>https://carlbarenbrug.com/@/page/kdrgic5goxMLdnYh</link>
+            <guid isPermaLink="false">blog/the-losing-battle-against-social-media</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>I write without the intention of this being just another rant about social media algorithms. I mean, I will rant, but I will also explore solutions. So bear with me.</p>
+<p>I think for the past couple of years I have been feeling increasingly disillusioned with some social media platforms, particularly Instagram. Since I started posting over six years ago, <a href="https://www.instagram.com/minimalissimo/" rel="noreferrer" target="_blank">Minimalissimo&#039;s IG</a> account has organically amassed a substantial following. The account's growth was something I felt genuinely quite proud of and over a short period of time, things were picking up good momentum. It felt like a great marketing tool and when I eventually tied in the <a href="https://minimalissimo.shop" rel="noreferrer" target="_blank">online shop</a>, we were even seeing a nice impact on sales numbers. Our follower numbers also seemed to command a lot of respect in the design industry, which in retrospect is pretty amusing. Then things started to change. Let's call it an algorithm adjustment. We all love to hate on it and for good reason. The realisation became clear that as a result of this adjustment we as users of a massive conglomerate (Meta), have absolutely no control over what is seen by others. We are like kites dancing in a hurricane. Yet we persist. We adapt to their algorithms and we follow their rules. We think platforms like Instagram add so much value to our work but in reality we see very little return on our time, creativity, and curation. This might not be the case for large organisations that have deep pockets for advertising where they can force visibility, but small businesses don't. Minimalissimo sure as shit doesn't. So where does that leave us?</p>
+<p>Well, we can play the game. We can follow the sheep while being guided by those who control things. Currently, that means more original content and more video. You see, Instagram is very clearly moving to compete with the unrelenting growth of TikTok, so the days of IG being a photo sharing site are essentially gone. There might be some semblance of it remaining, but using that method as primary material for your feed spells nothing but disappointment and lack of engagement. Unfortunately, in the case of Minimalissimo, creating video content is not really compatible. I also don't have the time to put into video capture and editing. Especially when social media is ultimately a support act to what I consider the product: the <a href="https://minimalissimo.com" rel="noreferrer" target="_blank">minimalissimo.com</a> website. Or we can simply persevere with static images and curate a beautiful visual feed  and live in hope that perhaps the algorithm will once again align with this approach. I write this with a wry smile.</p>
+<p>I wish I could just focus on the site. All I want to do is write a feature and press publish and be done with it. None of this added labour just to get the shit noticed. I could automate posting to some social platforms upon publishing an article, but there are limitations to that. So with the acceptance that unless I put money and resource into social media, things are unlikely to improve. Therefore, a change of strategy is required. I'm going to put Twitter aside for now—we are actually seeing <a href="https://twitter.com/minimalissimo" rel="noreferrer" target="_blank">reasonable growth</a> and engagement (for the time being at least). And with Elon's imminent impact on the platform, it's going to be interesting to see how that evolves.</p>
+<h2>Assets we control</h2>
+<p>What <em>can</em> we control? For starters, the websites we own and our newsletters. That is where attention needs to be directed. The Minimalissimo web estate has always been my priority and that is where I ultimately want readers and followers to visit. Social media is simply a means to an end. Visiting the site is one thing, retaining visitors and gaining newsletter subscribers is another. Then there's a small matter of ensuring those subscribers are genuinely interested and engaged and not simply making up the numbers. I do have one regret: waiting until 2019 to set up a newsletter. It seems absolutely mental thinking about it in hindsight. I could have capitalised on Minimalissimo's popularity pre-social media and probably amassed several hundred thousand subscribers—an incredibly valuable opportunity missed. Alas, I was late to the game but at least I played, and from day 1, it has always been about quality over quantity. And as a result of this, our newsletter subscribers are only sitting at a couple of thousand and require double-opt-in to be confirmed. So growth is <em>very</em> conservative, but I want to explore ways of growing this list and with it, engagement and dare I say it, community. How do I do that?</p>
+<h2>Short-term solutions</h2>
+<p>This is a design challenge with constraints. How do you get something noticed without making noise? By noise, I mean doing things like displaying obtrusive pop-ups and modals that demand your attention the second you land on a site. I know this approach actually works—it has a strong conversion rate. It's just fucking annoying and sites that do it are typically forgiven because they are offering a discount on purchases in exchange. I don't like it, but I am not averse to some kind of subtle and significantly delayed subscription prompt. There's a right way and a wrong way of doing this and conversion is not the sole criteria. So it's tempting to experiment with. I might just need to convince <a href="https://manuelmoreale.com" rel="noreferrer" target="_blank">Manu</a> to code it, which is a challenge in of itself because he's not fond of these things to say the least.</p>
+<p>Our new site redesign does have a comparatively bold and simple invitation to subscribe for updates, but it remains in the footer. I do expect there to be an increase purely as a consequence of this small change, but it won't be significant. A further refinement to this could be a link to a <a href="https://buttondown.email/minimalissimo/archive/minimalissimo-edited-7583/" rel="noreferrer" target="_blank">newsletter sample</a>. I recently improved the design of the web version, so it's useful to refer to. Should there be a call to action in the header somewhere too? Probably not, but it might be worth considering. Could there be a small text-based invitation at the end of each article? Potentially, but given how succinct our posts are, it might not strike the right balance. Another potential solution could be to run periodic product giveaways with entry criteria being newsletter signup, but it does run the risk of fleeting rather than sustained interest and it feels very similar to the <em>discount on signup</em> strategy. I don't currently invite customers to subscribe to the newsletter upon email receipt of purchase in the shop either, so that's something I could and should address. Related to the shop, I could quite easily subscribe <em>every</em> customer to the newsletter (like most retailers do) under the guise of <em>legitimate interest</em>, but I'm not going to do that. I want people to intentionally subscribe. You can tell I am not very good at sales, right?</p>
+<p>I could even consider migrating the Minimalissimo newsletter from <a href="https://buttondown.email" rel="noreferrer" target="_blank">Buttondown</a> to <a href="https://www.getrevue.co" rel="noreferrer" target="_blank">Revue</a>. This would then allow us to capitalise on our Twitter audience because Revue newsletters are promoted quite heavily within the bio of a Twitter profile. But then doing this essentially pulls me back into the shackles of social media as a reliant tool. And I don't want that. Plus, BD is awesome and I want to support <a href="https://buttondown.email/features/run-by-a-human" rel="noreferrer" target="_blank">Justin</a>.</p>
+<p>There's a lot to think about there. Are any of the above solutions innovative? Definitely not. But the ones I might explore are at least honest and respectful. And I would much rather try to build trust with readers rather than treat them like a number.</p>
+<h2>Long-term solutions</h2>
+<p>Although newsletters will always remain a strong asset for any company or individual creator, there are alternative solutions to social media platforms. One such solution centres around the concept of go-to-community (GTC), which basically means creating a space for people with a common interest to meet and discuss feedback, challenges, ideas, and strategies around a particular topic, product, or brand, while at the same time supporting your business through raising awareness and referring your product to others. And in return they are given certain control over directions the business might go or in some cases, create a byproduct where they too can directly benefit.</p>
+<p>Further to this, there is also an option to explore a web3 tokenised community. This might not be specifically for Minimalissimo, but possibly something that centres around minimalism in a more general sense. It might also feel a tad <em>new-age-nonsense</em> to you, but if there is a strong enough incentive and curiosity for people to join, then it could be a really interesting direction long-term. An example of its effectiveness could be opportunities to collaborate on product design between a couple of individuals or a group. The obvious concern with this approach is if you create a community, how does it scale and to what extent? How much time and resource would that take to manage? Would it ultimately be worthwhile? The only way to find out is to experiment.</p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>Ajde (climbing diary)</title>
+            <link>https://carlbarenbrug.com/@/page/wqwMP4egZiWRAUTO</link>
+            <guid isPermaLink="false">blog/ajde</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>I first met <a href="https://manuelmoreale.com" rel="noreferrer" target="_blank">Manu Moreale</a> (online) about five years ago when I asked for his help to rescue the <a href="https://minimalissimo.com" rel="noreferrer" target="_blank">Minimalissimo</a> website after an unnamed agency created a shit-show that left me down a similarly named creek without a paddle. Since then, we have worked together on various projects and built a solid friendship in the process. And about three years ago I was introduced to his brother, <a href="https://ivanmoreale.com" rel="noreferrer" target="_blank">Ivan</a>. He is a super talented graphic designer and we worked together on a couple of small projects. I then discovered that Ivan is an avid climber and at the time, I was just getting into the climbing scene too. Since then, we have chatted almost daily about design, our climbing exploits, debates, and sharing our admiration for some of the world's best athletes, how they compete and how they tackle real rock projects. </p>
+<p>So we decided that we should organise a trip. Originally, I had planned to visit Italy in spring 2021 in hopes that we were emerging from a global pandemic and experiencing some semblance of normality. With everything booked, I got sick (food poisoning) right before I was supposed to travel. By the time I was due to fly out, I was still in no condition to embark on a physically demanding climbing trip. So I decided to cancel. Plus, Covid restrictions were still pretty tight at that point, and although I lost out financially, in hindsight, it was probably for the best.</p>
+<p>One year and three vaccines later, I was scheduled to fly out to Venice in mid-May. Ivan had prepared and researched loads of climbing spots for us to explore and I was super hyped to get out there. Then my lovely partner returned from her Italian trip two weeks before I was set to leave and she tested positive for Covid. Brilliant. Yep, I got it too. So I was pretty wiped out for about a week, but I had one week left to fully recover and obviously test negative. I made it, but only just. I was on my way to meet two good friends whom I'd never met in person.</p>
+<h2>Arrival</h2>
+<p>Flying into Venice is beautiful and quite unique. I've experienced that a couple of times now and it doesn't get old. The good vibes, however, soon relinquished when my baggage didn't arrive with me from Munich. A great start to the trip. It was eventually found and delivered to me a day later, so disaster averted. Courtesy of a gracious taxi journey by the ever-relaxed Ivan, I arrived at a remote farm in Cividale del Friuli. A stunning little place that is so green, quiet (besides the birds, farm animals, and church bells), and serene that it was impossible to feel stressed about anything. 10 days of beautiful weather, nature, intense climbing, and new discoveries were upon me.</p>
+<figure class="img-figure"><div class="img-wrapper" style="padding-bottom: 133.33333333333%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/ajde/44d5c9151a-1690029260/ajde-7.jpg"></div></figure>
+<p>My excitement was slightly dented when Manu explained that due to a <em>Salone del Mobile</em>-related work load, he was totally snowed under with client projects. And since <em>Salone</em> had moved to early June rather than the typical April, my visit was poorly timed. It was unfortunate, but also unavoidable. So although we managed to enjoy a couple of meals together and talk about new projects and ideas, it was a short and sweet encounter. Next time, Manu, next time!</p>
+<h2>Osp</h2>
+<p>My expectations for this trip was to receive a masterclass from Ivan—a far superior climber than I—and visit some beautiful new locations. The first climbing session was on rope and it wasn't even in Italy. We decided to take a drive over the border to Slovenia in a tiny village called Osp. The temperature was sitting at 30ºC and I was facing a challenging first experience with outdoor rope climbing. Given my inexperience and the level of difficulty with this crag, we thought top-roping would be the best way to ease me in. Even so, the climbing felt brutal. The rock was sweating, my skin was sweating, and my shoes felt like I was stepping on a wet floor. So I was over-gripping like a maniac and expending a huge amount of energy. I only climbed two routes and I felt like I just trained for an entire day. This climbing trip was fully underway.</p>
+<figure class="img-figure"><div class="img-wrapper" style="padding-bottom: 133.33333333333%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/ajde/83c5fff1c3-1690029259/ajde-8.jpg"></div></figure>
+<figure class="img-figure"><div class="img-wrapper" style="padding-bottom: 133.33333333333%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/ajde/8871c5e91c-1690029243/ajde-1.jpg"></div></figure>
+<h2>Premariacco</h2>
+<p>Waking up to about 20 itchy mozzie bites from the previous day in the forest, it was clear that nature saw this tourist coming. We hit Premariacco (the pronunciation of which I perfected by the end of my trip) on the Natisone river for some bouldering. Ivan had already scouted out several projects for me to tackle and maybe one or two for himself. Dozens, if not hundreds of giant yet smooth surfaced boulders scattered down a river are so much fun to walk over, under, and between. I felt like a 10 year old again. So we made our way to the first project and it was one Ivan had climbed a year earlier. A gorgeous looking rock with lots of tiny finger pockets. After trying his beta (a term used for which holds to use and sequence of movements to make) for a while, it just wasn't working for me. So I tried to find a new one that suited me and after a few minor adjustments I got it dialled. <em>Send, Swim, Survive</em> (6C): done! I'd be back another day for the next project.</p>
+<figure class="img-figure"><div class="img-wrapper" style="padding-bottom: 133.33333333333%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/ajde/1d6bce22ce-1690029254/ajde-4.jpg"></div></figure>
+<figure class="img-figure"><div class="img-wrapper" style="padding-bottom: 133.33333333333%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/ajde/6baa209eac-1690029253/ajde-5.jpg"></div></figure>
+<h2>DEŠ Gym</h2>
+<p>Not all our climbing was outdoors. We regularly crossed the Slovenian border to train at a small but awesome climbing gym called Društvo ekstremnih športov (DEŠ). It's a super friendly place run in a part-time capacity with good vibes, a nice mix of climbing styles (without grades), and if you climb hard enough, you might just get a free glass of beer at the end of your session. I think we trained here for about 10 hours over the course of my trip and this was when Ivan could give me lots of advice about my climbing technique, asking me to re-climb boulder problems until I did it with more style, less power, and better precision. I always like to try something myself first, but I rarely get it perfect, so taking on board tiny details to improve my climbing efficiency goes a long way. And much of it translates to real rock. So I'm looking forward to hitting up this gym again next year.</p>
+<h2>Return to Premariacco</h2>
+<p>We returned to the Natisone river in search of a new project and we came across a gorgeous 55º overhanging boulder that was about five metres high. So we studied and cleaned the rock and found a couple of interesting lines; one for me and a more challenging one for Ivan. After finding a good beta, I managed to climb my problem within about three attempts. 13 moves on pretty good holds, but also moves that suited my height quite well. I think this is my favourite boulder I've climbed. From the discovery to the send, it was a beautiful process. So I decided to name it <em>Form Follows Fiume</em> (6C). The mood was high and I was psyched to see Ivan also send his project. His took a bit longer to find the best sequence, but after a few tries, he also sent his and it's an even more beautiful line than mine, albeit with a much scarier final move and top out. But Ivan made short work of it and named it <em>Form Follows Fear</em> (7A).</p>
+<figure class="img-figure"><div class="img-wrapper" style="padding-bottom: 133.33333333333%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/ajde/ae762da5c4-1690029258/ajde-6.jpg"></div></figure>
+<h2>Return to Slovenia and Drnulk</h2>
+<p>Our next adventure took us back to the ever-green Slovenia and the stunning location of Drnulk. There is a crag within a forested canyon with plenty of interesting routes to climb. There is a range of difficulty here and it gave me a great opportunity to sport climb a few simple routes along with a belaying masterclass by Ivan's partner, Katia. Although these easier routes are not physically demanding, I am still really inexperienced with this type of climbing, so it was a good mental challenge for me. Battling fear is the biggest obstacle but when you become hyper-focused on how you move, the fear soon disappears. I can't say that will always be the case because when I get to the point of trying harder routes with a bigger chance of taking a few metres fall, the fear will probably kick in hard. But as I continue to improve and grow my experience, the fear will inevitably subside. Right? Shit, I hope so.</p>
+<figure class="img-figure"><div class="img-wrapper" style="padding-bottom: 133.33333333333%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/ajde/ec27f7611a-1690029264/ajde-9.jpg"></div></figure>
+<figure class="img-figure"><div class="img-wrapper" style="padding-bottom: 133.33333333333%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/ajde/e9a1d8bdb2-1690029259/ajde-3.jpg"></div></figure>
+<figure class="img-figure"><div class="img-wrapper" style="padding-bottom: 133.33333333333%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/ajde/7e56822e68-1690029260/ajde-2.jpg"></div></figure>
+<h2>Closing out the trip</h2>
+<p>Given the beautiful weather, Ivan and Katia thought it would be a nice idea to have a BBQ on the Natisone river. After gathering wood and getting a little fire going, the three of us (+ Alice the happy dog <a href="https://www.instagram.com/explore/tags/alicecanefelice/" rel="noreferrer" target="_blank">#alicecanefelice</a>) enjoyed a really easy dinner with good wine while listening to the river as the sun set and the bugs descended upon me. It was a tranquil end (except when I stood on and smashed a wine glass) to a very physical trip and a good moment to reflect. I felt like I saw and experienced a lot in a short space of time, but there is still so much more to see and plenty more rocks to climb that I am bound to return for round 2. Or maybe I should just move out there! Or maybe just invest in a little holiday home to stay for a couple of months per year. Easier said than done, of course.</p>
+<p>Holidays come and go and many of them blend into one another with very little distinction when we look back. Yet, some trips are unique. Some will be remembered vividly for many, many years. I get the feeling this one will be one of those. And I have to thank Ivan, Manu, Katia, and Alice for that. It was sincerely a pleasure. Grazie Mille!</p>
+<figure class="img-figure"><div class="img-wrapper" style="padding-bottom: 133.33333333333%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/ajde/845f3b2090-1690029261/ajde-11.jpg"></div></figure>
+<figure class="img-figure"><div class="img-wrapper" style="padding-bottom: 133.33333333333%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/ajde/1b9a3cbb69-1690029264/ajde-12.jpg"></div></figure>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>Barenbrug House</title>
+            <link>https://carlbarenbrug.com/@/page/4st94l1JVu8IMypN</link>
+            <guid isPermaLink="false">blog/barenbrug-house</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>In the summer of 2021 I made the decision to plan a house project. Not just to save, find, and buy a pre-existing house—that would be far too easy—and boring (unless you're doing an interesting renovation). Instead, my partner and I are opting to buy a plot of land in Scotland and build on it. And the build will be a prefabricated one. I have been drawn to the concept of prefab architecture for many years and I am so happy to see how this area has evolved in recent times. It used to be very hard to find designs that had aesthetic appeal, but today, many prefabs look incredible and are built sustainably.</p>
+<p>With prefab, you can typically opt for various levels of service: you might just want to pay for the supply, you might want supply and assembly to weathertight conditions, or you might want the full turnkey service where the exterior and interior are built to liveable standards. The latter is definitely something we'll be opting for. Sure, it might be a little more expensive, but the whole appeal of prefab architecture is speed, efficiency, modularity, convenience, and stress-relief. Otherwise, I'd just be some mad-hatter like you see on Grand Designs killing myself with stress and near bankruptcy to design the perfectly bespoke home. I do admire some of those folks, admittedly, but we don't need to own an entirely unique home, particularly because our living requirements are pretty basic. I just want a well-designed, well-made, and energy-efficient one that functions as we need it to—now and in the future.</p>
+<p>The project—<a href="https://carlbarenbrug.com/house">Barenbrug House</a>—is underway and we are giving ourselves 4 years to realise it to a completed state. We are already one year into this project with the focus currently being research and money saving. I want to now share this project with you. It's a big undertaking and not without obstacles (location being the biggest), but it's an exciting one. And I reckon you'll find it pretty interesting to follow if you’re looking to do something similar. Our home is our ultimate sanctuary for ourselves, our (future) family, and our pets, so it's only right to want to create something special.</p>
+<p>↳ <a href="https://carlbarenbrug.com/house">View the project</a></p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>Care in Design</title>
+            <link>https://carlbarenbrug.com/@/page/Fl65wmy9esEtwxOM</link>
+            <guid isPermaLink="false">blog/care-in-design</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>Care in design is ultimately about feeling rather than seeing. It is about being thoughtful of users—of humans. It is designing product details that you might randomly discover (sometimes even years later) rather than only designing what should be seen. Care in design is worrying about the small and quiet things like the way something has been considerately packaged or a fun interaction on a website at the stroke of a key or being mindful of accessibility for minorities, that in turn will receive a quiet nod (or tweet) of approval or a gentle smile. Care in design is design that is loved and appreciated by makers and by users—a feeling of connection.</p>
+<p>As a designer, I would like to put more care into my work.</p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>What Is Too Minimal?</title>
+            <link>https://carlbarenbrug.com/@/page/07BQYBt5Jr3rKCd0</link>
+            <guid isPermaLink="false">blog/what-is-too-minimal</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>I'm currently facing a design and marketing challenge related to minimalism. So I want to present a series of questions that you are welcome to help answer in whatever format you like (email, tweet, blog post, or meme).</p>
+<p>If you run a website related to minimalism, is it only natural that you should embrace minimalism in all aspects (branding, design, content, technology, carbon impact and so on) or just selective ones? At what point does minimalism become detrimental to a brand or user experience? What is too minimal to succeed? What does success even look like for niche markets?</p>
+<p>Does light-touch minimalism just get lost in the crowd, devoid of personality? Conversely, how can a more extreme minimalism engage without losing character or appearing boring and uninspired? How can extreme minimalism for a brand be consistent across all platforms such as website, newsletter, and social media?</p>
+<p>How is the right balance struck? Is it even possible? Would you rather play it safe and be guided by metrics? Or would you stick to principles come what may? Or is it better to compromise brand distinctiveness and coherence for the sake of growth and algorithmic obedience?</p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>100% Functional == Beautiful</title>
+            <link>https://carlbarenbrug.com/@/page/gIucOZrz0VjUDfAK</link>
+            <guid isPermaLink="false">blog/function-beauty</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<blockquote>
+<p>If something is 100% functional, it is always beautiful. There is no such thing as an ugly nail or an ugly hammer, but there's lots of ugly cars, because not everything in a car is functional. Sometimes it's very beautiful, if the person who designed it has very good taste, but sometimes it's ugly.</p>
+</blockquote>
+<p>– Dan Gelbart</p>
+<p>This is a strong statement from Dan, who publishes an insightful and ongoing <a href="https://www.youtube.com/playlist?list=PLSGA1wWSdWaTXNhz_YkoPADUUmF1L5x2F" rel="noreferrer" target="_blank">YouTube series</a> on building prototypes. And it made me think about how objective or subjective such a statement is. Can a design that is 100% functional be undeniably beautiful? The short answer is yes, it can be. But is it beautiful 100% of the time? And does one fully functional design differ from another that's fully functional? Can it ever be ugly? Can a 100% functional object become ugly over time? And just because something is not ugly does it therefore imply beauty?</p>
+<p>Let's take a step back though. How can something be 100% functional? What criteria determines such a rating? Even taking the basic tool of a hammer as an example. Hammers can differ in size, weight, shape, material, grip, and construction. And as hammers are designed for humans to use, one hammer may feel fully functional to one person, but to another it might feel unusable. Does its function then come into question? If so, Dan's statement might fall apart and open itself to subjectivity. Yet, the parts that make up a hammer are entirely functional defined by its simplicity, as opposed to more complex designs that may have attributes that offer little to no functionality. You could say, the more complex a product is, the higher probability for ugliness. </p>
+<p>I want to believe in the beauty of 100% functionalism. It's an equation that makes sense to me. There's beauty in the ability of an object that allows you to perform something perfectly—it goes beyond aesthetics. If a design has been built to be useful above all else and it does so efficiently, effectively, and reliably, it cannot be disliked, therefore it cannot be ugly. Of course, things can be subjectively beautiful and far from functional, but that's not the point here. This is a matter of beauty determined by functionality. So can both be simultaneously objective? Or is there intersubjectivity at play here?</p>
+<p>If you have an opinion on this topic, please let me know. I'd love to hear your thoughts regardless of your conclusion.</p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>My Favourite Designers (ever)</title>
+            <link>https://carlbarenbrug.com/@/page/Uww9bqRyvZxejKTc</link>
+            <guid isPermaLink="false">blog/my-favourite-designers</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>I think I've spent almost every day for the past 10+ years thinking about design and designers, as well as architects and artists. Over that time, I've come to admire and truly appreciate the work of some highly notable individuals and teams, and others that probably fly under the radar of many folks. Earlier this year, I began a series on <a href="https://minimalissimo.com" rel="noreferrer" target="_blank">minimalissimo.com</a> titled <em>applied design</em>. It's a curation of random projects from a range of designers from a particular country. During the curation process, it got me thinking about my favourite creative people from the past and present. So I decided to give it more serious thought and to produce a list. And who doesn't love a list? I did consider some kind of ranking too, but felt this was probably a little unnecessary, and someone's bound to get offended. I'll keep that judgement in the dome. </p>
+<p>This exercise of favouritism does have a few benefits, though. It makes me take stock of what I value in design as a discipline, and whose work I've enjoyed as a collective portfolio rather than a one-hit wonder. It also encourages me to revisit projects that have made a lasting impression, and it might introduce you to several people whose work you'd never looked into before. Beyond just a list of names, I've decided to include my favourite project of theirs too, which has been a lot harder than I thought it would be. This goes without saying, but design is obviously a really broad term and I've got no intention of covering every form of design here. There are many types of creative people that I massively respect and would dream to work with (some again) that aren't included below. I'm really just basing this on the work I've seen and published on Minimalissimo or shared personally. It is, after all, a personal opinion (hello IndieWeb). And I'm going to cap this list at around 20, otherwise I'll be here forever thinking about it. I have also decided to split this into industrial and digital design groupings, sorted in no particular order.</p>
+<hr />
+<h2>Industrial designers</h2>
+<ul>
+<li><a href="https://www.agfronzoni.com/" rel="noreferrer" target="_blank">A G Fronzoni</a><ul>
+<li>Project: Fronzoni '64 Lounge Chair</li>
+</ul>
+</li>
+<li><a href="https://naotofukasawa.com/" rel="noreferrer" target="_blank">Naoto Fukasawa</a><ul>
+<li>Project: Hiroshima Lounge Chair (2009)</li>
+</ul>
+</li>
+<li><a href="https://www.nendo.jp/" rel="noreferrer" target="_blank">Oki Sato</a><ul>
+<li>Project: Border Table Collection (2015)</li>
+</ul>
+</li>
+<li><a href="https://www.kazushigemiyake.com/" rel="noreferrer" target="_blank">Kazushige Miyake</a><ul>
+<li>Project: MUJI Table Light (2016)</li>
+</ul>
+</li>
+<li><a href="https://www.jutok.jp/" rel="noreferrer" target="_blank">Kazunori Fujimoto</a><ul>
+<li>Project: House in Ashiya</li>
+</ul>
+</li>
+<li><a href="http://www.tadao-ando.com/" rel="noreferrer" target="_blank">Tadao Ando</a><ul>
+<li>Project: Row House</li>
+</ul>
+</li>
+<li><a href="http://shinichiogawa.com/" rel="noreferrer" target="_blank">Shinichi Ogawa</a><ul>
+<li>Project: Minimalist House</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Dieter_Rams" rel="noreferrer" target="_blank">Dieter Rams</a><ul>
+<li>Project: 606 Shelving System (1960)</li>
+</ul>
+</li>
+<li><a href="https://www.dyson.co.uk/james-dyson" rel="noreferrer" target="_blank">James Dyson</a><ul>
+<li>Project: AM05 Hot + Cool Fan Heater (2013)</li>
+</ul>
+</li>
+<li><a href="https://eeroaarnio.com/" rel="noreferrer" target="_blank">Eero Aarnio</a><ul>
+<li>Project: Ball Chair (1963)</li>
+</ul>
+</li>
+<li><a href="https://www.claudiosilvestrin.com/" rel="noreferrer" target="_blank">Claudio Silvestrin</a><ul>
+<li>Project: Waterside Bench (2001)</li>
+</ul>
+</li>
+<li><a href="http://philippemalouin.com/" rel="noreferrer" target="_blank">Philippe Malouin</a><ul>
+<li>Project: Mollo Armchair (2014)</li>
+</ul>
+</li>
+<li><a href="https://michaelanastassiades.com/" rel="noreferrer" target="_blank">Michael Anastassiades</a><ul>
+<li>Project: Mobile Chandelier Collection</li>
+</ul>
+</li>
+<li><a href="https://newtendency.com/" rel="noreferrer" target="_blank">New Tendency</a><ul>
+<li>Project: Meta Side Table</li>
+</ul>
+</li>
+<li><a href="https://teenage.engineering/" rel="noreferrer" target="_blank">Teenage Engineering</a><ul>
+<li>Project: OB-4 Magic Radio</li>
+</ul>
+</li>
+<li><a href="https://www.industrialfacility.co.uk/" rel="noreferrer" target="_blank">Industrial Facility</a><ul>
+<li>Project: w182 Pastille Lamp</li>
+</ul>
+</li>
+<li><a href="https://afteroom.com/" rel="noreferrer" target="_blank">Afteroom</a><ul>
+<li>Project: Afteroom Chair (2012)</li>
+</ul>
+</li>
+<li><a href="https://cwandt.com/" rel="noreferrer" target="_blank">CW&amp;T</a><ul>
+<li>Project: Pen Type-A (2012)</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/Jony_Ive" rel="noreferrer" target="_blank">Jony Ive</a><ul>
+<li>Project: Apple iPod (2001)</li>
+</ul>
+</li>
+<li><a href="https://normcph.com/" rel="noreferrer" target="_blank">Norm Architects</a><ul>
+<li>Project: Gjøvik House</li>
+</ul>
+</li>
+<li><a href="http://johnpawson.com/" rel="noreferrer" target="_blank">John Pawson</a><ul>
+<li>Project: Palmgren House</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>Digital designers</h2>
+<ul>
+<li><a href="https://www.studiolenzing.com/" rel="noreferrer" target="_blank">Leander Lenzing</a></li>
+<li><a href="https://favorit.studio/" rel="noreferrer" target="_blank">Stefan Jandl</a></li>
+<li><a href="https://rauno.me/" rel="noreferrer" target="_blank">Rauno Freiberg</a></li>
+<li><a href="http://www.antoniocarusone.com/" rel="noreferrer" target="_blank">Antonio Carusone</a></li>
+<li><a href="https://ivanmoreale.com/" rel="noreferrer" target="_blank">Ivan Moreale</a></li>
+<li><a href="https://openpurpose.com/" rel="noreferrer" target="_blank">Blank Resident</a></li>
+<li><a href="https://tr.af/" rel="noreferrer" target="_blank">James Traf</a></li>
+<li><a href="https://www.kristsdarzins.design/" rel="noreferrer" target="_blank">Krists Darzins</a></li>
+<li><a href="https://vanschneider.com/" rel="noreferrer" target="_blank">Tobias van Schneider</a></li>
+<li><a href="https://rsms.me/" rel="noreferrer" target="_blank">Rasmus Andersson</a></li>
+</ul>
+<p><em>Note: I'm considering this a fluid list. I'll aim to keep it updated over time and either extend or refine it, both in terms of designers and/or projects.</em></p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>End of Year Book Review (2022)</title>
+            <link>https://carlbarenbrug.com/@/page/qzKLAVgTH48t76NN</link>
+            <guid isPermaLink="false">blog/books-2022</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>I enjoy books (more so audio books than reading), but I don't consume them very much or as often as I'd like. At least in my own mind I don't get through many, but what's the global average? I don't honestly care. This year I wanted to make a concerted effort to consume more books, one way or another. I managed 10. A personal record in fact. So if you're curious about what those titles were, here you go:</p>
+<ul>
+<li><em>Hell Yeah or No</em> by Derek Sivers <span class="status">9/10</span></li>
+<li><em>Anything You Want</em> by Derek Sivers <span class="status">8/10</span></li>
+<li><em>The Practice of Not Thinking</em> by Ryunosuke Koike <span class="status">7/10</span></li>
+<li><em>Invention</em> by James Dyson <span class="status">8/10</span></li>
+<li><em>Hitchhiker’s Guide to the Galaxy</em> by Douglas Adams <span class="status">7/10</span></li>
+<li><em>Zero Negativity</em> by Ant Middleton <span class="status">6/10</span></li>
+<li><em>Sum: Forty Tales from the Afterlives</em> by David Eagleman <span class="status">7/10</span></li>
+<li><em>Win</em> by Harlan Coben <span class="status">7/10</span></li>
+<li><em>Homo Deus </em>by Yuval Noah Harari <span class="status">10/10</span></li>
+<li><em>21 Lessons for the 21st Century</em> by Yuval Noah Harari <span class="status">10/10</span></li>
+</ul>
+<p>For 2023, I'm aiming to consume 15 books mixing philosophy, design, fiction, and biography. And I'll be starting with <em>God is Not Great</em> by Christopher Hitchens.</p>
+<p><em>Note: I'm sharing this because my friend Manu requested it. He has <a href="https://manuelmoreale.com/end-of-year-book-review" rel="noreferrer" target="_blank">a book list</a> too, which you should check out.</em></p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>On Being a Slow Thinker</title>
+            <link>https://carlbarenbrug.com/@/page/Y62G5ty23c3rKQXV</link>
+            <guid isPermaLink="false">blog/slow-thinker</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>For a long time I considered myself a slow thinker. Meaning, I felt I wasn't particularly good at thinking on the spot and articulating what I wanted to express. Probably one of the reasons why I never do podcasts and why job interviews are met with such trepidation. But I recently came across <a href="https://sive.rs/slow" rel="noreferrer" target="_blank">Derek Sivers&#039; post</a> on this very topic and I found it so relatable. He explains:</p>
+<blockquote>
+<p>When someone asks me a deep question, I say, “Hmm. I don’t know.” The next day, I have an answer. I’m a disappointing person to try to debate or attack. I just have nothing to say in the moment, except maybe, “Good point.” Then a few days later, after thinking about it a lot, I have a response.</p>
+</blockquote>
+<p>I'm far more confident in expressing thoughts in text form, but even then, it's rarely an immediate back and forth conversation. I might need several minutes to formulate a response. That's not really applicable in person. You can't exactly sit and stare at someone blankly for 60 seconds while the cogs are turning to gather your thoughts. Live conversations don't work that way. There's no pause button to go and double check a reference to avoid a fuck up. We never like sounding stupid or misinformed. And you can't prepare for every conversation you have.</p>
+<blockquote>
+<p>People say that your first reaction is the most honest, but I disagree. Your first reaction is usually outdated. Either it’s an answer you came up with long ago and now use instead of thinking, or it’s a knee-jerk emotional response to something in your past.</p>
+</blockquote>
+<p>How slowly or quickly you <em>think</em> is not an accurate measurement of your intelligence. Slow thinking is, as Derek mentions, more deliberate and less emotional. Yet, with this in mind, I do sometimes fall into the trap of verbosely answering a question that I later regret, when I should have simply pushed it to one side until I was ready.</p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>Reflecting on Minimalissimo</title>
+            <link>https://carlbarenbrug.com/@/page/hAC0JOR7DFkEVPeh</link>
+            <guid isPermaLink="false">blog/reflecting-on-minimalissimo</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>I was recently asked what my values are in life. It's a very tough question to answer without throwing out one word answers off the top of your head. And that's pretty meaningless unless you're prepared to elaborate on that word and what it means in relation to your life and experience. And one word that comes to mind when I consider my values is <em>perseverance</em>. It's something that I've come to know quite well in recent years. Ever since I took ownership of <a href="https://minimalissimo.com" rel="noreferrer" target="_blank">minimalissimo.com</a> and began rock climbing, my attitude towards patience and perseverance has been pretty unrelenting. Don't get me wrong though, I'm very often left frustrated as hell too, but that's life. I can't control every outcome but I can keep trying, training, tweaking, experimenting, re-evaluating, and recalibrating.</p>
+<p>Reflecting on <a href="https://minimalissimo.com" rel="noreferrer" target="_blank">Minimalissimo</a> specifically, day in, day out I've researched, curated, collaborated, and created. I've trialled a lot of different things with the brand over the years. Some worked, most didn't. But I always learned something in the process. It's a passion project, but how long can a passion last? And if I'm persevering with this project, then I must ask, to what end?</p>
+<blockquote>
+<p>Perseverance: persistence in doing something despite difficulty or delay in achieving success.</p>
+</blockquote>
+<p>What is success? To generate enough income to support my lifestyle as a sole project? The means to simply curate for the love of good design? To give back to the design community? To create a never-ending minimalist gallery as some kind of obscure digital art installation? At this point, I don't actually know. But what I have acknowledged upon reflection is that our level of curation for minimal design is incredible. Not just in terms of consistency, but continual improvement. <a href="https://minimalissimo.com" rel="noreferrer" target="_blank">Minimalissimo</a> has never looked so good as a digital gallery. And nothing even comes close to its level of curation on the web within this niche space. Call it positive affirmation, call it pride, call it confidence, or shit, even call it arrogance. The site is fucking gorgeous. So whether or not it makes me any money or <em>not</em>, this little pillar of the design community is still standing strong, carving out pockets of progress here and there to keep my love for this project as pure as a <a href="https://archive.minimalissimo.com/year/2013/chiyodanomori-dental-clinic" rel="noreferrer" target="_blank">Japanese dental office</a>.</p>
+<p><em>Update: I'm tentatively planning on ending Minimalissimo by 2025 but keep it alive as a visual archive. The reason is to focus more energy into other projects.</em></p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>Seeing Beauty in Basic To-Do Lists</title>
+            <link>https://carlbarenbrug.com/@/page/IMXVrLUYLV0NfVqt</link>
+            <guid isPermaLink="false">blog/basic-to-do-lists</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>I like making lists. A lot of people do. And this is reflected in the abundance of to-do apps available today. There's a silly amount of them. Designed to augment and organise our lives, they end up being far more complex and clunky than they need to be. The rise of the overwhelming to-do app (web and native) has probably driven a bunch of people back to pen and paper and I don't blame them. It's basic. It's boring. But it works. But it's also pretty wasteful. Especially if you're writing daily tasks. I prefer digital, but I don't need filters, labels, colour coding, theming, reminders, calendars, timers, prioritisation, or integrations. I just want a simple and accessible task list in a clean environment that's easy to use. Remember, this is just for my essential needs. I can totally appreciate that others might need some advanced features.</p>
+<p>I've used quite a few different to-do apps to organise personal and work tasks. Some of them worked well but would have an ugly UI, some would be over-engineered resulting in a compromised UX, and others would find the right balance of form and function, but weren't particularly well supported or maintained. So recently I've been experimenting with some options after discussing the topic with <a href="https://manuelmoreale.com/" rel="noreferrer" target="_blank">Manu</a>. Looking into apps that are not specifically engineered to manage task lists. And I might just have found a tool that works well for me: <a href="https://ia.net/writer" rel="noreferrer" target="_blank">iA Writer</a>.</p>
+<p>If you're not familiar with iA Writer, it's a focused text editor with a simple interface that uses a formatting language called Markdown. It has evolved incredibly well over the years and in my opinion, offers a wonderful and unmatched user experience. From the typewriter-like environment, to the minimal and uncluttered UI design, to the clarity of the typography. I use it to write personal blog posts, feature articles, web copy, business plans, invoices, random notes, and now... to-do lists. I don't <em>need</em> another tool. This one works beautifully albeit a little imperfectly, but I'm fine with that.</p>
+<p>My approach is like this:</p>
+<ul>
+<li>I only use the Mac version of iA Writer.</li>
+<li>I have the app <em>always</em> open.</li>
+<li>I have just one file titled <code>to-do.txt</code>.</li>
+<li>The app is <em>always</em> set to full screen so I can tab or 3-finger drag to view it whenever I want.</li>
+<li>I have a subheading called <em>Today</em> for my daily tasks.</li>
+<li>Under that, I'll create a simple task list, which in editor mode, I can mark as complete as I move through my tasks.</li>
+<li>If need be, I'll create more subheadings related to other topics. These are typically geared towards unscheduled tasks that I'll eventually get to.</li>
+<li>At the end of the day, I wipe my task list and start a new one using the same file the next day. </li>
+<li>Rinse, repeat.</li>
+</ul>
+<figure class="img-figure with-caption"><div class="img-wrapper" style="padding-bottom: 66.6%"><img alt="Task list in iA Writer Pro" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/basic-to-do-lists/039d964443-1690029274/to-do-list-ia-writer.jpg"></div><figcaption>Task list in iA Writer Pro</figcaption></figure>
+<p>As I said, this is still experimental. Give it a try too if you want to change things up. But if not, here's several alternative apps that might take your fancy:</p>
+<ul>
+<li><a href="https://beta.wando.app/" rel="noreferrer" target="_blank">Wando</a></li>
+<li><a href="https://tasks.wtf/" rel="noreferrer" target="_blank">Tasks.wtf</a></li>
+<li><a href="https://www.getminimalist.com/" rel="noreferrer" target="_blank">Minimalist</a></li>
+<li><a href="https://auertasks.com/" rel="noreferrer" target="_blank">Auer Tasks</a></li>
+<li><a href="https://teuxdeux.com/" rel="noreferrer" target="_blank">TeuxDeux</a></li>
+<li><a href="https://tweek.so/" rel="noreferrer" target="_blank">Tweek</a></li>
+<li>Apple Notes</li>
+</ul>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>099 SPLY</title>
+            <link>https://carlbarenbrug.com/@/page/iY1jEkVObtwXadHO</link>
+            <guid isPermaLink="false">blog/099</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>In the spring of 2022, I had a call with Stefan Jandl, who runs <a href="https://favorit.studio/" rel="noreferrer" target="_blank">Favorit Studio</a>. As we have similar tastes and approach to design, we wanted to collaborate on a project together. Initially, we toyed with the idea of NFT art given its rise in popularity at the time, but it didn't feel right. So we continued circling ideas and finally arrived on what you might consider a fairly basic concept in a highly saturated market—product mockup designs.</p>
+<p>As a designer, I'm often looking for mockup designs—usually devices—to showcase digital products that I have available in the <a href="https://minimalissimo.shop" rel="noreferrer" target="_blank">Minimalissimo shop</a>, or for other side projects. There's hundreds of mockup marketplaces out there, some of which are free and others paid—most of which are really pedestrian. There's definitely some mockup sites that offer a quality product range, a couple of which I've previously been a customer. But as Stefan and I began diving into our market research, we realised there was an opportunity to offer mockups as a service that goes beyond anything we've seen available. We wanted to offer freelance designers and creative agencies a cut above the rest both in terms of photo-realistic designs and customer experience. And on top of that, a highly distinctive brand and art direction.</p>
+<p>So we created 099 (<a href="https://099.supply" rel="noreferrer" target="_blank">099.supply</a>). Completely bootstrapped with a team of four. We chose the name 099 because we didn't want to constrain ourselves with a mockup-related label. Future thinking, we thought a numbered brand could evolve and potentially take us in a number of directions down the line. We also liked the idea of having a finite number of products available on the site. As the name suggests, there would only ever be a maximum of 99 products. That's actually still a massive number of mockups to design, so this is an ongoing process whereby we'll periodically make small batches available over time. Not only does this take the pressure off us building a massive catalogue prior to launch, it also makes sense from a marketing perspective. A new drop, means fresh hype, and means more eyes on the site over a sustained period of time. In theory.</p>
+<figure class="img-figure with-caption"><div class="img-wrapper" style="padding-bottom: 66.706730769231%"><img alt="099 SPLY website" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/099/0d1903d3f4-1690029287/099-site-2.jpg"></div><figcaption>The 099 SPLY website</figcaption></figure>
+<p>So what is actually different besides the finite volume? This is where it gets quite interesting. Typically, you will find a mockup that you like, download and customise it to add your own branding and so on. It's a basic process. With 099, we offer configurable options <em>before</em> you even download the mockup. You can find the perfect balance and save yourself a bunch of time editing within Photoshop. Then just apply the finishing touches once you've downloaded it. Beyond that, you can also download a cost-effective product bundle with ALL configurations. We're also toying with the idea of setting up a subscription model with mockup credits. But that will likely arrive when the catalogue is a little fuller. You might be curious to know that there is no AI involved in the design of these. Each variation has been painstakingly crafted. That's not to say we might not experiment with AI in the future.</p>
+<figure class="img-figure with-caption"><div class="img-wrapper" style="padding-bottom: 66.666666666667%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/099/2009dcc42e-1690029281/002_laptop_angle_03_texture_03_lighting_01.jpg"></div><figcaption>002: Laptop mockup</figcaption></figure>
+<figure class="img-figure with-caption"><div class="img-wrapper" style="padding-bottom: 66.666666666667%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/099/32d80fd1cb-1690029285/008_book_angle_01_texture_01_lighting_03.jpg"></div><figcaption>008: Book mockup</figcaption></figure>
+<figure class="img-figure with-caption"><div class="img-wrapper" style="padding-bottom: 66.666666666667%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/099/c178a10c7b-1690029284/005_phone_angle_01_texture_03_lighting_01.jpg"></div><figcaption>005: Smartphone mockup</figcaption></figure>
+<p>As I mentioned, we looked to apply a distinctive art direction to 099. Although minimalism was a natural and important consideration, we didn't want to offer super clean-cut mockups or random colours. We decided to centre all products around a cube with a dark aesthetic—moody minimalism with a bit of character. Obviously this won't suit every use-case for creatives at first glance, but it's easy enough to brighten up the stage by swapping out colours and so on. You might even discover an easter egg in the PSD file.</p>
+<figure class="img-figure with-caption"><div class="img-wrapper" style="padding-bottom: 66.666666666667%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/099/5331c19686-1690029284/002_laptop_angle_02_texture_01_lighting_01.jpg"></div><figcaption>000: Spray can mockup</figcaption></figure>
+<figure class="img-figure with-caption"><div class="img-wrapper" style="padding-bottom: 66.666666666667%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/099/62017b85e2-1690029277/001_liquid_soap_angle_01_texture_02_lighting_01.jpg"></div><figcaption>001: Liquid soap mockup</figcaption></figure>
+<figure class="img-figure with-caption"><div class="img-wrapper" style="padding-bottom: 66.666666666667%"><img alt="" class="img" loading="lazy" src="https://carlbarenbrug.com/media/pages/blog/099/ff5048485f-1690029289/010_vinyl_record_angle_01_texture_01_lighting_01.jpg"></div><figcaption>010: Vinyl record mockup</figcaption></figure>
+<p>We have launched with the first batch which you can now download. We even made one of the products free if you want to just play around first. I do believe using these mockups will elevate product design and branding concepts massively. We're just getting started and I'm immensely proud of what we've built so far.</p>
+<p>↳ Visit <a href="https://099.supply" rel="noreferrer" target="_blank">099.supply</a></p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>Design Ethos</title>
+            <link>https://carlbarenbrug.com/@/page/h9aGYdCwXxcvI1UR</link>
+            <guid isPermaLink="false">blog/design-ethos</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>I've been designing various things—principally for screens, and to a lesser extent physical products—since 2007. Only now am I writing an ethos—that is, my attitude and approach to design. An ethos is useful to me because it consolidates <em>my</em> design principles and gives <em>you</em> a deeper understanding of my thinking. And my attitude towards design has ebbed and flowed over the years. As it should. Because design is influenced by the world around us; by society, by technology, by nature, and by our mentors. We're in a constant state of flux, so we must adapt. And with that said, with time, we can shape our attitudes, values, and future by listening and watching carefully. So consider this ethos a living thing—subject to change always and forever.</p>
+<hr />
+<p>A reflection of good design puts simplicity and utility at the forefront, while often adopting an understated aesthetic. Good design requires human understanding, personal expression, and an open-minded attitude with collaboration at its core.</p>
+<p>Designers have to be visionaries, but nothing can be promised—only proposed. We must identify challenges, ask honest questions, and problem solve with a systematic yet open and passionate mind to serve us in the quest to design well for the future. And as we learn from each project, each other, and evolving technologies, we can ultimately design with more efficiency, less ambiguity, better ethics, and with a continual sense of artful wonder. So, I want to break down a few foundations to explain further what I mean.</p>
+<hr />
+<h2>Simple</h2>
+<p>Simplicity is the importance of clarity. It's about streamlining the user experience so design can be easily understood. Because who wants design to be a hedge maze? When something is crafted simply it will typically be intuitive and balanced, removing unnecessary complexity and distraction. My design process is considerate and purposeful where everything seen and experienced is intentional (unless it looks wrong, in which case let's just call it <a href="https://en.wikipedia.org/wiki/Wabi-sabi" rel="noreferrer" target="_blank">wabi-sabi</a>).</p>
+<p>I avoid excessive visual elements and ensure an interface is organised in a logical manner, making it easy for users to understand and navigate. And there's always an intentional use of white space (empty area around design elements) to allow content to breathe. I always draw on the <a href="https://www.interaction-design.org/literature/topics/gestalt-principles" rel="noreferrer" target="_blank">Gestalt Principles</a> for digital work. They form the basis from which to design with clarity and assist with understanding how humans perceive and interpret visual information.</p>
+<p>An important characteristic of simple design is consistency. Visual elements such as typography, colours, icons, and spacing should be consistent throughout the design. Consistency enhances familiarity and reduces thinking time for users, as they can quickly understand and predict how different elements will behave. Is predictability boring, though? Well, sometimes, but it ultimately comes down to what a design should achieve.</p>
+<hr />
+<h2>Utilitarian</h2>
+<p>Form follows function. That is, prioritising <em>functionality</em>, <em>usability</em> and <em>practicality</em> over <em>style</em> and <em>flair</em> to serve the needs and goals of users. But that's not to say it'll be devoid of character and distinctiveness.</p>
+<p>Design needs utility otherwise it ceases to be design. A utilitarian approach puts user experience first. This involves understanding the target audience, their tasks, and their expectations by means of research, and then designing interfaces that facilitate the success of those tasks and iterating on them. The design is optimised to reduce the cognitive load and provide clear and straightforward pathways to desired actions or information.</p>
+<p>Utilitarian design also takes into account factors such as accessibility, robustness, and performance optimisation (speed is important). Remember, we design for <em>humans</em> and human constraints. Visual elements are employed purposefully to enhance usability and provide visual cues that guide users. This approach encourages a design aesthetic that is typically clean, simple, and uncluttered.</p>
+<hr />
+<h2>Minimal</h2>
+<p>Although minimalism plays an important role in my work, it feels more like a byproduct of my simple approach to design. I don't necessarily set out to make something minimal unless minimalism is, or is related to, the subject matter. Yet, it's really rewarding stripping back a design—inside and out—to find the lightest solution. That goes for form, function, and performance. Some may argue that minimal design lacks character, but I would argue that if something is honest, fast, clear, and focused, it is far more enjoyable to use. And a minimal design can still be interactive and lighthearted. Loud design might impress you initially as it demands attention, but that feeling is unlikely to last. Loud design tries too hard to impress, whereas minimalism is effortless and approachable while cutting out the ornamentation; that is, redundant components. And this makes for a better and more immersive user experience. It'll also avoid falling victim to trends.</p>
+<p>I'd consider minimal design a combination of the following:</p>
+<ul>
+<li><strong>A byproduct of simple design:</strong> Simplicity is at the core of anything that represents minimalism. A simple approach to design is the only way to find its purest form.</li>
+<li><strong>Understated:</strong> It is quiet, restrained, and modest yet expresses elegance and refinement through detail.</li>
+<li><strong>Exposes its essence to communicate its value:</strong> For a design to be appreciated, it must focus on the essential aspects. It must be devoid of unnecessary features to make it as clear and understandable as possible.</li>
+<li><strong>Geometric:</strong> Its composition reflects pure and well-structured forms to emphasise the precision and intentionality of its development.</li>
+<li><strong>A balance of form and function:</strong> By means of a well-executed build, it demonstrates the importance of aesthetics without compromising its core functionality and usefulness.</li>
+</ul>
+<hr />
+<h2>Experimental</h2>
+<p>Form follows feeling, just as form follows function. Sometimes we need spices of wonder and unpredictability in what we craft to spark emotion. That's where the fun, curiosity, and personal expression lies. Conversely, we want to avoid needless questions and wasted time, so at its core, a design should still be understandable and performant.</p>
+<p>Experimental design can appear in many forms and be applied to varying degrees. I wouldn't say I question conventional design practices, but I do like to push certain boundaries and embrace the unknown. Because it can lead to surprising results. I find experimenting through interdisciplinary <em>collaboration</em> as something that leads to good energy and good creative output. A cross-pollination of ideas fosters innovation and unique design solutions. I've proudly collaborated on many projects including <a href="https://theforest.link" rel="noreferrer" target="_blank">The Forest</a>, <a href="https://099.supply" rel="noreferrer" target="_blank">099</a>, <a href="https://mnmll.ist" rel="noreferrer" target="_blank">MNMLLIST</a>, <a href="https://carlbarenbrug.com/3d-printing-minimalissimo">3D printed objects</a>, and conducted countless experiments on <a href="https://minimalissimo.com" rel="noreferrer" target="_blank">Minimalissimo</a> with varying results. And even if something doesn't work the first, second, or third time, there is always insights to learn from—to help form better solutions.</p>
+<p>While experimental design may not always result in immediate adoption, it does fuel creativity, sparks imagination, and serves as a platform for trying new things. And we need more of that in design.</p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>Create Slowly</title>
+            <link>https://carlbarenbrug.com/@/page/Zd7Uj9e0TKseULJB</link>
+            <guid isPermaLink="false">blog/create-slowly</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>The concept of <em>slow design</em> is one I've applied for several years. As time passes (quickly) and new technologies land on our desks, the expectation that we need to react at lightning speed to prove to the world we're always in the know of what's trending, is exhausting. Even if you love tech, and I do, you'll feel it sooner or later. We're endlessly bombarded with choices, jargon, reviews, monthly recurring revenues, and so on—that make us feel pressured, envious, and overwhelmed. But we need to bring balance to the pace at which we encounter the world and encourage a different velocity of engagement and creation. To fight against needless disruption so we can stay focused.</p>
+<p>A core characteristic of creating slowly is <em>patience</em>. Being patient with ourself to:</p>
+<ul>
+<li>problem solve</li>
+<li>become proficient at certain tooling</li>
+<li>understand technologies and languages</li>
+<li>think creatively</li>
+<li>think critically</li>
+<li>produce something of quality</li>
+</ul>
+<p>Slow design is about embracing the time-consuming process of trial and error so we can figure out the most elegant, considered, and sustainable solution. Being mindful of a product's lifecycle is where enduring design originates. But it's not just about being patient with ourself. Often, we work with and depend on others to see a product evolve. Appreciating that people work differently is important. It can be both a blessing and a curse at times. But when something is out of our control, all we can do is communicate openly and regularly so collaborative design will flourish (eventually).</p>
+<p>When reflecting on an achievement, people often say that it's not the act of succeeding that's most satisfying. It's the process of getting there. I feel exactly the same. Design is not just about the end product. It's the journey <em>that</em> design has taken to be visualised, prototyped, iterated upon, tested, fine-tuned, and realised. For me, this is only approach to finding satisfaction and pride in my work.</p>
+<h2>Further reading</h2>
+<ul>
+<li><a href="https://www.slowlab.net/RESOURCES" rel="noreferrer" target="_blank">Slow Research Lab</a></li>
+<li><a href="https://design.family/" rel="noreferrer" target="_blank">Slow design</a> by Orbyt Studio</li>
+<li><a href="https://vanschneider.com/blog/a-tool-built-to-last/" rel="noreferrer" target="_blank">A digital tool built like a physical product?</a> by Tobias van Schneider</li>
+</ul>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>My Ikigai</title>
+            <link>https://carlbarenbrug.com/@/page/5aN0aEgnH8QPCZup</link>
+            <guid isPermaLink="false">blog/my-ikigai</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>I first came across the <a href="https://positivepsychology.com/ikigai/" rel="noreferrer" target="_blank">philosophy of ikigai</a> when I discovered and read the book by the same name. A <a href="https://literal.club/book/francesc-miralles-hector-garcia-ikigai-o91vv" rel="noreferrer" target="_blank">book</a> written by Francesc Miralles and Héctor García. It's the Japanese word that signifies 'a reason to live' or 'a reason to get out of bed in the morning'. It's a state of balance that represents the intersection of enjoyment, satisfaction, and contribution. And it's no surprise that knowing your ikigai can give you energy and help you live longer with greater happiness.</p>
+<p>We spend our lives striving to find purpose. To be useful. To be challenged. To find something we're good at. And something we can continually enjoy. To connect with self and with others. Recognising your ikigai might be simple, or it might be something you've yet to discover. It might not be a single thing either. You might have several interests or activities that you're passionate about. These will probably shift over time as you grow or change your lifestyle. We live through and experience multiple chapters in life and we shouldn't have to attach ourselves to things, people, and expectations for the entirety of our lives. So your ikigai today, might not be your ikigai tomorrow, or in five, ten, even fifty years from now.</p>
+<p>It's a strange thing, reading this book. As I made my way through the opening chapters and got a grasp of what ikigai means, I was unsure determining what mine was. Yet, the moment I turned the last page, it struck me. I have a lot diverse interests in life. Most of them simple pleasures that range between physical activities and technical craft. But none more so than <em>rock climbing</em> and <em>understanding minimalism</em>.</p>
+<hr />
+<p>Climbing wasn't even on my radar until 2019 after watching the documentary <em>Free Solo</em>, which sees Alex Honnold solo climb (no safety equipment) El Capitan's 900-metre vertical rock face at Yosemite National Park. That took me down a rabbit hole of climbing disciplines and professional climbers, and it pushed me to give the thing a try myself (albeit indoors and only a few metres high). I loved it immediately and I haven't looked back since. Not only is it an incredible physical challenge that works every part of the body, it also has a huge mental aspect to it—battling fear, problem solving of the finest details, and when facing the real rock, being out in nature. I go to sleep dreaming about how to move my body across a piece of rock (real or artificial). I have an endless and sometimes frustrating drive to push my body to achieve certain goals in both bouldering and sport climbing disciplines—pushing <a href="https://paper.dropbox.com/doc/Climbing-Logbook--B~2v5DJmnsPrLg2RXw4UUPM2AQ-XpeSkORZEbN4mZ3hEeqtk" rel="noreferrer" target="_blank">my numbers</a>. Numbers not to distract, but to give a sense of mission. Yet, the process of learning to move efficiently is often more rewarding than the success of completing a climb. I am only competing against myself and there's a certain serenity to that. Beyond the physical benefits, this sport is hugely social and inclusive. I have met some wonderful people, shared memorable moments, and that sense of community, which I do my best to encourage, is reason enough to turn up day after day with energy.</p>
+<hr />
+<p>Product design is my primary occupation and crafting things for screens is something I enjoy doing year after year. It poses an endless creative challenge to keep pace with standards, emerging tech, peers, trends, and sometimes defying those trends in the pursuit of simplicity. And through simplicity, I find myself diving deeper into the principle of <em>minimalism</em> and understanding its nuances. I have a focus and determination to find the purest solution to communicate with people through visual design. But I also see myself as a student constantly learning about the application of minimalism across art, design, and daily life. Exploring geometric forms, pure aesthetics, reductiveness, essentialism, intentionality, and sustainability. Across different disciplines, timelines, and cultures. And creating a readership around this topic is hugely motivating for me.</p>
+<hr />
+<p>These two areas of my life satisfy different aspects of my ikigai. Motivation and fulfilment come in the form of small details. With climbing, it could be unlocking a particular sequence of movements or finding <em>flow</em>, it could be completing a long-term project that I've trained weeks in preparation for, or it could simply be travelling with friends to visit a part of the world that offers a wonderful natural environment. With understanding minimalism, it could be discovering and showcasing perfect examples of <a href="https://minimalissimo.com" rel="noreferrer" target="_blank">applied design</a>, it could be reducing the number of items I own to relieve clutter and improve focus, or it could be learning how minimalism has impacted the lives of others and sharing those experiences as a source of encouragement and inspiration.</p>
+<hr />
+<p>Are there other things I want to do in life? Absolutely. So things will likely change in future. But it's hard to tell. Although new interests are inevitable, not everything will give me a sense of purpose. And that's okay. Because today is what's important.</p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>Bandwidth</title>
+            <link>https://carlbarenbrug.com/@/page/46AxQE4kGbdLOeig</link>
+            <guid isPermaLink="false">blog/bandwidth</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>I try not to pay too much attention to time, but sometimes it's hard to ignore. It passes far too quickly for my liking, but that's also because I'm nearing an age of self-reflection, but let's not go there! I enjoy routine and with that, life can get a little hazy albeit structured. The beginning of a year can look much like the end of one. But I'm making a concerted effort to take stock of how I want to spend my time, what gives me energy, what projects I'm involved in, and how much bandwidth I have available to make a meaningful impact on those projects.</p>
+<p>I'm actively involved in at least three major projects outside of my product design day job. They're ongoing, so they require some creative continuity and periodic injections of strategic thinking. But it's not all business and analytics, there's some playfulness sprinkled throughout, but these projects also aren't playgrounds. They're companies I'd like to see succeed both creatively and financially. But as time passes and I catch a glimpse of where I stand in relation to these companies, I'm increasingly convinced my bandwidth is running out and my motivation is dwindling. So something's got to give.</p>
+<p>2024 is going to be a year of change. I'll be stepping back from one or two projects and perhaps open the door to new opportunities if they present themselves. I want to be in a position where I can say 'yes' to the right things without stretching myself too thin. And until then, I can focus on and give more energy to that which remains. The result of doing this will be undoubtedly positive.</p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>App Defaults</title>
+            <link>https://carlbarenbrug.com/@/page/g5ICYnWZN9820nir</link>
+            <guid isPermaLink="false">blog/app-defaults</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>I discovered this "app defaults" initiative through <a href="https://manuelmoreale.com/app-defaults" rel="noreferrer" target="_blank">Manu</a>, and although many of my defaults are the same, I thought I'd share my setup regardless, adding a few new ones:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>App(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mail Client</td>
+<td>Apple Mail</td>
+</tr>
+<tr>
+<td>Mail Server</td>
+<td>Google Workspace</td>
+</tr>
+<tr>
+<td>Notes</td>
+<td>iA Writer + Apple Notes</td>
+</tr>
+<tr>
+<td>To-Do</td>
+<td>iA Writer</td>
+</tr>
+<tr>
+<td>Photo Shooting</td>
+<td>Apple Camera (15 Pro)</td>
+</tr>
+<tr>
+<td>Photo Management</td>
+<td>Apple Photos</td>
+</tr>
+<tr>
+<td>Calendar</td>
+<td>Apple Calendar</td>
+</tr>
+<tr>
+<td>Cloud File Storage</td>
+<td>iCloud</td>
+</tr>
+<tr>
+<td>RSS</td>
+<td>Reeder (with iCloud)</td>
+</tr>
+<tr>
+<td>Contacts</td>
+<td>Apple Contacts</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>Arc (Safari + Firefox for testing)</td>
+</tr>
+<tr>
+<td>Chat</td>
+<td>Apple Messages + Telegram</td>
+</tr>
+<tr>
+<td>Bookmarks</td>
+<td>Are.na</td>
+</tr>
+<tr>
+<td>Read It Later</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Word Processing</td>
+<td>iA Writer</td>
+</tr>
+<tr>
+<td>Spreadsheets</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Presentations</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Shopping Lists</td>
+<td>Apple Notes</td>
+</tr>
+<tr>
+<td>Meal Planning</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Budgeting</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>News</td>
+<td>Hacker News + X</td>
+</tr>
+<tr>
+<td>Music</td>
+<td>Spotify</td>
+</tr>
+<tr>
+<td>Audio Books</td>
+<td>Audible (maybe moving to Spotify)</td>
+</tr>
+<tr>
+<td>Podcasts</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Password Management</td>
+<td>Apple Keychain</td>
+</tr>
+<tr>
+<td>Code Editor</td>
+<td>Visual Studio Code</td>
+</tr>
+<tr>
+<td>Maps</td>
+<td>Apple Maps</td>
+</tr>
+<tr>
+<td>AI Assistant</td>
+<td>ChatGPT 4</td>
+</tr>
+</tbody>
+</table>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>099 on Product Hunt</title>
+            <link>https://carlbarenbrug.com/@/page/7ws4y2YsGvMbNQd2</link>
+            <guid isPermaLink="false">blog/099-ph</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>If you're unfamiliar with <a href="https://www.producthunt.com/" rel="noreferrer" target="_blank">Product Hunt</a>, it's a platform used to share and discover new digital products. Its usefulness has probably waned a lot in recent years unless you're prepared to inject an advertising budget, but I still think there's value in sharing projects organically. There's simply nothing to lose.</p>
+<p>You might recall that in the spring of 2023, I started a company called <a href="https://099.supply" rel="noreferrer" target="_blank">099 Supply</a>. We craft digital tools for creatives, with our first batch of tools being photorealistic product mockups engineered for graphic designers. We've now produced 15 products to date, one of which is free to download and experiment with.</p>
+<p>We've received some useful customer feedback and validation since launch, which has helped shape some of our work in recent months, but we're looking for more. This is the main driver to share a campaign on Product Hunt. I'm also hopeful of reaching a new audience and possibly a boost in traffic, but it's certainly not an expectation.</p>
+<p>If you're an active user of Product Hunt, I'd massively appreciate your support by upvoting 099 and sharing sharing any feedback you might have. Hell, you can even create a free account just for this purpose if you're feeling generous with your time. Thank you. I owe you a brew ♡</p>
+<p>→ <a href="https://www.producthunt.com/posts/099-supply" rel="noreferrer" target="_blank">View the campaign</a></p>
+<figure class="video-figure"><div class="video-wrapper" style="padding-bottom: 56.25%"><iframe allow="fullscreen" allowfullscreen src="https://www.youtube.com/embed/kKEnKWZnoNg"></iframe></div><figcaption>A little demo of 099 I made for Product Hunt</figcaption></figure>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>Taking a Step Back from Minimalissimo</title>
+            <link>https://carlbarenbrug.com/@/page/kUOD2PV3ByRVXYuA</link>
+            <guid isPermaLink="false">blog/minimalissimo-departure</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<p>I recently wrote about <a href="https://carlbarenbrug.com/bandwidth">bandwidth</a> and how I've been struggling to balance my day job as a product designer with several side projects and businesses. Reflecting deeply this year, I've decided to make a few changes, one of which is the difficult decision to step back from <a href="https://minimalissimo.com" rel="noreferrer" target="_blank">Minimalissimo</a>, a project I've passionately run for over 10 years. The reasons are varied, but primarily, it's due to my diminishing motivation.</p>
+<p>I feel I've taken Mimo (as I call it) as far as I can, both as a growing business and as a digital gallery of design. Curating the finest examples of minimalist works and shaping revenue streams to sustain the site has been a fulfilling challenge. Mimo is globally recognised as the home of <em>minimalism in design</em> and has attracted a consistent readership since its inception. Mimo is also self-sufficient, covering its costs month after month, year after year, even amid the relentless competition for attention from other publications and social media platforms. However, I've never drawn a salary from it, so when I speak of sustainability, it's with a grain of salt.</p>
+<p>To clarify, Mimo isn't going away. Instead, I'm happily passing the daily management of the site and newsletter to my dear friend <a href="https://manuelmoreale.com" rel="noreferrer" target="_blank">Manu</a>, starting in January. He's been an integral, though silent, partner for years, making this transition feel natural. I trust he'll maintain the site's smooth operation, sprinkling in some experimentation here and there (he's already warned me). I'm excited to see it evolve! My involvement will be limited, adopting a more hands-off approach. This shift will also see us pausing all social media activities to focus exclusively on the website and newsletter.</p>
+<p>As for me, I'll be dedicating more time to <a href="https://099.supply" rel="noreferrer" target="_blank">099.supply</a> and <a href="https://minimalism.com" rel="noreferrer" target="_blank">minimalism.com</a> in 2024. The latter will be kicking off the new year with an entirely new website, art direction, and purpose. It might actually be my best work yet (if things come together as intended). I need some fresh motivation, new challenges, and most importantly some white space to welcome any surprises or opportunities.</p>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+                <item>
+            <title>Things I Learned This Year</title>
+            <link>https://carlbarenbrug.com/@/page/NIq1NenTvGIg2AwM</link>
+            <guid isPermaLink="false">blog/learning</guid>
+            <pubDate></pubDate>
+            <description><![CDATA[<ol>
+<li>Personalisation sells, but good design satisfies.</li>
+<li>Don't wait for perfect execution. Ship and iterate.</li>
+<li>You don't need to fill your time. Creating calendar white space provides a buffer for work and play.</li>
+<li>Find the intersection of doing what makes you happy, what is smart for you long-term, and what is useful to others. Whatever that is, do it often.</li>
+<li>Ideas are worth nothing unless executed. They are just a multiplier. Execution is worth millions.</li>
+<li>The extremes inform the mean, but not vice versa. Design for the edge-cases; the middle will take care of itself.</li>
+<li>Friends are not forever, but they enrich our lives like no others can.</li>
+<li>Age should never hold back your confidence.</li>
+<li>Drinking enough water in a day is actually pretty hard.</li>
+<li>Nobody cares <em>how many</em> books you've read. People care <em>what</em> books you've read. And timing can determine quality. The impact a book can have on you is dependent on where you are in life.</li>
+<li>Don't dwell on augmenting your life. Self-care is more important than you probably think.</li>
+<li>Move to your own rhythm. This is where progress is realised. Keeping pace with others is a losing battle.</li>
+<li>How slowly or quickly you think is not an accurate measurement of your intelligence. Slow thinking is more deliberate and less emotional.</li>
+<li>Just because AI is available, doesn't mean you <em>need</em> it in your product.</li>
+<li>Personal websites and newsletters are far more valuable than any social media presence.</li>
+<li>You can’t teach minimalism to somebody who hasn’t felt the pain of having too much stuff.</li>
+<li>Solo projects evolve faster, but collaborative projects evolve better.</li>
+<li>We don't need a million followers. And maybe we don't need a thousand true fans. But we probably could use ten good internet friends to make our digital life better.</li>
+<li>Email is the best form of communication. Especially if you write informally.</li>
+<li>It's okay to obsess over numbers, but only if they give a sense of mission rather than distraction.</li>
+</ol>]]></description>
+            <author>cmhbarenbrug@gmail.com (Carl Barenbrug)</author>
+        </item>
+            </channel>
+</rss>
