@@ -4,14 +4,14 @@ Tip: usar la [interfaz web](https://openstreetmap.org) de OpenStreetMap o [Graph
 
 ## API
 
--   [Documentación docs.graphhopper.com](https://docs.graphhopper.com)
--   [Documentación GitHub](https://github.com/graphhopper/graphhopper/blob/3.x/docs/web/api-doc.md)
+- [Documentación docs.graphhopper.com](https://docs.graphhopper.com)
+- [Documentación GitHub](https://github.com/graphhopper/graphhopper/blob/3.x/docs/web/api-doc.md)
 
 Por lo que veo, es la misma API pero la documentación de docs.graphhopper.com están mejor ordenadas y representadas.
 
 Se puede usar la llave de OpenStreetMap para tests y scripts: `LijBPDQGfu7Iiq80w3HzwB4RUDJbMbhs6BU0dEnn`.
 
-### Ejemplo [[curl]]
+### Ejemplo curl
 
 ```sh
 curl \
