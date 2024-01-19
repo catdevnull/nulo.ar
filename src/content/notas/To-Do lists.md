@@ -1,2 +1,0 @@
-- [Seeing Beauty in Basic To-Do Lists - cmhb.de](https://cmhb.de/basic-to-do-lists)
-- [Tweek Calendar](https://tweek.so/): un calendario/planeador muy lindo y también con versión papel.
