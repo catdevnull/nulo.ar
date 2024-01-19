@@ -262,3 +262,10 @@ Frankly, I don't want to end this on a bad note. I like Alpine as a project, and
 
 - [December 2021 #alpine-devel logs](https://irclogs.alpinelinux.org/%23alpine-devel-2021-12.log)
 - [January 2022 #alpine-devel logs](https://irclogs.alpinelinux.org/%23alpine-devel-2022-01.log)
+
+## Aftermath
+
+After this was posted, a bunch of stuff happened.
+
+- [Mailing list thread](https://lists.alpinelinux.org/~alpine/devel/%3C20220120180617.rvboyscx2oz5r3wu%40x69%3E)
+- [Alpine Council thread about MPS](https://gitlab.alpinelinux.org/alpine/council/-/issues/11)
