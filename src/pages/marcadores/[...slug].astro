@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Nav from "../../components/Nav.astro";
 import Prose from "../../components/Prose.astro";
+import { Icon } from "astro-icon/components";
 export async function getStaticPaths() {
   const marcadoresEntries = await getCollection("marcadores");
   return marcadoresEntries.map((entry) => ({
@@ -24,7 +25,10 @@ const title = entry.data.title ?? entry.data.url;
     <header data-pagefind-body class="m-8 text-center">
       {/* https://github.com/CloudCannon/pagefind/issues/532 */}
       <h1 class="font-bold text-3xl">
-        <a class="underline" href={entry.data.url}>{title}</a>
+        <a href={entry.data.url}>
+          <span class="underline">{entry.data.title || entry.data.url}</span>
+          <Icon class="inline-block" name="eva:external-link-fill" />
+        </a>
       </h1>
       {
         entry.data.tags && (
