@@ -1,1 +1,0 @@
--   [text/enriched MIME Content-type (RFC1523)](https://datatracker.ietf.org/doc/html/rfc1523)
