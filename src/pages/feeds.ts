@@ -3,16 +3,23 @@ import { parseDocument } from "htmlparser2";
 import { getElementsByTagName } from "domutils";
 import { feeds, readFeed } from "../../feeds";
 
-export default async function () {
+if (process.argv[1].endsWith("feeds.ts")) {
+  console.info(await getFeeds());
+}
+
+export default async function getFeeds() {
   const articles = [];
 
   for (const [name, baseUrl] of Object.entries(feeds)) {
-    const rawFeed = await readFeed(name);
-    const { title, item, link } = parseFeed(baseUrl, rawFeed);
+    try {
+      const rawFeed = await readFeed(name);
+      const { title, item, link } = parseFeed(baseUrl, rawFeed);
 
-    articles.push({ title, item, link, baseUrl });
+      articles.push({ title, item, link, baseUrl });
+    } catch (error) {
+      throw new Error(`failed parsing ${name}`, { cause: error });
+    }
   }
-
   return { articles };
 }
 
