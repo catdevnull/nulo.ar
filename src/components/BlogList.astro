@@ -4,10 +4,13 @@ import FormattedDate from "./FormattedDate.astro";
 interface Props {
   entries: CollectionEntry<"blog">[];
   small?: boolean;
+  n?: number;
 }
-const { entries, small = false } = Astro.props;
+const { entries, small = false, n = Infinity } = Astro.props;
 
-const sortedEntries = entries.sort((a, b) => +b.data.date - +a.data.date);
+const sortedEntries = entries
+  .sort((a, b) => +b.data.date - +a.data.date)
+  .slice(0, n);
 ---
 
 <ul class="flex flex-col gap-4 max-w-2xl mx-auto">
