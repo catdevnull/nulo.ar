@@ -19,17 +19,17 @@ function getHost(url: string): string {
 }
 ---
 
-<ul class="list-disc max-w-2xl w-full mx-auto">
+<ul class="list-disc max-w-2xl w-full mx-auto pl-4">
   {
     entries.map((entry) => (
-      <li class="">
+      <li class="py-1">
         {/* prettier-ignore */}
-        <a href={entry.data.url}>
-            <span class="underline">{entry.data.title || entry.data.url}</span>
-            <span class="text-neutral-500 dark:text-neutral-300">({getHost(entry.data.url)})</span>
-            <Icon class="inline-block" name="eva:external-link-fill" />
-          </a>
-        <div>
+        <a class="block break-words leading-tight" href={entry.data.url}>
+          <span class="underline">{entry.data.title || entry.data.url}</span>
+          <span class="text-neutral-500 dark:text-neutral-300">({getHost(entry.data.url)})</span>
+          <Icon class="inline-block" name="eva:external-link-fill" />
+        </a>
+        <div class="mt-1">
           {entry.body.length > 0 && (
             <>
               {/* prettier-ignore */}
@@ -37,9 +37,9 @@ function getHost(url: string): string {
             </>
           )}
           {entry.data.tags && (
-            <ul class="not-prose inline-flex gap-1 mx-auto justify-center leading-none">
+            <ul class="not-prose mx-auto leading-none inline">
               {entry.data.tags.map((tag) => (
-                <li>
+                <li class="inline mr-1">
                   <a
                     href={`/marcadores/tags/${slug(tag)}`}
                     class="text-green-600 dark:text-green-300"
