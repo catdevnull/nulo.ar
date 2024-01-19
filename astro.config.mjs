@@ -23,5 +23,6 @@ export default defineConfig({
   },
   redirects: {
     // TODO
+    // TODO harmful behaviour
   },
 });

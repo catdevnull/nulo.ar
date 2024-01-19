@@ -1,3 +1,9 @@
+---
+title: Experiencing harmful behavior in Alpine
+date: 2022-01-20
+lang: en
+---
+
 <small>Started writing 2022-01-01, published 2022-01-20 with help from friends.</small>
 
 I'm a new contributor to aports/Alpine. Recently, [I took maintainership of `telegram-desktop` (and the related `tg_owt`)](https://gitlab.alpinelinux.org/alpine/aports/-/merge_requests/28864) after [upgrading it for a few versions](https://gitlab.alpinelinux.org/alpine/aports/-/merge_requests/27025) and generally improving the situation of the package by using some packaged dependencies instead of bundled ones.
@@ -105,7 +111,7 @@ snip
 snip
 2021-12-31 12:52:05 <Nulo> mps, I believe I've read the backlog, what did I miss?
 2021-12-31 12:56:55 <Nulo> I don't want to remove you TSC, especially because I have no power to do that. I want to solve this situation without stepping on each other
-2021-12-31 12:57:52 <Nulo> When you proposed to remove the comments, I (and other folks) generally disagreed. Instead of accepting that, you merged my changes and then removed them in an unrelated commit, I guess in hope that I wouldn't notice 
+2021-12-31 12:57:52 <Nulo> When you proposed to remove the comments, I (and other folks) generally disagreed. Instead of accepting that, you merged my changes and then removed them in an unrelated commit, I guess in hope that I wouldn't notice
 2021-12-31 13:17:51 <mps> Nulo: do you really-really think comment '# disable jemalloc' belong to APKBUILD
 2021-12-31 13:19:47 <Nulo> It is relevant because the list of dependencies (the wiki page link which you deleted) had jemalloc as a dependency, but we are patching it out instead. It provides an explanation as of to why that dependency wasn't in the list.
 2021-12-31 13:23:36 <mps> git commit msg servers this
@@ -213,9 +219,9 @@ snip
 </details>
 
 Soon after that, Ariadne privately messaged me asking me about the situation. She first told me that I should report it to the Technical Steering Comittee, but I was told a few moments later that apparently mps "does not want to waste the TSC's time with [my] dispute." This is ironic as he [previously](#tsc-log) explicitly told psykose to report it to the TSC.
-    
+
 She then asked me if restoring the deleted comments would be an acceptable outcome. I said no, because the problem wasn't that mps removed some comments. The problem was that mps bypassed me as a maintainer twice, making changes which he was explicitly told not to. <mark>This is the kind of unwelcoming behavior that turns people away from free software communities</mark>. I was then told that there was no interest in kicking out mps from the project, and that she had spoken with mps for him to stop this behavior.
-    
+
 I for one don't believe that someone can change their behavior which they repeated many times can change it by being told not to one hour after they last did it. In fact, I don't think mps understood the problem at all:
 
 ```
@@ -237,7 +243,7 @@ The problem wasn't the Non Maintainer Update, the problem was the intent behind 
 2022-01-17 10:07:52 <mps> jk, ofc
 2022-01-17 10:14:13 <psykose> that just looks like an oversight with two pkgvers
 2022-01-17 10:14:37 <psykose> not sure why you are acting like a child again, but there is no issue with deleting an obviously duplicated pkgver
-2022-01-17 10:14:48 <ikke> Probably badly resolved conflict 
+2022-01-17 10:14:48 <ikke> Probably badly resolved conflict
 2022-01-17 10:15:11 <psykose> yeah
 2022-01-17 10:18:21 <mps> psykose: please be careful with your words
 2022-01-17 10:20:08 <psykose> i am
@@ -254,6 +260,5 @@ Just reading the logs and seeing what he did should make it clear that he's bein
 
 Frankly, I don't want to end this on a bad note. I like Alpine as a project, and apart from mps, everyone has been nothing but nice. However, I don't feel that the response I got goes anywhere as the TSC aren't interested in making any change. That makes me uncomfortable.
 
--   [December 2021 #alpine-devel logs](https://irclogs.alpinelinux.org/%23alpine-devel-2021-12.log)
--   [January 2022 #alpine-devel logs](https://irclogs.alpinelinux.org/%23alpine-devel-2022-01.log)
-
+- [December 2021 #alpine-devel logs](https://irclogs.alpinelinux.org/%23alpine-devel-2021-12.log)
+- [January 2022 #alpine-devel logs](https://irclogs.alpinelinux.org/%23alpine-devel-2022-01.log)
