@@ -58,7 +58,6 @@ function parseFeed(feedUrl: string, rawFeed: string) {
     !item ||
     !item.link ||
     !item.title ||
-    !item.pubDate ||
     !link
   ) {
     throw "no pude parsear";
@@ -69,6 +68,6 @@ function parseFeed(feedUrl: string, rawFeed: string) {
   return {
     title: feed.title,
     link,
-    item: { title: item.title, link: item.link, pubDate: item.pubDate },
+    item: { title: item.title, link: item.link },
   };
 }
