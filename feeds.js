@@ -10,6 +10,7 @@ const feeds = {
   taylor: "https://taylor.town/feed.xml",
   nexxel: "https://www.nexxel.dev/rss.xml",
   delroth: "https://delroth.net//posts/index.xml",
+  carlbarenburg: "https://carlbarenbrug.com/feed/rss",
 };
 
 const cachedFeedsDir = ".cached-feeds/";
