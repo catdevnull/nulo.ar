@@ -3,6 +3,6 @@ title: a2hs.js - A useful modern JavaScript solution that helps your website use
 date: 2023-03-06
 url: https://github.com/koddr/a2hs.js
 tags:
-  - desarrollo-web
+  - desarrollo web
   - web-apps
 ---
