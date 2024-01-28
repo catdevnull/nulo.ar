@@ -17,7 +17,10 @@ A partir de esto, la comunidad general dio respuesta a estas dos situaciones:
 
 ## ¿Que tengo que hacer?
 
-Como son varios cambios juntos, hay que dar varios pasos para seguir leyendo nuestros queridos comics: 1. Generar una copia de seguridad en Tachiyomi, instalar Mihon e importar la copia de seguridad 2. Borrar las extensiones viejas de Tachiyomi y reinstalarlas de Keiyoushi
+Como son varios cambios juntos, hay que dar varios pasos para seguir leyendo nuestros queridos comics:
+
+1. Generar una copia de seguridad en Tachiyomi, instalar Mihon e importar la copia de seguridad
+2. Borrar las extensiones viejas de Tachiyomi y reinstalarlas de Keiyoushi
 
 ## Tachiyomi -> Mihon
 
