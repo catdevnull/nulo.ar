@@ -4,3 +4,7 @@ a.internal::before {
 a.internal::after {
   content: "]]";
 }
+
+:root {
+  color-scheme: light dark;
+}
