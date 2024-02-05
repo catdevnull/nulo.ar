@@ -34,6 +34,9 @@ dependencies:
     version: 5.3.3
 
 devDependencies:
+  '@iconify-json/bi':
+    specifier: ^1.1.23
+    version: 1.1.23
   '@iconify-json/eva':
     specifier: ^1.1.10
     version: 1.1.10
@@ -700,6 +703,12 @@ packages:
   /@fontsource-variable/inter@5.0.16:
     resolution: {integrity: sha512-k+BUNqksTL+AN+o+OV7ILeiE9B5M5X+/jA7LWvCwjbV9ovXTqZyKRhA/x7uYv/ml8WQ0XNLBM7cRFIx4jW0/hg==}
     dev: false
+
+  /@iconify-json/bi@1.1.23:
+    resolution: {integrity: sha512-1te+g9ZzI+PU1Lv6Xerd3XPXf4DE6g3TvDL2buIopTAfrauPHyXCHPFQMrzoQVNrVPCpN3rv3vBtJMPyBwJ9IA==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
 
   /@iconify-json/eva@1.1.10:
     resolution: {integrity: sha512-2mLBnkAXJJAOwZK7vJ62d+ZMMEeG6ch8sJkJu1/gweYLxxXD9npGutF/LtSpoVYhIf0WGl6c85G0ez8TvMyawQ==}
