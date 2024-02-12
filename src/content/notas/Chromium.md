@@ -4,6 +4,7 @@ El StartupWMClass es incorrecto, el correcto es igual al Icon. Entonces copiamos
 
 ```fish
 cd ~/.local/share/applications/
-mkdir bak && cp *chrome* bak/
+for i in *chrome*; do cp $i $i.bak; done
+# es idempotente :)
 sed -Ei 's/StartupWMClass=(.*)//g' *chrome* && sed -Ei 's/Icon=(.*)/Icon=\\1\nStartupWMClass=\\1/g' *chrome*
 ```
