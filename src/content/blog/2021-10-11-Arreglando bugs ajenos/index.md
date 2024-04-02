@@ -104,7 +104,7 @@ Por un tiempo, tuve una de mis muñecas inaccesibles por unas semanas. Esto me o
 
 Recientemente, en el sitio agregaron una solapa de "transcripción" mostrando todo el dialogo que había en el video del ejercicio. Sin embargo, cuando esta solapa estaba cerrada, se podían seguir seleccionando los enlaces dentro de la solapa con el teclado, haciendo la navegación por teclado tediosa.
 
-<video controls src="/public/assets/2021-10-11-Arreglando bugs ajenos-details.mp4">Tu navegador no soporta video HTML5.</video>
+<video controls src="/assets/2021-10-11-Arreglando bugs ajenos-details.mp4">Tu navegador no soporta video HTML5.</video>
 
 La solucion es simplemente usar el elemento de solapa que ya viene con el navegador: [`<details>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/details). (La página de `<details>` en MDN esta desactualizada al momento de escribir este artículo.)
 
