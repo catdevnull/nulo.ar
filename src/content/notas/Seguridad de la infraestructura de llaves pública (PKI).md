@@ -41,6 +41,8 @@ Sin embargo, hoy en día los navegadores (en Google Chrome desde 2018<sup>[2](ht
 
 [BGP hijacking - Wikipedia]: https://en.wikipedia.org/index.php?title=BGP_hijacking
 
+- En octubre 2023, `xmpp.ru`/`jabber.ru` detectó un ataque activo que involucró interceptar conexiones a sus VPS en Hetzner y Linode generando certificados via Let's Encrypt. [Mitigating the Hetzner/Linode XMPP.ru MitM interception incident](https://www.devever.net/~hl/xmpp-incident) o el post original: [Encrypted traffic interception on Hetzner and Linode targeting the largest Russian XMPP (Jabber) messaging service](https://notes.valdikss.org.ru/jabber.ru-mitm/)
+
 ### Soluciones o mitigaciones
 
 #### Monitorear Certificate Transparency
