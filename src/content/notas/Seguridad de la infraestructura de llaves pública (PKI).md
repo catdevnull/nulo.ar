@@ -29,6 +29,8 @@ Previamente, la única forma de verificar que una autoridad había falsificado u
 
 Sin embargo, hoy en día los navegadores (en Google Chrome desde 2018<sup>[2](https://groups.google.com/a/chromium.org/g/ct-policy/c/wHILiYf31DE/m/iMFmpMEkAQAJ)</sup>) requieren que los certificados estén registrados en un registro de transparencia ([Certificate Transparency - Wikipedia](https://en.wikipedia.org/wiki/Certificate_Transparency)). De esta manera, se puede inspeccionar estos registros públicos por certificados inusuales. [crt.sh](https://crt.sh/) es un sitio que permite acceder a estos registros fácilmente.
 
+(Notese, igualmente, que otras cosas que no son navegadores web pueden no estar chequeando los registros de transparencia. Aún hoy en día no es un requerimiento para las autoridades de certificados reportar todos los certificados generados a los registros de transparencia.)
+
 [ACME]: https://en.wikipedia.org/wiki/Automatic_Certificate_Management_Environment
 
 ### Casos
