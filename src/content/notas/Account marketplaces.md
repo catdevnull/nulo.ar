@@ -1,0 +1,2 @@
+- [Accsmarket](https://accsmarket.com/) - Facebook, Instagram, VK, GMail, Twitter/X, TikTok, Linkedin, Reddit, etc
+- [lzt.market](https://lzt.market/) - Steam, Fortnite, LoL, Telegram, Discord, TikTok, Instagram, Spotify, Minecraft, etc
