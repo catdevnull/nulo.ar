@@ -1,9 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
 
-import screenshot from "./screenshot-cropped.webp";
-import screenshotDark from "./screenshot-cropped-dark.webp";
-
 import Layout from "../../layouts/Layout.astro";
 const title = "DlBot";
 const description =
@@ -61,19 +58,6 @@ const description =
         />
         @dlthefourthbot
       </a>
-    </div>
-    <div class="shrink-0 p-6 lg:p-12">
-      <picture>
-        <source
-          srcset={screenshotDark.src}
-          media="(prefers-color-scheme: dark)"
-        />
-        <img
-          class="rounded-lg drop-shadow-lg max-h-[90vh]"
-          src={screenshot.src}
-          alt="Una captura de pantalla de Telegram de una conversación con DlBot, en la que se envía un link de Instagram Reels y DlBot le contesta con un video subido."
-        />
-      </picture>
     </div>
   </section>
 
