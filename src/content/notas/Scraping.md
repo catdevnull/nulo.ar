@@ -1,0 +1,7 @@
+- Extract data from SSR sites (React, Next.js, Remix, etc) ([example](https://x.com/forgebitz/status/1817453553146908941)).
+    - [Example in Preciazo](https://github.com/catdevnull/preciazo/blob/b9bd9eb51d4bb8426e9950c5ae89861ca9a947de/rust/src/scraper/sites/vtex.rs#L163)
+- Some websites will have [JSON-LD](https://json-ld.org/) embedded for search engines to scrap. You can, too! `<script type="application/ld+json">`
+- Extract [sitemaps](https://en.wikipedia.org/wiki/Site_map) to get a list of pages to scrap.
+- Extract [`<meta>` tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta) for basic and not-so-basic metadata.
+    - [Example in Preciazo](https://github.com/catdevnull/preciazo/blob/b9bd9eb51d4bb8426e9950c5ae89861ca9a947de/rust/src/scraper/sites/vtex.rs#L100)
+- Inject code into React apps (monkeypatching or using the browser debugger) and send the data to your own API server. [Demo](https://www.youtube.com/watch?v=UR5Mm--sAwM)
