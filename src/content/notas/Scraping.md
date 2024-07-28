@@ -5,3 +5,4 @@
 - Extract [`<meta>` tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta) for basic and not-so-basic metadata.
     - [Example in Preciazo](https://github.com/catdevnull/preciazo/blob/b9bd9eb51d4bb8426e9950c5ae89861ca9a947de/rust/src/scraper/sites/vtex.rs#L100)
 - Inject code into React apps (monkeypatching or using the browser debugger) and send the data to your own API server. [Demo](https://www.youtube.com/watch?v=UR5Mm--sAwM)
+    - [Snippets](https://gist.github.com/dougwithseismic/156ae2d424e687d257630cd92aaf00d6)
